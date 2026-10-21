@@ -1,7 +1,7 @@
 # Site Neanuphar — règles du projet
 
 Site perso qui regroupe des petits outils utilisables dans le navigateur.
-Domaine prévu : neanuphar.fr (hébergement prévu : GitHub Pages).
+En ligne sur neanuphar.fr, hébergé par GitHub Pages (branche `main`, dossier racine). Chaque envoi sur `main` met le site à jour.
 Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est écrit par l'IA, la propriétaire valide visuellement dans le navigateur.
 
 ## Structure
@@ -12,8 +12,11 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 ├── index.html         ← page d'accueil : une carte par outil
 ├── silhouette/
 │   └── index.html     ← Atelier Silhouette
-└── smash/
-    └── index.html     ← Checklist Smash Ultimate
+├── smash/
+│   └── index.html     ← Checklist Smash Ultimate
+├── recettes/
+│   └── index.html     ← Mes recettes (liste dans le tableau RECETTES)
+└── CNAME              ← créé par GitHub Pages pour neanuphar.fr : ne pas supprimer
 ```
 
 - Un outil = un dossier = un seul fichier `index.html`.

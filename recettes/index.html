@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes recettes</title>
+  <style>
+    :root {
+      --fond: #f4f1ea;
+      --carte: #ffffff;
+      --texte: #1f1d1a;
+      --doux: #6b665e;
+      --accent: #2f7d6d;
+      --bord: #e2ddd2;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fond: #16181b;
+        --carte: #202328;
+        --texte: #ece9e2;
+        --doux: #9a968e;
+        --accent: #5cc2aa;
+        --bord: #2e3238;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .retour {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+    .retour:hover { text-decoration: underline; }
+    h1 { font-size: 1.8rem; margin: 0 0 4px; }
+    .sous-titre { color: var(--doux); margin: 0 0 20px; }
+
+    .recherche {
+      width: 100%;
+      font: inherit;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      background: var(--carte);
+      color: var(--texte);
+    }
+    .recherche:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+    .filtres { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .filtre {
+      font: inherit;
+      font-size: .9rem;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--bord);
+      background: var(--carte);
+      color: var(--texte);
+      cursor: pointer;
+    }
+    .filtre:hover { border-color: var(--accent); }
+    .filtre[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--carte); }
+
+    .recette {
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .recette[open] { border-color: var(--accent); }
+    .recette summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .recette summary::-webkit-details-marker { display: none; }
+    .recette summary::after {
+      content: "+";
+      margin-left: auto;
+      font-size: 1.3rem;
+      color: var(--doux);
+      flex-shrink: 0;
+    }
+    .recette[open] summary::after { content: "−"; }
+    .titre { font-weight: 600; font-size: 1.05rem; }
+    .resume { color: var(--doux); font-size: .9rem; }
+    .contenu { padding: 0 16px 16px; }
+    .infos { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .info {
+      font-size: .85rem;
+      padding: 2px 10px;
+      border-radius: 6px;
+      background: var(--fond);
+      color: var(--doux);
+    }
+    .contenu h3 {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--doux);
+      margin: 16px 0 6px;
+    }
+    .contenu ul, .contenu ol { margin: 0; padding-left: 22px; }
+    .contenu li { margin: 4px 0; }
+    .ingredients li::marker { color: var(--accent); }
+    .etapes li::marker { color: var(--accent); font-weight: 600; }
+    .note {
+      background: var(--fond);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin: 6px 0;
+      font-size: .95rem;
+    }
+    .source { color: var(--doux); font-size: .85rem; margin-top: 12px; }
+    .aucune { color: var(--doux); text-align: center; padding: 24px; display: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="retour" href="../index.html">← Accueil</a>
+    <h1>Mes recettes</h1>
+    <p class="sous-titre">Les recettes que j'ai faites, avec mes ajustements.</p>
+
+    <input class="recherche" id="recherche" type="search" placeholder="Chercher une recette ou un ingrédient…" aria-label="Chercher une recette">
+    <div class="filtres" id="filtres"></div>
+
+    <div id="liste"></div>
+    <p class="aucune" id="aucune">Aucune recette ne correspond.</p>
+  </main>
+
+  <script>
+    // ===== Les recettes (modifiables) =====
+    // Pour en ajouter une : copier un bloc { ... } et changer le contenu.
+    const RECETTES = [
+      {
+        titre: "Cookies au beurre noisette",
+        categorie: "Gâteaux et biscuits",
+        resume: "Cookies chewy, beurre noisette et deux chocolats.",
+        portions: "18 cookies",
+        temps: "~1 h + 30 min de repos",
+        ingredients: [
+          "185 g de beurre, pesé cru (avant de le noisetter)",
+          "215 g de cassonade blonde",
+          "1 œuf + 1 jaune d'œuf",
+          "2 c. à café d'extrait de vanille",
+          "225 g de farine (T45, T55 ou un mélange)",
+          "¾ c. à café de bicarbonate de soude (pas de levure chimique)",
+          "1 c. à café de sel de mer fin",
+          "200 g de chocolat au lait, haché",
+          "200 g de chocolat noir, haché",
+          "Fleur de sel, pour le dessus",
+        ],
+        etapes: [
+          "Faire noisetter le beurre : dans une casserole claire, à feu moyen. Il fond, mousse et crépite, puis se calme. Arrêter quand les petites particules au fond sont brun doré et que ça sent la noisette (5 à 8 min). Verser aussitôt dans un bol en raclant le fond.",
+          "Laisser refroidir le beurre 10 à 15 min : tiède, pas chaud.",
+          "Fouetter le beurre avec la cassonade 1 à 2 min.",
+          "Ajouter l'œuf, le jaune et la vanille, puis fouetter énergiquement jusqu'à ce que ce soit lisse et crémeux.",
+          "Mélanger à part la farine, le bicarbonate et le sel, puis les incorporer à la spatule, juste jusqu'à ne plus voir de farine.",
+          "Ajouter les chocolats.",
+          "Mettre la pâte au frigo, couverte, au moins 30 min (jusqu'à 24 h pour plus de goût).",
+          "Préchauffer le four : 170 °C en chaleur tournante, ou 190 °C en chaleur classique.",
+          "Former des boules et les espacer sur une plaque avec papier cuisson.",
+          "Cuire environ 7 min : bords dorés, centre encore mou et brillant. Si les bords sont pâles, 1 à 2 min de plus.",
+          "Parsemer de fleur de sel et laisser refroidir sur la plaque : ils se raffermissent en refroidissant.",
+        ],
+        notes: [
+          "Version doublée (36 cookies) : tout ×2, faite avec 400 g de cassonade au lieu de 430 g. Ça marche très bien.",
+          "Avec la cassonade française, le mélange beurre-sucre paraît plus liquide qu'en vidéo : c'est normal, la farine rattrape tout.",
+          "Bien mélanger la farine avec le bicarbonate avant de l'ajouter, sinon on tombe sur des bouchées au goût métallique.",
+          "Conservation : 3 à 4 jours en boîte hermétique, pas au frigo. Un morceau de pain de mie dans la boîte les garde moelleux.",
+        ],
+        source: "D'après la recette de Cupcake Jemma (Crumbs & Doilies).",
+      },
+      {
+        titre: "Cookies beurre et cassonade",
+        categorie: "Gâteaux et biscuits",
+        resume: "Version sans beurre noisette, plus rapide.",
+        portions: "12 cookies",
+        temps: "~30 min",
+        ingredients: [
+          "225 g de beurre ramolli",
+          "215 g de cassonade, tassée",
+          "1 œuf + 1 jaune d'œuf",
+          "2 c. à café d'extrait de vanille",
+          "225 g de farine",
+          "¾ c. à café de bicarbonate de soude",
+          "1 c. à café de sel fin",
+          "100 g de chocolat au lait, haché",
+          "100 g de chocolat noir, haché",
+        ],
+        etapes: [
+          "Préchauffer le four à 180 °C (chaleur tournante) et préparer une plaque avec papier cuisson.",
+          "Fouetter le beurre et la cassonade jusqu'à ce que ce soit léger et crémeux, 2 à 3 min.",
+          "Ajouter l'œuf, le jaune et la vanille, et mélanger.",
+          "Mélanger à part la farine, le bicarbonate et le sel, puis les incorporer sans trop travailler la pâte.",
+          "Ajouter les chocolats.",
+          "Former des boules de 50 à 60 g et les espacer sur la plaque.",
+          "Cuire 10 à 12 min : bords dorés, centre encore moelleux.",
+          "Laisser 5 à 10 min sur la plaque avant de les déplacer.",
+        ],
+        notes: [
+          "Astuce de la recette d'origine : remplacer 50 g de cassonade par 50 g de sucre blanc, pour que les cookies tiennent mieux leur forme.",
+        ],
+        source: "D'après un commentaire YouTube qui convertit la recette en grammes.",
+      },
+      {
+        titre: "Gâteau au chocolat au yaourt",
+        categorie: "Gâteaux et biscuits",
+        resume: "Gros gâteau moelleux, cacao et yaourt.",
+        portions: "8 à 12 parts",
+        temps: "~1 h",
+        ingredients: [
+          "3 œufs",
+          "5 c. à soupe de sucre",
+          "2 sachets de sucre vanillé",
+          "2 yaourts nature",
+          "1 cup de cacao non sucré",
+          "2 cups de farine",
+          "1 cup d'huile neutre (tournesol ou colza)",
+          "1 sachet de levure chimique",
+        ],
+        etapes: [
+          "Préchauffer le four à 180 °C.",
+          "Préparer un grand moule (24-26 cm, ou moule à cake) : papier cuisson au fond, bords légèrement beurrés.",
+          "Mélanger les œufs avec le sucre et le sucre vanillé.",
+          "Ajouter les yaourts et l'huile, puis mélanger.",
+          "Ajouter la farine, le cacao et la levure, et mélanger jusqu'à ce que ce soit homogène.",
+          "Verser dans le moule et cuire 35 à 45 min. C'est cuit quand un couteau planté au centre ressort sec.",
+        ],
+        notes: [
+          "« Cup » = la même tasse pour tous les ingrédients : c'est le rapport entre eux qui compte.",
+          "Pas d'huile d'olive : son goût jure avec le cacao.",
+        ],
+        source: "",
+      },
+      {
+        titre: "Crêpes à la vanille, peu sucrées",
+        categorie: "Crêpes et pancakes",
+        resume: "Pâte fine et souple, vanille plutôt que sucre.",
+        portions: "15 à 20 crêpes",
+        temps: "~20 min + 30 min de repos",
+        ingredients: [
+          "200 g de farine T45 ou T55",
+          "50 g de Maïzena",
+          "4 œufs",
+          "500 ml de lait entier",
+          "100 ml d'eau plate",
+          "50 g de beurre fondu (tiède)",
+          "1 c. à soupe de sucre",
+          "2 c. à café d'extrait de vanille",
+          "1 pincée de sel",
+        ],
+        etapes: [
+          "Au blender : mettre d'abord le lait, l'eau, les œufs, le beurre fondu et la vanille, puis la farine, la Maïzena, le sucre et le sel. Mixer 20 à 30 secondes, pas plus.",
+          "Sans blender : farine, Maïzena, sucre et sel dans un saladier, les œufs au centre, fouetter en versant le lait petit à petit, puis ajouter l'eau, le beurre et la vanille.",
+          "Laisser reposer au moins 30 min (idéalement 1 h) à température ambiante.",
+          "Chauffer une poêle à feu moyen-vif, la graisser légèrement avec un essuie-tout beurré.",
+          "Remuer la pâte avant chaque louche (la Maïzena se dépose au fond), verser une petite louche et étaler en tournant la poêle.",
+          "Retourner quand les bords se décollent et dorent.",
+        ],
+        notes: [
+          "La première crêpe sert à régler le feu : normal si elle est ratée.",
+          "Pour des crêpes salées : retirer le sucre et la vanille.",
+          "Sans Maïzena : 250 g de farine, ça marche aussi.",
+        ],
+        source: "",
+      },
+      {
+        titre: "Pancakes moelleux",
+        categorie: "Crêpes et pancakes",
+        resume: "Pancakes épais, un quart de maïzena pour le moelleux.",
+        portions: "4 personnes",
+        temps: "~25 min",
+        ingredients: [
+          "190 g de farine",
+          "60 g de Maïzena",
+          "1 c. à soupe de levure chimique",
+          "30 g de sucre",
+          "1 pincée de sel",
+          "2 gros œufs",
+          "300 ml de lait",
+          "40 g de beurre fondu",
+        ],
+        etapes: [
+          "Mélanger dans un saladier la farine, la Maïzena, la levure, le sucre et le sel.",
+          "Dans un autre bol, fouetter les œufs avec le lait, puis ajouter le beurre fondu.",
+          "Verser le liquide sur le sec et mélanger juste assez pour ne plus voir de farine. Quelques grumeaux, c'est normal.",
+          "Laisser reposer 10 min.",
+          "Cuire dans une poêle légèrement beurrée à feu moyen : une petite louche, retourner quand des bulles apparaissent, puis encore 1 min environ.",
+        ],
+        notes: [
+          "Pas plus d'un quart de Maïzena par rapport au total farine + Maïzena, sinon les pancakes se cassent.",
+        ],
+        source: "",
+      },
+    ];
+
+    // ===== Affichage =====
+    const liste = document.getElementById("liste");
+    const recherche = document.getElementById("recherche");
+    const zoneFiltres = document.getElementById("filtres");
+    const aucune = document.getElementById("aucune");
+    let categorieActive = "Toutes";
+
+    function el(balise, classe, texte) {
+      const e = document.createElement(balise);
+      if (classe) e.className = classe;
+      if (texte !== undefined) e.textContent = texte;
+      return e;
+    }
+
+    function liste_de(balise, classe, elements) {
+      const l = el(balise, classe);
+      elements.forEach((t) => l.append(el("li", "", t)));
+      return l;
+    }
+
+    function carte(r) {
+      const d = el("details", "recette");
+      const s = el("summary");
+      const entete = el("div");
+      entete.append(el("div", "titre", r.titre), el("div", "resume", r.resume));
+      s.append(entete);
+      d.append(s);
+
+      const c = el("div", "contenu");
+      const infos = el("div", "infos");
+      [r.categorie, r.portions, r.temps].filter(Boolean).forEach((t) => infos.append(el("span", "info", t)));
+      c.append(infos);
+
+      c.append(el("h3", "", "Ingrédients"), liste_de("ul", "ingredients", r.ingredients));
+      c.append(el("h3", "", "Étapes"), liste_de("ol", "etapes", r.etapes));
+      if (r.notes && r.notes.length) {
+        c.append(el("h3", "", "Notes"));
+        r.notes.forEach((n) => c.append(el("p", "note", n)));
+      }
+      if (r.source) c.append(el("p", "source", r.source));
+      d.append(c);
+
+      // Texte utilisé par la recherche
+      d.dataset.texte = [r.titre, r.resume, r.categorie, ...r.ingredients].join(" ").toLowerCase();
+      d.dataset.categorie = r.categorie;
+      return d;
+    }
+
+    function construireFiltres() {
+      const categories = ["Toutes", ...new Set(RECETTES.map((r) => r.categorie))];
+      categories.forEach((cat) => {
+        const b = el("button", "filtre", cat);
+        b.type = "button";
+        b.setAttribute("aria-pressed", cat === categorieActive);
+        b.addEventListener("click", () => {
+          categorieActive = cat;
+          zoneFiltres.querySelectorAll(".filtre").forEach((x) => x.setAttribute("aria-pressed", x.textContent === cat));
+          filtrer();
+        });
+        zoneFiltres.append(b);
+      });
+    }
+
+    function sansAccents(t) {
+      return t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    }
+
+    function filtrer() {
+      const q = sansAccents(recherche.value.trim());
+      let visibles = 0;
+      liste.querySelectorAll(".recette").forEach((d) => {
+        const ok = (categorieActive === "Toutes" || d.dataset.categorie === categorieActive)
+          && (!q || sansAccents(d.dataset.texte).includes(q));
+        d.hidden = !ok;
+        if (ok) visibles++;
+      });
+      aucune.style.display = visibles ? "none" : "block";
+    }
+
+    RECETTES.forEach((r) => liste.append(carte(r)));
+    construireFiltres();
+    recherche.addEventListener("input", filtrer);
+  </script>
+</body>
+</html>
