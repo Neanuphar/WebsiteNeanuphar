@@ -62,6 +62,15 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 2. Ajouter une carte dans `index.html` à la racine (copier un bloc `<a class="carte">`).
 3. Tester en local, puis faire un commit.
 
+## Recettes (`recettes/index.html`)
+
+- Chaque recette est un bloc du tableau `RECETTES`, en haut du script.
+- Les quantités qui doivent changer quand on double la recette sont entre crochets : `"[185] g de beurre"`, `"[0.75] c. à café de bicarbonate"`, `"[8] à [12] parts"`. Mettre aussi les crochets dans `portions`.
+- `{s}` ajoute un « s » si le nombre juste avant dépasse 1 : `"[1] œuf{s} + [1] jaune{s} d'œuf"` devient « 2 œufs + 2 jaunes d'œuf ».
+- Pas de crochets pour ce qui ne double pas : températures, temps, taille des boules, dimensions du plat.
+- Les étapes et les notes ne sont pas recalculées : y éviter les quantités, renvoyer plutôt aux ingrédients (« le sucre pour les fruits »).
+- Quand une info manque dans une recette donnée, la compléter seulement avec une valeur standard et le signaler (« environ », estimation).
+
 ## Méthode de travail
 
 - Un commit après chaque modification qui marche, avec un message clair en français.

@@ -126,6 +126,27 @@
       font-size: .95rem;
     }
     .source { color: var(--doux); font-size: .85rem; margin-top: 12px; }
+    .choix {
+      display: inline-flex;
+      border: 1px solid var(--bord);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .choix button {
+      font: inherit;
+      font-size: .9rem;
+      padding: 6px 14px;
+      border: none;
+      background: var(--carte);
+      color: var(--texte);
+      cursor: pointer;
+    }
+    .choix button + button { border-left: 1px solid var(--bord); }
+    .choix button:hover { background: var(--fond); }
+    .choix button[aria-pressed="true"] { background: var(--accent); color: var(--carte); font-weight: 600; }
+    .alerte { margin: 0 0 8px; }
+    .alerte[hidden] { display: none; }
     .aucune { color: var(--doux); text-align: center; padding: 24px; display: none; }
   </style>
 </head>
@@ -150,18 +171,18 @@
         titre: "Cookies au beurre noisette",
         categorie: "Gâteaux et biscuits",
         resume: "Cookies chewy, beurre noisette et deux chocolats.",
-        portions: "~21 cookies de 50 g",
+        portions: "~[21] cookies de 50 g",
         temps: "~1 h + 30 min de repos",
         ingredients: [
-          "185 g de beurre, pesé cru (avant de le noisetter)",
-          "215 g de cassonade blonde",
-          "1 œuf + 1 jaune d'œuf",
-          "2 c. à café d'extrait de vanille",
-          "225 g de farine (T45, T55 ou un mélange)",
-          "¾ c. à café de bicarbonate de soude (pas de levure chimique)",
-          "1 c. à café de sel de mer fin",
-          "200 g de chocolat au lait, haché",
-          "200 g de chocolat noir, haché",
+          "[185] g de beurre, pesé cru (avant de le noisetter)",
+          "[215] g de cassonade blonde",
+          "[1] œuf{s} + [1] jaune{s} d'œuf",
+          "[2] c. à café d'extrait de vanille",
+          "[225] g de farine (T45, T55 ou un mélange)",
+          "[0.75] c. à café de bicarbonate de soude (pas de levure chimique)",
+          "[1] c. à café de sel de mer fin",
+          "[200] g de chocolat au lait, haché",
+          "[200] g de chocolat noir, haché",
           "Fleur de sel, pour le dessus",
         ],
         etapes: [
@@ -178,7 +199,7 @@
           "Parsemer de fleur de sel et laisser refroidir sur la plaque : ils se raffermissent en refroidissant.",
         ],
         notes: [
-          "Version doublée (36 cookies) : tout ×2, faite avec 400 g de cassonade au lieu de 430 g. Ça marche très bien.",
+          "Version doublée : faite avec 400 g de cassonade au lieu de 430 g. Ça marche très bien.",
           "Avec la cassonade française, le mélange beurre-sucre paraît plus liquide qu'en vidéo : c'est normal, la farine rattrape tout.",
           "Bien mélanger la farine avec le bicarbonate avant de l'ajouter, sinon on tombe sur des bouchées au goût métallique.",
           "Conservation : 3 à 4 jours en boîte hermétique, pas au frigo. Un morceau de pain de mie dans la boîte les garde moelleux.",
@@ -189,17 +210,17 @@
         titre: "Gâteau au chocolat au yaourt",
         categorie: "Gâteaux et biscuits",
         resume: "Gros gâteau moelleux, cacao et yaourt.",
-        portions: "8 à 12 parts",
+        portions: "[8] à [12] parts",
         temps: "~1 h",
         ingredients: [
-          "3 œufs",
-          "5 c. à soupe de sucre",
-          "2 sachets de sucre vanillé",
-          "2 yaourts nature",
-          "1 cup de cacao non sucré",
-          "2 cups de farine",
-          "1 cup d'huile neutre (tournesol ou colza)",
-          "1 sachet de levure chimique",
+          "[3] œufs",
+          "[5] c. à soupe de sucre",
+          "[2] sachets de sucre vanillé",
+          "[2] yaourts nature",
+          "[1] cup{s} de cacao non sucré",
+          "[2] cups de farine",
+          "[1] cup{s} d'huile neutre (tournesol ou colza)",
+          "[1] sachet{s} de levure chimique",
         ],
         etapes: [
           "Préchauffer le four à 180 °C.",
@@ -219,16 +240,16 @@
         titre: "Tiramisu maison",
         categorie: "Desserts",
         resume: "Crème mascarpone, boudoirs au lait, spéculoos.",
-        portions: "8 à 10 parts",
+        portions: "[8] à [10] parts",
         temps: "~30 min + 4 h de frigo",
         ingredients: [
-          "500 g de mascarpone",
-          "40 cl de crème liquide entière, bien froide",
-          "40 g de sucre glace",
-          "1 sachet de sucre vanillé",
-          "1 c. à soupe de pâte à tartiner",
+          "[500] g de mascarpone",
+          "[40] cl de crème liquide entière, bien froide",
+          "[40] g de sucre glace",
+          "[1] sachet{s} de sucre vanillé",
+          "[1] c. à soupe de pâte à tartiner",
           "Des morceaux de ce que tu veux à ajouter dans la crème (facultatif)",
-          "24 à 30 boudoirs environ, selon le plat",
+          "[24] à [30] boudoirs environ, selon le plat",
           "Du lait froid, nature ou chocolaté",
           "Du nappage au chocolat (facultatif)",
           "Du spéculoos en poudre, pour le dessus",
@@ -254,22 +275,22 @@
         titre: "Crumble pommes-poires",
         categorie: "Desserts",
         resume: "Fruits fondants sous une pâte croquante. Sans œuf, sans fruits à coque, sans protéines de lait de vache.",
-        portions: "6 parts",
+        portions: "[6] parts",
         temps: "~50 min",
         ingredients: [
-          "4 pommes",
-          "2 poires",
-          "150 g de farine de blé",
-          "100 g de cassonade ou de sucre",
-          "100 g de beurre doux Flora, mou",
-          "1 c. à café de cannelle en poudre",
-          "1 pincée de sel",
-          "1 c. à soupe de sucre (pour les fruits)",
+          "[4] pommes",
+          "[2] poires",
+          "[150] g de farine de blé",
+          "[100] g de cassonade ou de sucre",
+          "[100] g de beurre doux Flora, mou",
+          "[1] c. à café de cannelle en poudre",
+          "[1] pincée{s} de sel",
+          "[1] c. à soupe de sucre (pour les fruits)",
         ],
         etapes: [
           "Préchauffer le four à 180 °C. Sortir le beurre Flora du frigo pour qu'il ramollisse.",
           "Éplucher les pommes et les poires, enlever le cœur et les couper en cubes d'environ 2 cm.",
-          "Les mettre dans une poêle avec 1 c. à soupe de sucre et une demi-cuillère à café de cannelle. Cuire à feu moyen en remuant de temps en temps, jusqu'à ce qu'ils commencent à ramollir (environ 5 à 8 min).",
+          "Les mettre dans une poêle avec le sucre pour les fruits et la moitié de la cannelle. Cuire à feu moyen en remuant de temps en temps, jusqu'à ce qu'ils commencent à ramollir (environ 5 à 8 min).",
           "Verser les fruits chauds avec leur jus dans un plat qui va au four.",
           "Dans un saladier, mélanger la farine, la cassonade, le sel et le reste de la cannelle. Ajouter le beurre Flora et mélanger avec les doigts jusqu'à obtenir une pâte homogène.",
           "Arracher des petits morceaux de pâte, de la taille d'une bille, et les poser en vrac sur les fruits chauds jusqu'à les recouvrir. Pas de gros morceaux, sinon le dedans reste pâteux.",
@@ -287,18 +308,18 @@
         titre: "Crêpes à la vanille, peu sucrées",
         categorie: "Crêpes et pancakes",
         resume: "Pâte fine et souple, vanille plutôt que sucre.",
-        portions: "15 à 20 crêpes",
+        portions: "[15] à [20] crêpes",
         temps: "~20 min + 30 min de repos",
         ingredients: [
-          "200 g de farine T45 ou T55",
-          "50 g de Maïzena",
-          "4 œufs",
-          "500 ml de lait entier",
-          "100 ml d'eau plate",
-          "50 g de beurre fondu (tiède)",
-          "1 c. à soupe de sucre",
-          "2 c. à café d'extrait de vanille",
-          "1 pincée de sel",
+          "[200] g de farine T45 ou T55",
+          "[50] g de Maïzena",
+          "[4] œufs",
+          "[500] ml de lait entier",
+          "[100] ml d'eau plate",
+          "[50] g de beurre fondu (tiède)",
+          "[1] c. à soupe de sucre",
+          "[2] c. à café d'extrait de vanille",
+          "[1] pincée{s} de sel",
         ],
         etapes: [
           "Au blender : mettre d'abord le lait, l'eau, les œufs, le beurre fondu et la vanille, puis la farine, la Maïzena, le sucre et le sel. Mixer 20 à 30 secondes, pas plus.",
@@ -311,7 +332,7 @@
         notes: [
           "La première crêpe sert à régler le feu : normal si elle est ratée.",
           "Pour des crêpes salées : retirer le sucre et la vanille.",
-          "Sans Maïzena : 250 g de farine, ça marche aussi.",
+          "Sans Maïzena : remplacer la Maïzena par la même quantité de farine, ça marche aussi.",
         ],
         source: "",
       },
@@ -319,17 +340,17 @@
         titre: "Pancakes moelleux",
         categorie: "Crêpes et pancakes",
         resume: "Pancakes épais, un quart de maïzena pour le moelleux.",
-        portions: "4 personnes",
+        portions: "[4] personnes",
         temps: "~25 min",
         ingredients: [
-          "190 g de farine",
-          "60 g de Maïzena",
-          "1 c. à soupe de levure chimique",
-          "30 g de sucre",
-          "1 pincée de sel",
-          "2 gros œufs",
-          "300 ml de lait",
-          "40 g de beurre fondu",
+          "[190] g de farine",
+          "[60] g de Maïzena",
+          "[1] c. à soupe de levure chimique",
+          "[30] g de sucre",
+          "[1] pincée{s} de sel",
+          "[2] gros œufs",
+          "[300] ml de lait",
+          "[40] g de beurre fondu",
         ],
         etapes: [
           "Mélanger dans un saladier la farine, la Maïzena, la levure, le sucre et le sel.",
@@ -365,6 +386,28 @@
       return l;
     }
 
+    // ===== Quantités =====
+    // Dans les données, un nombre entre crochets [185] est multiplié quand on double.
+    // {s} ajoute un « s » si le nombre juste avant est plus grand que 1 (œuf{s} → œufs).
+    const FRACTIONS = { 0.25: "¼", 0.5: "½", 0.75: "¾" };
+
+    function formater(v) {
+      if (Number.isInteger(v)) return String(v);
+      const entier = Math.floor(v);
+      const reste = Math.round((v - entier) * 100) / 100;
+      if (FRACTIONS[reste]) return entier ? entier + " " + FRACTIONS[reste] : FRACTIONS[reste];
+      return String(Math.round(v * 10) / 10).replace(".", ",");
+    }
+
+    function avecQuantites(texte, facteur) {
+      let dernier = 1;
+      return texte.replace(/\[([\d.]+)\]|\{s\}/g, (morceau, nombre) => {
+        if (nombre === undefined) return dernier > 1 ? "s" : "";
+        dernier = Number(nombre) * facteur;
+        return formater(dernier);
+      });
+    }
+
     function carte(r) {
       const d = el("details", "recette");
       const s = el("summary");
@@ -374,11 +417,41 @@
       d.append(s);
 
       const c = el("div", "contenu");
-      const infos = el("div", "infos");
-      [r.categorie, r.portions, r.temps].filter(Boolean).forEach((t) => infos.append(el("span", "info", t)));
-      c.append(infos);
 
-      c.append(el("h3", "", "Ingrédients"), liste_de("ul", "ingredients", r.ingredients));
+      // Choix recette simple / doublée
+      const choix = el("div", "choix");
+      choix.setAttribute("role", "group");
+      choix.setAttribute("aria-label", "Quantités");
+      const boutons = [[1, "Recette simple"], [2, "Doublée (×2)"]].map(([f, libelle]) => {
+        const b = el("button", "", libelle);
+        b.type = "button";
+        b.addEventListener("click", () => afficher(f));
+        choix.append(b);
+        return [f, b];
+      });
+      c.append(choix);
+
+      const infos = el("div", "infos");
+      c.append(infos);
+      const alerte = el("p", "note alerte",
+        "Recette doublée : prévois un plat plus grand ou plusieurs fournées, et surveille la cuisson, elle peut être plus longue. Les chiffres dans les étapes et les notes restent ceux de la recette simple.");
+      c.append(alerte);
+
+      c.append(el("h3", "", "Ingrédients"));
+      const ingredients = el("ul", "ingredients");
+      c.append(ingredients);
+
+      function afficher(f) {
+        boutons.forEach(([bf, b]) => b.setAttribute("aria-pressed", bf === f));
+        infos.innerHTML = "";
+        [r.categorie, r.portions && avecQuantites(r.portions, f), r.temps].filter(Boolean)
+          .forEach((t) => infos.append(el("span", "info", t)));
+        ingredients.innerHTML = "";
+        r.ingredients.forEach((t) => ingredients.append(el("li", "", avecQuantites(t, f))));
+        alerte.hidden = f === 1;
+      }
+      afficher(1);
+
       c.append(el("h3", "", "Étapes"), liste_de("ol", "etapes", r.etapes));
       if (r.notes && r.notes.length) {
         c.append(el("h3", "", "Notes"));
@@ -388,7 +461,7 @@
       d.append(c);
 
       // Texte utilisé par la recherche
-      d.dataset.texte = [r.titre, r.resume, r.categorie, ...r.ingredients].join(" ").toLowerCase();
+      d.dataset.texte = [r.titre, r.resume, r.categorie, ...r.ingredients.map((t) => avecQuantites(t, 1))].join(" ").toLowerCase();
       d.dataset.categorie = r.categorie;
       return d;
     }
