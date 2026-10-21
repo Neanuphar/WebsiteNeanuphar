@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier Silhouette</title>
+  <style>
+    :root {
+      --fond: #f4f1ea;
+      --carte: #ffffff;
+      --texte: #1f1d1a;
+      --doux: #6b665e;
+      --accent: #2f7d6d;
+      --bord: #e2ddd2;
+      --damier-a: #e9e5dc;
+      --damier-b: #f7f5f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fond: #16181b;
+        --carte: #202328;
+        --texte: #ece9e2;
+        --doux: #9a968e;
+        --accent: #5cc2aa;
+        --bord: #2e3238;
+        --damier-a: #2a2d33;
+        --damier-b: #23262b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .retour {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+    .retour:hover { text-decoration: underline; }
+    h1 { font-size: 1.8rem; margin: 0 0 4px; }
+    .sous-titre { color: var(--doux); margin: 0 0 24px; }
+
+    .atelier {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 16px;
+      align-items: start;
+    }
+    @media (max-width: 800px) {
+      .atelier { grid-template-columns: 1fr; }
+    }
+
+    .scene {
+      position: relative;
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      background-color: var(--damier-b);
+      background-image:
+        linear-gradient(45deg, var(--damier-a) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--damier-a) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--damier-a) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--damier-a) 75%);
+      background-size: 24px 24px;
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+      cursor: pointer;
+    }
+    .scene.survol { outline: 3px dashed var(--accent); outline-offset: -8px; }
+    .scene canvas {
+      max-width: 100%;
+      max-height: 70vh;
+      height: auto;
+      display: none;
+    }
+    .scene.pleine canvas { display: block; }
+    .scene.pleine { cursor: default; }
+    .vide {
+      text-align: center;
+      color: var(--doux);
+      max-width: 320px;
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .scene.pleine .vide { display: none; }
+    .vide strong { color: var(--texte); display: block; margin-bottom: 4px; }
+
+    .panneau {
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .groupe { padding: 12px 0; border-bottom: 1px solid var(--bord); }
+    .groupe:first-child { padding-top: 0; }
+    .groupe:last-child { border-bottom: none; padding-bottom: 0; }
+    .groupe h2 {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--doux);
+      margin: 0 0 8px;
+    }
+    .ligne {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 6px 0;
+    }
+    .ligne label { flex: 1; }
+    input[type="range"] { width: 100%; accent-color: var(--accent); }
+    input[type="color"] {
+      width: 40px;
+      height: 28px;
+      padding: 0;
+      border: 1px solid var(--bord);
+      border-radius: 6px;
+      background: none;
+      cursor: pointer;
+    }
+    input[type="checkbox"], input[type="radio"] { accent-color: var(--accent); }
+    .valeur { color: var(--doux); font-variant-numeric: tabular-nums; min-width: 3ch; text-align: right; }
+    .desactive { opacity: .45; pointer-events: none; }
+
+    button {
+      font: inherit;
+      width: 100%;
+      padding: 9px 12px;
+      margin: 4px 0;
+      border-radius: 8px;
+      border: 1px solid var(--bord);
+      background: var(--fond);
+      color: var(--texte);
+      cursor: pointer;
+    }
+    button:hover:not(:disabled) { border-color: var(--accent); }
+    button.principal {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--carte);
+      font-weight: 600;
+    }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    .aide { font-size: .85rem; color: var(--doux); margin: 6px 0 0; }
+    .statut { font-size: .9rem; color: var(--accent); min-height: 1.5em; margin: 8px 0 0; }
+    .masque { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="retour" href="../index.html">← Accueil</a>
+    <h1>Atelier Silhouette</h1>
+    <p class="sous-titre">Transforme une image en silhouette noire avec contour, façon « Quel est ce Pokémon ? ».</p>
+
+    <div class="atelier">
+      <div class="scene" id="scene" tabindex="0" aria-label="Zone de dépôt d'image">
+        <div class="vide">
+          <strong>Ajoute une image</strong>
+          Glisse-la ici, colle-la avec Ctrl+V, ou clique pour la choisir.
+          Le mieux : un PNG à fond transparent.
+        </div>
+        <canvas id="rendu"></canvas>
+      </div>
+
+      <div class="panneau">
+        <div class="groupe">
+          <button class="principal" id="btn-charger">Choisir une image</button>
+          <input type="file" id="fichier" accept="image/*" class="masque">
+        </div>
+
+        <div class="groupe">
+          <h2>Silhouette</h2>
+          <div class="ligne">
+            <label for="couleur-ombre">Couleur</label>
+            <input type="color" id="couleur-ombre" value="#000000">
+          </div>
+        </div>
+
+        <div class="groupe">
+          <h2>Contour</h2>
+          <div class="ligne">
+            <label for="epaisseur">Épaisseur</label>
+            <span class="valeur" id="val-epaisseur">6</span>
+          </div>
+          <input type="range" id="epaisseur" min="0" max="30" value="6">
+          <div class="ligne">
+            <label for="couleur-contour">Couleur</label>
+            <input type="color" id="couleur-contour" value="#ffffff">
+          </div>
+        </div>
+
+        <div class="groupe">
+          <h2>Fond de l'image</h2>
+          <div class="ligne">
+            <label for="retirer-fond">Retirer le fond uni</label>
+            <input type="checkbox" id="retirer-fond">
+          </div>
+          <div id="bloc-tolerance" class="desactive">
+            <div class="ligne">
+              <label for="tolerance">Tolérance</label>
+              <span class="valeur" id="val-tolerance">30</span>
+            </div>
+            <input type="range" id="tolerance" min="0" max="100" value="30">
+          </div>
+          <p class="aide">Pour un JPG sur fond d'une seule couleur. Le fond est détecté depuis les bords de l'image.</p>
+        </div>
+
+        <div class="groupe">
+          <h2>Fond final</h2>
+          <div class="ligne">
+            <label><input type="radio" name="fond-final" value="transparent" checked> Transparent</label>
+          </div>
+          <div class="ligne">
+            <label><input type="radio" name="fond-final" value="couleur"> Couleur</label>
+            <input type="color" id="couleur-fond" value="#2f7d6d">
+          </div>
+        </div>
+
+        <div class="groupe">
+          <button id="btn-reveler" disabled>Révéler</button>
+          <button id="btn-telecharger" disabled>Télécharger en PNG</button>
+          <button id="btn-copier" disabled>Copier l'image</button>
+          <p class="statut" id="statut" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // ===== Réglages modifiables =====
+    const TAILLE_MAX = 1200;     // côté max de l'image traitée, en pixels
+    const SEUIL_ALPHA = 20;      // en dessous, un pixel est considéré transparent
+    const NOM_FICHIER = "silhouette.png";
+
+    // ===== Éléments de la page =====
+    const $ = (id) => document.getElementById(id);
+    const scene = $("scene");
+    const rendu = $("rendu");
+    const ctxRendu = rendu.getContext("2d");
+    const champFichier = $("fichier");
+    const statut = $("statut");
+
+    // ===== État =====
+    let imageSource = null;      // canvas avec l'image d'origine redimensionnée
+    let decoupe = null;          // canvas avec le fond retiré (cache)
+    let cleDecoupe = "";         // réglages utilisés pour le cache
+    let revele = false;
+    let rendusEnAttente = false;
+
+    // ===== Chargement d'une image =====
+    function chargerFichier(fichier) {
+      if (!fichier || !fichier.type.startsWith("image/")) {
+        direStatut("Ce fichier n'est pas une image.");
+        return;
+      }
+      const url = URL.createObjectURL(fichier);
+      const img = new Image();
+      img.onload = () => {
+        const echelle = Math.min(1, TAILLE_MAX / Math.max(img.width, img.height));
+        const c = document.createElement("canvas");
+        c.width = Math.max(1, Math.round(img.width * echelle));
+        c.height = Math.max(1, Math.round(img.height * echelle));
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(url);
+        imageSource = c;
+        cleDecoupe = "";
+        revele = false;
+        scene.classList.add("pleine");
+        ["btn-reveler", "btn-telecharger", "btn-copier"].forEach((id) => ($(id).disabled = false));
+        direStatut("");
+        demanderRendu();
+      };
+      img.onerror = () => {
+        URL.revokeObjectURL(url);
+        direStatut("Impossible de lire cette image.");
+      };
+      img.src = url;
+    }
+
+    // ===== Retrait du fond uni (remplissage depuis les bords) =====
+    function calculerDecoupe() {
+      const retirer = $("retirer-fond").checked;
+      const tolerance = Number($("tolerance").value);
+      const cle = retirer + "|" + tolerance;
+      if (decoupe && cle === cleDecoupe) return decoupe;
+
+      const l = imageSource.width;
+      const h = imageSource.height;
+      const c = document.createElement("canvas");
+      c.width = l;
+      c.height = h;
+      const ctx = c.getContext("2d");
+      ctx.drawImage(imageSource, 0, 0);
+
+      if (retirer) {
+        const donnees = ctx.getImageData(0, 0, l, h);
+        const p = donnees.data;
+        // Couleur de référence : la plus fréquente parmi les quatre coins
+        const coins = [0, l - 1, (h - 1) * l, (h - 1) * l + l - 1].map((i) => [p[i * 4], p[i * 4 + 1], p[i * 4 + 2]]);
+        const ref = coins.reduce((meilleur, coin) => {
+          const score = coins.filter((x) => dist2(x, coin) < 400).length;
+          return score > meilleur.score ? { coin, score } : meilleur;
+        }, { coin: coins[0], score: 0 }).coin;
+
+        const max = (tolerance / 100) * 441;
+        const seuil = max * max;
+        const vu = new Uint8Array(l * h);
+        const pile = [];
+        const proche = (i) => {
+          const o = i * 4;
+          if (p[o + 3] < SEUIL_ALPHA) return true;
+          const dr = p[o] - ref[0], dg = p[o + 1] - ref[1], db = p[o + 2] - ref[2];
+          return dr * dr + dg * dg + db * db <= seuil;
+        };
+        const ajouter = (i) => {
+          if (!vu[i] && proche(i)) { vu[i] = 1; pile.push(i); }
+        };
+        for (let x = 0; x < l; x++) { ajouter(x); ajouter((h - 1) * l + x); }
+        for (let y = 0; y < h; y++) { ajouter(y * l); ajouter(y * l + l - 1); }
+        while (pile.length) {
+          const i = pile.pop();
+          p[i * 4 + 3] = 0;
+          const x = i % l;
+          if (x > 0) ajouter(i - 1);
+          if (x < l - 1) ajouter(i + 1);
+          if (i >= l) ajouter(i - l);
+          if (i < (h - 1) * l) ajouter(i + l);
+        }
+        ctx.putImageData(donnees, 0, 0);
+      }
+
+      decoupe = c;
+      cleDecoupe = cle;
+      return c;
+    }
+
+    function dist2(a, b) {
+      return (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2;
+    }
+
+    // Remplit la forme d'une image avec une couleur unie (garde les bords doux)
+    function forme(source, couleur) {
+      const c = document.createElement("canvas");
+      c.width = source.width;
+      c.height = source.height;
+      const ctx = c.getContext("2d");
+      ctx.drawImage(source, 0, 0);
+      ctx.globalCompositeOperation = "source-in";
+      ctx.fillStyle = couleur;
+      ctx.fillRect(0, 0, c.width, c.height);
+      return c;
+    }
+
+    // ===== Rendu final =====
+    function demanderRendu() {
+      if (rendusEnAttente || !imageSource) return;
+      rendusEnAttente = true;
+      requestAnimationFrame(() => {
+        rendusEnAttente = false;
+        dessiner();
+      });
+    }
+
+    function dessiner() {
+      const base = calculerDecoupe();
+      const epaisseur = Number($("epaisseur").value);
+      const marge = epaisseur;
+      rendu.width = base.width + marge * 2;
+      rendu.height = base.height + marge * 2;
+      ctxRendu.clearRect(0, 0, rendu.width, rendu.height);
+
+      const fondFinal = document.querySelector('input[name="fond-final"]:checked').value;
+      if (fondFinal === "couleur") {
+        ctxRendu.fillStyle = $("couleur-fond").value;
+        ctxRendu.fillRect(0, 0, rendu.width, rendu.height);
+      }
+
+      // Contour : la forme dessinée tout autour, à plusieurs distances
+      if (epaisseur > 0) {
+        const contour = forme(base, $("couleur-contour").value);
+        const pas = Math.max(1, Math.ceil(epaisseur / 4));
+        for (let r = epaisseur; r > 0; r -= pas) {
+          const n = Math.max(12, Math.ceil(r * 3));
+          for (let k = 0; k < n; k++) {
+            const a = (k / n) * Math.PI * 2;
+            ctxRendu.drawImage(contour, marge + Math.cos(a) * r, marge + Math.sin(a) * r);
+          }
+        }
+      }
+
+      const dessus = revele ? base : forme(base, $("couleur-ombre").value);
+      ctxRendu.drawImage(dessus, marge, marge);
+      $("btn-reveler").textContent = revele ? "Cacher" : "Révéler";
+    }
+
+    // ===== Export =====
+    function versBlob() {
+      return new Promise((ok) => rendu.toBlob(ok, "image/png"));
+    }
+
+    async function telecharger() {
+      const blob = await versBlob();
+      if (!blob) return direStatut("Export impossible.");
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = revele ? "revele.png" : NOM_FICHIER;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      direStatut("Image téléchargée.");
+    }
+
+    async function copier() {
+      try {
+        const blob = await versBlob();
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+        direStatut("Image copiée, tu peux la coller où tu veux.");
+      } catch (e) {
+        direStatut("Copie impossible dans ce navigateur. Utilise « Télécharger ».");
+      }
+    }
+
+    function direStatut(texte) {
+      statut.textContent = texte;
+    }
+
+    // ===== Événements =====
+    $("btn-charger").addEventListener("click", () => champFichier.click());
+    champFichier.addEventListener("change", () => {
+      chargerFichier(champFichier.files[0]);
+      champFichier.value = "";
+    });
+
+    scene.addEventListener("click", () => { if (!imageSource) champFichier.click(); });
+    scene.addEventListener("keydown", (e) => {
+      if (!imageSource && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); champFichier.click(); }
+    });
+    scene.addEventListener("dragover", (e) => { e.preventDefault(); scene.classList.add("survol"); });
+    scene.addEventListener("dragleave", () => scene.classList.remove("survol"));
+    scene.addEventListener("drop", (e) => {
+      e.preventDefault();
+      scene.classList.remove("survol");
+      chargerFichier(e.dataTransfer.files[0]);
+    });
+
+    window.addEventListener("paste", (e) => {
+      const items = e.clipboardData ? [...e.clipboardData.items] : [];
+      const image = items.find((it) => it.type.startsWith("image/"));
+      if (image) chargerFichier(image.getAsFile());
+    });
+
+    $("epaisseur").addEventListener("input", (e) => { $("val-epaisseur").textContent = e.target.value; demanderRendu(); });
+    $("tolerance").addEventListener("input", (e) => { $("val-tolerance").textContent = e.target.value; demanderRendu(); });
+    $("retirer-fond").addEventListener("change", (e) => {
+      $("bloc-tolerance").classList.toggle("desactive", !e.target.checked);
+      demanderRendu();
+    });
+    ["couleur-ombre", "couleur-contour", "couleur-fond"].forEach((id) => $(id).addEventListener("input", demanderRendu));
+    document.querySelectorAll('input[name="fond-final"]').forEach((r) => r.addEventListener("change", demanderRendu));
+    $("couleur-fond").addEventListener("input", () => {
+      document.querySelector('input[name="fond-final"][value="couleur"]').checked = true;
+    });
+
+    $("btn-reveler").addEventListener("click", () => { revele = !revele; demanderRendu(); });
+    $("btn-telecharger").addEventListener("click", telecharger);
+    $("btn-copier").addEventListener("click", copier);
+  </script>
+</body>
+</html>

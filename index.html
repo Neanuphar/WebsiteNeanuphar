@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neanuphar</title>
+  <style>
+    :root {
+      --fond: #f4f1ea;
+      --carte: #ffffff;
+      --texte: #1f1d1a;
+      --doux: #6b665e;
+      --accent: #2f7d6d;
+      --bord: #e2ddd2;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fond: #16181b;
+        --carte: #202328;
+        --texte: #ece9e2;
+        --doux: #9a968e;
+        --accent: #5cc2aa;
+        --bord: #2e3238;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 4px;
+    }
+    .sous-titre {
+      color: var(--doux);
+      margin: 0 0 32px;
+    }
+    .grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .carte {
+      display: block;
+      padding: 20px;
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color .15s, transform .15s;
+    }
+    .carte:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .carte h2 {
+      font-size: 1.1rem;
+      margin: 0 0 6px;
+      color: var(--accent);
+    }
+    .carte p {
+      margin: 0;
+      color: var(--doux);
+      font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Neanuphar</h1>
+    <p class="sous-titre">Mes petits outils, au même endroit.</p>
+
+    <div class="grille">
+      <a class="carte" href="silhouette/index.html">
+        <h2>Atelier Silhouette</h2>
+        <p>Transforme une image en silhouette noire avec contour.</p>
+      </a>
+      <a class="carte" href="smash/index.html">
+        <h2>Checklist Smash</h2>
+        <p>Les persos de Smash Ultimate à cocher.</p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
