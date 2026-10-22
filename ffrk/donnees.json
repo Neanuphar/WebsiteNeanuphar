@@ -1,6 +1,6 @@
 {
- "revision": 38,
- "maj": "2026-10-22T10:05:33.000Z",
+ "revision": 39,
+ "maj": "2026-10-22T10:11:27.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -3655,6 +3655,340 @@
      ],
      "image": "images/porom/double-incantation-soin-x.webp",
      "effet": "Réservée à Porom. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin énorme de toute l'équipe, ou réanimation des alliés KO (avec énormément de PV).\n• Temps d'attente des attaques Foudre réduit de 4 tours.\n• Pendant un temps : imprégnation Foudre.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Grande sœur responsable.\n\nCOMPÉTENCES SYNCHRO\n• Foudre blanche (白き雷, école Magie blanche, déclenchée par une compétence Magie blanche) : 3 attaques Magie blanche Foudre + non-élémentaire sur un ennemi, et petit soin de toute l'équipe, plus fort selon le nombre d'alliés imprégnés de Foudre (3 paliers).\n• Soin de Mysidia (ミシディアヒール, école Magie blanche, déclenchée par une compétence Magie blanche) : sans temps d'attente, gros soin d'un allié, et temps d'attente réduit d'1 tour.\n\nMODE GRANDE SŒUR RESPONSABLE (しっかり者の姉モード)\n• Chaque compétence Synchro utilisée par Porom : attaque supplémentaire [Cadeau précoce].\n• Après 4 Cadeaux précoces, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : CADEAU PRÉCOCE (おませな贈りもの)\n• Attaque Magie blanche qui inflige 99 999 dégâts à un ennemi.\n• Soin automatique d'un allié à chaque perte de PV, jusqu'à 2000 PV soignés.\n• Si 4 alliés de FF IV ou plus sont en vie : temps d'attente de toute l'équipe réduit d'1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Porom augmentées (niv. 1).\n\nÀ VÉRIFIER : ケアルダ traduit « Soin X » (nom français à confirmer) ; « 99 999 dégâts » est bien écrit tel quel à l'écran."
+    }
+   ]
+  },
+  {
+   "id": "tellah",
+   "nom": "Tellah",
+   "nomJP": "テラ",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "terre",
+    "feu",
+    "glace",
+    "foudre"
+   ],
+   "sprite": "images/tellah/sprite.png",
+   "capacites": [
+    {
+     "id": "c-souvenir",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "思い出す",
+     "nomFR": "Souvenir",
+     "elements": [
+      "feu",
+      "glace",
+      "foudre"
+     ],
+     "image": "images/tellah/souvenir.webp",
+     "effet": "Réservée à Tellah.\n\n• Lance au hasard Brasier (ファイラ), Glacier (ブリザラ) ou Foudre+ (サンダラ) sur un ennemi.\n\nÀ VÉRIFIER : les noms français des sorts de niveau 2."
+    },
+    {
+     "id": "c-art-secret-du-sage-protection-du-roc",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "賢者の秘術・巌の加護",
+     "nomFR": "Art secret du sage – Protection du roc",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/tellah/art-secret-du-sage-protection-du-roc.webp",
+     "effet": "Réservée à Tellah. Chaîne élémentaire (属性リミットチェイン).\n\nEFFET\n• Sans temps d'attente : lance une chaîne Terre (jusqu'à 125 chaînes).\n• Élément Terre renforcé pour toute l'équipe (effet fort).\n• Pendant un temps : magie augmentée (effet fort).\n• Pendant un temps : attaque Terre +2 niveaux.\n\nPENDANT LA CHAÎNE\n• Élément Terre renforcé pour toute l'équipe (effet fort).\n• La chaîne avance avec les attaques Terre.\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : le texte ne répète pas « toute l'équipe » pour la magie et l'attaque Terre (probablement toute l'équipe)."
+    },
+    {
+     "id": "c-ce-qui-fait-le-sage",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "賢人たる所以",
+     "nomFR": "Ce qui fait le sage",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tellah/ce-qui-fait-le-sage.webp",
+     "effet": "Réservée à Tellah. Utilisable 1 fois. Étiquette 対ウェポンブレイク・魔.\n\nATTAQUE\n• Sans temps d'attente : 15 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : magie et esprit de toute l'équipe augmentés (effet moyen), défense et défense magique augmentées (effet faible).\n• Dégâts des attaques magiques augmentés pendant 3 tours (effet moyen).\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : mode Éveil Vieux sage, et plafond de dégâts +1 niveau.\n\nMODE ÉVEIL VIEUX SAGE (老賢者覚醒モード)\n• Compétences Terre utilisables à l'infini.\n• Temps d'attente des compétences Terre réduit selon leur niveau d'affinage (精錬度).\n• Les compétences Terre se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Statistiques de Tellah augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対ウェポンブレイク・魔."
+    },
+    {
+     "id": "c-trace-radieuse-du-vieux-sage",
+     "type": "C神技",
+     "categorie": "magique",
+     "nomJP": "耀光老賢者の剛痕",
+     "nomFR": "Trace radieuse du vieux sage",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tellah/trace-radieuse-du-vieux-sage.webp",
+     "effet": "Réservée à Tellah. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Terre, effet max : moyen.\n• Les compétences Terre se lancent 1 fois de plus.\n• Les compétences Terre ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 4 attaques magiques spéciales Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Dégâts des attaques magiques de toute l'équipe augmentés pendant 1 tour (effet moyen).\n• Pendant 1 tour : plafond de dégâts de Tellah +1 niveau.\n• Pendant 1 tour : les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB de Tellah se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet de la Force du cristal III n'est pas décrit."
+    }
+   ]
+  },
+  {
+   "id": "edge",
+   "nom": "Edge",
+   "nomJP": "エッジ",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "eau",
+    "feu",
+    "foudre"
+   ],
+   "sprite": "images/edge/sprite.png",
+   "capacites": [
+    {
+     "id": "c-style-d-eblan-lien-d-ombre",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "エブラーナ流・影縛り",
+     "nomFR": "Style d'Eblan – Lien d'ombre",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/edge/style-d-eblan-lien-d-ombre.webp",
+     "effet": "Réservée à Edge.\n\n• Attaque physique non-élémentaire sur un ennemi.\n• Faible chance de Paralysie."
+    },
+    {
+     "id": "c-eclairs-enchaines-edge",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・エッジ",
+     "nomFR": "Éclairs enchaînés – Edge",
+     "elements": [
+      "eau",
+      "feu",
+      "foudre",
+      "poison"
+     ],
+     "image": "images/edge/eclairs-enchaines-edge.webp",
+     "effet": "Réservée à Edge. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : mode Quadruple élément II.\n• La prochaine jauge ATB d'Edge se remplit instantanément (1 fois).\n• Edge n'a aucun temps d'attente pendant 2 tours.\n\nMODE QUADRUPLE ÉLÉMENT II (クアッドエレメントモードII)\n• Si Edge utilise une compétence Eau, Feu, Foudre ou Poison à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque de tous les éléments d'Edge augmentée, débloquée au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Edge, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-trinite",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "三位一体",
+     "nomFR": "Trinité",
+     "elements": [
+      "eau",
+      "feu",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/edge/trinite.webp",
+     "effet": "Réservée à Edge. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques ou de ninjutsu selon les statistiques d'Edge, Eau + Feu + Foudre + non-élémentaire, sur un ennemi.\n• Pendant un temps : mode Éveil Ninja, et plafond de dégâts +1 niveau.\n• Temps d'attente des compétences Ninja réduit.\n• Chaque compétence Ninja utilisée : attaque supplémentaire [Style libre d'Eblan].\n\nMODE ÉVEIL NINJA (忍者覚醒モード)\n• Compétences Ninja utilisables à l'infini.\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : STYLE LIBRE D'EBLAN (エブラーナ無手勝流)\nL'effet dépend des statistiques d'Edge :\n• Attaque plus haute que la magie : 4 attaques physiques Eau + Feu + Foudre + non-élémentaire sur un ennemi, et pendant un temps, attaque Eau, Feu et Foudre d'Edge +1 niveau.\n• Magie plus haute que l'attaque : 2 attaques de ninjutsu Eau + Feu + Foudre + non-élémentaire sur un ennemi, qui ignorent la défense magique, et le même bonus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-style-d-eblan-harmonie-parfaite",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "エブラーナ流・渾然一体",
+     "nomFR": "Style d'Eblan – Harmonie parfaite",
+     "elements": [
+      "eau",
+      "feu",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/edge/style-d-eblan-harmonie-parfaite.webp",
+     "effet": "Réservée à Edge. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques ou de ninjutsu selon les statistiques d'Edge, Eau + Feu + Foudre + non-élémentaire, sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Triple élément III.\n• Toutes les 3 compétences Synchro utilisées : pendant un temps, Edge reçoit à nouveau les imprégnations qu'il a déjà.\n\nCOMPÉTENCES SYNCHRO\n• Style d'Eblan – Déferlement (エブラーナ流・怒涛, école Ninja, déclenchée par une compétence Ninja) : 6 attaques physiques ou de ninjutsu selon les statistiques d'Edge, Eau + Feu + Foudre + non-élémentaire, sur un ennemi, avec un temps d'attente court.\n• Style d'Eblan – Lutte acharnée (エブラーナ流・奮闘, école Ninja, déclenchée par une compétence Ninja) : 3 attaques physiques ou de ninjutsu selon les statistiques d'Edge, Eau + Feu + Foudre + non-élémentaire, sur un ennemi, avec un temps d'attente court, et pendant un temps, attaque Eau, Feu et Foudre d'Edge +1 niveau.\n\nMODE TRIPLE ÉLÉMENT III (トライエレメントモードIII)\n• Si Edge utilise une compétence Eau, Feu ou Foudre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : « reçoit à nouveau les imprégnations qu'il a déjà » (自身がまとっている属性まといを一定時間付与) : probablement un renouvellement de leur durée."
+    }
+   ]
+  },
+  {
+   "id": "fusoya",
+   "nom": "FuSoYa",
+   "nomJP": "フースーヤ",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "sacre"
+   ],
+   "sprite": "images/fusoya/sprite.png",
+   "capacites": [
+    {
+     "id": "c-onde-mentale",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "せいしんは",
+     "nomFR": "Onde mentale",
+     "elements": [],
+     "image": "images/fusoya/onde-mentale.webp",
+     "effet": "Réservée à FuSoYa.\n\n• Récup pour toute l'équipe."
+    },
+    {
+     "id": "c-protection-de-la-lune-en-fleur",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "月華の加護",
+     "nomFR": "Protection de la lune en fleur",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/fusoya/protection-de-la-lune-en-fleur.webp",
+     "effet": "Réservée à FuSoYa. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Sacré renforcée [重式].\n• Pendant un temps : chaque compétence Sacré utilisée déclenche l'attaque supplémentaire [Purification de la lune en fleur].\n\nATTAQUE SUPPLÉMENTAIRE : PURIFICATION DE LA LUNE EN FLEUR (月華の浄化)\n• 2 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Tous les 2 déclenchements : brièvement, résistance Sacré de l'ennemi −1 niveau.\n\nBONUS D'APPRENTISSAGE\n• Magie +5, Esprit +5."
+    }
+   ]
+  },
+  {
+   "id": "golbez",
+   "nom": "Golbez",
+   "nomJP": "ゴルベーザ",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "tenebres"
+   ],
+   "sprite": "images/golbez/sprite.png",
+   "capacites": [
+    {
+     "id": "c-froid-paralysant",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "呪縛の冷気",
+     "nomFR": "Froid paralysant",
+     "elements": [],
+     "image": "images/golbez/froid-paralysant.webp",
+     "effet": "Réservée à Golbez.\n\n• Faible chance d'infliger Paralysie à tous les ennemis."
+    },
+    {
+     "id": "c-roc-de-la-genese",
+     "type": "超必殺",
+     "categorie": "magique",
+     "nomJP": "ジェネシスロック",
+     "nomFR": "Roc de la genèse",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/golbez/roc-de-la-genese.webp",
+     "effet": "Réservée à Golbez.\n\nATTAQUE\n• 6 attaques magiques puissantes Ténèbres sur tous les ennemis.\n• Pendant un temps : imprégnation Ténèbres.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-quasar-de-l-abime",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "アビスクエーサー",
+     "nomFR": "Quasar de l'abîme",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/golbez/quasar-de-l-abime.webp",
+     "effet": "Réservée à Golbez.\n\nATTAQUE\n• 8 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : barrière pour toute l'équipe, qui renvoie à l'attaquant une partie des dégâts reçus, en dégâts Ténèbres.\n• Hâte et mode Burst pour Golbez.\n\nCOMPÉTENCES BURST (mode Burst)\n• Vague montante (ライズウェイブ, école Magie noire) : 4 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Système de riposte (迎撃システム, école Magie noire) : 3 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et temps d'attente de Golbez réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-maitre-de-baron",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "バロンの支配者",
+     "nomFR": "Maître de Baron",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/golbez/maitre-de-baron.webp",
+     "effet": "Réservée à Golbez.\n\nATTAQUE\n• 10 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres, magie de Golbez augmentée (effet moyen) et défense augmentée (effet faible).\n• Soin automatique à chaque perte de PV, jusqu'à 6000 PV soignés au total.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-miasme-des-chaines-noires",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "黒縛の瘴気",
+     "nomFR": "Miasme des chaînes noires",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/golbez/miasme-des-chaines-noires.webp",
+     "effet": "Réservée à Golbez. Chaîne élémentaire (属性リミットチェイン).\n\nEFFET\n• Lance une chaîne Ténèbres (jusqu'à 150 chaînes).\n• Élément Ténèbres renforcé pour toute l'équipe (effet fort).\n• Pendant un temps : magie de toute l'équipe augmentée (effet fort).\n\nPENDANT LA CHAÎNE\n• Élément Ténèbres renforcé pour toute l'équipe (effet fort).\n• La chaîne avance avec les attaques Ténèbres.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-eclairs-enchaines-golbez-tenebres",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・ゴルベーザ闇",
+     "nomFR": "Éclairs enchaînés – Golbez Ténèbres",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/golbez/eclairs-enchaines-golbez-tenebres.webp",
+     "effet": "Réservée à Golbez. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : résistance Ténèbres d'un ennemi −2 niveaux.\n• La prochaine jauge ATB de Golbez se remplit plus vite (1 fois).\n• Golbez n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Ténèbres de Golbez augmentée, débloquée au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Golbez, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-barriere-du-chaos",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "カオスバリア",
+     "nomFR": "Barrière du chaos",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/golbez/barriere-du-chaos.webp",
+     "effet": "Réservée à Golbez. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Barrière sur Golbez qui annule les attaques reçues, jusqu'à 100 % de ses PV max.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-demon-imbibe-de-tenebres",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "闇に染まりし魔人",
+     "nomFR": "Démon imprégné de ténèbres",
+     "elements": [],
+     "image": "images/golbez/demon-imbibe-de-tenebres.webp",
+     "effet": "Réservée à Golbez. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : temps d'attente des attaques magiques de Golbez réduit.\n• Pendant un temps : boost des compétences Arts sombres, effet max : moyen.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-prison-noire",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "黒き牢獄",
+     "nomFR": "Prison noire",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/golbez/prison-noire.webp",
+     "effet": "Réservée à Golbez. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Pendant un temps : mode Éveil Ténèbres, et plafond de dégâts +1 niveau.\n• Barrière sur Golbez qui annule les attaques reçues, jusqu'à 100 % de ses PV max.\n• Active le mode Armure noire.\n\nMODE ÉVEIL TÉNÈBRES (闇覚醒モード)\n• Compétences Ténèbres utilisables à l'infini.\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ARMURE NOIRE (黒き甲冑モード, tant que la barrière dure)\n• Les compétences Ténèbres remplissent davantage la jauge de capacités spéciales (effet moyen).\n• Toutes les 3 compétences Ténèbres utilisées : attaque supplémentaire [Âme fantôme].\n• Ce mode n'a pas de durée : il dure tant que la barrière n'est pas brisée, et prend fin avec elle.\n\nATTAQUE SUPPLÉMENTAIRE : ÂME FANTÔME (ファントムソウル)\n• 8 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Barrière sur Golbez qui annule les attaques reçues, jusqu'à 100 % de ses PV max.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-meteore-noir",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "ダークメテオ",
+     "nomFR": "Météore noir",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/golbez/meteore-noir.webp",
+     "effet": "Réservée à Golbez. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Ténèbres utilisées : pendant un temps, attaque Ténèbres de Golbez +2 niveaux.\n\nCOMPÉTENCES SYNCHRO\n• Vague du néant (ヴォイドウェイブ, école Arts sombres, déclenchée par une compétence Ténèbres) : 6 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et dégâts des compétences Ténèbres de Golbez augmentés pendant 1 tour (effet moyen).\n• Main du néant (ヴォイドハンド, école Arts sombres, déclenchée par une compétence Ténèbres) : attaque magique Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-vague-des-quatre-dragons-noirs",
+     "type": "O奥義",
+     "categorie": "magique",
+     "nomJP": "四天黒竜波",
+     "nomFR": "Vague des quatre dragons noirs",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/golbez/vague-des-quatre-dragons-noirs.webp",
+     "effet": "Réservée à Golbez. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques magiques ultra-puissantes Ténèbres sur un ennemi.\n• Puis une attaque magique Ténèbres qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-meteore-noir-ultime",
+     "type": "究極",
+     "categorie": "magique",
+     "nomJP": "究極ダークメテオ",
+     "nomFR": "Météore noir ultime",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/golbez/meteore-noir-ultime.webp",
+     "effet": "Réservée à Golbez. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• Toutes les 2 compétences Ténèbres utilisées : attaque supplémentaire [Frappe du cœur – Golbez] (2 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Golbez (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Golbez +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – GOLBEZ (心撃・ゴルベーザ)\n• Pendant un temps : attaque Ténèbres de toute l'équipe +1 niveau.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Dragon noir Kai (こくりゅう改, école Arts sombres), remplace Dragon noir (6 attaques magiques Ténèbres sur un ennemi) : 6 attaques magiques Ténèbres sur un ennemi ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Roc de l'abîme Kai (アビスロック改, école Arts sombres), remplace Roc de l'abîme (5 attaques magiques Ténèbres sur un ennemi, et brièvement, résistance Ténèbres −1 niveau) : même effet, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
    ]
   }
