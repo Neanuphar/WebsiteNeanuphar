@@ -150,6 +150,8 @@
     }
     .avatar img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
     .compte { font-size: .75rem; color: var(--accent); }
+    .recheck { font-size: .7rem; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: #e0a530; color: #1f1d1a; white-space: nowrap; }
+    .entete-perso .recheck { display: inline-block; margin-top: 6px; }
     .points-perso { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
     .points-perso span { width: 11px; height: 11px; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); }
     .entete-perso .elements { margin: 6px 0 0; }
@@ -874,6 +876,7 @@
       const a = el("a", "carte-perso");
       a.href = "#/perso/" + encodeURIComponent(p.id);
       a.append(avatar(p), el("span", "nom", p.nom));
+      if (p.recheck) a.append(el("span", "recheck", "À revérifier"));
       if (p.nomJP) a.append(el("span", "jp", p.nomJP));
       a.append(el("span", "serie", [p.serie === "Autres" ? "Autres" : "FF " + p.serie, CATEGORIES[p.categorie]].filter(Boolean).join(" · ")));
       if (p.elements && p.elements.length) a.append(pointsElements(p.elements));
@@ -930,6 +933,7 @@
       tete.append(avatar(p));
       const infos = el("div");
       infos.append(el("h2", "", p.nom));
+      if (p.recheck) { const r = el("span", "recheck", "À revérifier"); r.title = "Traductions à recontrôler avec les captures"; infos.append(r); }
       if (p.nomJP) infos.append(el("div", "jp", p.nomJP));
       infos.append(el("div", "jp", [p.serie === "Autres" ? "Autres jeux" : "Final Fantasy " + p.serie, CATEGORIES[p.categorie]].filter(Boolean).join(" · ")));
       if (p.elements.length) {

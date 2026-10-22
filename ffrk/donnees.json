@@ -1,5 +1,5 @@
 {
- "revision": 15,
+ "revision": 16,
  "maj": "2026-10-22T04:30:59.000Z",
  "persos": [
   {
@@ -841,7 +841,8 @@
      "image": "images/firion/flamme-des-armes-eveillee.webp",
      "effet": "Réservée à Firion. Utilisable 1 fois.\n\nATTAQUE\n• 7 coups physiques puissants Sacré + Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Double élément II, le mode Éveil D Guerrier loyal – I [Flamme sacrée de Firion] et la Résonance des souvenirs.\n\nMODE ÉVEIL D GUERRIER LOYAL – I [FLAMME SACRÉE DE FIRION] (avant le Dual Shift)\n• Boost des compétences Samouraï ou Chevalier, effet max : moyen.\n• Les compétences Samouraï ou Chevalier se lancent 2 fois de plus.\n• À chaque compétence Samouraï ou Chevalier utilisée, l'effet monte : le temps d'attente des compétences Samouraï ou Chevalier équipées par Firion est réduit (3 paliers max).\n\nMODE ÉVEIL D GUERRIER LOYAL – II [FLAMME SACRÉE DE FIRION] (après le Dual Shift)\n• Aucun temps d'attente.\n• Dégâts des capacités spéciales et des Limit Break augmentés (effet moyen).\n• Quand Firion utilise une capacité spéciale ou une Limit Break : la prochaine jauge ATB se remplit instantanément (1 fois), aucun temps d'attente pendant 1 tour, et taux de critique à 100 % pendant 3 tours.\nModes de la même catégorie : Éveil D Guerrier loyal – II, Éveil D Guerrier loyal – I, Éveil Guerrier loyal.\n\nDUAL SHIFT (デュアルシフト)\n• Firion reçoit le mode Éveil D Guerrier loyal – II [Flamme sacrée de Firion].\n• Quel que soit le moment du Dual Shift, le mode II dure 1 tour (que Firion ait agi 1, 2, 3, 4 ou 5 fois après le mode I ; à partir de la 6e action, comme à la 5e).\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• À sa prochaine action, si Firion utilise une compétence Sacré ou Feu, il reçoit pendant un temps l'imprégnation renforcée [重式] de l'élément correspondant.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Samouraï ou Chevalier de Firion augmentés (5 %).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : comment se déclenche le Dual Shift (non précisé sur les captures), le sens de 義士 (traduit « Guerrier loyal »), et le nom : バーン pourrait être « Burn »."
     }
-   ]
+   ],
+   "recheck": true
   },
   {
    "id": "maria",
@@ -1006,7 +1007,8 @@
      "image": "images/guy/impact-de-gaia-polaire.webp",
      "effet": "Réservée à Guy. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : toute l'équipe reçoit le mode Acquisition – Guy.\n• Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Guy se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +4 niveaux.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Guy] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Impact de Gaïa polaire].\n\nMODE ACQUISITION – GUY (習得モード・ガイ)\n• Dégâts Terre de Guy augmentés (5 %).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – GUY (星撃・ガイ)\n• 10 coups physiques Terre + non-élémentaire sur un ennemi.\n• Le bonus de dégâts Terre de toute l'équipe ayant le mode Acquisition – Guy évolue (5 paliers max : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : IMPACT DE GAÏA POLAIRE\n• Attaque physique Terre + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : dégâts Terre de toute l'équipe augmentés (30 %).\n• Met fin au mode Maître de Guy.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre de Guy augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離, et la progression des paliers de la Frappe stellaire (probablement un palier par déclenchement)."
     }
-   ]
+   ],
+   "recheck": true
   },
   {
    "id": "leonhart",
@@ -1067,7 +1069,8 @@
      "image": "images/leonhart/arme-des-tenebres-ultime.webp",
      "effet": "Réservée à Leonhart. Utilisable 1 fois.\n\nATTAQUE\n• 7 coups physiques puissants Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• En utilisant une compétence Ténèbres : attaque supplémentaire [Frappe du cœur – Leonhart], selon le nombre d'alliés de FF II en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Leonhart (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Leonhart +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – LEONHART (心撃・レオンハルト)\n• 0 à 3 alliés de FF II en vie : pendant 3 tours, dégâts physiques de toute l'équipe augmentés (effet faible).\n• 4 alliés de FF II ou plus : pendant 3 tours, dégâts des héros de FF II augmentés (effet moyen).\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Briseur de ténèbres Kai (ダークネスブレイカー改, école 暗黒) : 6 coups physiques Ténèbres sur un ennemi. Plus forte, avec plafond de dégâts +1 niveau, après 3 utilisations.\n• Version normale, Briseur de ténèbres (ダークネスブレイカー) : 6 coups physiques Ténèbres sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
-   ]
+   ],
+   "recheck": true
   }
  ]
 }
