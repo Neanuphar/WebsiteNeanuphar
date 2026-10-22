@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki FFRK</title>
+  <style>
+    :root {
+      --fond: #f4f1ea;
+      --carte: #ffffff;
+      --texte: #1f1d1a;
+      --doux: #6b665e;
+      --accent: #2f7d6d;
+      --bord: #e2ddd2;
+      --rond: #2a2e36;
+      --danger: #b3412f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fond: #16181b;
+        --carte: #202328;
+        --texte: #ece9e2;
+        --doux: #9a968e;
+        --accent: #5cc2aa;
+        --bord: #2e3238;
+        --rond: #11141a;
+        --danger: #e07a68;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main { max-width: 900px; margin: 0 auto; padding: 20px 16px 64px; }
+    a { color: var(--accent); }
+    .haut { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .retour { color: var(--accent); text-decoration: none; }
+    .retour:hover { text-decoration: underline; }
+    h1 { font-size: 1.7rem; margin: 0 0 4px; }
+    .sous-titre { color: var(--doux); margin: 0 0 16px; }
+    .etat { font-size: .85rem; color: var(--doux); text-align: right; }
+    .etat.ok { color: var(--accent); }
+    .etat.erreur { color: var(--danger); }
+
+    button, .bouton {
+      font: inherit;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--bord);
+      background: var(--carte);
+      color: var(--texte);
+      cursor: pointer;
+    }
+    button:hover:not(:disabled) { border-color: var(--accent); }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    button.principal { background: var(--accent); border-color: var(--accent); color: var(--carte); font-weight: 600; }
+    button.danger { color: var(--danger); }
+    button.petit { padding: 4px 10px; font-size: .9rem; }
+
+    input[type="text"], input[type="search"], input[type="password"], select, textarea {
+      font: inherit;
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid var(--bord);
+      border-radius: 10px;
+      background: var(--carte);
+      color: var(--texte);
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+    /* ---- Recherche et filtres ---- */
+    .filtres { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+    .elements { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 16px; }
+    .puce {
+      font-size: .85rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: var(--el, var(--doux));
+      color: #fff;
+      cursor: pointer;
+      opacity: .45;
+    }
+    .puce[aria-pressed="true"] { opacity: 1; box-shadow: 0 0 0 2px var(--fond), 0 0 0 4px var(--el); }
+    .puce.clair { color: #222; }
+    .puce.fixe { cursor: default; opacity: 1; }
+
+    /* ---- Grille des persos ---- */
+    .grille-persos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+      gap: 10px;
+    }
+    .carte-perso {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 8px;
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      color: inherit;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      font: inherit;
+    }
+    .carte-perso:hover { border-color: var(--accent); }
+    .carte-perso .nom { font-weight: 600; line-height: 1.2; }
+    .carte-perso .jp, .carte-perso .serie { font-size: .8rem; color: var(--doux); }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      background: var(--rond);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
+    .compte { font-size: .75rem; color: var(--accent); }
+    .ajout { border-style: dashed; color: var(--accent); justify-content: center; min-height: 150px; }
+    .ajout .plus { font-size: 2rem; line-height: 1; }
+
+    /* ---- Fiche perso ---- */
+    .entete-perso {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 16px;
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    .entete-perso .avatar { width: 96px; height: 96px; flex-shrink: 0; }
+    .entete-perso h2 { margin: 0; font-size: 1.5rem; }
+    .entete-perso .jp { color: var(--doux); }
+    .entete-perso .actions { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+    .grille-capacites {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+      gap: 14px 8px;
+      padding: 16px;
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+    }
+    .cercle {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1;
+      max-width: 96px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 3px solid #8d8a83;
+      background: radial-gradient(circle at 50% 40%, #3b4250, var(--rond));
+      box-shadow: 0 2px 4px rgba(0,0,0,.35), inset 0 0 0 2px rgba(255,255,255,.15);
+      padding: 0;
+      cursor: pointer;
+    }
+    .cercle:hover { border-color: var(--accent); }
+    .cercle img {
+      position: absolute;
+      inset: 6%;
+      width: 88%;
+      height: 88%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    .cercle .etiquette {
+      position: absolute;
+      top: -10px;
+      right: -6px;
+      font-size: .78rem;
+      font-weight: 800;
+      color: #ffe7a0;
+      text-shadow: -1px -1px 0 #3a2410, 1px -1px 0 #3a2410, -1px 1px 0 #3a2410, 1px 1px 0 #3a2410, 0 2px 2px rgba(0,0,0,.5);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .cercle .points {
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 2px;
+    }
+    .cercle .points span { width: 10px; height: 10px; border-radius: 50%; border: 1px solid #fff; }
+    .cercle.plus { border-style: dashed; background: transparent; color: var(--accent); font-size: 2rem; box-shadow: none; }
+    .nom-cercle { font-size: .75rem; text-align: center; color: var(--doux); margin-top: 6px; line-height: 1.2; word-break: break-word; }
+
+    /* ---- Résultats de capacités ---- */
+    .resultats { margin-bottom: 20px; }
+    .resultats h2, .titre-section { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--doux); margin: 16px 0 8px; }
+    .ligne-capacite {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      text-align: left;
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      border-radius: 12px;
+    }
+    .ligne-capacite .cercle { width: 52px; height: 52px; margin: 0; flex-shrink: 0; }
+    .ligne-capacite .cercle .etiquette { display: none; }
+    .ligne-capacite .infos { flex: 1; min-width: 0; }
+    .ligne-capacite .infos div { overflow: hidden; text-overflow: ellipsis; }
+    .ligne-capacite .perso { font-size: .8rem; color: var(--doux); }
+
+    /* ---- Fenêtres ---- */
+    dialog {
+      width: min(560px, calc(100vw - 24px));
+      max-height: calc(100vh - 24px);
+      border: 1px solid var(--bord);
+      border-radius: 14px;
+      padding: 0;
+      background: var(--carte);
+      color: var(--texte);
+    }
+    dialog::backdrop { background: rgba(0,0,0,.55); }
+    .fenetre { padding: 18px; }
+    .fenetre h2 { margin: 0 0 12px; font-size: 1.2rem; }
+    .champ { margin-bottom: 12px; }
+    .champ > label, .champ > .label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: 4px; }
+    .aide { font-size: .85rem; color: var(--doux); margin: 4px 0 0; }
+    .boutons { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; margin-top: 16px; }
+    .apercu-image {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .apercu-image .cercle, .apercu-image .avatar { width: 72px; height: 72px; margin: 0; flex-shrink: 0; cursor: default; }
+    .detail-tete { display: flex; gap: 16px; align-items: center; margin-bottom: 12px; }
+    .detail-tete .cercle { width: 96px; height: 96px; margin: 0; flex-shrink: 0; cursor: default; }
+    .detail-tete .type { font-weight: 700; color: var(--accent); }
+    .detail-tete .nomfr { font-size: 1.2rem; font-weight: 700; }
+    .detail-tete .nomjp { color: var(--doux); }
+    .effet { white-space: pre-wrap; background: var(--fond); border-radius: 10px; padding: 10px 12px; margin: 8px 0 0; }
+    .vide { text-align: center; color: var(--doux); padding: 24px; }
+    .masque { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="haut">
+      <a class="retour" href="../index.html">← Accueil</a>
+      <div>
+        <div class="etat" id="etat"></div>
+        <button class="petit" id="btn-edition" type="button">Mode édition</button>
+      </div>
+    </div>
+
+    <div id="vue"></div>
+  </main>
+
+  <!-- Fenêtre : mode édition -->
+  <dialog id="fen-edition">
+    <form class="fenetre" method="dialog" id="form-edition">
+      <h2>Mode édition</h2>
+      <p class="aide">Pour ajouter et modifier depuis cette page, colle ta clé GitHub (token). Elle reste dans ce navigateur, sur cet appareil, et n'est jamais envoyée ailleurs que chez GitHub.</p>
+      <div class="champ">
+        <label for="champ-token">Clé GitHub</label>
+        <input type="password" id="champ-token" autocomplete="off" placeholder="github_pat_…">
+      </div>
+      <p class="aide" id="etat-token"></p>
+      <div class="boutons">
+        <button type="button" id="btn-exporter">Télécharger une sauvegarde</button>
+        <button type="button" class="danger" id="btn-deconnecter">Désactiver</button>
+        <button type="button" id="btn-fermer-edition">Fermer</button>
+        <button type="button" class="principal" id="btn-connecter">Activer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Fenêtre : perso -->
+  <dialog id="fen-perso">
+    <form class="fenetre" id="form-perso">
+      <h2 id="titre-perso">Ajouter un perso</h2>
+      <div class="champ">
+        <label for="perso-nom">Nom</label>
+        <input type="text" id="perso-nom" required placeholder="Ex. Relm">
+      </div>
+      <div class="champ">
+        <label for="perso-jp">Nom japonais</label>
+        <input type="text" id="perso-jp" placeholder="Ex. リルム">
+      </div>
+      <div class="champ">
+        <label for="perso-serie">Jeu</label>
+        <select id="perso-serie"></select>
+      </div>
+      <div class="champ">
+        <span class="label">Sprite</span>
+        <div class="apercu-image">
+          <div class="avatar" id="perso-apercu">?</div>
+          <div>
+            <button type="button" id="perso-choisir">Choisir une image</button>
+            <input type="file" id="perso-fichier" accept="image/*" class="masque">
+            <p class="aide">Une capture du pixel art, détourée si possible. Tu peux aussi la coller avec Ctrl+V.</p>
+          </div>
+        </div>
+      </div>
+      <div class="boutons">
+        <button type="button" class="danger" id="perso-supprimer" hidden>Supprimer le perso</button>
+        <button type="button" id="perso-annuler">Annuler</button>
+        <button type="submit" class="principal">Enregistrer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Fenêtre : capacité (formulaire) -->
+  <dialog id="fen-capa">
+    <form class="fenetre" id="form-capa">
+      <h2 id="titre-capa">Ajouter une capacité</h2>
+      <div class="champ">
+        <span class="label">Image</span>
+        <div class="apercu-image">
+          <div class="cercle" id="capa-apercu"></div>
+          <div>
+            <button type="button" id="capa-choisir">Choisir une image</button>
+            <input type="file" id="capa-fichier" accept="image/*" class="masque">
+            <p class="aide">L'icône ronde de la capacité, détourée. Tu peux aussi la coller avec Ctrl+V.</p>
+          </div>
+        </div>
+      </div>
+      <div class="champ">
+        <label for="capa-type">Type</label>
+        <input type="text" id="capa-type" list="liste-types" placeholder="Ex. 覚醒">
+        <datalist id="liste-types"></datalist>
+      </div>
+      <div class="champ">
+        <label for="capa-jp">Nom japonais</label>
+        <input type="text" id="capa-jp">
+      </div>
+      <div class="champ">
+        <label for="capa-fr">Ta traduction</label>
+        <input type="text" id="capa-fr">
+      </div>
+      <div class="champ">
+        <span class="label">Éléments</span>
+        <div class="elements" id="capa-elements"></div>
+      </div>
+      <div class="champ">
+        <label for="capa-effet">Effet</label>
+        <textarea id="capa-effet" placeholder="Ce que fait la capacité, avec tes mots."></textarea>
+      </div>
+      <div class="boutons">
+        <button type="button" id="capa-annuler">Annuler</button>
+        <button type="submit" class="principal">Enregistrer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Fenêtre : détail d'une capacité -->
+  <dialog id="fen-detail">
+    <div class="fenetre">
+      <div class="detail-tete">
+        <div class="cercle" id="detail-cercle"></div>
+        <div>
+          <div class="type" id="detail-type"></div>
+          <div class="nomfr" id="detail-fr"></div>
+          <div class="nomjp" id="detail-jp"></div>
+        </div>
+      </div>
+      <div class="elements" id="detail-elements"></div>
+      <p class="effet" id="detail-effet"></p>
+      <div class="boutons">
+        <button type="button" class="danger" id="detail-supprimer">Supprimer</button>
+        <button type="button" id="detail-modifier">Modifier</button>
+        <button type="button" class="principal" id="detail-fermer">Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Fenêtre : conflit -->
+  <dialog id="fen-conflit">
+    <div class="fenetre">
+      <h2>Modifié sur un autre appareil</h2>
+      <p>Le wiki a été enregistré depuis un autre appareil pendant que tu travaillais ici. Pour ne rien écraser, ta dernière modification n'a pas été enregistrée.</p>
+      <p class="aide">Télécharge une sauvegarde si tu veux garder une trace de ce que tu viens de faire, puis recharge pour récupérer la dernière version.</p>
+      <div class="boutons">
+        <button type="button" id="conflit-exporter">Télécharger une sauvegarde</button>
+        <button type="button" class="principal" id="conflit-recharger">Recharger</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    // ===== Réglages modifiables =====
+    const DEPOT = {
+      proprietaire: "Neanuphar",
+      nom: "WebsiteNeanuphar",
+      branche: "main",
+      dossier: "ffrk",              // dossier de cette page dans le repo
+      fichier: "donnees.json",      // données du wiki, dans ce dossier
+    };
+    const ELEMENTS = [
+      { id: "feu", nom: "Feu", couleur: "#e2553b" },
+      { id: "glace", nom: "Glace", couleur: "#4fb3e6" },
+      { id: "foudre", nom: "Foudre", couleur: "#e8c22a", clair: true },
+      { id: "terre", nom: "Terre", couleur: "#9a6f3a" },
+      { id: "vent", nom: "Vent", couleur: "#3fae7e" },
+      { id: "eau", nom: "Eau", couleur: "#2f6fd0" },
+      { id: "sacre", nom: "Sacré", couleur: "#efe3a8", clair: true },
+      { id: "tenebres", nom: "Ténèbres", couleur: "#5a3f8c" },
+      { id: "poison", nom: "Poison", couleur: "#9b4fb3" },
+      { id: "neutre", nom: "Non-élémentaire", couleur: "#8c8c8c" },
+    ];
+    // Types proposés dans le formulaire (on peut aussi en taper un autre)
+    const TYPES = ["初期", "専用", "超必殺", "Burst", "超絶", "Chain", "閃技", "覚醒", "D覚醒", "S奥義", "究極", "M神技", "C神技", "LBSD", "LBLC"];
+    const SERIES = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "Tactics", "Type-0", "Autres"];
+    const TAILLE_CAPACITE = 160;   // côté max des icônes de capacité, en pixels
+    const TAILLE_SPRITE = 192;     // côté max des sprites
+    const DELAI_ENREGISTREMENT = 2500; // ms d'attente avant d'enregistrer
+
+    // ===== État =====
+    const CLE_TOKEN = "neanuphar-ffrk-token";
+    let donnees = { revision: 0, persos: [] };
+    let shaBase = null;              // version du fichier sur GitHub au chargement
+    let token = lire(CLE_TOKEN) || "";
+    const imagesEnAttente = new Map(); // chemin → Blob pas encore envoyé
+    const imagesASupprimer = new Set();
+    const apercus = new Map();          // chemin → URL locale, pour afficher tout de suite
+    let minuterie = null;
+    let enCours = false;
+    let aRefaire = false;
+    let nonEnregistre = false;
+    let enConflit = false;
+    const filtres = { texte: "", serie: "", type: "", elements: new Set() };
+
+    const $ = (id) => document.getElementById(id);
+
+    function lire(cle) { try { return localStorage.getItem(cle); } catch (e) { return null; } }
+    function ecrire(cle, v) { try { v ? localStorage.setItem(cle, v) : localStorage.removeItem(cle); } catch (e) {} }
+
+    function el(balise, classe, texte) {
+      const e = document.createElement(balise);
+      if (classe) e.className = classe;
+      if (texte !== undefined && texte !== null) e.textContent = texte;
+      return e;
+    }
+    function sansAccents(t) {
+      return (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    }
+    function slug(t) {
+      return sansAccents(t).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "perso";
+    }
+    function idUnique(prefixe) {
+      return prefixe + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    }
+    const editable = () => !!token;
+
+    // ===== Images =====
+    function srcImage(chemin) {
+      if (!chemin) return "";
+      return apercus.get(chemin) || chemin;
+    }
+    function imageAvecSecours(chemin) {
+      const img = el("img");
+      img.alt = "";
+      img.loading = "lazy";
+      img.src = srcImage(chemin);
+      // Si le site n'est pas encore à jour, on lit l'image directement dans le repo
+      img.addEventListener("error", () => {
+        const brut = `https://raw.githubusercontent.com/${DEPOT.proprietaire}/${DEPOT.nom}/${DEPOT.branche}/${DEPOT.dossier}/${chemin}`;
+        if (img.src !== brut) img.src = brut;
+      }, { once: true });
+      return img;
+    }
+
+    function chargerImage(fichier) {
+      return new Promise((ok, ko) => {
+        const url = URL.createObjectURL(fichier);
+        const img = new Image();
+        img.onload = () => { URL.revokeObjectURL(url); ok(img); };
+        img.onerror = () => { URL.revokeObjectURL(url); ko(new Error("Image illisible")); };
+        img.src = url;
+      });
+    }
+    // Réduit l'image (pixel art : sans lissage) et la convertit pour l'envoi
+    async function preparerImage(fichier, tailleMax, pixelArt) {
+      const img = await chargerImage(fichier);
+      const echelle = Math.min(1, tailleMax / Math.max(img.width, img.height));
+      const c = document.createElement("canvas");
+      c.width = Math.max(1, Math.round(img.width * echelle));
+      c.height = Math.max(1, Math.round(img.height * echelle));
+      const x = c.getContext("2d");
+      x.imageSmoothingEnabled = !pixelArt;
+      x.drawImage(img, 0, 0, c.width, c.height);
+      const format = pixelArt ? "image/png" : "image/webp";
+      let blob = await new Promise((ok) => c.toBlob(ok, format, 0.9));
+      if (!blob || blob.type !== format) blob = await new Promise((ok) => c.toBlob(ok, "image/png"));
+      return blob;
+    }
+    function ajouterImage(dossierPerso, blob) {
+      const ext = blob.type === "image/webp" ? "webp" : "png";
+      const chemin = `images/${dossierPerso}/${idUnique("")}.${ext}`;
+      imagesEnAttente.set(chemin, blob);
+      apercus.set(chemin, URL.createObjectURL(blob));
+      return chemin;
+    }
+    function retirerImage(chemin) {
+      if (!chemin) return;
+      if (imagesEnAttente.has(chemin)) imagesEnAttente.delete(chemin);
+      else imagesASupprimer.add(chemin);
+    }
+
+    // ===== GitHub =====
+    const API = `https://api.github.com/repos/${DEPOT.proprietaire}/${DEPOT.nom}`;
+    const CHEMIN_DONNEES = `${DEPOT.dossier}/${DEPOT.fichier}`;
+
+    async function github(chemin, options = {}) {
+      let rep;
+      try {
+        rep = await fetch(API + chemin, {
+          ...options,
+          headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: "Bearer " + token,
+            ...(options.body ? { "Content-Type": "application/json" } : {}),
+            ...(options.headers || {}),
+          },
+        });
+      } catch (e) {
+        throw new Error("Pas de connexion à GitHub.");
+      }
+      if (rep.status === 401) throw new Error("Clé GitHub invalide ou expirée.");
+      if (!rep.ok) {
+        const err = new Error(rep.status === 403 || rep.status === 404
+          ? "La clé n'a pas le droit d'écrire dans ce repo (vérifie la permission « Contents : Read and write »)."
+          : "Erreur GitHub " + rep.status + ".");
+        err.statut = rep.status;
+        throw err;
+      }
+      return rep.status === 204 ? null : rep.json();
+    }
+
+    function base64VersTexte(b64) {
+      const bin = atob(b64.replace(/\s/g, ""));
+      const octets = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+      return new TextDecoder().decode(octets);
+    }
+    function blobVersBase64(blob) {
+      return new Promise((ok, ko) => {
+        const r = new FileReader();
+        r.onload = () => ok(String(r.result).split(",")[1]);
+        r.onerror = ko;
+        r.readAsDataURL(blob);
+      });
+    }
+
+    async function lireFichierDistant(ref) {
+      try {
+        const info = await github(`/contents/${CHEMIN_DONNEES}?ref=${encodeURIComponent(ref)}`);
+        let texte;
+        if (info.encoding === "base64" && info.content) texte = base64VersTexte(info.content);
+        else {
+          // Fichier de plus de 1 Mo : on le lit en brut
+          const brut = await fetch(`${API}/contents/${CHEMIN_DONNEES}?ref=${encodeURIComponent(ref)}`, {
+            headers: { Accept: "application/vnd.github.raw+json", Authorization: "Bearer " + token },
+          });
+          texte = await brut.text();
+        }
+        return { sha: info.sha, donnees: JSON.parse(texte) };
+      } catch (e) {
+        if (e.statut === 404) return { sha: null, donnees: null };
+        throw e;
+      }
+    }
+
+    // ===== Chargement =====
+    async function charger() {
+      afficherEtat("Chargement…");
+      try {
+        if (token) {
+          const distant = await lireFichierDistant(DEPOT.branche);
+          shaBase = distant.sha;
+          if (distant.donnees) donnees = distant.donnees;
+        } else {
+          const rep = await fetch(`${DEPOT.fichier}?t=${Date.now()}`);
+          if (rep.ok) donnees = await rep.json();
+        }
+        normaliser();
+        afficherEtat(token ? "Mode édition" : "");
+      } catch (e) {
+        afficherEtat(e.message, "erreur");
+      }
+      router();
+    }
+    function normaliser() {
+      if (!donnees || !Array.isArray(donnees.persos)) donnees = { revision: 0, persos: [] };
+      donnees.persos.forEach((p) => { if (!Array.isArray(p.capacites)) p.capacites = []; });
+    }
+
+    // ===== Enregistrement (un seul commit par enregistrement) =====
+    function modifie() {
+      nonEnregistre = true;
+      afficherEtat("Modifications en attente…");
+      clearTimeout(minuterie);
+      minuterie = setTimeout(enregistrer, DELAI_ENREGISTREMENT);
+    }
+
+    async function enregistrer() {
+      if (enConflit || !token) return;
+      if (enCours) { aRefaire = true; return; }
+      enCours = true;
+      afficherEtat("Enregistrement…");
+      try {
+        await envoyer();
+        nonEnregistre = imagesEnAttente.size > 0;
+        const h = new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+        afficherEtat("Enregistré ✓ " + h, "ok");
+      } catch (e) {
+        if (e.conflit) {
+          enConflit = true;
+          afficherEtat("Non enregistré : conflit", "erreur");
+          $("fen-conflit").showModal();
+        } else {
+          afficherEtat("Erreur : " + e.message, "erreur");
+        }
+      } finally {
+        enCours = false;
+        if (aRefaire && !enConflit) { aRefaire = false; enregistrer(); }
+      }
+    }
+
+    async function envoyer(essai = 1) {
+      const ref = await github(`/git/ref/heads/${DEPOT.branche}`);
+      const commitParent = ref.object.sha;
+      const commit = await github(`/git/commits/${commitParent}`);
+
+      // Le fichier a-t-il été modifié ailleurs depuis le chargement ?
+      const distant = await lireFichierDistant(commitParent);
+      if (distant.sha !== shaBase) {
+        const e = new Error("conflit");
+        e.conflit = true;
+        throw e;
+      }
+
+      const envoyees = [...imagesEnAttente.keys()];
+      const supprimees = [...imagesASupprimer];
+      const arbre = [];
+      for (const chemin of envoyees) {
+        const blob = await github("/git/blobs", {
+          method: "POST",
+          body: JSON.stringify({ content: await blobVersBase64(imagesEnAttente.get(chemin)), encoding: "base64" }),
+        });
+        arbre.push({ path: `${DEPOT.dossier}/${chemin}`, mode: "100644", type: "blob", sha: blob.sha });
+      }
+      supprimees.forEach((chemin) => arbre.push({ path: `${DEPOT.dossier}/${chemin}`, mode: "100644", type: "blob", sha: null }));
+
+      const contenu = { ...donnees, revision: (donnees.revision || 0) + 1, maj: new Date().toISOString() };
+      const blobDonnees = await github("/git/blobs", {
+        method: "POST",
+        body: JSON.stringify({ content: JSON.stringify(contenu, null, 1), encoding: "utf-8" }),
+      });
+      arbre.push({ path: CHEMIN_DONNEES, mode: "100644", type: "blob", sha: blobDonnees.sha });
+
+      const nouvelArbre = await github("/git/trees", {
+        method: "POST",
+        body: JSON.stringify({ base_tree: commit.tree.sha, tree: arbre }),
+      });
+      const nouveauCommit = await github("/git/commits", {
+        method: "POST",
+        body: JSON.stringify({ message: "Wiki FFRK : mise à jour", tree: nouvelArbre.sha, parents: [commitParent] }),
+      });
+      try {
+        await github(`/git/refs/heads/${DEPOT.branche}`, {
+          method: "PATCH",
+          body: JSON.stringify({ sha: nouveauCommit.sha, force: false }),
+        });
+      } catch (e) {
+        // Un autre commit est arrivé entre-temps (sur un autre fichier) : on recommence une fois
+        if (e.statut === 422 && essai < 2) return envoyer(essai + 1);
+        throw e;
+      }
+
+      donnees.revision = contenu.revision;
+      donnees.maj = contenu.maj;
+      shaBase = blobDonnees.sha;
+      envoyees.forEach((c) => imagesEnAttente.delete(c));
+      supprimees.forEach((c) => imagesASupprimer.delete(c));
+    }
+
+    function afficherEtat(texte, classe) {
+      const e = $("etat");
+      e.textContent = texte;
+      e.className = "etat" + (classe ? " " + classe : "");
+    }
+
+    function exporter() {
+      const blob = new Blob([JSON.stringify(donnees, null, 1)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "wiki-ffrk-sauvegarde.json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    // ===== Navigation =====
+    function router() {
+      $("btn-edition").textContent = editable() ? "Mode édition ✓" : "Mode édition";
+      const m = location.hash.match(/^#\/perso\/(.+)$/);
+      const perso = m && donnees.persos.find((p) => p.id === decodeURIComponent(m[1]));
+      if (perso) vuePerso(perso);
+      else vueListe();
+    }
+    window.addEventListener("hashchange", router);
+
+    // ===== Vue : liste =====
+    function vueListe() {
+      const vue = $("vue");
+      vue.innerHTML = "";
+      vue.append(el("h1", "", "Wiki FFRK"));
+      vue.append(el("p", "sous-titre", "Les capacités spéciales de mes persos, traduites."));
+
+      const recherche = el("input");
+      recherche.type = "search";
+      recherche.placeholder = "Chercher un perso ou une capacité…";
+      recherche.value = filtres.texte;
+      recherche.setAttribute("aria-label", "Recherche");
+      vue.append(recherche);
+
+      const zoneFiltres = el("div", "filtres");
+      const selSerie = el("select");
+      selSerie.setAttribute("aria-label", "Jeu");
+      selSerie.append(new Option("Tous les jeux", ""));
+      SERIES.forEach((s) => selSerie.append(new Option(s === "Autres" ? "Autres" : "FF " + s, s)));
+      selSerie.value = filtres.serie;
+      const selType = el("select");
+      selType.setAttribute("aria-label", "Type de capacité");
+      selType.append(new Option("Tous les types", ""));
+      typesConnus().forEach((t) => selType.append(new Option(t, t)));
+      selType.value = filtres.type;
+      zoneFiltres.append(selSerie, selType);
+      vue.append(zoneFiltres);
+
+      const puces = el("div", "elements");
+      ELEMENTS.forEach((e) => {
+        const b = puceElement(e);
+        b.setAttribute("aria-pressed", filtres.elements.has(e.id));
+        b.addEventListener("click", () => {
+          filtres.elements.has(e.id) ? filtres.elements.delete(e.id) : filtres.elements.add(e.id);
+          b.setAttribute("aria-pressed", filtres.elements.has(e.id));
+          remplir();
+        });
+        puces.append(b);
+      });
+      vue.append(puces);
+
+      const zoneResultats = el("div", "resultats");
+      const zonePersos = el("div");
+      vue.append(zoneResultats, zonePersos);
+
+      function remplir() {
+        const q = sansAccents(filtres.texte.trim());
+        const filtreCapa = filtres.type || filtres.elements.size;
+
+        // Capacités qui correspondent
+        const capas = [];
+        donnees.persos.forEach((p) => {
+          if (filtres.serie && p.serie !== filtres.serie) return;
+          p.capacites.forEach((c) => {
+            const texteOk = !q || sansAccents([c.nomFR, c.nomJP, c.effet, c.type].join(" ")).includes(q);
+            const typeOk = !filtres.type || c.type === filtres.type;
+            const elOk = !filtres.elements.size || (c.elements || []).some((x) => filtres.elements.has(x));
+            if (texteOk && typeOk && elOk && (q || filtreCapa)) capas.push([p, c]);
+          });
+        });
+        zoneResultats.innerHTML = "";
+        if (q || filtreCapa) {
+          zoneResultats.append(el("h2", "", `Capacités (${capas.length})`));
+          if (!capas.length) zoneResultats.append(el("p", "vide", "Aucune capacité ne correspond."));
+          capas.slice(0, 200).forEach(([p, c]) => zoneResultats.append(ligneCapacite(p, c)));
+        }
+
+        // Persos
+        const persos = donnees.persos
+          .filter((p) => !filtres.serie || p.serie === filtres.serie)
+          .filter((p) => !q || sansAccents(p.nom + " " + (p.nomJP || "")).includes(q))
+          .filter((p) => !filtreCapa || capas.some(([pp]) => pp === p))
+          .sort(triPersos);
+        zonePersos.innerHTML = "";
+        zonePersos.append(el("h2", "titre-section", `Persos (${persos.length})`));
+        const grille = el("div", "grille-persos");
+        persos.forEach((p) => grille.append(cartePerso(p)));
+        if (editable() && !filtreCapa) {
+          const ajout = el("button", "carte-perso ajout");
+          ajout.type = "button";
+          ajout.append(el("span", "plus", "+"), el("span", "", "Ajouter un perso"));
+          ajout.addEventListener("click", () => ouvrirPerso(null));
+          grille.append(ajout);
+        }
+        zonePersos.append(grille);
+        if (!donnees.persos.length) {
+          zonePersos.append(el("p", "vide", editable()
+            ? "Aucun perso pour l'instant : commence par en ajouter un."
+            : "Aucun perso pour l'instant. Active le mode édition pour en ajouter."));
+        }
+      }
+
+      recherche.addEventListener("input", () => { filtres.texte = recherche.value; remplir(); });
+      selSerie.addEventListener("change", () => { filtres.serie = selSerie.value; remplir(); });
+      selType.addEventListener("change", () => { filtres.type = selType.value; remplir(); });
+      remplir();
+    }
+
+    function triPersos(a, b) {
+      const sa = SERIES.indexOf(a.serie), sb = SERIES.indexOf(b.serie);
+      return (sa === sb ? 0 : (sa < 0 ? 99 : sa) - (sb < 0 ? 99 : sb)) || a.nom.localeCompare(b.nom, "fr");
+    }
+    function typesConnus() {
+      const s = new Set(TYPES);
+      donnees.persos.forEach((p) => p.capacites.forEach((c) => c.type && s.add(c.type)));
+      return [...s];
+    }
+
+    function avatar(p) {
+      const a = el("div", "avatar");
+      if (p && p.sprite) a.append(imageAvecSecours(p.sprite));
+      else a.textContent = p ? (p.nom || "?").charAt(0).toUpperCase() : "?";
+      return a;
+    }
+    function cartePerso(p) {
+      const a = el("a", "carte-perso");
+      a.href = "#/perso/" + encodeURIComponent(p.id);
+      a.append(avatar(p), el("span", "nom", p.nom));
+      if (p.nomJP) a.append(el("span", "jp", p.nomJP));
+      a.append(el("span", "serie", p.serie === "Autres" ? "Autres" : "FF " + p.serie));
+      if (p.capacites.length) a.append(el("span", "compte", p.capacites.length + " capacité" + (p.capacites.length > 1 ? "s" : "")));
+      return a;
+    }
+
+    function puceElement(e, fixe) {
+      const b = el(fixe ? "span" : "button", "puce" + (e.clair ? " clair" : "") + (fixe ? " fixe" : ""), e.nom);
+      if (!fixe) b.type = "button";
+      b.style.setProperty("--el", e.couleur);
+      return b;
+    }
+
+    function cercle(c, balise = "button") {
+      const b = el(balise, "cercle");
+      if (balise === "button") b.type = "button";
+      if (c && c.image) b.append(imageAvecSecours(c.image));
+      if (c && c.type) b.append(el("span", "etiquette", c.type));
+      if (c && c.elements && c.elements.length) {
+        const pts = el("span", "points");
+        c.elements.forEach((id) => {
+          const e = ELEMENTS.find((x) => x.id === id);
+          if (e) { const s = el("span"); s.style.background = e.couleur; s.title = e.nom; pts.append(s); }
+        });
+        b.append(pts);
+      }
+      return b;
+    }
+
+    function ligneCapacite(p, c) {
+      const b = el("button", "ligne-capacite");
+      b.type = "button";
+      b.append(cercle(c, "span"));
+      const infos = el("div", "infos");
+      infos.append(el("div", "", c.nomFR || c.nomJP || "(sans nom)"));
+      infos.append(el("div", "perso", [p.nom, c.type].filter(Boolean).join(" · ")));
+      b.append(infos);
+      b.addEventListener("click", () => {
+        location.hash = "#/perso/" + encodeURIComponent(p.id);
+        setTimeout(() => ouvrirDetail(p, c), 0);
+      });
+      return b;
+    }
+
+    // ===== Vue : fiche perso =====
+    function vuePerso(p) {
+      const vue = $("vue");
+      vue.innerHTML = "";
+      const retour = el("a", "retour", "← Tous les persos");
+      retour.href = "#/";
+      vue.append(retour);
+
+      const tete = el("div", "entete-perso");
+      tete.style.marginTop = "12px";
+      tete.append(avatar(p));
+      const infos = el("div");
+      infos.append(el("h2", "", p.nom));
+      if (p.nomJP) infos.append(el("div", "jp", p.nomJP));
+      infos.append(el("div", "jp", p.serie === "Autres" ? "Autres jeux" : "Final Fantasy " + p.serie));
+      if (editable()) {
+        const actions = el("div", "actions");
+        const modif = el("button", "petit", "Modifier le perso");
+        modif.type = "button";
+        modif.addEventListener("click", () => ouvrirPerso(p));
+        actions.append(modif);
+        infos.append(actions);
+      }
+      tete.append(infos);
+      vue.append(tete);
+
+      vue.append(el("h2", "titre-section", `Capacités (${p.capacites.length})`));
+      const grille = el("div", "grille-capacites");
+      p.capacites.forEach((c) => {
+        const bloc = el("div");
+        const b = cercle(c);
+        b.setAttribute("aria-label", c.nomFR || c.nomJP || c.type || "Capacité");
+        b.addEventListener("click", () => ouvrirDetail(p, c));
+        bloc.append(b, el("div", "nom-cercle", c.nomFR || c.nomJP || ""));
+        grille.append(bloc);
+      });
+      if (editable()) {
+        const bloc = el("div");
+        const plus = el("button", "cercle plus", "+");
+        plus.type = "button";
+        plus.setAttribute("aria-label", "Ajouter une capacité");
+        plus.addEventListener("click", () => ouvrirCapa(p, null));
+        bloc.append(plus, el("div", "nom-cercle", "Ajouter"));
+        grille.append(bloc);
+      }
+      if (!p.capacites.length && !editable()) grille.append(el("p", "vide", "Aucune capacité pour l'instant."));
+      vue.append(grille);
+    }
+
+    // ===== Fenêtre : détail =====
+    let detailCourant = null;
+    function ouvrirDetail(p, c) {
+      detailCourant = { p, c };
+      const rond = $("detail-cercle");
+      rond.innerHTML = "";
+      rond.append(...cercle(c, "span").childNodes);
+      $("detail-type").textContent = c.type || "";
+      $("detail-fr").textContent = c.nomFR || "(pas encore traduit)";
+      $("detail-jp").textContent = c.nomJP || "";
+      const els = $("detail-elements");
+      els.innerHTML = "";
+      (c.elements || []).forEach((id) => {
+        const e = ELEMENTS.find((x) => x.id === id);
+        if (e) els.append(puceElement(e, true));
+      });
+      $("detail-effet").textContent = c.effet || "Pas encore d'effet noté.";
+      $("detail-modifier").hidden = !editable();
+      $("detail-supprimer").hidden = !editable();
+      $("fen-detail").showModal();
+    }
+    $("detail-fermer").addEventListener("click", () => $("fen-detail").close());
+    $("detail-modifier").addEventListener("click", () => {
+      $("fen-detail").close();
+      ouvrirCapa(detailCourant.p, detailCourant.c);
+    });
+    $("detail-supprimer").addEventListener("click", () => {
+      const { p, c } = detailCourant;
+      if (!confirm("Supprimer cette capacité ?")) return;
+      retirerImage(c.image);
+      p.capacites = p.capacites.filter((x) => x !== c);
+      $("fen-detail").close();
+      modifie();
+      router();
+    });
+
+    // ===== Fenêtre : perso =====
+    let persoCourant = null;
+    let spriteChoisi = null; // Blob
+    SERIES.forEach((s) => $("perso-serie").append(new Option(s === "Autres" ? "Autres" : "Final Fantasy " + s, s)));
+
+    function ouvrirPerso(p) {
+      persoCourant = p;
+      spriteChoisi = null;
+      $("titre-perso").textContent = p ? "Modifier le perso" : "Ajouter un perso";
+      $("perso-nom").value = p ? p.nom : "";
+      $("perso-jp").value = p ? p.nomJP || "" : "";
+      $("perso-serie").value = p ? p.serie : (filtres.serie || "I");
+      $("perso-supprimer").hidden = !p;
+      const ap = $("perso-apercu");
+      ap.replaceWith(Object.assign(avatar(p), { id: "perso-apercu" }));
+      $("fen-perso").showModal();
+    }
+    async function choisirSprite(fichier) {
+      try {
+        spriteChoisi = await preparerImage(fichier, TAILLE_SPRITE, true);
+        const ap = $("perso-apercu");
+        ap.innerHTML = "";
+        const img = el("img");
+        img.src = URL.createObjectURL(spriteChoisi);
+        ap.append(img);
+      } catch (e) { alert(e.message); }
+    }
+    $("perso-choisir").addEventListener("click", () => $("perso-fichier").click());
+    $("perso-fichier").addEventListener("change", (e) => { if (e.target.files[0]) choisirSprite(e.target.files[0]); e.target.value = ""; });
+    $("perso-annuler").addEventListener("click", () => $("fen-perso").close());
+    $("form-perso").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nom = $("perso-nom").value.trim();
+      if (!nom) return;
+      let p = persoCourant;
+      if (!p) {
+        let id = slug(nom), n = 2;
+        while (donnees.persos.some((x) => x.id === id)) id = slug(nom) + "-" + n++;
+        p = { id, nom, nomJP: "", serie: "I", sprite: "", capacites: [] };
+        donnees.persos.push(p);
+      }
+      p.nom = nom;
+      p.nomJP = $("perso-jp").value.trim();
+      p.serie = $("perso-serie").value;
+      if (spriteChoisi) {
+        retirerImage(p.sprite);
+        p.sprite = ajouterImage(p.id, spriteChoisi);
+      }
+      $("fen-perso").close();
+      modifie();
+      if (persoCourant) router();
+      else location.hash = "#/perso/" + encodeURIComponent(p.id);
+    });
+    $("perso-supprimer").addEventListener("click", () => {
+      const p = persoCourant;
+      if (!confirm(`Supprimer ${p.nom} et ses ${p.capacites.length} capacité(s) ?`)) return;
+      retirerImage(p.sprite);
+      p.capacites.forEach((c) => retirerImage(c.image));
+      donnees.persos = donnees.persos.filter((x) => x !== p);
+      $("fen-perso").close();
+      modifie();
+      location.hash = "#/";
+    });
+
+    // ===== Fenêtre : capacité =====
+    let capaCourante = null;
+    let imageCapaChoisie = null;
+    TYPES.forEach((t) => $("liste-types").append(new Option(t)));
+    ELEMENTS.forEach((e) => {
+      const b = puceElement(e);
+      b.dataset.id = e.id;
+      b.addEventListener("click", () => b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"));
+      $("capa-elements").append(b);
+    });
+
+    function ouvrirCapa(p, c) {
+      capaCourante = { p, c };
+      imageCapaChoisie = null;
+      $("titre-capa").textContent = c ? "Modifier la capacité" : "Ajouter une capacité";
+      $("capa-type").value = c ? c.type || "" : "";
+      $("capa-jp").value = c ? c.nomJP || "" : "";
+      $("capa-fr").value = c ? c.nomFR || "" : "";
+      $("capa-effet").value = c ? c.effet || "" : "";
+      $("capa-elements").querySelectorAll(".puce").forEach((b) =>
+        b.setAttribute("aria-pressed", !!(c && (c.elements || []).includes(b.dataset.id))));
+      const ap = $("capa-apercu");
+      ap.innerHTML = "";
+      if (c && c.image) ap.append(imageAvecSecours(c.image));
+      $("fen-capa").showModal();
+    }
+    async function choisirImageCapa(fichier) {
+      try {
+        imageCapaChoisie = await preparerImage(fichier, TAILLE_CAPACITE, false);
+        const ap = $("capa-apercu");
+        ap.innerHTML = "";
+        const img = el("img");
+        img.src = URL.createObjectURL(imageCapaChoisie);
+        ap.append(img);
+      } catch (e) { alert(e.message); }
+    }
+    $("capa-choisir").addEventListener("click", () => $("capa-fichier").click());
+    $("capa-fichier").addEventListener("change", (e) => { if (e.target.files[0]) choisirImageCapa(e.target.files[0]); e.target.value = ""; });
+    $("capa-annuler").addEventListener("click", () => $("fen-capa").close());
+    $("form-capa").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const { p } = capaCourante;
+      let c = capaCourante.c;
+      if (!c) {
+        c = { id: idUnique("c"), type: "", nomJP: "", nomFR: "", elements: [], effet: "", image: "" };
+        p.capacites.push(c);
+      }
+      c.type = $("capa-type").value.trim();
+      c.nomJP = $("capa-jp").value.trim();
+      c.nomFR = $("capa-fr").value.trim();
+      c.effet = $("capa-effet").value.trim();
+      c.elements = [...$("capa-elements").querySelectorAll('.puce[aria-pressed="true"]')].map((b) => b.dataset.id);
+      if (imageCapaChoisie) {
+        retirerImage(c.image);
+        c.image = ajouterImage(p.id, imageCapaChoisie);
+      }
+      $("fen-capa").close();
+      modifie();
+      router();
+    });
+
+    // Coller une image (Ctrl+V) dans le formulaire ouvert
+    window.addEventListener("paste", (e) => {
+      const items = e.clipboardData ? [...e.clipboardData.items] : [];
+      const image = items.find((it) => it.type.startsWith("image/"));
+      if (!image) return;
+      if ($("fen-capa").open) choisirImageCapa(image.getAsFile());
+      else if ($("fen-perso").open) choisirSprite(image.getAsFile());
+    });
+
+    // ===== Fenêtre : mode édition =====
+    $("btn-edition").addEventListener("click", () => {
+      $("champ-token").value = token;
+      $("etat-token").textContent = token ? "Le mode édition est actif sur cet appareil." : "";
+      $("btn-deconnecter").hidden = !token;
+      $("fen-edition").showModal();
+    });
+    $("btn-fermer-edition").addEventListener("click", () => $("fen-edition").close());
+    $("btn-exporter").addEventListener("click", exporter);
+    $("btn-connecter").addEventListener("click", async () => {
+      const essai = $("champ-token").value.trim();
+      if (!essai) return;
+      const ancien = token;
+      token = essai;
+      $("etat-token").textContent = "Vérification…";
+      try {
+        await github("");
+        ecrire(CLE_TOKEN, token);
+        $("etat-token").textContent = "Clé acceptée.";
+        $("fen-edition").close();
+        await charger();
+      } catch (e) {
+        token = ancien;
+        $("etat-token").textContent = e.statut === 404 ? "Cette clé ne donne pas accès au repo du site." : e.message;
+      }
+    });
+    $("btn-deconnecter").addEventListener("click", () => {
+      if (nonEnregistre && !confirm("Des modifications ne sont pas encore enregistrées. Désactiver quand même ?")) return;
+      token = "";
+      ecrire(CLE_TOKEN, "");
+      $("fen-edition").close();
+      afficherEtat("");
+      router();
+    });
+
+    $("conflit-exporter").addEventListener("click", exporter);
+    $("conflit-recharger").addEventListener("click", () => { nonEnregistre = false; location.reload(); });
+
+    window.addEventListener("beforeunload", (e) => {
+      if (nonEnregistre) { e.preventDefault(); e.returnValue = ""; }
+    });
+
+    charger();
+  </script>
+</body>
+</html>

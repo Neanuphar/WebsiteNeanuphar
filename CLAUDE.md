@@ -18,6 +18,10 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 │   └── index.html     ← Checklist Smash Ultimate
 ├── recettes/
 │   └── index.html     ← Mes recettes (liste dans le tableau RECETTES)
+├── ffrk/
+│   ├── index.html     ← Wiki FFRK (persos et capacités spéciales)
+│   ├── donnees.json   ← données du wiki (créé au premier enregistrement)
+│   └── images/<perso>/← sprites et icônes de capacités
 └── CNAME              ← créé par GitHub Pages pour neanuphar.fr : ne pas supprimer
 ```
 
@@ -72,6 +76,15 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 - Pas de crochets pour ce qui ne double pas : températures, temps, taille des boules, dimensions du plat.
 - Les étapes et les notes ne sont pas recalculées : y éviter les quantités, renvoyer plutôt aux ingrédients (« le sucre pour les fruits »).
 - Quand une info manque dans une recette donnée, la compléter seulement avec une valeur standard et le signaler (« environ », estimation).
+
+## Wiki FFRK (`ffrk/`) — exception aux règles « un seul fichier » et « hors ligne »
+
+- Les données sont dans `ffrk/donnees.json`, les images dans `ffrk/images/<id-du-perso>/`. Les chemins d'images dans le JSON sont relatifs au dossier `ffrk/` (`images/relm/xxx.webp`).
+- Format : `{ revision, maj, persos: [{ id, nom, nomJP, serie, sprite, capacites: [{ id, type, nomJP, nomFR, elements, effet, image }] }] }`. `serie` vaut une valeur de `SERIES`, `elements` des `id` de `ELEMENTS` (voir le haut du script).
+- La page enregistre elle-même dans ce repo via l'API GitHub, avec une clé (token) que la propriétaire colle dans la page. La clé reste dans son navigateur : ne jamais l'écrire dans le repo.
+- Chaque enregistrement depuis la page fait un seul commit (« Wiki FFRK : mise à jour »). La page refuse d'écraser le fichier s'il a changé ailleurs entre-temps.
+- Pour modifier `donnees.json` directement (par exemple pour ajouter un perso à partir de captures d'écran) : `git pull` d'abord, garder le format, augmenter `revision` de 1, puis commit et push.
+- Icônes de capacité : environ 160 px, fond transparent. Sprites : PNG sans lissage.
 
 ## Méthode de travail
 
