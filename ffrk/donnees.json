@@ -1,6 +1,6 @@
 {
- "revision": 12,
- "maj": "2026-10-22T13:00:00.000Z",
+ "revision": 13,
+ "maj": "2026-10-22T04:30:40.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -967,6 +967,44 @@
      ],
      "image": "images/maria/fleche-comete-ultime-128.webp",
      "effet": "Réservée à Maria. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Terre poussée à l'extrême (+20 %).\n• Toutes les 3 compétences Terre utilisées : attaque supplémentaire [Frappe du cœur – Maria] (1 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Maria (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Terre se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Maria +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – MARIA (心撃・マリア)\n• Pendant un temps : attaque Terre de Maria +2 niveaux.\n• Ses compétences Terre n'ont aucun temps d'attente pendant 3 tours.\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Explosion 8 Kai (ばくは8改, école Magie noire) : 6 attaques magiques Terre sur un ennemi. Après 3 utilisations : plus puissante, et plafond de dégâts +1 niveau.\n• Version normale, Explosion 8 (ばくは8) : 6 attaques magiques Terre sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "guy",
+   "nom": "Guy",
+   "nomJP": "ガイ",
+   "serie": "II",
+   "categorie": "physique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/guy/sprite.png",
+   "capacites": [
+    {
+     "id": "c-hache-experte",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "熟練の斧",
+     "nomFR": "Hache experte",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/guy/hache-experte.webp",
+     "effet": "Réservée à Guy.\n\n• 3 coups physiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-impact-de-gaia-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星ガイアインパクト",
+     "nomFR": "Impact de Gaïa polaire",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/guy/impact-de-gaia-polaire.webp",
+     "effet": "Réservée à Guy. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : toute l'équipe reçoit le mode Acquisition – Guy.\n• Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Guy se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +4 niveaux.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Guy] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Impact de Gaïa polaire].\n\nMODE ACQUISITION – GUY (習得モード・ガイ)\n• Dégâts Terre de Guy augmentés (5 %).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – GUY (星撃・ガイ)\n• 10 coups physiques Terre + non-élémentaire sur un ennemi.\n• Le bonus de dégâts Terre de toute l'équipe ayant le mode Acquisition – Guy évolue (5 paliers max : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : IMPACT DE GAÏA POLAIRE\n• Attaque physique Terre + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : dégâts Terre de toute l'équipe augmentés (30 %).\n• Met fin au mode Maître de Guy.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre de Guy augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離, et la progression des paliers de la Frappe stellaire (probablement un palier par déclenchement)."
     }
    ]
   }
