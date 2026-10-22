@@ -1,6 +1,6 @@
 {
- "revision": 8,
- "maj": "2026-10-22T10:00:00.000Z",
+ "revision": 9,
+ "maj": "2026-10-22T11:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -489,6 +489,138 @@
      "elements": [],
      "image": "images/echo/super-eclair-echo.webp",
      "effet": "Réservée à Écho. Limit Break, utilisable 1 fois.\n\nEFFET\n• Consomme la jauge de Limite, sans temps d'attente.\n• Pendant un temps : quand Écho utilise une compétence Magie noire ou Danseuse (踊り子), attaque supplémentaire [Frappe super éclair – Écho] (1 fois max).\n• La prochaine jauge ATB d'Écho se remplit instantanément (1 fois).\n• Remplit 1 segment de la jauge de Limite.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE SUPER ÉCLAIR – ÉCHO (超閃撃・エコー)\n• Temps d'attente de toute l'équipe réduit de 3 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois, débloquée au niveau d'entraînement 5."
+    }
+   ]
+  },
+  {
+   "id": "meia",
+   "nom": "Meia",
+   "nomJP": "メイア",
+   "serie": "I",
+   "categorie": "magique",
+   "elements": [
+    "eau"
+   ],
+   "sprite": "images/meia/sprite.png",
+   "capacites": [
+    {
+     "id": "c-synchro-meia",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "メイアシンクロ",
+     "nomFR": "Synchro Meia",
+     "elements": [],
+     "image": "images/meia/synchro-meia.webp",
+     "effet": "Réservée à Meia.\n\n• Pendant un temps : magie de Meia augmentée (effet moyen)."
+    },
+    {
+     "id": "c-eclairs-enchaines-meia-eau",
+     "type": "閃技",
+     "categorie": "magique",
+     "nomJP": "連閃・メイア水",
+     "nomFR": "Éclairs enchaînés – Meia (Eau)",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/meia/eclairs-enchaines-meia-eau.webp",
+     "effet": "Réservée à Meia. Utilisable 1 fois.\n\nEFFET\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : quand Meia utilise une compétence Eau, attaque supplémentaire [Frappe éclair enchaînée – Meia].\n• La prochaine jauge ATB de Meia se remplit instantanément (1 fois).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE ÉCLAIR ENCHAÎNÉE – MEIA (連閃撃・メイア)\n• 6 attaques magiques Eau + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Eau de Meia augmentée, débloquée au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Meia, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-energie-de-sorciere",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ウィッチ・エナジー",
+     "nomFR": "Énergie de sorcière",
+     "elements": [],
+     "image": "images/meia/energie-de-sorciere.webp",
+     "effet": "Réservée à Meia. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Temps d'attente de Meia réduit de 3 tours.\n• Remplit 1 segment de la jauge de capacités spéciales de Meia.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-pallida-mors-radieuse",
+     "type": "C神技",
+     "categorie": "magique",
+     "nomJP": "耀光パッリダ・モルス",
+     "nomFR": "Pallida Mors radieuse",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/meia/pallida-mors-radieuse.webp",
+     "effet": "Réservée à Meia. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Eau renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 1 fois de plus.\n• Utiliser une compétence Eau ne décompte pas son nombre d'utilisations.\n• Perce la défense et la défense magique (effet moyen).\n\nFORCE CRISTAL I & II (クリスタルフォース)\n• Sans temps d'attente : 4 attaques magiques spéciales Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant 2 tours : plafond de dégâts de Meia +1 niveau.\n• Temps d'attente des compétences Eau réduit de 2 tours.\n• Pendant 2 tours : dégâts des compétences Eau augmentés (effet fort).\n• Pendant 2 tours : perce la défense et la défense magique (effet fort).\n• Le prochain remplissage de la jauge ATB est raccourci (1 fois).\nLa Force Cristal III devient utilisable après 3 actions.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet de la Force Cristal III n'est pas décrit sur l'écran."
+    },
+    {
+     "id": "c-eveil-elan-vital",
+     "type": "D覚醒",
+     "categorie": "magique",
+     "nomJP": "覚醒エラン・ヴィタール",
+     "nomFR": "Éveil Élan vital",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/meia/eveil-elan-vital.webp",
+     "effet": "Réservée à Meia. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit de Meia augmentés (effet fort).\n• Imprégnation Eau renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Eau I [Meia] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL EAU I (avant la Dual Shift)\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 2 fois de plus.\n• Temps d'attente des compétences Eau équipées réduit.\n\nDUAL SHIFT\n• Fait passer Meia en mode D-Éveil Eau II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL EAU II (après la Dual Shift)\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau n'ont plus de temps d'attente.\n• Chaque compétence Eau déclenche l'attaque supplémentaire [D Quick Aqua].\n\nATTAQUE SUPPLÉMENTAIRE : D QUICK AQUA (Dクイックアクア)\n• Pendant 3 tours : les compétences Eau de Meia n'ont plus de temps d'attente.\n• Pendant 3 tours : plafond de dégâts +1 niveau.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Eau de Meia +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Eau I et II [Meia] et le mode Éveil Eau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "matoya",
+   "nom": "Matoya",
+   "nomJP": "マトーヤ",
+   "serie": "I",
+   "categorie": "magique",
+   "elements": [
+    "feu",
+    "glace",
+    "foudre"
+   ],
+   "sprite": "images/matoya/sprite.png",
+   "capacites": [
+    {
+     "id": "c-remede-miracle",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ばんのうのくすり",
+     "nomFR": "Remède miracle",
+     "elements": [],
+     "image": "images/matoya/remede-miracle.webp",
+     "effet": "Réservée à Matoya.\n\n• Esuna (エスナ, soigne les altérations d'état) sur un allié."
+    },
+    {
+     "id": "c-mixture-de-sorciere",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "魔女の調合",
+     "nomFR": "Mixture de sorcière",
+     "elements": [],
+     "image": "images/matoya/mixture-de-sorciere.webp",
+     "effet": "Réservée à Matoya. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Matoya n'a aucun temps d'attente pendant 2 tours.\n• Pendant un temps : mode Œil de cristal.\n\nMODE ŒIL DE CRISTAL (クォーツアイモード)\n• À sa prochaine action, si Matoya utilise une compétence Feu, Glace ou Foudre, elle reçoit pendant un temps l'imprégnation de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-lien-destin-de-matoya",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "絆・マトーヤ天命",
+     "nomFR": "Lien – Destin de Matoya",
+     "elements": [],
+     "image": "images/matoya/lien-destin-de-matoya.webp",
+     "effet": "Réservée à Matoya. Chaîne de métier (ジョブリミットチェイン).\n\nEFFET\n• Sans temps d'attente : lance une chaîne Sorcière (魔女), jusqu'à 150 chaînes.\n• Pendant un temps : magie de toute l'équipe augmentée (effet fort).\n• Hâte pour toute l'équipe.\n\nPENDANT LA CHAÎNE\n• Dégâts des attaques de compétences Sorcière de l'équipe augmentés (effet fort).\n• La chaîne avance avec les attaques de compétences Sorcière.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-dechainement-magique",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "魔力の大暴走",
+     "nomFR": "Déchaînement magique",
+     "elements": [
+      "feu",
+      "glace",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/matoya/dechainement-magique.webp",
+     "effet": "Réservée à Matoya. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Feu + Glace + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Éveil Sorcière, et plafond de dégâts +1 niveau.\n• Active le mode Œil de cristal II.\n• Effet bonus selon le nombre d'alliés de FF I encore en vie (voir plus bas).\n\nMODE ÉVEIL SORCIÈRE (魔女覚醒モード)\n• Compétences Sorcière utilisables à l'infini.\n• Boost des compétences Sorcière, effet max : moyen.\n• Les compétences Sorcière se lancent 1 fois de plus.\n\nMODE ŒIL DE CRISTAL II (クォーツアイモードII)\n• À sa prochaine action, si Matoya utilise une compétence Feu, Glace ou Foudre, elle reçoit pendant un temps l'imprégnation renforcée [重式] de cet élément.\n\nEFFET BONUS SELON LES ALLIÉS DE FF I EN VIE\n• 0 ou 1 : Matoya n'a aucun temps d'attente pendant 1 tour + pendant un temps, attaque Feu, Glace et Foudre +1 niveau.\n• 2 ou 3 : toute l'équipe n'a aucun temps d'attente pendant 1 tour + pendant un temps, attaque de tous les éléments +1 niveau.\n• 4 ou plus : toute l'équipe n'a aucun temps d'attente pendant 1 tour + pendant un temps, attaque de tous les éléments +2 niveaux + dégâts augmentés en frappant une faiblesse, même légère (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
     }
    ]
   }
