@@ -1,6 +1,6 @@
 {
- "revision": 4,
- "maj": "2026-10-22T06:00:00.000Z",
+ "revision": 5,
+ "maj": "2026-10-22T07:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -108,6 +108,105 @@
      ],
      "effet": "Réservée au Guerrier de la Lumière.\n\nATTAQUE\n• 7 coups physiques puissants Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Sacré renforcée [重式] et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Sacré I et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences (アビリティ) Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée renforce le mode, jusqu'à 3 paliers : temps d'attente des compétences Sacré équipées réduit, et taux de critique 50 / 75 / 100 %.\n\nDUAL SHIFT\n• Fait passer le Guerrier en mode D-Éveil Sacré II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré déclenche l'attaque supplémentaire D Bright Shift.\n\nATTAQUE SUPPLÉMENTAIRE : D BRIGHT SHIFT\nSelon le nombre d'alliés de FF I encore en vie :\n• 0 à 3 : baisse brève de la défense, de la défense magique et de l'esprit d'un ennemi (effet très fort) + pendant un temps, attaque Sacré de toute l'équipe +2 niveaux.\n• 4 ou plus : pendant 2 tours, plafond de dégâts du Guerrier +1 niveau et dégâts fatals (フェイタルダメージ) +20 %.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré du Guerrier +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Guerrier de la Lumière] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'étiquette 対乾坤一擲 et l'effet exact des « dégâts fatals ».",
      "image": "images/guerrier-de-la-lumiere/eveil-crossover.webp"
+    }
+   ]
+  },
+  {
+   "id": "garland",
+   "nom": "Garland",
+   "nomJP": "ガーランド",
+   "serie": "I",
+   "categorie": "physique",
+   "elements": [
+    "tenebres"
+   ],
+   "sprite": "images/garland/sprite.png",
+   "capacites": [
+    {
+     "id": "c-assaut-feroce",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "猛攻撃",
+     "nomFR": "Assaut féroce",
+     "elements": [],
+     "image": "images/garland/assaut-feroce.webp",
+     "effet": "Réservée à Garland.\n\n• Pendant un temps : défense de Garland réduite (effet moyen) et attaque augmentée (effet moyen)."
+    },
+    {
+     "id": "c-cycle-du-combat",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "戦いの輪廻",
+     "nomFR": "Cycle du combat",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/garland/cycle-du-combat.webp",
+     "effet": "Réservée à Garland.\n\nATTAQUE\n• 6 coups physiques puissants Ténèbres sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Griffe mortelle (デスクロウ, école 暗黒) : attaque physique Ténèbres sur un ennemi, et absorbe une partie des dégâts pour soigner Garland.\n• Raz-de-marée des ténèbres (やみのつなみ, école 暗黒) : 2 attaques physiques à distance Ténèbres sur tous les ennemis.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-amour-et-haine",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "愛憎",
+     "nomFR": "Amour et haine",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/garland/amour-et-haine.webp",
+     "effet": "Réservée à Garland. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Remplit 1 segment de la jauge de capacités spéciales de Garland.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-tranchant-circulaire-veritable",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "真・ラウンドエッジ",
+     "nomFR": "Tranchant circulaire véritable",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/garland/tranchant-circulaire-veritable.webp",
+     "effet": "Réservée à Garland. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : taux de critique de toute l'équipe à 50 %.\n• Imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Ténèbres utilisées : attaque supplémentaire [Cycle de la haine], de plus en plus forte.\n\nCOMPÉTENCES SYNCHRO (déclenchées par une compétence Ténèbres)\n• Choc du chaos (カオスショック, école 物理ヘヴィ) : 6 coups physiques Ténèbres + non-élémentaire sur un ennemi, plus puissants si Garland est en Charge lourde niveau 2.\n• Bosse du chaos (カオスバンプ, école 物理ヘヴィ) : 3 coups physiques Ténèbres + non-élémentaire sur un ennemi, temps d'attente de Garland réduit de 2 tours, et pendant un temps, Charge lourde +1 niveau (max 2).\n\nATTAQUE SUPPLÉMENTAIRE : CYCLE DE LA HAINE (憎悪の輪廻)\nPlus elle se déclenche, plus elle est forte (3 paliers) :\n• 1er palier : pendant un temps, taux de critique de l'équipe à 60 % + dégâts des compétences Ténèbres augmentés pendant 1 tour (effet faible).\n• 2e palier : critique à 80 % + dégâts Ténèbres augmentés (effet moyen).\n• 3e palier : critique à 100 % + dégâts Ténèbres augmentés (effet fort).\nLe compteur repart à zéro si on relance la capacité ou quand le mode Synchro se termine.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-cycle-malefique",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "禍々しき輪廻",
+     "nomFR": "Cycle maléfique",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/garland/cycle-malefique.webp",
+     "effet": "Réservée à Garland. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques Ténèbres + non-élémentaire sur un ennemi.\n• Toute l'équipe reçoit 1 barrière qui réduit les dégâts (effet moyen).\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Active le mode Cycle.\n\nMODE CYCLE (輪廻モード, pendant un temps)\n• Chaque fois qu'une barrière de réduction de dégâts de Garland est consommée : attaque supplémentaire [Cycle du chaos].\n• Plus le Cycle du chaos se déclenche, plus les dégâts des compétences Ténèbres de Garland augmentent (3 paliers, effet max : fort).\n\nATTAQUE SUPPLÉMENTAIRE : CYCLE DU CHAOS (混沌の輪廻)\n• 6 coups physiques Ténèbres + non-élémentaire sur un ennemi.\n\nCOMPÉTENCES SYNCHRO (déclenchées par une compétence Ténèbres)\n• Impact enchaîné (チェーンインパクト, école 暗黒) : 6 coups physiques Ténèbres + non-élémentaire. Si Garland est en état Flux du chaos : les mêmes coups + 1 barrière de réduction de dégâts pour toute l'équipe (effet moyen), et l'état Flux du chaos prend fin.\n• Tranchant circulaire (ラウンドエッジ, école 暗黒) : 3 coups physiques Ténèbres + non-élémentaire sur un ennemi, temps d'attente de Garland réduit de 1 tour, et tant que le mode Synchro dure, Garland passe en état Flux du chaos (混沌流転).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-foreuse-tournoyante-veritable",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "真・ツイストドリル",
+     "nomFR": "Foreuse tournoyante véritable",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/garland/foreuse-tournoyante-veritable.webp",
+     "effet": "Réservée à Garland. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : dégâts critiques de toute l'équipe augmentés.\n• Imprégnation Ténèbres.\n• Pendant un temps : mode Éveil Ténèbres, et plafond de dégâts +1 niveau.\n• Active le mode Corps maléfique du chaos.\n\nMODE ÉVEIL TÉNÈBRES\n• Compétences Ténèbres utilisables à l'infini.\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE CORPS MALÉFIQUE DU CHAOS (混沌の邪身モード)\n• Pendant un temps : temps d'attente de Garland réduit.\n• Chaque compétence Ténèbres utilisée augmente son taux de critique (4 paliers : 25 / 50 / 75 / 100 %).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-cycle-du-combat-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極戦いの輪廻",
+     "nomFR": "Cycle du combat ultime",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/garland/cycle-du-combat-ultime.webp",
+     "effet": "Réservée à Garland. Utilisable 1 fois.\n\nATTAQUE\n• 7 coups physiques puissants Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• En utilisant une compétence Ténèbres : attaque supplémentaire [Frappe du cœur – Garland] (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Garland (liste plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Garland +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – GARLAND (心撃・ガーランド)\n• Pendant 3 tours : taux de critique de toute l'équipe à 100 % et dégâts fatals (フェイタルダメージ) +10 %.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Porte-chaos Kai (カオスブリンガー改, école 暗黒) : 5 attaques physiques à distance Ténèbres sur un ennemi + brièvement, attaque de Garland augmentée (effet moyen), défense et défense magique réduites (effet faible). Plus forte, avec plafond de dégâts +1 niveau, après 3 utilisations. Version normale : Porte-chaos (カオスブリンガー).\n• Âme du chaos Kai (ソウルオブカオス改, école 物理ヘヴィ) : 6 coups physiques Ténèbres sur un ennemi. Plus forte, avec plafond de dégâts +1 niveau, après 3 utilisations. Version normale : Âme du chaos (ソウルオブカオス).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact des « dégâts fatals »."
     }
    ]
   }
