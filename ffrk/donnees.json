@@ -1,6 +1,6 @@
 {
- "revision": 18,
- "maj": "2026-10-22T04:47:04.000Z",
+ "revision": 19,
+ "maj": "2026-10-22T04:52:30.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1255,6 +1255,205 @@
      ],
      "image": "images/minwu/eveil-descellement-du-destin.webp",
      "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques Magie blanche puissantes Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit de Minwu augmentés (effet fort), et imprégnation Sacré renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Magie blanche I [Minwu] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL MAGIE BLANCHE I (avant la Dual Shift)\n• Boost des compétences Magie blanche, effet max : moyen.\n• Les compétences Magie blanche se lancent 2 fois de plus.\n• Chaque compétence Magie blanche utilisée renforce le mode : temps d'attente des compétences Magie blanche équipées réduit (jusqu'à 3 paliers).\n\nDUAL SHIFT\n• Fait passer Minwu en mode D-Éveil Magie blanche II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL MAGIE BLANCHE II (après la Dual Shift)\n• Plafond de dégâts +2 niveaux.\n• Boost des compétences Magie blanche, effet max : moyen.\n• Les compétences Magie blanche se lancent 1 fois de plus.\n• Les compétences Magie blanche n'ont plus de temps d'attente.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Magie blanche de Minwu +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Magie blanche I et II [Minwu] et le mode Éveil Magie blanche.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II, à confirmer)."
+    }
+   ]
+  },
+  {
+   "id": "richard",
+   "nom": "Richard",
+   "nomJP": "リチャード",
+   "serie": "II",
+   "categorie": "physique",
+   "elements": [
+    "vent",
+    "foudre",
+    "eau",
+    "tenebres"
+   ],
+   "sprite": "images/richard/sprite.png",
+   "capacites": [
+    {
+     "id": "c-lance-de-l-expert",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "熟練の槍",
+     "nomFR": "Lance de l'expert",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/richard/lance-de-l-expert.webp",
+     "effet": "Réservée à Richard.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-lien-destin-de-richard",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "絆・リチャード天命",
+     "nomFR": "Lien – Destin de Richard",
+     "elements": [],
+     "image": "images/richard/lien-destin-de-richard.webp",
+     "effet": "Réservée à Richard. Chaîne de métier (ジョブリミットチェイン).\n\nEFFET\n• Sans temps d'attente : lance une chaîne Chevalier dragon (竜騎士), jusqu'à 150 chaînes.\n• Dégâts des attaques des Chevaliers dragons alliés qui comptent pour la chaîne augmentés (effet fort).\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort).\n• Hâte pour toute l'équipe.\n\nPENDANT LA CHAÎNE\n• Dégâts des attaques Chevalier dragon de l'équipe qui comptent pour la chaîne augmentés (effet fort).\n• La chaîne avance avec ces attaques Chevalier dragon.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-chevalier-dragon-du-vent-et-de-la-foudre",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "風雷の竜騎士",
+     "nomFR": "Chevalier dragon du vent et de la foudre",
+     "elements": [
+      "vent",
+      "foudre",
+      "eau",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/richard/chevalier-dragon-du-vent-et-de-la-foudre.webp",
+     "effet": "Réservée à Richard. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques Saut Vent + Foudre + Eau + Ténèbres + non-élémentaire sur un ennemi.\n• Pendant 3 tours : plus aucun temps en l'air (滞空時間) pour toute l'équipe.\n• Pendant 3 tours : dégâts des compétences Chevalier dragon augmentés (effet fort).\n• Pendant un temps : les attaques Saut n'ont plus de temps d'attente.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Quadruple élément III.\n\nCOMPÉTENCES SYNCHRO\n• Assaut de la lance du dragon (竜槍の猛撃, école Chevalier dragon, déclenchée par une compétence Chevalier dragon) : 6 attaques Saut Vent + Foudre + Eau + Ténèbres + non-élémentaire sur un ennemi, avec un long temps en l'air.\n• Course vaillante (勇ましき疾駆, école Chevalier dragon, déclenchée par une compétence Chevalier dragon) : sans temps d'attente, attaque Saut Vent + Foudre + Eau + Ténèbres + non-élémentaire sur un ennemi, sans temps en l'air, et temps d'attente de Richard réduit de 3 tours.\n\nMODE QUADRUPLE ÉLÉMENT III (クアッドエレメントモードIII)\n• Si Richard utilise une compétence Vent, Foudre, Eau ou Ténèbres à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : l'écran ne dit pas si la hausse des dégâts Chevalier dragon vaut pour Richard seul ou pour toute l'équipe."
+    },
+    {
+     "id": "c-dernier-chevalier-dragon-supreme",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ラストドラグーン・極",
+     "nomFR": "Dernier chevalier dragon suprême",
+     "elements": [
+      "vent",
+      "foudre",
+      "eau",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/richard/dernier-chevalier-dragon-supreme.webp",
+     "effet": "Réservée à Richard. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Richard].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Quadruple élément.\n\n2E ACTIVATION : DERNIER CHEVALIER DRAGON SUPRÊME\n• 20 attaques Saut Vent + Foudre + Eau + Ténèbres + non-élémentaire sur un ennemi.\n• Puis une attaque Saut Vent + Foudre + Eau + Ténèbres + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – RICHARD]\n• Plus Richard inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nMODE QUADRUPLE ÉLÉMENT (クアッドエレメントモード)\n• Si Richard utilise une compétence Vent, Foudre, Eau ou Ténèbres à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Richard augmentées (niv. 3).\n• Temps d'attente de la 2e activation réduit (niv. 3).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-foudre-polaire-des-nuees-sombres",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星暗雲雷撃",
+     "nomFR": "Foudre polaire des nuées sombres",
+     "elements": [
+      "vent",
+      "foudre",
+      "eau",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/richard/foudre-polaire-des-nuees-sombres.webp",
+     "effet": "Réservée à Richard. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente.\n• Pendant un temps : mode Apprentissage – Richard pour les Chevaliers dragons alliés.\n• Pendant un temps : mode Maître pour Richard.\n• La prochaine jauge ATB de Richard se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +4 niveaux.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Richard] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Foudre polaire des nuées sombres].\n\nMODE APPRENTISSAGE – RICHARD (習得モード・リチャード)\n• Dégâts augmentés de 5 %.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – RICHARD (星撃・リチャード)\n• 10 attaques Saut sans temps en l'air sur un ennemi : Vent, Foudre, Eau ou Ténèbres (+ non-élémentaire), selon l'élément dont Richard est imprégné.\n• Le bonus de dégâts des alliés en mode Apprentissage – Richard augmente (5 paliers : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : FOUDRE POLAIRE DES NUÉES SOMBRES\n• Attaque Saut Vent + Foudre + Eau + Ténèbres + non-élémentaire sur un ennemi, sans temps en l'air, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Dégâts des Chevaliers dragons alliés +30 % pendant 1 tour.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque de tous les éléments de Richard augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離 ; le mode Maître de Richard affiche bien plafond +4 niveaux (les autres persos ont +2)."
+    }
+   ]
+  },
+  {
+   "id": "leila",
+   "nom": "Leila",
+   "nomJP": "レイラ",
+   "serie": "II",
+   "categorie": "physique",
+   "elements": [
+    "poison",
+    "eau",
+    "foudre"
+   ],
+   "sprite": "images/leila/sprite.png",
+   "capacites": [
+    {
+     "id": "c-foudre-2",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "サンダー2",
+     "nomFR": "Foudre 2",
+     "elements": [
+      "foudre"
+     ],
+     "image": "images/leila/foudre-2.webp",
+     "effet": "Réservée à Leila.\n\n• Attaque magique Foudre sur un ennemi."
+    },
+    {
+     "id": "c-couteaux-pirates",
+     "type": "超必殺",
+     "categorie": "physique",
+     "nomJP": "パイレーツナイブス",
+     "nomFR": "Couteaux pirates",
+     "elements": [
+      "eau"
+     ],
+     "image": "images/leila/couteaux-pirates.webp",
+     "effet": "Réservée à Leila.\n\nATTAQUE\n• 6 attaques physiques puissantes Eau sur un ennemi.\n• Pendant un temps : attaque et défense magique de l'ennemi réduites (effet fort).\n• Attaque de Leila augmentée (effet moyen) et défense magique augmentée (effet faible).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-brume-toxique-16",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "どくぎり16",
+     "nomFR": "Brume toxique 16",
+     "elements": [
+      "poison",
+      "neutre"
+     ],
+     "image": "images/leila/brume-toxique-16.webp",
+     "effet": "Réservée à Leila.\n\nATTAQUE\n• 8 attaques physiques puissantes Poison + non-élémentaire sur tous les ennemis.\n• Pendant un temps : imprégnation Poison, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Dard empoisonné (ポイズンスティング, école Voleur) : 4 attaques physiques Poison + non-élémentaire sur un ennemi, avec un temps d'attente court.\n• Croc venimeux de la pirate (女海賊の毒牙, école Voleur) : 2 attaques physiques Poison + non-élémentaire sur un ennemi ; pendant un temps, attaque et esprit de l'ennemi réduits (effet faible), attaque et esprit de Leila augmentés (effet faible).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-stratageme-polaire-de-l-equipage-pirate",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星海賊団の秘策",
+     "nomFR": "Stratagème polaire de l'équipage pirate",
+     "elements": [
+      "poison",
+      "neutre"
+     ],
+     "image": "images/leila/stratageme-polaire-de-l-equipage-pirate.webp",
+     "effet": "Réservée à Leila. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Leila se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Leila Poison] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Stratagème polaire de l'équipage pirate].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – LEILA POISON (星撃・レイラ毒)\n• 10 attaques physiques Poison + non-élémentaire sur un ennemi.\n• Brièvement : Déprotection (デプロテ, défense réduite) +1 niveau sur l'ennemi.\n• Tant que le mode Maître dure, le renforcement du héros de Leila augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %).\n\nATTAQUE MAÎTRE : STRATAGÈME POLAIRE DE L'ÉQUIPAGE PIRATE\n• Attaque physique Poison + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Brièvement : Déprotection +3 niveaux sur l'ennemi.\n• Leila n'a aucun temps d'attente pendant 1 tour.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Poison de Leila augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    }
+   ]
+  },
+  {
+   "id": "gordon",
+   "nom": "Gordon",
+   "nomJP": "ゴードン",
+   "serie": "II",
+   "categorie": "soutien",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/gordon/sprite.png",
+   "capacites": [
+    {
+     "id": "c-haut-potentiel",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ハイポテンシャル",
+     "nomFR": "Haut potentiel",
+     "elements": [],
+     "image": "images/gordon/haut-potentiel.webp",
+     "effet": "Réservée à Gordon.\n\n• Pendant un temps : attaque et magie de Gordon augmentées (effet moyen), défense et défense magique augmentées (effet faible)."
+    },
+    {
+     "id": "c-cloche-de-la-deesse",
+     "type": "専用",
+     "categorie": "physique",
+     "nomJP": "女神のベル",
+     "nomFR": "Cloche de la déesse",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/gordon/cloche-de-la-deesse.webp",
+     "effet": "Réservée à Gordon.\n\nATTAQUE\n• 3 attaques physiques à distance non-élémentaires sur tous les ennemis.\n• Pendant un temps : attaque et magie des ennemis réduites (effet fort)."
+    },
+    {
+     "id": "c-bouclier-royal-de-kashuan",
+     "type": "覚醒",
+     "categorie": "soutien",
+     "nomJP": "カシュオーンの王盾",
+     "nomFR": "Bouclier royal de Kashuan",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/gordon/bouclier-royal-de-kashuan.webp",
+     "effet": "Réservée à Gordon. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : temps d'attente de toute l'équipe réduit de 3 tours.\n• Pendant un temps : mode Éveil [Fierté du souverain].\n• Chaque compétence Soutien physique (物理補助) utilisée : attaques supplémentaires [Amour du royaume restauré] et [Chagrin du royaume perdu].\n\nMODE ÉVEIL [FIERTÉ DU SOUVERAIN] (国主の誇り覚醒モード)\n• Compétences Soutien physique utilisables à l'infini.\n• Temps d'attente des compétences Soutien physique réduit selon leur niveau d'affinage (精錬度).\n• Toutes les 2 compétences Soutien physique utilisées : attaque supplémentaire [Volonté du gardien inébranlable] (堅守の勇志) : barrière magique pour toute l'équipe, qui bloque 1 attaque magique (sauf certaines), et Image (分身) pour toute l'équipe, qui bloque 1 attaque physique.\n\nATTAQUE SUPPLÉMENTAIRE : AMOUR DU ROYAUME RESTAURÉ (復国の愛)\n• 4 attaques Feu + non-élémentaire sur un ennemi : physiques à distance ou magiques, selon les statistiques de Gordon.\n• Pendant 1 tour : dégâts des attaques physiques de toute l'équipe augmentés (effet moyen), ou dégâts des attaques magiques de toute l'équipe augmentés (effet moyen).\n\nATTAQUE SUPPLÉMENTAIRE : CHAGRIN DU ROYAUME PERDU (亡国の哀)\n• 4 attaques Feu + non-élémentaire sur un ennemi : physiques à distance ou magiques, selon les statistiques de Gordon.\n• Pendant un temps : attaque et défense de l'ennemi réduites, ou magie et défense magique réduites (effet fort). Les deux effets alternent à chaque déclenchement.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Gordon augmentées (niv. 3).\n• Barrière de réduction de dégâts sur Gordon, 1 fois (niv. 1), débloquée au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +5, Magie +5.\n\nÀ VÉRIFIER : le nom français de l'école 物理補助 (« Soutien physique » est une traduction littérale) ; quelle statistique décide entre attaque physique et magique."
     }
    ]
   }
