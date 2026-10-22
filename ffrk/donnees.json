@@ -1,6 +1,6 @@
 {
- "revision": 34,
- "maj": "2026-10-22T09:35:18.000Z",
+ "revision": 35,
+ "maj": "2026-10-22T09:38:37.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2886,6 +2886,91 @@
      ],
      "image": "images/cecil-chevalier-noir/eveil-lune-noire.webp",
      "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Arts sombres I [Cecil (Chevalier noir)] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL ARTS SOMBRES I (avant la Dual Shift)\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 2 fois de plus.\n• Chaque compétence Arts sombres utilisée renforce le mode : temps d'attente des compétences Arts sombres équipées réduit (jusqu'à 3 paliers).\n• Tant que ce mode dure : plus Cecil a perdu de PV à cause de ses propres effets (dégâts proportionnels à ses PV), plus les dégâts de ses compétences Arts sombres augmentent (effet max : moyen, 3 paliers).\n\nDUAL SHIFT\n• Fait passer Cecil en mode D-Éveil Arts sombres II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL ARTS SOMBRES II (après la Dual Shift)\n• Plafond de dégâts +2 niveaux.\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 1 fois de plus.\n• Taux de critique à 100 %.\n• Les compétences Arts sombres n'ont plus de temps d'attente.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Arts sombres de Cecil +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Arts sombres I et II [Cecil (Chevalier noir)] et le mode Éveil Arts sombres.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
+    }
+   ]
+  },
+  {
+   "id": "cecil-paladin",
+   "nom": "Cecil (Paladin)",
+   "nomJP": "セシル（パラディン）",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "sacre"
+   ],
+   "sprite": "images/cecil-paladin/sprite.png",
+   "capacites": [
+    {
+     "id": "c-rempart",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ランパート",
+     "nomFR": "Rempart",
+     "elements": [],
+     "image": "images/cecil-paladin/rempart.webp",
+     "effet": "Réservée à Cecil (Paladin).\n\n• Pendant un temps : défense et défense magique de toute l'équipe augmentées (effet faible)."
+    },
+    {
+     "id": "c-bonte-voeux-et-prieres",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "優しさと願いと祈りと",
+     "nomFR": "Bonté, vœux et prières",
+     "elements": [],
+     "image": "images/cecil-paladin/bonte-voeux-et-prieres.webp",
+     "effet": "Réservée à Cecil (Paladin). Chaîne de série (シリーズリミットチェイン). Étiquette 対フルブレイク.\n\nEFFET\n• Sans temps d'attente : lance une chaîne FF IV (jusqu'à 125 chaînes).\n• Dégâts des héros de FF IV de l'équipe augmentés (effet fort).\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n\nPENDANT LA CHAÎNE\n• Dégâts des héros de FF IV de l'équipe augmentés (effet fort).\n• La chaîne avance avec les attaques des héros de FF IV.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク."
+    },
+    {
+     "id": "c-liens-tisses-sacre-de-cecil",
+     "type": "LBLC",
+     "categorie": "physique",
+     "nomJP": "紡絆・セシル聖",
+     "nomFR": "Liens tissés – Sacré de Cecil",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/cecil-paladin/liens-tisses-sacre-de-cecil.webp",
+     "effet": "Réservée à Cecil (Paladin). Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Sacré (jusqu'à 150 chaînes). Si une chaîne Sacré est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, avec plafond de dégâts +1 niveau, sur un ennemi.\n• Pendant un temps : mode Chain Force [Cecil Sacré].\n• La prochaine jauge ATB de Cecil se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Sacré.\n\nMODE CHAIN FORCE – CECIL SACRÉ (チェインフォースモード・セシル聖)\n• Toutes les 50 chaînes Sacré : attaque supplémentaire [Guide sacré – Cecil (Paladin)] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE SACRÉ – CECIL (PALADIN) (聖の導・セシル(パラディン))\n• Attaque Sacré + non-élémentaire, physique ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante à chaque déclenchement.\n• Temps d'attente des compétences Sacré de Cecil réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Cecil réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-poussee-sainte-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星セイントスラスター",
+     "nomFR": "Poussée sainte polaire",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/cecil-paladin/poussee-sainte-polaire.webp",
+     "effet": "Réservée à Cecil (Paladin). Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Cecil se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Cecil Sacré] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Poussée sainte polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – CECIL SACRÉ (星撃・セシル聖)\n• 10 attaques Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi.\n• Tant que le mode Maître dure, le renforcement du héros de Cecil augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %) et son plafond de dégâts change (5 paliers : niveaux 3 / 4 / 5 / 6 / 7).\n\nATTAQUE MAÎTRE : POUSSÉE SAINTE POLAIRE\n• Attaque Sacré + non-élémentaire, physique ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : vrai plafond de dégâts de Cecil +1 niveau, et Cecil n'a aucun temps d'attente.\n• Pendant 1 tour : renforcement du héros 50 %.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Sacré de Cecil augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    },
+    {
+     "id": "c-eveil-explosion-eclatante",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒シャインブラスト",
+     "nomFR": "Éveil – Explosion éclatante",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/cecil-paladin/eveil-explosion-eclatante.webp",
+     "effet": "Réservée à Cecil (Paladin). Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques puissantes Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps, selon les statistiques de Cecil : taux de critique +50 %, ou esprit augmenté (effet moyen) ; et défense augmentée (effet faible).\n• Pendant un temps : imprégnation Sacré renforcée [重式], et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Sacré I [Cecil (Paladin)] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée renforce le mode : temps d'attente des compétences Sacré équipées réduit (jusqu'à 3 paliers).\n\nDUAL SHIFT\n• Fait passer Cecil en mode D-Éveil Sacré II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 1 fois de plus.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [D Barrière de lumière].\n\nATTAQUE SUPPLÉMENTAIRE : D BARRIÈRE DE LUMIÈRE (Dライトバリア)\n• 4 attaques Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet fort).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré de Cecil +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Cecil (Paladin)] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
+    },
+    {
+     "id": "c-eveil-lune-radieuse",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒輝月",
+     "nomFR": "Éveil – Lune radieuse",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/cecil-paladin/eveil-lune-radieuse.webp",
+     "effet": "Réservée à Cecil (Paladin). Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques puissantes Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Sacré renforcée [重式], et plafond de dégâts +1 niveau.\n• Dégâts des compétences Sacré augmentés pendant 2 tours (effet fort).\n• Active le mode D-Éveil Sacré I [Cecil (Paladin) II] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [D Plongeon du paladin] (2 fois max).\n\nDUAL SHIFT\n• Fait passer Cecil en mode D-Éveil Sacré II.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [D Plongeon sacré].\n\nATTAQUE SUPPLÉMENTAIRE : D PLONGEON DU PALADIN (Dパラディンダイブ)\n• 7 attaques Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi.\n\nATTAQUE SUPPLÉMENTAIRE : D PLONGEON SACRÉ (Dホーリーダイブ)\n• Attaque Sacré + non-élémentaire, physique ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Temps d'attente de Cecil réduit de 3 tours.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré de Cecil +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Cecil (Paladin) II] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
    ]
   }
