@@ -336,6 +336,7 @@
           <option value="physique">Physique</option>
           <option value="magique">Magique</option>
           <option value="soutien">Soutien</option>
+          <option value="mixte">Physique et magique</option>
         </select>
       </div>
       <div class="champ">
@@ -471,7 +472,7 @@
     ];
     // Types proposés dans le formulaire (on peut aussi en taper un autre)
     const TYPES = ["初期", "専用", "超必殺", "Burst", "超絶", "Chain", "閃技", "覚醒", "D覚醒", "S奥義", "O奥義", "真奥義", "究極", "M神技", "A神技", "C神技", "LBSD", "LBLC", "LBOF", "LB閃"];
-    const CATEGORIES = { physique: "Physique", magique: "Magique", soutien: "Soutien" };
+    const CATEGORIES = { physique: "Physique", magique: "Magique", soutien: "Soutien", mixte: "Physique et magique" };  // mixte : perso seulement (ex. Chevalier Oignon), visible avec le filtre Physique comme Magique
     const SERIES = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "Tactics", "Type-0", "Autres"];
     const TAILLE_CAPACITE = 160;   // côté max des icônes de capacité, en pixels
     const TAILLE_SPRITE = 192;     // côté max des sprites
@@ -805,7 +806,7 @@
       const selCategorie = el("select");
       selCategorie.setAttribute("aria-label", "Catégorie");
       selCategorie.append(new Option("Catégories", ""));
-      Object.entries(CATEGORIES).forEach(([id, nom]) => selCategorie.append(new Option(nom, id)));
+      Object.entries(CATEGORIES).filter(([id]) => id !== "mixte").forEach(([id, nom]) => selCategorie.append(new Option(nom, id)));
       selCategorie.value = filtres.categorie;
       zoneFiltres.append(recherche, selSerie, selCategorie);
       vue.append(zoneFiltres);
@@ -832,7 +833,7 @@
         // Un perso s'affiche s'il a au moins un des éléments cochés
         const persos = donnees.persos
           .filter((p) => !filtres.serie || p.serie === filtres.serie)
-          .filter((p) => !filtres.categorie || p.categorie === filtres.categorie)
+          .filter((p) => !filtres.categorie || p.categorie === filtres.categorie || (p.categorie === "mixte" && (filtres.categorie === "physique" || filtres.categorie === "magique")))
           .filter((p) => !q || sansAccents(p.nom + " " + (p.nomJP || "")).includes(q))
           .filter((p) => !filtres.elements.size || (p.elements || []).some((x) => filtres.elements.has(x)))
           .sort(triPersos);

@@ -1,6 +1,6 @@
 {
- "revision": 30,
- "maj": "2026-10-22T09:07:11.000Z",
+ "revision": 31,
+ "maj": "2026-10-22T09:18:54.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2222,6 +2222,186 @@
      ],
      "image": "images/ingus/assaut-des-chevaliers.webp",
      "effet": "Réservée à Ingus. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet moyen).\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Escorte.\n\nCOMPÉTENCES SYNCHRO\n• Ruée titanesque (ティターンラッシュ, école Chevalier, déclenchée par une compétence Terre) : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Charge titanesque (ティターンチャージ, école Chevalier, déclenchée par une compétence Terre) : 3 attaques physiques Terre + non-élémentaire sur un ennemi, et dégâts des compétences Terre d'Ingus augmentés pendant 3 tours (effet moyen).\n\nMODE ESCORTE (護衛モード)\n• Pendant un temps : quand la barrière de réduction de dégâts d'Ingus est consommée, attaque supplémentaire [Garde de l'Égide].\n• Après 4 Gardes de l'Égide, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : GARDE DE L'ÉGIDE (イージスガード)\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet moyen).\n• Toute l'équipe récupère 1500 PV.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    }
+   ]
+  },
+  {
+   "id": "chevalier-oignon",
+   "nom": "Chevalier Oignon",
+   "nomJP": "オニオンナイト",
+   "serie": "III",
+   "categorie": "mixte",
+   "elements": [
+    "vent",
+    "eau",
+    "feu",
+    "terre"
+   ],
+   "sprite": "images/chevalier-oignon/sprite.png",
+   "capacites": [
+    {
+     "id": "c-sagesse-interdite-scellee",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "封印されし禁断の叡智",
+     "nomFR": "Sagesse interdite scellée",
+     "elements": [],
+     "image": "images/chevalier-oignon/sagesse-interdite-scellee.webp",
+     "effet": "Réservée au Chevalier Oignon.\n\nEFFET\n• Pendant un temps : magie et esprit de toute l'équipe augmentés (effet moyen), défense magique augmentée (effet faible).\n• Temps d'attente des attaques magiques de toute l'équipe réduit de 3 tours.\n• Hâte pour toute l'équipe.\n• Pendant un temps : mode EX [Sage] (賢者).\n\nMODE EX [SAGE]\n• Magie du Chevalier Oignon augmentée (effet moyen).\n• Dégâts de la Magie noire augmentés (effet faible).\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-spectre-oignon",
+     "type": "LBOF",
+     "categorie": "magique",
+     "nomJP": "オニオンスペクトル",
+     "nomFR": "Spectre oignon",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/chevalier-oignon/spectre-oignon.webp",
+     "effet": "Réservée au Chevalier Oignon. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 4 attaques magiques ultra-puissantes Vent + Eau + Feu + Terre sur un ennemi : elles ignorent la défense magique et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-aero-d-oignon",
+     "type": "閃技",
+     "categorie": "magique",
+     "nomJP": "エアロオブタマネギ",
+     "nomFR": "Aéro d'oignon",
+     "elements": [
+      "vent"
+     ],
+     "image": "images/chevalier-oignon/aero-d-oignon.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Attaque magique Vent sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante si l'ennemi est faible ou légèrement faible au Vent.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-ame-d-oignon",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ソウルオブタマネギ",
+     "nomFR": "Âme d'oignon",
+     "elements": [],
+     "image": "images/chevalier-oignon/ame-d-oignon.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : dégâts du Chevalier Oignon augmentés quand il touche un point faible ou légèrement faible (effet moyen).\n• Temps d'attente du Chevalier Oignon réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Attaque +5, Magie +5."
+    },
+    {
+     "id": "c-puissance-changeante",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "可変の力",
+     "nomFR": "Puissance changeante",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/chevalier-oignon/puissance-changeante.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : mode Quadruple élément II.\n\nMODE QUADRUPLE ÉLÉMENT II (クアッドエレメントモードII)\n• Si le Chevalier Oignon utilise une compétence Vent, Eau, Feu ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +5, Magie +5."
+    },
+    {
+     "id": "c-apogee-du-potentiel-magie",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "可能性の極致・魔",
+     "nomFR": "Apogée du potentiel – Magie",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/apogee-du-potentiel-magie.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : magie de toute l'équipe augmentée (effet moyen), défense magique augmentée (effet faible).\n• Pendant un temps : mode Éveil Magie noire, et plafond de dégâts +1 niveau.\n• Toutes les 3 compétences Vent, Eau, Feu ou Terre utilisées : attaque supplémentaire [Sorcellerie oignon].\n\nMODE ÉVEIL MAGIE NOIRE (黒魔法覚醒モード)\n• Compétences Magie noire utilisables à l'infini.\n• Boost des compétences Magie noire, effet max : moyen.\n• Les compétences Magie noire se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : SORCELLERIE OIGNON (オニオンソーサリー)\n• Attaque magique Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-apogee-du-potentiel-force",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "可能性の極致・力",
+     "nomFR": "Apogée du potentiel – Force",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/apogee-du-potentiel-force.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : taux de critique de toute l'équipe à 100 %.\n• Temps d'attente des attaques physiques réduit de 2 tours.\n• Pendant un temps : mode Éveil Ninja interdit, et plafond de dégâts +1 niveau.\n\nMODE ÉVEIL NINJA INTERDIT (禁断の忍者覚醒モード)\n• Compétences Vitesse physique, Soutien physique et Ninja utilisables à l'infini.\n• Temps d'attente de ces compétences réduit selon leur niveau d'affinage (精錬度).\n• Chaque compétence Vitesse physique, Soutien physique ou Ninja utilisée : attaque supplémentaire [Libération de la force] (力の解放) : 6 attaques physiques Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : la réduction de 2 tours des attaques physiques vaut a priori pour toute l'équipe (le texte la met dans la même phrase que le critique de l'équipe) ; « dégâts niv. 3 » est sans doute le niveau atteint au niveau d'entraînement actuel (3 sur 15)."
+    },
+    {
+     "id": "c-potentiel-du-vent-magie",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "風の潜在力・魔",
+     "nomFR": "Potentiel du vent – Magie",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/potentiel-du-vent-magie.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Révélation du vent.\n\nCOMPÉTENCES SYNCHRO\n• Grande magie synchrone – Vent (同期式だいまほう・風, école Magie noire, déclenchée par une compétence Vent) : 6 attaques magiques Vent + non-élémentaire sur un ennemi.\n• Grande magie sans limite – Vent (限界突破だいまほう・風, école Magie noire, déclenchée par une compétence Vent) : sans temps d'attente, temps d'attente du Chevalier Oignon réduit de 3 tours, et dégâts des compétences Vent augmentés pendant 3 tours (effet fort).\n\nMODE RÉVÉLATION DU VENT (風の啓示モード)\n• Tant que le mode Synchro dure : toutes les 2 compétences Synchro utilisées, attaque supplémentaire [Âme d'oignon – Vent].\n\nATTAQUE SUPPLÉMENTAIRE : ÂME D'OIGNON – VENT (オニオンソウル・風)\n• 1er et 2e déclenchements : 5 attaques magiques Vent + non-élémentaire sur un ennemi, puis une qui peut dépasser le plafond de dégâts.\n• 3e déclenchement : 10 attaques magiques Vent + non-élémentaire sur un ennemi, puis une qui peut dépasser le plafond de dégâts, et fin du mode Révélation du vent.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-potentiel-de-la-terre-magie",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "地の潜在力・魔",
+     "nomFR": "Potentiel de la terre – Magie",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/potentiel-de-la-terre-magie.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : magie et esprit de toute l'équipe augmentés (effet moyen), défense magique augmentée (effet faible).\n• Imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Une seule fois pendant le mode Synchro : après 3 compétences Synchro, le Chevalier Oignon passe en état [Démon de la terre] (地の魔人).\n\nCOMPÉTENCES SYNCHRO\n• Grande magie synchrone – Terre (同期式だいまほう・地, école Magie noire, déclenchée par une compétence Terre) : 6 attaques magiques Terre + non-élémentaire sur un ennemi, et temps d'attente du Chevalier Oignon réduit d'1 tour.\n• Grande magie sans limite – Terre (限界突破だいまほう・地, école Magie noire, déclenchée par une compétence Terre) : sans temps d'attente. L'effet change selon l'état [Démon de la terre] :\n  – sans l'état : dégâts des compétences Terre du Chevalier Oignon augmentés pendant 3 tours (effet moyen) ;\n  – avec l'état : dégâts des compétences Terre de toute l'équipe augmentés pendant 3 tours (effet moyen), temps d'attente réduit d'1 tour, et fin de l'état [Démon de la terre].\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-double-lame-oignon",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "オニオンソード二刀流",
+     "nomFR": "Double lame oignon",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/double-lame-oignon.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau, mode Quadruple élément III et mode Révélation du cristal.\n\nCOMPÉTENCES SYNCHRO\n• Coup rapide (クイックヒット, école Vitesse physique, déclenchée par une compétence Vitesse physique ou Ninja) : 6 attaques physiques Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi, avec un temps d'attente court.\n• Danse du chevalier oignon (たまねぎ剣士の舞, école Vitesse physique, déclenchée par une compétence Vent, Eau, Feu ou Terre) : attaque physique Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi, avec un temps d'attente court ; dégâts des compétences Vent, Eau, Feu ou Terre du Chevalier Oignon augmentés pendant 2 tours (effet moyen), et son temps d'attente réduit de 2 tours.\n\nMODE QUADRUPLE ÉLÉMENT III (クアッドエレメントモードIII)\n• Si le Chevalier Oignon utilise une compétence Vent, Eau, Feu ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nMODE RÉVÉLATION DU CRISTAL (クリスタルの啓示モード)\n• Tant que le mode Synchro dure : défense du Chevalier Oignon réduite (effet fort), attaque augmentée (effet très fort).\n• Chaque compétence Synchro utilisée : attaque supplémentaire [Super grande taille].\n• Après 3 Super grandes tailles, le mode prend fin ; à la fin du mode, 1 segment de la jauge de capacités spéciales se remplit.\n\nATTAQUE SUPPLÉMENTAIRE : SUPER GRANDE TAILLE (超・大斬り)\n• Attaque physique Vent + Eau + Feu + Terre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; plus l'attaque du Chevalier Oignon est élevée, plus elle est puissante.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-escrimeur-magique-magie",
+     "type": "O奥義",
+     "categorie": "magique",
+     "nomJP": "マジックフェンサー・魔",
+     "nomFR": "Escrimeur magique – Magie",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/chevalier-oignon/escrimeur-magique-magie.webp",
+     "effet": "Réservée au Chevalier Oignon. Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques magiques ultra-puissantes Vent + Eau + Feu + Terre sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-tornade-iii",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "トルネド【III】",
+     "nomFR": "Tornade [III]",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/tornade-iii.webp",
+     "effet": "Réservée au Chevalier Oignon. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Chevalier Oignon Vent].\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : TORNADE [III]\n• 20 attaques magiques Vent + non-élémentaire sur un ennemi.\n• Puis une attaque magique Vent + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – CHEVALIER OIGNON VENT]\n• Plus le Chevalier Oignon inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques du Chevalier Oignon augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
     }
    ]
   }
