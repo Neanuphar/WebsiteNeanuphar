@@ -1,6 +1,6 @@
 {
- "revision": 40,
- "maj": "2026-10-22T14:26:08.000Z",
+ "revision": 41,
+ "maj": "2026-10-22T14:29:31.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -4066,6 +4066,29 @@
    "sprite": "images/theodor/sprite.png",
    "capacites": [
     {
+     "id": "c-magie-blanche-soin",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "しろまほう・ケアル",
+     "nomFR": "Magie blanche – Soin",
+     "elements": [],
+     "image": "images/theodor/magie-blanche-soin.webp",
+     "effet": "Réservée à Theodor.\n\n• Soin moyen d'un allié."
+    },
+    {
+     "id": "c-croix-sacree",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "ホーリークロス",
+     "nomFR": "Croix sacrée",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/theodor/croix-sacree.webp",
+     "effet": "Réservée à Theodor.\n\nATTAQUE\n• 8 attaques physiques puissantes Sacré + non-élémentaire sur un ennemi.\n• Soin de toute l'équipe, proportionnel aux PV max (effet moyen).\n• Hâte et mode Burst pour Theodor.\n\nCOMPÉTENCES BURST (mode Burst)\n• Taille de soin (ケアルスラッシュ, école Chevalier) : 4 attaques physiques Sacré + non-élémentaire sur un ennemi, et soin d'un allié proportionnel à ses PV max (effet faible).\n• Lame Esuna (エスナブレード, école Chevalier) : 2 attaques physiques Sacré + non-élémentaire sur tous les ennemis, et Esuna sur un allié.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
      "id": "c-double-ruee",
      "type": "超絶",
      "categorie": "physique",
@@ -4111,6 +4134,28 @@
      "elements": [],
      "image": "images/theodor/eclairs-enchaines-theodor.webp",
      "effet": "Réservée à Theodor. Utilisable 1 fois. Étiquette 対ウェポンブレイク・攻.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Brièvement : attaque, esprit, défense et défense magique de toute l'équipe augmentés (effet faible).\n• La prochaine jauge ATB de Theodor se remplit plus vite (1 fois).\n• Theodor n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Sacré de Theodor augmentée, débloquée au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Theodor, 1 fois (niv. 5), débloquée au niveau d'entraînement 10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対ウェポンブレイク・攻."
+    },
+    {
+     "id": "c-charge-croisee",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "クロスチャージ",
+     "nomFR": "Charge croisée",
+     "elements": [],
+     "image": "images/theodor/charge-croisee.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Remplit 2 segments de la jauge de capacités spéciales de Theodor.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-force-lunaire",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ルナフォース",
+     "nomFR": "Force lunaire",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/theodor/force-lunaire.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Sacré renforcée [重式].\n• Theodor n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
     },
     {
      "id": "c-double-bravoure-croix",
@@ -4175,6 +4220,161 @@
      ],
      "image": "images/theodor/epee-croissant-grondement.webp",
      "effet": "Réservée à Theodor. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accélération [Theodor].\n• La prochaine jauge ATB de Theodor se remplit instantanément (1 fois).\n\nMODE ACCÉLÉRATION [THEODOR] (アクセルモード)\n• Boost des compétences Sacré, effet max : fort.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [Frappe grondante – Theodor].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE GRONDANTE – THEODOR (轟撃・セオドア)\n• 6 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Brièvement : attaque Sacré de Theodor +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Theodor réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    }
+   ]
+  },
+  {
+   "id": "rubicante",
+   "nom": "Rubicante",
+   "nomJP": "ルビカンテ",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/rubicante/sprite.png",
+   "capacites": [
+    {
+     "id": "c-laisse-moi-te-soigner",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "回復してやろう",
+     "nomFR": "Laisse-moi te soigner",
+     "elements": [],
+     "image": "images/rubicante/laisse-moi-te-soigner.webp",
+     "effet": "Réservée à Rubicante.\n\n• Réanime un allié KO (PV au retour : moyen)."
+    },
+    {
+     "id": "c-eclair-plongeant-rubicante",
+     "type": "LB閃",
+     "categorie": "soutien",
+     "nomJP": "降閃【ルビカンテ】",
+     "nomFR": "Éclair plongeant [Rubicante]",
+     "elements": [
+      "feu"
+     ],
+     "image": "images/rubicante/eclair-plongeant-rubicante.webp",
+     "effet": "Réservée à Rubicante. Limit Break, utilisable 1 fois.\n\nEFFET\n• Consomme la jauge de Limite, sans temps d'attente.\n• Brièvement : résistance Feu de l'ennemi −4 niveaux.\n• Temps d'attente de toute l'équipe réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Feu augmentée, débloquée au niveau d'entraînement 7.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-assaut-de-la-danse-des-flammes",
+     "type": "LBOF",
+     "categorie": "magique",
+     "nomJP": "炎武の猛攻",
+     "nomFR": "Assaut de la danse des flammes",
+     "elements": [
+      "feu"
+     ],
+     "image": "images/rubicante/assaut-de-la-danse-des-flammes.webp",
+     "effet": "Réservée à Rubicante. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 5 attaques magiques ultra-puissantes Feu sur un ennemi : elles ignorent la défense magique et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-torrent-de-flammes-supreme",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "かえんりゅう・極",
+     "nomFR": "Torrent de flammes suprême",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/rubicante/torrent-de-flammes-supreme.webp",
+     "effet": "Réservée à Rubicante. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : résistance Feu d'un ennemi −2 niveaux.\n• Pendant un temps : attaque Feu de toute l'équipe +2 niveaux.\n• Active l'état [Vrai arcane renforcé – Rubicante].\n\n2E ACTIVATION : TORRENT DE FLAMMES SUPRÊME\n• 10 attaques magiques Feu + non-élémentaire sur un ennemi.\n• Puis une attaque magique Feu + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – RUBICANTE]\n• Plus Rubicante utilise de compétences Feu pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Rubicante augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "barbariccia",
+   "nom": "Barbariccia",
+   "nomJP": "バルバリシア",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "vent"
+   ],
+   "sprite": "images/barbariccia/sprite.png",
+   "capacites": [
+    {
+     "id": "c-doigt-pointe",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ゆびさき",
+     "nomFR": "Doigt pointé",
+     "elements": [],
+     "image": "images/barbariccia/doigt-pointe.webp",
+     "effet": "Réservée à Barbariccia.\n\n• Chance moyenne d'infliger Pétrification à un ennemi."
+    },
+    {
+     "id": "c-tornade",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "たつまき",
+     "nomFR": "Tornade",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/barbariccia/tornade.webp",
+     "effet": "Réservée à Barbariccia.\n\nATTAQUE\n• 10 attaques magiques puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent, magie de Barbariccia augmentée (effet moyen) et défense magique augmentée (effet faible).\n• Chaque compétence Vent utilisée : attaque supplémentaire [Vent arrière] (おいかぜ) : 5 attaques magiques Vent + non-élémentaire sur un ennemi.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-grande-tempete",
+     "type": "O奥義",
+     "categorie": "magique",
+     "nomJP": "おおあらし",
+     "nomFR": "Grande tempête",
+     "elements": [
+      "vent"
+     ],
+     "image": "images/barbariccia/grande-tempete.webp",
+     "effet": "Réservée à Barbariccia. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques magiques ultra-puissantes Vent sur un ennemi.\n• Puis une attaque magique Vent qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-aero-propulsion-grondement",
+     "type": "A神技",
+     "categorie": "magique",
+     "nomJP": "轟・エアロドライブ",
+     "nomFR": "Aéro-propulsion – Grondement",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/barbariccia/aero-propulsion-grondement.webp",
+     "effet": "Réservée à Barbariccia. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 attaques magiques Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accélération [Barbariccia].\n• La prochaine jauge ATB de Barbariccia se remplit instantanément (1 fois).\n\nMODE ACCÉLÉRATION [BARBARICCIA] (アクセルモード)\n• Boost des compétences Vent, effet max : fort.\n• Chaque compétence Vent utilisée : attaque supplémentaire [Frappe grondante – Barbariccia].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE GRONDANTE – BARBARICCIA (轟撃・バルバリシア)\n• 8 attaques magiques Vent + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de Barbariccia réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-tornade-radieuse",
+     "type": "C神技",
+     "categorie": "magique",
+     "nomJP": "耀光たつまき",
+     "nomFR": "Tornade radieuse",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/barbariccia/tornade-radieuse.webp",
+     "effet": "Réservée à Barbariccia. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Vent + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent se lancent 1 fois de plus.\n• Les compétences Vent ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 6 attaques magiques spéciales Vent + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Brièvement : attaque Vent de toute l'équipe +3 niveaux.\n• Pendant 2 tours : plafond de dégâts de Barbariccia +1 niveau.\n• Temps d'attente de Barbariccia réduit de 2 tours.\n• Pendant 2 tours : les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB de Barbariccia se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet de la Force du cristal III n'est pas décrit."
+    }
+   ]
+  },
+  {
+   "id": "ursula",
+   "nom": "Ursula",
+   "nomJP": "アーシュラ",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [],
+   "sprite": "images/ursula/sprite.png",
+   "capacites": [
+    {
+     "id": "c-point-vital",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "てんけつ",
+     "nomFR": "Point vital",
+     "elements": [],
+     "image": "images/ursula/point-vital.webp",
+     "effet": "Réservée à Ursula.\n\n• Faible chance d'infliger Mort à un ennemi."
     }
    ]
   }
