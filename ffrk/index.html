@@ -324,6 +324,14 @@
         <select id="perso-serie"></select>
       </div>
       <div class="champ">
+        <label for="perso-categorie">Catégorie</label>
+        <select id="perso-categorie">
+          <option value="">Non précisée</option>
+          <option value="physique">Physique</option>
+          <option value="magique">Magique</option>
+        </select>
+      </div>
+      <div class="champ">
         <span class="label">Éléments</span>
         <div class="elements" id="perso-elements"></div>
         <p class="aide">Ceux qui servent à le retrouver dans la recherche.</p>
@@ -447,6 +455,7 @@
     ];
     // Types proposés dans le formulaire (on peut aussi en taper un autre)
     const TYPES = ["初期", "専用", "超必殺", "Burst", "超絶", "Chain", "閃技", "覚醒", "D覚醒", "S奥義", "究極", "M神技", "C神技", "LBSD", "LBLC"];
+    const CATEGORIES = { physique: "Physique", magique: "Magique" };
     const SERIES = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "Tactics", "Type-0", "Autres"];
     const TAILLE_CAPACITE = 160;   // côté max des icônes de capacité, en pixels
     const TAILLE_SPRITE = 192;     // côté max des sprites
@@ -636,6 +645,7 @@
       donnees.persos.forEach((p) => {
         if (!Array.isArray(p.capacites)) p.capacites = [];
         if (!Array.isArray(p.elements)) p.elements = [];
+        if (!CATEGORIES[p.categorie]) p.categorie = "";
       });
     }
 
@@ -843,7 +853,7 @@
       a.href = "#/perso/" + encodeURIComponent(p.id);
       a.append(avatar(p), el("span", "nom", p.nom));
       if (p.nomJP) a.append(el("span", "jp", p.nomJP));
-      a.append(el("span", "serie", p.serie === "Autres" ? "Autres" : "FF " + p.serie));
+      a.append(el("span", "serie", [p.serie === "Autres" ? "Autres" : "FF " + p.serie, CATEGORIES[p.categorie]].filter(Boolean).join(" · ")));
       if (p.elements && p.elements.length) a.append(pointsElements(p.elements));
       if (p.capacites.length) a.append(el("span", "compte", p.capacites.length + " capacité" + (p.capacites.length > 1 ? "s" : "")));
       return a;
@@ -899,7 +909,7 @@
       const infos = el("div");
       infos.append(el("h2", "", p.nom));
       if (p.nomJP) infos.append(el("div", "jp", p.nomJP));
-      infos.append(el("div", "jp", p.serie === "Autres" ? "Autres jeux" : "Final Fantasy " + p.serie));
+      infos.append(el("div", "jp", [p.serie === "Autres" ? "Autres jeux" : "Final Fantasy " + p.serie, CATEGORIES[p.categorie]].filter(Boolean).join(" · ")));
       if (p.elements.length) {
         const els = el("div", "elements");
         p.elements.forEach((id) => {
@@ -996,6 +1006,7 @@
       $("perso-nom").value = p ? p.nom : "";
       $("perso-jp").value = p ? p.nomJP || "" : "";
       $("perso-serie").value = p ? p.serie : (filtres.serie || "I");
+      $("perso-categorie").value = p ? p.categorie || "" : "";
       $("perso-elements").querySelectorAll(".puce").forEach((b) =>
         b.setAttribute("aria-pressed", !!(p && p.elements.includes(b.dataset.id))));
       $("perso-supprimer").hidden = !p;
@@ -1024,12 +1035,13 @@
       if (!p) {
         let id = slug(nom), n = 2;
         while (donnees.persos.some((x) => x.id === id)) id = slug(nom) + "-" + n++;
-        p = { id, nom, nomJP: "", serie: "I", elements: [], sprite: "", capacites: [] };
+        p = { id, nom, nomJP: "", serie: "I", categorie: "", elements: [], sprite: "", capacites: [] };
         donnees.persos.push(p);
       }
       p.nom = nom;
       p.nomJP = $("perso-jp").value.trim();
       p.serie = $("perso-serie").value;
+      p.categorie = $("perso-categorie").value;
       p.elements = [...$("perso-elements").querySelectorAll('.puce[aria-pressed="true"]')].map((b) => b.dataset.id);
       if (spriteChoisi) {
         retirerImage(p.sprite);
