@@ -1,6 +1,6 @@
 {
- "revision": 7,
- "maj": "2026-10-22T09:00:00.000Z",
+ "revision": 8,
+ "maj": "2026-10-22T10:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -381,6 +381,114 @@
      ],
      "image": "images/wol/surdestruction-polaire.webp",
      "effet": "Réservée à Wol. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Wol se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Wol] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Surdestruction polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – WOL (星撃・ウォル)\n• 10 coups physiques sur un ennemi : Terre + non-élémentaire ou Sacré + non-élémentaire, selon l'élément dont Wol est imprégné.\n• Brièvement : Déprotection (デプロテ, défense réduite) +1 niveau sur l'ennemi.\n• Tant que le mode Maître dure, le renforcement du héros de Wol augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %).\n\nATTAQUE MAÎTRE : SURDESTRUCTION POLAIRE\n• Coup physique Terre + Sacré + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Brièvement : Déprotection +3 niveaux sur l'ennemi.\n• Wol n'a aucun temps d'attente pendant 1 tour.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n• Attaque Terre et Sacré de Wol augmentée, débloquée au niveau d'entraînement 5.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離 et du « renforcement du héros » (英雄強化)."
+    }
+   ]
+  },
+  {
+   "id": "super-moine",
+   "nom": "Super Moine",
+   "nomJP": "スーパーモンク",
+   "serie": "I",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "feu",
+    "foudre"
+   ],
+   "sprite": "images/super-moine/sprite.png",
+   "capacites": [
+    {
+     "id": "c-mains-nues-ultimes",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "さいきょうのすで",
+     "nomFR": "Mains nues ultimes",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/super-moine/mains-nues-ultimes.webp",
+     "effet": "Réservée à Super Moine.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-art-de-l-eclair",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "電光石火の極意",
+     "nomFR": "Art de l'éclair",
+     "elements": [],
+     "image": "images/super-moine/art-de-l-eclair.webp",
+     "effet": "Réservée à Super Moine. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Super Moine n'a aucun temps d'attente pendant 3 tours.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-poing-de-toutes-ses-forces",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "渾身の一拳",
+     "nomFR": "Poing de toutes ses forces",
+     "elements": [
+      "terre",
+      "feu",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/super-moine/poing-de-toutes-ses-forces.webp",
+     "effet": "Réservée à Super Moine. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques Terre + Feu + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Éveil Moine, et plafond de dégâts +1 niveau.\n• Active le mode Charge de l'esprit combatif et le mode Assaut de l'esprit combatif.\n\nMODE ÉVEIL MOINE (モンク覚醒モード)\n• Compétences Moine utilisables à l'infini.\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine se lancent 1 fois de plus.\n\nMODE CHARGE DE L'ESPRIT COMBATIF (闘魂チャージモード)\n• À sa prochaine action, si Super Moine utilise une compétence Terre, Feu ou Foudre, il reçoit pendant un temps l'imprégnation de cet élément.\n\nMODE ASSAUT DE L'ESPRIT COMBATIF (闘魂ラッシュモード)\n• Défense et défense magique de Super Moine réduites (effet moyen).\n• Attaque augmentée (effet fort).\n• Ses compétences Moine ont de fortes chances de se lancer 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-grondement-combat-acharne",
+     "type": "A神技",
+     "categorie": "physique",
+     "nomJP": "轟・力戦奮闘",
+     "nomFR": "Grondement – Combat acharné",
+     "elements": [
+      "terre",
+      "feu",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/super-moine/grondement-combat-acharne.webp",
+     "effet": "Réservée à Super Moine. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 coups physiques Terre + Feu + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accel [Super Moine].\n• La prochaine jauge ATB de Super Moine se remplit instantanément (1 fois).\n\nMODE ACCEL [SUPER MOINE] (アクセルモード)\n• Boost des compétences Terre, Feu ou Foudre, effet max : fort.\n• Les compétences Terre, Feu ou Foudre n'ont plus de temps d'attente.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Super Moine réduit de 1 tour, débloqué au niveau d'entraînement 5."
+    }
+   ]
+  },
+  {
+   "id": "echo",
+   "nom": "Écho",
+   "nomJP": "エコー",
+   "serie": "I",
+   "categorie": "magique",
+   "elements": [],
+   "sprite": "images/echo/sprite.png",
+   "capacites": [
+    {
+     "id": "c-bobo-envole-toi",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "いたいのとんでけ",
+     "nomFR": "Bobo, envole-toi !",
+     "elements": [],
+     "image": "images/echo/bobo-envole-toi.webp",
+     "effet": "Réservée à Écho.\n\n• Récup (リジェネ, soin progressif) pour toute l'équipe."
+    },
+    {
+     "id": "c-le-show-d-echo",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "エコー・ショータイム",
+     "nomFR": "Le show d'Écho",
+     "elements": [],
+     "image": "images/echo/le-show-d-echo.webp",
+     "effet": "Réservée à Écho.\n\n• Pendant un temps : magie de toute l'équipe augmentée (effet moyen) et défense augmentée (effet faible).\n• Carapace (プロテス, réduit les dégâts physiques) et Hâte pour toute l'équipe.\n• Temps d'attente réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : le texte ne précise pas si la réduction de 2 tours concerne Écho ou toute l'équipe."
+    },
+    {
+     "id": "c-super-eclair-echo",
+     "type": "LB閃",
+     "categorie": "soutien",
+     "nomJP": "超閃【エコー】",
+     "nomFR": "Super éclair [Écho]",
+     "elements": [],
+     "image": "images/echo/super-eclair-echo.webp",
+     "effet": "Réservée à Écho. Limit Break, utilisable 1 fois.\n\nEFFET\n• Consomme la jauge de Limite, sans temps d'attente.\n• Pendant un temps : quand Écho utilise une compétence Magie noire ou Danseuse (踊り子), attaque supplémentaire [Frappe super éclair – Écho] (1 fois max).\n• La prochaine jauge ATB d'Écho se remplit instantanément (1 fois).\n• Remplit 1 segment de la jauge de Limite.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE SUPER ÉCLAIR – ÉCHO (超閃撃・エコー)\n• Temps d'attente de toute l'équipe réduit de 3 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois, débloquée au niveau d'entraînement 5."
     }
    ]
   }
