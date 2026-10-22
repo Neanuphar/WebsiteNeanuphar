@@ -1,6 +1,6 @@
 {
- "revision": 19,
- "maj": "2026-10-22T04:52:30.000Z",
+ "revision": 20,
+ "maj": "2026-10-22T05:36:52.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1454,6 +1454,130 @@
      ],
      "image": "images/gordon/bouclier-royal-de-kashuan.webp",
      "effet": "Réservée à Gordon. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : temps d'attente de toute l'équipe réduit de 3 tours.\n• Pendant un temps : mode Éveil [Fierté du souverain].\n• Chaque compétence Soutien physique (物理補助) utilisée : attaques supplémentaires [Amour du royaume restauré] et [Chagrin du royaume perdu].\n\nMODE ÉVEIL [FIERTÉ DU SOUVERAIN] (国主の誇り覚醒モード)\n• Compétences Soutien physique utilisables à l'infini.\n• Temps d'attente des compétences Soutien physique réduit selon leur niveau d'affinage (精錬度).\n• Toutes les 2 compétences Soutien physique utilisées : attaque supplémentaire [Volonté du gardien inébranlable] (堅守の勇志) : barrière magique pour toute l'équipe, qui bloque 1 attaque magique (sauf certaines), et Image (分身) pour toute l'équipe, qui bloque 1 attaque physique.\n\nATTAQUE SUPPLÉMENTAIRE : AMOUR DU ROYAUME RESTAURÉ (復国の愛)\n• 4 attaques Feu + non-élémentaire sur un ennemi : physiques à distance ou magiques, selon les statistiques de Gordon.\n• Pendant 1 tour : dégâts des attaques physiques de toute l'équipe augmentés (effet moyen), ou dégâts des attaques magiques de toute l'équipe augmentés (effet moyen).\n\nATTAQUE SUPPLÉMENTAIRE : CHAGRIN DU ROYAUME PERDU (亡国の哀)\n• 4 attaques Feu + non-élémentaire sur un ennemi : physiques à distance ou magiques, selon les statistiques de Gordon.\n• Pendant un temps : attaque et défense de l'ennemi réduites, ou magie et défense magique réduites (effet fort). Les deux effets alternent à chaque déclenchement.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Gordon augmentées (niv. 3).\n• Barrière de réduction de dégâts sur Gordon, 1 fois (niv. 1), débloquée au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +5, Magie +5.\n\nÀ VÉRIFIER : le nom français de l'école 物理補助 (« Soutien physique » est une traduction littérale) ; quelle statistique décide entre attaque physique et magique."
+    }
+   ]
+  },
+  {
+   "id": "josef",
+   "nom": "Josef",
+   "nomJP": "ヨーゼフ",
+   "serie": "II",
+   "categorie": "physique",
+   "elements": [
+    "glace",
+    "terre"
+   ],
+   "sprite": "images/josef/sprite.png",
+   "capacites": [
+    {
+     "id": "c-poings-de-l-expert",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "熟練の素手",
+     "nomFR": "Poings de l'expert",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/josef/poings-de-l-expert.webp",
+     "effet": "Réservée à Josef.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-voie-du-dur-a-cuire",
+     "type": "Burst",
+     "categorie": "soutien",
+     "nomJP": "漢の生き様",
+     "nomFR": "Voie du dur à cuire",
+     "elements": [
+      "glace"
+     ],
+     "image": "images/josef/voie-du-dur-a-cuire.webp",
+     "effet": "Réservée à Josef.\n\nEFFET\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen).\n• Pendant un temps : imprégnation Glace, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Bras prodigieux brise-glace (砕氷の怪腕, école Moine) : 3 attaques physiques Glace + non-élémentaire sur un ennemi ; le nombre de coups double quand Josef est en mode Ruée.\n• Cran des plaines enneigées (雪原の男気, école Moine) : 4 attaques physiques Glace + non-élémentaire sur un ennemi ; pendant un temps, défense et défense magique de Josef réduites (effet fort), et mode Ruée (猛進モード : temps d'attente réduit).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lien-destin-de-josef",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "絆・ヨーゼフ天命",
+     "nomFR": "Lien – Destin de Josef",
+     "elements": [],
+     "image": "images/josef/lien-destin-de-josef.webp",
+     "effet": "Réservée à Josef. Chaîne de métier (ジョブリミットチェイン).\n\nEFFET\n• Sans temps d'attente : lance une chaîne Moine (モンク), jusqu'à 150 chaînes.\n• Dégâts des attaques des Moines alliés qui comptent pour la chaîne augmentés (effet fort).\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort).\n• Hâte pour toute l'équipe.\n\nPENDANT LA CHAÎNE\n• Dégâts des attaques Moine de l'équipe qui comptent pour la chaîne augmentés (effet fort).\n• La chaîne avance avec ces attaques Moine.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-eclair-de-glace-josef",
+     "type": "LB閃",
+     "categorie": "physique",
+     "nomJP": "氷閃【ヨーゼフ】",
+     "nomFR": "Éclair de glace [Josef]",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/josef/eclair-de-glace-josef.webp",
+     "effet": "Réservée à Josef. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• Consomme la jauge de Limite, sans temps d'attente.\n• Attaque physique Glace + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Remplit 1 segment de la jauge de Limite.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Glace augmentée, débloquée au niveau d'entraînement 7.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-eclairs-enchaines-josef",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・ヨーゼフ",
+     "nomFR": "Éclairs enchaînés – Josef",
+     "elements": [],
+     "image": "images/josef/eclairs-enchaines-josef.webp",
+     "effet": "Réservée à Josef. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : temps d'attente des compétences Moine de Josef réduit.\n• La prochaine jauge ATB de Josef se remplit instantanément (1 fois).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Glace de Josef augmentée, débloquée au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Josef, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-le-dur-a-cuire-maitre-des-plaines-enneigees",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "雪原極めし漢",
+     "nomFR": "Le dur à cuire maître des plaines enneigées",
+     "elements": [
+      "glace",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/josef/le-dur-a-cuire-maitre-des-plaines-enneigees.webp",
+     "effet": "Réservée à Josef. Utilisable 1 fois. Étiquette 対フルブレイク.\n\nATTAQUE\n• 15 attaques physiques Glace + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Pendant un temps : mode Éveil Moine, et plafond de dégâts +1 niveau.\n• Tenir bon pour toute l'équipe.\n• Effet en plus selon le nombre d'alliés de FF II encore en vie (plus bas).\n\nMODE ÉVEIL MOINE (モンク覚醒モード)\n• Compétences Moine utilisables à l'infini.\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine se lancent 1 fois de plus.\n\nEFFET SELON LES ALLIÉS DE FF II EN VIE\n• 0 ou 1 : temps d'attente de Josef réduit d'1 tour.\n• 2 ou 3 : temps d'attente de toute l'équipe réduit d'1 tour, et pendant un temps, dégâts des attaques alliées qui touchent un point faible ou légèrement faible augmentés (effet faible).\n• 4 ou plus : pareil, avec un effet moyen.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク (probablement un contenu ou un type d'ennemi visé)."
+    },
+    {
+     "id": "c-determination-du-dur-a-cuire",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "漢の決意",
+     "nomFR": "Détermination du dur à cuire",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/josef/determination-du-dur-a-cuire.webp",
+     "effet": "Réservée à Josef. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Glace renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Fier de sa force.\n• Barrière de réduction de dégâts sur Josef, 1 fois (effet très faible).\n\nCOMPÉTENCES SYNCHRO\n• Poing de glace du dur à cuire (漢の氷拳, école Moine, déclenchée par une compétence Glace) : 5 attaques physiques Glace + non-élémentaire sur un ennemi, puis une attaque physique Glace + non-élémentaire qui ignore la défense.\n• Bravoure sans égale (勇猛無比, école Moine, déclenchée par une compétence Glace) : sans temps d'attente, temps d'attente de Josef réduit de 3 tours, et dégâts des compétences Glace augmentés pendant 3 tours (effet moyen).\n\nMODE FIER DE SA FORCE (力自慢の漢モード)\n• Tant que le mode Synchro dure : quand la barrière de réduction de dégâts de Josef est consommée, attaque supplémentaire [Moral au plus haut], puis le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : MORAL AU PLUS HAUT (士気向上)\n• Tenir bon pour toute l'équipe.\n• Brièvement : attaque Glace de Josef +5 niveaux.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-pugilat-du-dur-a-cuire",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "漢の拳闘",
+     "nomFR": "Pugilat du dur à cuire",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/josef/pugilat-du-dur-a-cuire.webp",
+     "effet": "Réservée à Josef. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Glace renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Chevaleresque.\n\nCOMPÉTENCES SYNCHRO\n• Poing brise-glace (砕氷拳打, école Moine, déclenchée par une compétence Moine) : 6 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Posture du gardien (仁王立ち, école 物理補助, déclenchée par une compétence Moine) : déclenche l'effet [Posture du gardien], qui dépend du niveau de l'état Dur à cuire (0 à 2), puis remet cet état à 0.\n\nMODE CHEVALERESQUE (義侠モード)\n• Tant que le mode Synchro dure : chaque Poing brise-glace utilisé par Josef renforce l'état Dur à cuire d'1 niveau (2 max).\n\nEFFET [POSTURE DU GARDIEN] SELON L'ÉTAT DUR À CUIRE\n• Niveau 0 : Josef n'a aucun temps d'attente pendant 2 tours.\n• Niveau 1 : barrière de réduction de dégâts pour toute l'équipe, 2 fois (effet moyen).\n• Niveau 2 : pendant un temps, taux de critique de toute l'équipe à 100 %.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-le-dur-a-cuire-des-plaines-enneigees",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "雪原の漢",
+     "nomFR": "Le dur à cuire des plaines enneigées",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/josef/le-dur-a-cuire-des-plaines-enneigees.webp",
+     "effet": "Réservée à Josef. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : résistance Glace d'un ennemi −2 niveaux.\n• Pendant un temps : attaque Glace de toute l'équipe +2 niveaux.\n• Active l'état [Vrai arcane renforcé – Josef].\n\n2E ACTIVATION : LE DUR À CUIRE DES PLAINES ENNEIGÉES\n• 10 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Puis une attaque physique Glace + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – JOSEF]\n• Plus Josef utilise de compétences Moine pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Josef augmentées (niv. 3).\n• Temps d'attente de la 2e activation réduit (niv. 3).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
     }
    ]
   }
