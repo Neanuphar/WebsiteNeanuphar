@@ -1,6 +1,6 @@
 {
- "revision": 42,
- "maj": "2026-10-22T14:31:01.000Z",
+ "revision": 43,
+ "maj": "2026-10-22T22:45:02.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -4477,6 +4477,492 @@
      "elements": [],
      "image": "images/lena/eveil-gardienne-de-la-vie-et-de-l-ame.webp",
      "effet": "Réservée à Lena. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin extrême de toute l'équipe, avec plafond +1 niveau ; ou, si des alliés sont KO, réanimation (avec énormément de PV).\n• Hâte, et temps d'attente réduit de 2 tours.\n• Pendant un temps : plafond de dégâts de Lena +1 niveau.\n• Active le mode D-Éveil Double métier I [Lena] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL DOUBLE MÉTIER I (avant la Dual Shift)\n• Chaque compétence Magie blanche ou Danseuse utilisée renforce le mode (jusqu'à 3 paliers) : temps d'attente de ces compétences réduit, et soins augmentés (effet max : moyen).\n• Chaque compétence Magie blanche : attaque supplémentaire [D Évangile de la sainte].\n• Chaque compétence Danseuse : attaque supplémentaire [D Cœur bienveillant].\n\nDUAL SHIFT\n• Fait passer Lena en mode D-Éveil Double métier II.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL DOUBLE MÉTIER II (après la Dual Shift)\n• Les compétences Magie blanche n'ont plus de temps d'attente.\n• Chaque compétence Magie blanche : attaque supplémentaire [D Serment bienveillant].\n\nATTAQUE SUPPLÉMENTAIRE : D ÉVANGILE DE LA SAINTE (D聖女の福音)\n• Soin automatique de toute l'équipe à chaque perte de PV ; la quantité dépend du niveau d'affinage (精錬度) de la compétence utilisée (5 paliers).\n\nATTAQUE SUPPLÉMENTAIRE : D CŒUR BIENVEILLANT (D恵愛の心)\n• Soin de toute l'équipe ; la quantité dépend du niveau d'affinage de la compétence utilisée (5 paliers).\n\nATTAQUE SUPPLÉMENTAIRE : D SERMENT BIENVEILLANT (D優しき誓い)\n• Soin moyen de toute l'équipe, Récup forte, et temps d'attente réduit d'1 tour.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Soins des compétences Magie blanche de Lena +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Double métier I et II [Lena] et le mode Éveil Double métier.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Barrière de réduction de dégâts sur Lena, 1 fois (niv. 1), débloquée au niveau d'entraînement 3.\n\nÀ VÉRIFIER : Wジョブ traduit « Double métier » ; la Hâte et la réduction de 2 tours valent a priori pour toute l'équipe."
+    }
+   ]
+  },
+  {
+   "id": "bartz",
+   "nom": "Bartz",
+   "nomJP": "バッツ",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "vent",
+    "eau",
+    "feu"
+   ],
+   "sprite": "images/bartz/sprite.png",
+   "capacites": [
+    {
+     "id": "c-lance-montante",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "ライズランス",
+     "nomFR": "Lance montante",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/bartz/lance-montante.webp",
+     "effet": "Réservée à Bartz.\n\n• Attaque physique non-élémentaire sur un ennemi.\n• Pendant un temps : défense de Bartz augmentée (effet faible)."
+    },
+    {
+     "id": "c-force-du-fragment-de-terre",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "土のかけらに宿りし力",
+     "nomFR": "Force du fragment de terre",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/bartz/force-du-fragment-de-terre.webp",
+     "effet": "Réservée à Bartz.\n\nATTAQUE\n• 8 attaques physiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Rafale magilame – Fracas (魔法剣みだれうち 砕, école Magilame) : 4 attaques physiques Terre + Vent sur un ennemi, et dégâts des compétences Magilame de Bartz augmentés pendant 2 tours (effet faible).\n• Technique transmise – Tourbillon de sable (直伝剣技・砂塵, école Magilame) : 3 attaques physiques Terre + Vent sur un ennemi ; pendant un temps, attaque de Bartz augmentée (effet moyen) et défense magique augmentée (effet faible).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-guerrier-choisi-par-les-quatre-cristaux",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "四晶に選ばれし戦士",
+     "nomFR": "Guerrier choisi par les quatre cristaux",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/bartz/guerrier-choisi-par-les-quatre-cristaux.webp",
+     "effet": "Réservée à Bartz.\n\nATTAQUE\n• 10 attaques physiques Vent + Eau + Feu + Terre sur un ennemi.\n• Active le mode EX [Force des quatre cristaux].\n\nMODE EX [FORCE DES QUATRE CRISTAUX] (四晶の力, pendant un temps)\n• Plus Bartz utilise de compétences Vent, Eau, Feu ou Terre, plus les dégâts de ses compétences Magilame augmentent (effet max : très fort).\n• À la fin du mode : déclenche [Poursuite magilame] (魔法剣おいうち), qui peut dépasser le plafond de dégâts.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-quatre-coeurs-quete",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "4つの心「探求」",
+     "nomFR": "Quatre cœurs « Quête »",
+     "elements": [
+      "vent"
+     ],
+     "image": "images/bartz/quatre-coeurs-quete.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Remplit 1 segment de la jauge de capacités spéciales de Bartz.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-force-de-la-terre-accordee",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "授かりし大地の力",
+     "nomFR": "Force de la terre accordée",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/bartz/force-de-la-terre-accordee.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Bartz n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-maitre-chevalier-mystique",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ジョブマスター魔法剣士",
+     "nomFR": "Maître Chevalier mystique",
+     "elements": [],
+     "image": "images/bartz/maitre-chevalier-mystique.webp",
+     "effet": "Réservée à Bartz. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : temps d'attente des compétences Magilame de Bartz réduit.\n• Pendant un temps : boost des compétences Magilame, effet max : moyen.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-eclat-des-quatre-lumieres",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "四光の輝き",
+     "nomFR": "Éclat des quatre lumières",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/bartz/eclat-des-quatre-lumieres.webp",
+     "effet": "Réservée à Bartz. Utilisable 3 fois.\n\n• Sans temps d'attente : Bartz n'a aucun temps d'attente pendant 1 tour.\n• Pendant un temps : mode Quadruple élément.\n\nMODE QUADRUPLE ÉLÉMENT (クアッドエレメントモード)\n• Si Bartz utilise une compétence Vent, Eau, Feu ou Terre à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-eveil-de-la-terre",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "土のめざめ",
+     "nomFR": "Éveil de la terre",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/bartz/eveil-de-la-terre.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre.\n• Pendant un temps : mode Éveil Magilame, et plafond de dégâts +1 niveau.\n• Effet en plus selon le nombre d'alliés de FF V encore en vie (plus bas).\n\nMODE ÉVEIL MAGILAME (魔法剣覚醒モード)\n• Compétences Magilame utilisables à l'infini.\n• Boost des compétences Magilame, effet max : moyen.\n• Les compétences Magilame se lancent 1 fois de plus.\n\nEFFET SELON LES ALLIÉS DE FF V EN VIE (pendant un temps)\n• 1 : forte chance que les compétences Magilame de Bartz se lancent encore 1 fois.\n• 2 ou 3 : pareil, et temps d'attente des compétences Magilame réduit.\n• 4 ou plus : les compétences Magilame se lancent toujours 1 fois de plus, et leur temps d'attente est réduit.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : « dégâts niv. 3 » est sans doute le niveau atteint au niveau d'entraînement actuel (3 sur 15)."
+    },
+    {
+     "id": "c-apprentissage-complet",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "ラーニング・コンプリート",
+     "nomFR": "Apprentissage complet",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/bartz/apprentissage-complet.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Feu + Eau + Vent + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : dégâts critiques de Bartz augmentés.\n• Pendant un temps : mode Éveil Apprentissage, et plafond de dégâts +1 niveau.\n• Active le mode Quadruple élément II.\n• Chaque compétence Feu, Eau, Vent ou Terre utilisée : attaque supplémentaire, qui alterne dans l'ordre entre [Garde baissée (V)], [Vent blanc (V)] et [Garde puissante (V)].\n\nMODE ÉVEIL APPRENTISSAGE (ラーニング覚醒モード)\n• Compétences Feu, Eau, Vent et Terre utilisables à l'infini.\n• Temps d'attente de ces compétences réduit selon leur niveau d'affinage (精錬度).\n• Ces compétences se lancent 1 fois de plus.\n\nMODE QUADRUPLE ÉLÉMENT II (クアッドエレメントモードII)\n• Si Bartz utilise une compétence Vent, Eau, Feu ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUES SUPPLÉMENTAIRES\n• Garde baissée (V) (ガードオファ【V】) : pendant un temps, défense et défense magique de tous les ennemis réduites (effet fort).\n• Vent blanc (V) (ホワイトウインド【V】) : toute l'équipe récupère 2000 PV.\n• Garde puissante (V) (マイティガード【V】) : barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lien-de-la-terre",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "土のきずな",
+     "nomFR": "Lien de la terre",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/bartz/lien-de-la-terre.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Toutes les 3 compétences Synchro utilisées : pendant un temps, imprégnation Terre.\n\nCOMPÉTENCES SYNCHRO\n• Coup de poing gobelin de la terre (大地のゴブリンパンチ, école Magilame, déclenchée par une compétence Terre) : 6 attaques physiques Terre + non-élémentaire sur un ennemi ; plus puissante à chaque utilisation (2 paliers max).\n• Lame de sable (砂塵の刃, école Magilame, déclenchée par une compétence Terre) : 3 attaques physiques Terre + non-élémentaire sur un ennemi, et effet en plus selon les alliés de FF V en vie :\n  – 1 : taux de critique de Bartz à 100 % pendant 1 tour, et son temps d'attente réduit de 2 tours ;\n  – 2 ou plus : pareil, et dégâts critiques augmentés pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-coeur-des-cristaux-reunis",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "集いしクリスタルの心",
+     "nomFR": "Cœur des cristaux réunis",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/bartz/coeur-des-cristaux-reunis.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques physiques ultra-puissantes Vent + Eau + Feu + Terre sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-porteur-des-elements",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "エレメントブリンガー",
+     "nomFR": "Porteur des éléments",
+     "elements": [
+      "vent",
+      "eau",
+      "feu",
+      "terre"
+     ],
+     "image": "images/bartz/porteur-des-elements.webp",
+     "effet": "Réservée à Bartz. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 4 attaques physiques ultra-puissantes Feu + Eau + Vent + Terre sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-maitre-des-metiers-terre",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ジョブマスター・土",
+     "nomFR": "Maître des métiers – Terre",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/bartz/maitre-des-metiers-terre.webp",
+     "effet": "Réservée à Bartz. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Bartz Terre].\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : MAÎTRE DES MÉTIERS – TERRE\n• 20 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Puis une attaque physique Terre + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – BARTZ TERRE]\n• Plus Bartz inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Bartz augmentées (niv. 3).\n• Temps d'attente de la 2e activation réduit (niv. 3).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-maitre-des-metiers-vent",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ジョブマスター・風",
+     "nomFR": "Maître des métiers – Vent",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/bartz/maitre-des-metiers-vent.webp",
+     "effet": "Réservée à Bartz. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Bartz Vent].\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : MAÎTRE DES MÉTIERS – VENT\n• 20 attaques physiques à distance Vent + non-élémentaire sur un ennemi.\n• Puis une attaque physique à distance Vent + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – BARTZ VENT]\n• Plus Bartz inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Bartz augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-epee-magique-radieuse-faille-terrestre",
+     "type": "C神技",
+     "categorie": "physique",
+     "nomJP": "耀光魔法剣・地裂",
+     "nomFR": "Magilame radieuse – Faille terrestre",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/bartz/epee-magique-radieuse-faille-terrestre.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Terre, effet max : moyen.\n• Les compétences Terre se lancent 1 fois de plus.\n• Les compétences Terre ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n• Quand Bartz utilise la Force du cristal : attaque supplémentaire [Frappe radieuse – Bartz Terre], selon les alliés de FF V en vie (2 fois max).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 6 attaques physiques spéciales Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Dégâts des attaques physiques de Bartz augmentés pendant 2 tours (effet moyen).\n• Pendant 2 tours : les attaques percent la défense et la défense magique (effet fort).\n• La Force du cristal III devient utilisable après 3 actions.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE RADIEUSE – BARTZ TERRE (光撃・バッツ地)\n• 0 ou 1 allié de FF V en vie : temps d'attente de Bartz réduit de 2 tours, et sa prochaine jauge ATB se remplit plus vite (1 fois).\n• 2 ou 3 : pareil, et plafond de dégâts +1 niveau pendant 2 tours.\n• 4 ou plus : pendant 2 tours, plafond de dégâts +1 niveau et aucun temps d'attente ; la prochaine jauge ATB se remplit instantanément (1 fois).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet de la Force du cristal III n'est pas décrit."
+    },
+    {
+     "id": "c-eveil-de-l-eau",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒水のめざめ",
+     "nomFR": "Éveil – Éveil de l'eau",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/bartz/eveil-de-l-eau.webp",
+     "effet": "Réservée à Bartz. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Eau renforcée [重式], et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Magilame I [Bartz Eau] et la Résonance des souvenirs.\n• Bartz n'a aucun temps d'attente pendant 2 tours.\n\nMODE D-ÉVEIL MAGILAME I (avant la Dual Shift)\n• Boost des compétences Magilame, effet max : moyen.\n• Les compétences Magilame se lancent 2 fois de plus.\n• Chaque compétence Magilame équipée utilisée : attaque supplémentaire [D Danse magilame – Eau] (2 fois max).\n\nDUAL SHIFT\n• Fait passer Bartz en mode D-Éveil Magilame II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL MAGILAME II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Magilame, effet max : moyen.\n• Les compétences Magilame n'ont plus de temps d'attente.\n• Taux de critique à 100 %.\n• Chaque compétence Magilame utilisée : attaque supplémentaire [D Épée d'eau vive], selon le nombre d'alliés en Résonance du destin (天命の共鳴) encore en vie (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : D DANSE MAGILAME – EAU (D魔法剣乱舞・水)\n• Attaque physique Eau + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nATTAQUE SUPPLÉMENTAIRE : D ÉPÉE D'EAU VIVE (D流水の剣)\n• 0 à 2 alliés en Résonance du destin : attaque physique Eau + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; pendant 1 tour, les compétences Magilame de Bartz se lancent 1 fois de plus.\n• 3 ou plus : pendant 1 tour, les compétences Magilame de toute l'équipe se lancent 1 fois de plus.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Magilame de Bartz +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Magilame I et II [Bartz Eau] et le mode Éveil Magilame.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : 天命の共鳴 traduit « Résonance du destin » (ce qui l'active n'est pas dit) ; à partir de 5 actions, l'icône est barrée."
+    }
+   ]
+  },
+  {
+   "id": "galuf",
+   "nom": "Galuf",
+   "nomJP": "ガラフ",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "feu"
+   ],
+   "sprite": "images/galuf/sprite.png",
+   "capacites": [
+    {
+     "id": "c-poing-du-veteran",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "老練の拳",
+     "nomFR": "Poing du vétéran",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/galuf/poing-du-veteran.webp",
+     "effet": "Réservée à Galuf.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-retour-en-force",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "捲土重来",
+     "nomFR": "Retour en force",
+     "elements": [
+      "terre",
+      "feu"
+     ],
+     "image": "images/galuf/retour-en-force.webp",
+     "effet": "Réservée à Galuf.\n\nATTAQUE\n• 8 attaques physiques puissantes Terre + Feu sur un ennemi.\n• Pendant un temps : résistance Terre de l'ennemi −2 niveaux.\n• Hâte et mode Burst pour Galuf.\n\nCOMPÉTENCES BURST (mode Burst)\n• Poing écrasant (砕く豪拳, école Moine) : 4 attaques physiques Terre + Feu sur un ennemi.\n• Âme héroïque exaltée (昂る英魂, école Moine) : 2 attaques physiques Terre + Feu sur un ennemi, et pendant un temps, taux de critique de Galuf à 50 %.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-devouement-assidu",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "精励恪勤",
+     "nomFR": "Dévouement assidu",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/galuf/devouement-assidu.webp",
+     "effet": "Réservée à Galuf.\n\nATTAQUE\n• 10 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Terre de l'ennemi −2 niveaux.\n• Pendant un temps : attaque Terre de toute l'équipe +2 niveaux.\n• Pendant un temps : imprégnation Terre.\n• Temps d'attente de Galuf réduit de 3 tours.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-ame-immortelle",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "霊魂不滅",
+     "nomFR": "Âme immortelle",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/galuf/ame-immortelle.webp",
+     "effet": "Réservée à Galuf. Chaîne élémentaire (属性リミットチェイン).\n\nEFFET\n• Lance une chaîne Terre (jusqu'à 150 chaînes).\n• Élément Terre renforcé pour toute l'équipe (effet fort).\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort).\n\nPENDANT LA CHAÎNE\n• Élément Terre renforcé pour toute l'équipe (effet fort).\n• La chaîne avance avec les attaques Terre.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-super-eclair-galuf",
+     "type": "LB閃",
+     "categorie": "soutien",
+     "nomJP": "超閃【ガラフ】",
+     "nomFR": "Super éclair [Galuf]",
+     "elements": [],
+     "image": "images/galuf/super-eclair-galuf.webp",
+     "effet": "Réservée à Galuf. Limit Break, utilisable 1 fois.\n\nEFFET\n• Consomme la jauge de Limite, sans temps d'attente.\n• Pendant un temps : quand Galuf utilise une compétence Terre, attaque supplémentaire [Frappe super éclair – Galuf] (1 fois max).\n• La prochaine jauge ATB de Galuf se remplit instantanément (1 fois).\n• Remplit 1 segment de la jauge de Limite.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE SUPER ÉCLAIR – GALUF (超閃撃・ガラフ)\n• Temps d'attente de toute l'équipe réduit de 3 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois, débloquée au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-diamant",
+     "type": "閃技",
+     "categorie": "physique",
+     "nomJP": "金剛",
+     "nomFR": "Diamant",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/galuf/diamant.webp",
+     "effet": "Réservée à Galuf. Utilisable 3 fois.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-bravoure-inflexible",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "勇剛",
+     "nomFR": "Bravoure inflexible",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/galuf/bravoure-inflexible.webp",
+     "effet": "Réservée à Galuf. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Galuf n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-enchainement-de-l-aube",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "暁の連撃",
+     "nomFR": "Enchaînement de l'Aube",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/galuf/enchainement-de-l-aube.webp",
+     "effet": "Réservée à Galuf. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : mode Éveil Terre, et plafond de dégâts +1 niveau.\n• Active le mode Roi de Bal.\n• Toutes les 3 compétences Terre utilisées : attaque supplémentaire [Attaque de Baldesion].\n\nMODE ÉVEIL TERRE (地覚醒モード)\n• Compétences Terre utilisables à l'infini.\n• Boost des compétences Terre, effet max : moyen.\n• Les compétences Terre se lancent 1 fois de plus.\n\nMODE ROI DE BAL (バル王モード)\n• Après 3 compétences Terre : remplit 1 segment de la jauge de capacités spéciales de Galuf, puis le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : ATTAQUE DE BALDESION (バルデシオンアタック)\n• Attaque physique Terre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-heritier-de-mon-ame",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "我が魂の後継者",
+     "nomFR": "Héritier de mon âme",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/galuf/heritier-de-mon-ame.webp",
+     "effet": "Réservée à Galuf. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Dou.\n\nCOMPÉTENCES SYNCHRO\n• Poing de l'Aube (暁の拳打, école Moine, déclenchée par une compétence Terre) : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Sens du devoir de l'Aube (暁の使命感, école Soutien physique, déclenchée par une compétence Terre) : déclenche l'effet [Sens du devoir de l'Aube], qui dépend du nombre de souvenirs (0 à 2), puis consomme tous les souvenirs.\n\nMODE DOU (ドゥモード)\n• Tant que le mode Synchro dure : chaque Poing de l'Aube donne 1 souvenir à Galuf (2 max).\n\nEFFET [SENS DU DEVOIR DE L'AUBE] SELON LES SOUVENIRS\n• 0 : Galuf n'a aucun temps d'attente pendant 2 tours.\n• 1 : dégâts critiques de toute l'équipe augmentés pendant 2 tours.\n• 2 : pendant un temps, taux de critique de toute l'équipe à 100 %.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-amis-intimes",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "知己朋友",
+     "nomFR": "Amis intimes",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/galuf/amis-intimes.webp",
+     "effet": "Réservée à Galuf. Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques physiques ultra-puissantes Terre sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    }
+   ]
+  },
+  {
+   "id": "gilgamesh",
+   "nom": "Gilgamesh",
+   "nomJP": "ギルガメッシュ",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/gilgamesh/sprite.png",
+   "capacites": [
+    {
+     "id": "c-changement-gilgamesh",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ギルガメッシュチェンジ",
+     "nomFR": "Changement Gilgamesh",
+     "elements": [],
+     "image": "images/gilgamesh/changement-gilgamesh.webp",
+     "effet": "Réservée à Gilgamesh.\n\n• Pendant un temps : attaque de Gilgamesh augmentée (effet moyen)."
+    },
+    {
+     "id": "c-botte-secrete-impasse-totale",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "秘剣・八方ふさがり",
+     "nomFR": "Botte secrète – Impasse totale",
+     "elements": [],
+     "image": "images/gilgamesh/botte-secrete-impasse-totale.webp",
+     "effet": "Réservée à Gilgamesh.\n\nATTAQUE\n• 8 attaques physiques puissantes sur un ennemi.\n• Pendant un temps : Gilgamesh attire les attaques physiques et de Magie noire visant un seul allié (ひきつけ), et sa défense est augmentée (effet très fort).\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Double estoc (双突き, école Samouraï) : 2 attaques physiques sur un ennemi, et Dissipation (デスペル).\n• Retour d'hirondelle (ツバメ返し, école Samouraï) : 2 attaques physiques sur un ennemi, et pendant un temps, Gilgamesh se met en garde (かまえる).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'écran ne précise pas d'élément (probablement non-élémentaire)."
+    },
+    {
+     "id": "c-combat-a-mort-sur-le-grand-pont",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ビッグブリッヂの死闘",
+     "nomFR": "Combat à mort sur le Grand Pont",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/gilgamesh/combat-a-mort-sur-le-grand-pont.webp",
+     "effet": "Réservée à Gilgamesh. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• 20 attaques physiques faibles Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : Gilgamesh se met en garde (かまえる, effet fort).\n• Plafond de dégâts +1 niveau.\n• Active l'état [Vrai arcane renforcé – Gilgamesh].\n\n2E ACTIVATION : COMBAT À MORT SUR LE GRAND PONT\n• 20 attaques physiques Feu + non-élémentaire sur un ennemi.\n• Puis une attaque physique Feu + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – GILGAMESH]\n• Plus Gilgamesh utilise de compétences Feu pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Gilgamesh augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "gogo-v",
+   "nom": "Gogo (V)",
+   "nomJP": "ものまねしゴゴ",
+   "serie": "V",
+   "categorie": "magique",
+   "elements": [
+    "eau"
+   ],
+   "sprite": "images/gogo-v/sprite.png",
+   "capacites": [
+    {
+     "id": "c-art-du-mime",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ものまね芸",
+     "nomFR": "Art du mime",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/gogo-v/art-du-mime.webp",
+     "effet": "Réservée à Gogo (V).\n\n• Imite la dernière action d'un allié (sauf certaines) ; en cas d'échec, attaque physique non-élémentaire sur un ennemi.\n• Remplit la jauge de capacités spéciales de Gogo (effet extrême)."
+    },
+    {
+     "id": "c-symetrie-fantastique",
+     "type": "超必殺",
+     "categorie": "soutien",
+     "nomJP": "幻想シンメトリー",
+     "nomFR": "Symétrie fantastique",
+     "elements": [],
+     "image": "images/gogo-v/symetrie-fantastique.webp",
+     "effet": "Réservée à Gogo (V).\n\nEFFET\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen).\n• Hâte pour toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-souffle-aquatique-des-abysses",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "深海アクアブレス",
+     "nomFR": "Souffle aquatique des abysses",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/gogo-v/souffle-aquatique-des-abysses.webp",
+     "effet": "Réservée à Gogo (V).\n\nATTAQUE\n• 6 attaques magiques puissantes Eau + non-élémentaire sur tous les ennemis.\n• Pendant un temps : imprégnation Eau, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Voie du mime (ものまね道, école Spéciale) : imite la dernière action d'un allié (sauf certaines), et chaque utilisation réduit le temps d'attente de cette compétence (11 fois max).\n• Talent de maître – Art de l'eau (名人たしなみ・水芸, école Magie noire) : 4 attaques magiques Eau + non-élémentaire sur un ennemi.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-maelstrom-radieux-a-couper-le-souffle",
+     "type": "C神技",
+     "categorie": "magique",
+     "nomJP": "耀光絶息ミールストーム",
+     "nomFR": "Maelström radieux à couper le souffle",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/gogo-v/maelstrom-radieux-a-couper-le-souffle.webp",
+     "effet": "Réservée à Gogo (V). Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Eau renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 1 fois de plus.\n• Les compétences Eau ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 6 attaques magiques spéciales Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Dégâts des attaques magiques de Gogo augmentés pendant 1 tour (effet moyen).\n• Pendant 1 tour : plafond de dégâts +1 niveau, et les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB de Gogo se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 3).\n• Dégâts de la capacité augmentés (niv. 1).\n\nÀ VÉRIFIER : l'effet de la Force du cristal III n'est pas décrit ; « niv. 3 » est sans doute le niveau atteint au niveau d'entraînement actuel (3 sur 10)."
+    },
+    {
+     "id": "c-eveil-fantaisiste-des-fonds-marins",
+     "type": "D覚醒",
+     "categorie": "magique",
+     "nomJP": "覚醒海底ファンタジスタ",
+     "nomFR": "Éveil – Fantaisiste des fonds marins",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/gogo-v/eveil-fantaisiste-des-fonds-marins.webp",
+     "effet": "Réservée à Gogo (V). Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 7 attaques magiques puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit de Gogo augmentés (effet fort), et imprégnation Eau renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Eau I [Gogo] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL EAU I (avant la Dual Shift)\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 1 fois de plus.\n• Chaque compétence Eau utilisée : attaque supplémentaire [D Symétrie abyssale].\n\nDUAL SHIFT\n• Fait passer Gogo en mode D-Éveil Eau II (retire le mode I).\n• Pendant un temps : mode D Mime des fosses marines.\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL EAU II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 1 fois de plus.\n\nMODE D MIME DES FOSSES MARINES (D海溝ものまねモード)\n• Dégâts des imitations de Gogo augmentés (effet fort).\n• Chaque fois qu'un autre allié utilise une compétence Eau : attaque supplémentaire [D Mime – Spectacle aquatique].\n• Après 3 déclenchements, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : D SYMÉTRIE ABYSSALE (D海淵シンメトリー)\n• 4 attaques magiques Eau + non-élémentaire sur un ennemi.\n• Temps d'attente de toute l'équipe réduit d'1 tour.\n• Tous les 2 déclenchements : brièvement, défense, défense magique et esprit de l'ennemi réduits (effet fort).\n\nATTAQUE SUPPLÉMENTAIRE : D MIME – SPECTACLE AQUATIQUE (Dものまね・水演)\n• Imite la dernière action d'un allié (sauf certaines).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Eau de Gogo +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Eau I et II [Gogo] et le mode Éveil Eau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le sens de l'étiquette 対乾坤一擲 ; à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
     }
    ]
   }
