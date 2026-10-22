@@ -1,6 +1,6 @@
 {
- "revision": 33,
- "maj": "2026-10-22T09:31:38.000Z",
+ "revision": 34,
+ "maj": "2026-10-22T09:35:18.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2669,6 +2669,223 @@
      ],
      "image": "images/nuage-des-tenebres/eveil-canon-a-ondes-antiaerien.webp",
      "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit du Nuage des Ténèbres augmentés (effet fort), et imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Ténèbres I [Nuage des Ténèbres] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL TÉNÈBRES I (avant la Dual Shift)\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 2 fois de plus.\n• Chaque compétence Ténèbres équipée utilisée : attaque supplémentaire [D Projectile d'ondes].\n\nDUAL SHIFT\n• Fait passer le Nuage des Ténèbres en mode D-Éveil Ténèbres II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL TÉNÈBRES II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n• La jauge de capacités spéciales se remplit plus vite en attaquant ou en utilisant une compétence (effet moyen).\n• À la fin du mode : le Nuage des Ténèbres n'a aucun temps d'attente pendant 2 tours.\n\nATTAQUE SUPPLÉMENTAIRE : D PROJECTILE D'ONDES (D波動弾)\n• 4 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Tous les 2 déclenchements : temps d'attente du Nuage des Ténèbres réduit d'1 tour.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Ténèbres du Nuage des Ténèbres +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Ténèbres I et II [Nuage des Ténèbres] et le mode Éveil Ténèbres.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
+    }
+   ]
+  },
+  {
+   "id": "aria",
+   "nom": "Aria",
+   "nomJP": "エリア",
+   "serie": "III",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/aria/sprite.png",
+   "capacites": [
+    {
+     "id": "c-soin-plus-iii",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ケアルラ【III】",
+     "nomFR": "Soin+ [III]",
+     "elements": [],
+     "image": "images/aria/soin-plus-iii.webp",
+     "effet": "Réservée à Aria.\n\n• Soin moyen d'un allié.\n\nÀ VÉRIFIER : ケアルラ traduit « Soin+ » (nom français à confirmer)."
+    },
+    {
+     "id": "c-lumiere-de-l-arc-en-ciel",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "虹の光",
+     "nomFR": "Lumière de l'arc-en-ciel",
+     "elements": [],
+     "image": "images/aria/lumiere-de-l-arc-en-ciel.webp",
+     "effet": "Réservée à Aria.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Récup forte (リジェネガ) pour toute l'équipe : 2000 PV soignés à chaque fois.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-rencontre-sur-le-vaste-ocean",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "大海原の邂逅",
+     "nomFR": "Rencontre sur le vaste océan",
+     "elements": [],
+     "image": "images/aria/rencontre-sur-le-vaste-ocean.webp",
+     "effet": "Réservée à Aria.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Barrière pour toute l'équipe : annule les attaques Feu reçues, jusqu'à 100 % des PV max.\n• Récup pour toute l'équipe (effet fort).\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    }
+   ]
+  },
+  {
+   "id": "cecil-chevalier-noir",
+   "nom": "Cecil (Chevalier noir)",
+   "nomJP": "セシル（暗黒騎士）",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "tenebres",
+    "feu"
+   ],
+   "sprite": "images/cecil-chevalier-noir/sprite.png",
+   "capacites": [
+    {
+     "id": "c-arme-de-sang",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "ブラッドウェポン",
+     "nomFR": "Arme de sang",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/arme-de-sang.webp",
+     "effet": "Réservée à Cecil (Chevalier noir).\n\n• Attaque physique non-élémentaire sur un ennemi.\n• Absorbe une partie des dégâts infligés pour soigner Cecil."
+    },
+    {
+     "id": "c-flamme-noire",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "ダークフレイム",
+     "nomFR": "Flamme noire",
+     "elements": [
+      "tenebres",
+      "feu"
+     ],
+     "image": "images/cecil-chevalier-noir/flamme-noire.webp",
+     "effet": "Réservée à Cecil (Chevalier noir).\n\nATTAQUE\n• Cecil subit des dégâts moyens, proportionnels à ses PV max.\n• 8 attaques physiques à distance Ténèbres + Feu sur tous les ennemis.\n• Pendant un temps : attaque de Cecil augmentée (effet moyen), défense magique augmentée (effet faible).\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Noir de jais (漆黒, école Arts sombres) : 4 attaques physiques Ténèbres + non-élémentaire sur un ennemi ; plus les PV restants de Cecil sont bas, plus elles sont puissantes.\n• Chute sombre (ダークフォール, école Arts sombres) : Cecil subit de petits dégâts proportionnels à ses PV max, puis 2 attaques physiques Ténèbres + non-élémentaire sur tous les ennemis.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-porte-de-l-abime",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "アビスゲート",
+     "nomFR": "Porte de l'abîme",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/porte-de-l-abime.webp",
+     "effet": "Réservée à Cecil (Chevalier noir).\n\nATTAQUE\n• 8 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Taille de l'ombre (シャドウスラッシュ, école Arts sombres) : 4 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pulsion maléfique (イビルドライブ, école Arts sombres) : 3 attaques physiques Ténèbres + non-élémentaire sur un ennemi, et dégâts des compétences Arts sombres de Cecil augmentés pendant 3 tours (effet faible).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-tenebres-eternelles",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "常闇",
+     "nomFR": "Ténèbres éternelles",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/tenebres-eternelles.webp",
+     "effet": "Réservée à Cecil (Chevalier noir).\n\nATTAQUE\n• 10 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Dégâts égaux à 99 % des PV actuels, qui peuvent dépasser le plafond de dégâts.\n• Barrière qui annule les attaques reçues, jusqu'à 100 % des PV max.\n• Active le mode EX [Ailes rouges].\n\nMODE EX [AILES ROUGES] (赤い翼, tant que la barrière dure)\n• Attaque de Cecil augmentée (effet moyen).\n• Temps d'attente des compétences Arts sombres réduit.\n• Les compétences Arts sombres se lancent 1 fois de plus.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le texte (très abrégé) ne dit pas qui subit les dégâts de 99 % des PV actuels ; d'après la barrière qui suit, c'est probablement Cecil lui-même."
+    },
+    {
+     "id": "c-charge-de-l-abime",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "アビスチャージ",
+     "nomFR": "Charge de l'abîme",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/cecil-chevalier-noir/charge-de-l-abime.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 5 attaques physiques ultra-puissantes Ténèbres sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-force-malefique",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "イビルフォース",
+     "nomFR": "Force maléfique",
+     "elements": [],
+     "image": "images/cecil-chevalier-noir/force-malefique.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 3 fois.\n\n• Sans temps d'attente : barrière sur Cecil qui annule les attaques reçues, jusqu'à 100 % de ses PV max.\n• Pendant un temps : boost des compétences Arts sombres, effet max : moyen.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-zone-malefique",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "イビルゾーン",
+     "nomFR": "Zone maléfique",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/cecil-chevalier-noir/zone-malefique.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Cecil n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lune-noire",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "闇月",
+     "nomFR": "Lune noire",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/lune-noire.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Pendant un temps : mode Éveil Arts sombres, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Arts sombres utilisées : Cecil subit des dégâts moyens proportionnels à ses PV max, et attaque supplémentaire [Épée maléfique].\n\nMODE ÉVEIL ARTS SOMBRES (暗黒覚醒モード)\n• Compétences Arts sombres utilisables à l'infini.\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : ÉPÉE MALÉFIQUE (イビルソード)\n• 8 attaques physiques Ténèbres + non-élémentaire sur un ennemi ; puissance et taux de critique selon le niveau de l'état [Ténèbres] (あんこく状態).\n• État [Ténèbres] de Cecil +1 niveau (2 max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : « dégâts niv. 3 » est sans doute le niveau atteint au niveau d'entraînement actuel (3 sur 15)."
+    },
+    {
+     "id": "c-elite-de-baron-unie",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "バロン精鋭の共闘",
+     "nomFR": "Élite de Baron unie",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/elite-de-baron-unie.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : mode Éveil Arts sombres, et plafond de dégâts +1 niveau.\n• Active le mode [Ailes rouges de Baron].\n\nMODE ÉVEIL ARTS SOMBRES (暗黒覚醒モード)\n• Compétences Arts sombres utilisables à l'infini.\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 1 fois de plus.\n\nMODE AILES ROUGES DE BARON (バロンの赤い翼モード)\n• Pendant 3 tours : taux de critique de Cecil à 100 %.\n• Pendant 3 tours : dégâts Ténèbres augmentés (effet fort).\n• Pendant 3 tours : aucun temps d'attente.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-embrasement-de-l-ombre",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "シャドウブレイザー",
+     "nomFR": "Embrasement de l'ombre",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/embrasement-de-l-ombre.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Ténèbres abyssales.\n\nCOMPÉTENCES SYNCHRO\n• Frappe de l'ombre (シャドウスマッシュ, école Arts sombres, déclenchée par une compétence Arts sombres) : 6 attaques physiques Ténèbres + non-élémentaire sur un ennemi, et dégâts des compétences Arts sombres de Cecil augmentés pendant 1 tour (effet moyen).\n• Pulsion de l'ombre (シャドウドライブ, école Arts sombres, déclenchée par une compétence Arts sombres) : Cecil subit de très lourds dégâts proportionnels à ses PV max, puis 3 attaques physiques Ténèbres + non-élémentaire sur un ennemi, et son temps d'attente est réduit d'1 tour.\n\nMODE TÉNÈBRES ABYSSALES (冥闇モード)\n• Pendant un temps : état [Ténèbres abyssales] niveau 2 (2 max).\n• Tant que le mode Synchro dure : chaque Pulsion de l'ombre utilisée déclenche l'attaque supplémentaire [Chasseur d'ombre], dont l'effet change si l'état est au niveau 1 ou plus.\n\nATTAQUE SUPPLÉMENTAIRE : CHASSEUR D'OMBRE (シャドウチェイサー)\n• Niveau 0 : attaque physique Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; plus les PV restants de Cecil sont bas, plus elle est puissante.\n• Niveau 1 ou 2 : pareil, et Cecil absorbe une partie des dégâts infligés pour se soigner ; l'état [Ténèbres abyssales] baisse d'1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-lame-cauchemar",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "ナイトメアブレイド",
+     "nomFR": "Lame cauchemar",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/cecil-chevalier-noir/lame-cauchemar.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques physiques ultra-puissantes Ténèbres sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-changement-de-classe",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ジョブチェンジ",
+     "nomFR": "Changement de classe",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/changement-de-classe.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Cecil (Chevalier noir)].\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : CHANGEMENT DE CLASSE\n• 20 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Puis une attaque physique Ténèbres + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – CECIL (CHEVALIER NOIR)]\n• Plus Cecil inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Cecil augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-eveil-lune-noire",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒闇月",
+     "nomFR": "Éveil – Lune noire",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cecil-chevalier-noir/eveil-lune-noire.webp",
+     "effet": "Réservée à Cecil (Chevalier noir). Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Arts sombres I [Cecil (Chevalier noir)] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL ARTS SOMBRES I (avant la Dual Shift)\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 2 fois de plus.\n• Chaque compétence Arts sombres utilisée renforce le mode : temps d'attente des compétences Arts sombres équipées réduit (jusqu'à 3 paliers).\n• Tant que ce mode dure : plus Cecil a perdu de PV à cause de ses propres effets (dégâts proportionnels à ses PV), plus les dégâts de ses compétences Arts sombres augmentent (effet max : moyen, 3 paliers).\n\nDUAL SHIFT\n• Fait passer Cecil en mode D-Éveil Arts sombres II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL ARTS SOMBRES II (après la Dual Shift)\n• Plafond de dégâts +2 niveaux.\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 1 fois de plus.\n• Taux de critique à 100 %.\n• Les compétences Arts sombres n'ont plus de temps d'attente.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Arts sombres de Cecil +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Arts sombres I et II [Cecil (Chevalier noir)] et le mode Éveil Arts sombres.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
     }
    ]
   }
