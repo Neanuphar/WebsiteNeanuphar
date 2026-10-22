@@ -1,6 +1,6 @@
 {
- "revision": 5,
- "maj": "2026-10-22T07:00:00.000Z",
+ "revision": 6,
+ "maj": "2026-10-22T08:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -207,6 +207,99 @@
      ],
      "image": "images/garland/cycle-du-combat-ultime.webp",
      "effet": "Réservée à Garland. Utilisable 1 fois.\n\nATTAQUE\n• 7 coups physiques puissants Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• En utilisant une compétence Ténèbres : attaque supplémentaire [Frappe du cœur – Garland] (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Garland (liste plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Garland +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – GARLAND (心撃・ガーランド)\n• Pendant 3 tours : taux de critique de toute l'équipe à 100 % et dégâts fatals (フェイタルダメージ) +10 %.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Porte-chaos Kai (カオスブリンガー改, école 暗黒) : 5 attaques physiques à distance Ténèbres sur un ennemi + brièvement, attaque de Garland augmentée (effet moyen), défense et défense magique réduites (effet faible). Plus forte, avec plafond de dégâts +1 niveau, après 3 utilisations. Version normale : Porte-chaos (カオスブリンガー).\n• Âme du chaos Kai (ソウルオブカオス改, école 物理ヘヴィ) : 6 coups physiques Ténèbres sur un ennemi. Plus forte, avec plafond de dégâts +1 niveau, après 3 utilisations. Version normale : Âme du chaos (ソウルオブカオス).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact des « dégâts fatals »."
+    }
+   ]
+  },
+  {
+   "id": "sarah",
+   "nom": "Sarah",
+   "nomJP": "セーラ",
+   "serie": "I",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/sarah/sprite.png",
+   "capacites": [
+    {
+     "id": "c-lumiere-guide",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "導きの光",
+     "nomFR": "Lumière guide",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/sarah/lumiere-guide.webp",
+     "effet": "Réservée à Sarah.\n\n• Attaque de magie blanche Sacré sur tous les ennemis."
+    },
+    {
+     "id": "c-priere-sacree",
+     "type": "専用",
+     "categorie": "soutien",
+     "nomJP": "聖なる祈り",
+     "nomFR": "Prière sacrée",
+     "elements": [],
+     "image": "images/sarah/priere-sacree.webp",
+     "effet": "Réservée à Sarah.\n\n• Soin moyen de toute l'équipe.\n• Récup (リジェネ, soin progressif) pour toute l'équipe, effet fort."
+    },
+    {
+     "id": "c-chant-de-priere-ancien",
+     "type": "Burst",
+     "categorie": "soutien",
+     "nomJP": "古の祈り歌",
+     "nomFR": "Chant de prière ancien",
+     "elements": [],
+     "image": "images/sarah/chant-de-priere-ancien.webp",
+     "effet": "Réservée à Sarah.\n\nEFFET\n• Soin moyen de toute l'équipe.\n• Toute l'équipe bloque 1 attaque magique (sauf certaines).\n• Pendant un temps : esprit de Sarah augmenté (effet moyen) et défense magique augmentée (effet faible).\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Prière pure (清き祈り, école Magie blanche) : sans temps d'attente, gros soin d'un allié + Récup (effet fort).\n• Humble souhait (ささやかな願い, école Magie blanche) : petit soin de toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-eclat-du-cristal",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "クリスタルの輝き",
+     "nomFR": "Éclat du cristal",
+     "elements": [],
+     "image": "images/sarah/eclat-du-cristal.webp",
+     "effet": "Réservée à Sarah.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Toute l'équipe passe en état « Tenir bon » (踏みとどまる) : elle survit à un coup qui devrait la mettre KO.\n• Pendant un temps : mode Brave pour Sarah, directement au niveau Brave 2.\n\nCOMPÉTENCE BRAVE : MÉLODIE DE SOIN (ヒールメロディ, école Magie blanche)\nSans temps d'attente, selon le niveau Brave :\n• Niv. 0 : petit soin d'un allié.\n• Niv. 1 : petit soin de toute l'équipe.\n• Niv. 2 : soin moyen de toute l'équipe.\n• Niv. 3 : soin moyen de toute l'équipe + aucun temps d'attente pendant 1 tour.\n\nLe niveau Brave monte quand Sarah utilise une compétence Magie blanche ou Barde (吟遊詩人).\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-chant-dedie-aux-guerriers",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "戦士に捧ぐ歌",
+     "nomFR": "Chant dédié aux guerriers",
+     "elements": [],
+     "image": "images/sarah/chant-dedie-aux-guerriers.webp",
+     "effet": "Réservée à Sarah.\n\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen).\n• Blindage (シェル, réduit les dégâts magiques) et Hâte pour toute l'équipe.\n• Soin automatique à chaque perte de PV, jusqu'à 2000 PV soignés au total.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-ronde-de-lumiere",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "光のロンド",
+     "nomFR": "Ronde de lumière",
+     "elements": [],
+     "image": "images/sarah/ronde-de-lumiere.webp",
+     "effet": "Réservée à Sarah. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Toute l'équipe reçoit une barrière magique qui bloque 1 attaque magique (sauf certaines).\n• Hâte pour toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-eclairs-enchaines-sarah",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・セーラ",
+     "nomFR": "Éclairs enchaînés – Sarah",
+     "elements": [],
+     "image": "images/sarah/eclairs-enchaines-sarah.webp",
+     "effet": "Réservée à Sarah. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen).\n• Temps d'attente réduit de 2 tours.\n• Le prochain remplissage de la jauge ATB de Sarah est raccourci (1 fois).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Sarah augmentées, débloqué au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Sarah, 1 fois (niv. 5), débloquée au niveau d'entraînement 10.\n\nÀ VÉRIFIER : le texte ne précise pas si la réduction de 2 tours du temps d'attente concerne Sarah ou toute l'équipe."
+    },
+    {
+     "id": "c-chant-noble",
+     "type": "覚醒",
+     "categorie": "soutien",
+     "nomJP": "高貴なる歌",
+     "nomFR": "Chant noble",
+     "elements": [],
+     "image": "images/sarah/chant-noble.webp",
+     "effet": "Réservée à Sarah. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : très gros soin de toute l'équipe, ou résurrection des alliés KO (avec énormément de PV).\n• « Tenir bon » (踏みとどまる) et Hâte pour toute l'équipe.\n• Temps d'attente réduit de 2 tours.\n• Effet bonus si le Guerrier de la Lumière ou Garland est dans l'équipe (voir plus bas).\n• Pendant un temps : mode Éveil Princesse de Cornelia.\n\nMODE ÉVEIL PRINCESSE DE CORNELIA (コーネリア王女覚醒モード)\n• Compétences Magie blanche et Barde utilisables à l'infini.\n• Temps d'attente de ses compétences Magie blanche et Barde réduit.\n• Chaque compétence Magie blanche ou Barde déclenche l'attaque supplémentaire [Voix de guérison] (ヒーリングボイス) : soin de toute l'équipe, plus fort selon le niveau de raffinement de la compétence utilisée (5 paliers max).\n\nEFFET BONUS SELON L'ÉQUIPE\n• Avec le Guerrier de la Lumière : pendant un temps, attaque Sacré de toute l'équipe +1 niveau, et soin automatique à chaque perte de PV (2000 PV au total).\n• Avec Garland : pendant un temps, attaque Ténèbres de toute l'équipe +1 niveau, et le même soin automatique.\n• Avec les deux : attaque Sacré et Ténèbres de toute l'équipe +2 niveaux, et le même soin automatique.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Sarah augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
     }
    ]
   }
