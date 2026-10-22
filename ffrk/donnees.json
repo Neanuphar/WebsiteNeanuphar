@@ -1,6 +1,6 @@
 {
- "revision": 21,
- "maj": "2026-10-22T05:48:13.000Z",
+ "revision": 22,
+ "maj": "2026-10-22T05:52:19.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1742,6 +1742,108 @@
      ],
      "image": "images/empereur/liens-tisses-terre-de-l-empereur.webp",
      "effet": "Réservée à l'Empereur. Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Terre (jusqu'à 150 chaînes). Si une chaîne Terre est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25), et à la fin de la capacité, le compteur de chaînes de tous les ennemis monte de 10.\n• 10 attaques magiques Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Empereur Terre].\n• La prochaine jauge ATB de l'Empereur se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Terre.\n\nMODE CHAIN FORCE – EMPEREUR TERRE (チェインフォースモード・皇帝地)\n• Quand l'Empereur utilise une compétence Terre : attaque supplémentaire [Guide de la terre – Empereur] (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DE LA TERRE – EMPEREUR (地の導・皇帝)\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de l'Empereur réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    }
+   ]
+  },
+  {
+   "id": "hilda",
+   "nom": "Hilda",
+   "nomJP": "ヒルダ",
+   "serie": "II",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/hilda/sprite.png",
+   "capacites": [
+    {
+     "id": "c-amorce-de-la-contre-attaque",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "反撃の糸口",
+     "nomFR": "Amorce de la contre-attaque",
+     "elements": [],
+     "image": "images/hilda/amorce-de-la-contre-attaque.webp",
+     "effet": "Réservée à Hilda.\n\n• Pendant un temps : attaque de toute l'équipe augmentée (effet faible)."
+    },
+    {
+     "id": "c-lune-sentimentale",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "センチメンタルムーン",
+     "nomFR": "Lune sentimentale",
+     "elements": [],
+     "image": "images/hilda/lune-sentimentale.webp",
+     "effet": "Réservée à Hilda.\n\nEFFET\n• Sans temps d'attente : soin moyen de toute l'équipe.\n• Récup forte (リジェネガ) pour toute l'équipe.\n• Image (分身) pour toute l'équipe, qui bloque 1 attaque physique.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-valse-pour-la-victoire",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "ワルツ・フォー・ウィン",
+     "nomFR": "Valse pour la victoire",
+     "elements": [],
+     "image": "images/hilda/valse-pour-la-victoire.webp",
+     "effet": "Réservée à Hilda.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Pendant un temps : défense de toute l'équipe augmentée (effet fort).\n• Tenir bon pour toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    }
+   ]
+  },
+  {
+   "id": "scott",
+   "nom": "Scott",
+   "nomJP": "スコット",
+   "serie": "II",
+   "categorie": "physique",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/scott/sprite.png",
+   "capacites": [
+    {
+     "id": "c-esprit-combatif-royal",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "王族の闘志",
+     "nomFR": "Esprit combatif royal",
+     "elements": [],
+     "image": "images/scott/esprit-combatif-royal.webp",
+     "effet": "Réservée à Scott.\n\n• Pendant un temps : défense de Scott augmentée (effet moyen)."
+    },
+    {
+     "id": "c-flamme-du-soleil-ardent",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "烈日の炎",
+     "nomFR": "Flamme du soleil ardent",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/scott/flamme-du-soleil-ardent.webp",
+     "effet": "Réservée à Scott.\n\nATTAQUE\n• 8 attaques physiques puissantes Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Feu, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Sceau magique – Taille explosive (魔印・爆裂斬, école Magilame) : 3 attaques physiques Feu + non-élémentaire sur un ennemi, et dégâts des compétences Magilame de Scott augmentés pendant 3 tours (effet faible).\n• Taille enflammée de l'avant-garde (先駆けの炎斬, école Magilame) : 2 attaques physiques Feu + non-élémentaire sur tous les ennemis, et pendant un temps, défense de Scott réduite et attaque augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-ardeur-heroique",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "勇壮なる気炎",
+     "nomFR": "Ardeur héroïque",
+     "elements": [
+      "feu"
+     ],
+     "image": "images/scott/ardeur-heroique.webp",
+     "effet": "Réservée à Scott. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : imprégnation Feu renforcée [重式].\n• Pendant un temps : temps d'attente des compétences Magilame de Scott réduit.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-epee-du-mirage-ardent-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極陽炎の剣",
+     "nomFR": "Épée du mirage ardent ultime",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/scott/epee-du-mirage-ardent-ultime.webp",
+     "effet": "Réservée à Scott. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Feu renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Feu poussée à l'extrême (+20 %).\n• Toutes les 2 compétences Magilame utilisées : attaque supplémentaire [Frappe du cœur – Scott], selon le nombre d'alliés Chevaliers mystiques (魔法剣士) ou de FF II encore en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Scott (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Magilame se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Scott +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – SCOTT (心撃・スコット)\n• 0 à 3 alliés Chevaliers mystiques ou de FF II en vie : pendant 3 tours, dégâts de Scott contre un point faible ou légèrement faible augmentés (effet moyen).\n• 4 ou plus : pendant 3 tours, même bonus pour toute l'équipe.\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Anneau d'amour Kai (愛のリング改, école Magilame), remplace Anneau d'amour (6 attaques physiques Feu sur un ennemi, plus puissantes si Hilda ou Gordon est dans l'équipe) : 6 attaques physiques Feu sur un ennemi ; après 3 utilisations, plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
    ]
   }
