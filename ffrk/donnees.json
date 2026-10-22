@@ -1,6 +1,6 @@
 {
- "revision": 31,
- "maj": "2026-10-22T09:18:54.000Z",
+ "revision": 32,
+ "maj": "2026-10-22T09:24:18.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2239,6 +2239,38 @@
    ],
    "sprite": "images/chevalier-oignon/sprite.png",
    "capacites": [
+    {
+     "id": "c-frappe-rapide",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "高速ヒット",
+     "nomFR": "Frappe rapide",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/chevalier-oignon/frappe-rapide.webp",
+     "effet": "Réservée au Chevalier Oignon.\n\n• 3 attaques physiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-tranche-d-oignon",
+     "type": "超必殺",
+     "categorie": "physique",
+     "nomJP": "オニオンスライス",
+     "nomFR": "Tranche d'oignon",
+     "elements": [],
+     "image": "images/chevalier-oignon/tranche-d-oignon.webp",
+     "effet": "Réservée au Chevalier Oignon.\n\nATTAQUE\n• 8 à 11 attaques physiques puissantes sur un ennemi : plus le Chevalier Oignon est rapide, plus il y en a.\n• Pendant un temps : défense et défense magique de l'ennemi réduites (effet fort).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'écran ne précise pas d'élément (probablement non-élémentaire)."
+    },
+    {
+     "id": "c-grand-destin-de-la-prophetie",
+     "type": "Burst",
+     "categorie": "soutien",
+     "nomJP": "予言の大器",
+     "nomFR": "Grand destin de la prophétie",
+     "elements": [],
+     "image": "images/chevalier-oignon/grand-destin-de-la-prophetie.webp",
+     "effet": "Réservée au Chevalier Oignon.\n\nEFFET\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen).\n• Hâte et mode Burst pour le Chevalier Oignon.\n\nCOMPÉTENCES BURST (mode Burst)\n• Taille supplémentaire (追加斬り, école Vitesse physique) : 4 attaques physiques sur un ennemi, et les attaques physiques du Chevalier Oignon n'ont aucun temps d'attente pendant 1 tour.\n• Grande magie éclair (速攻だいまほう, école Magie noire) : 4 attaques magiques non-élémentaires sur un ennemi, et les attaques magiques du Chevalier Oignon n'ont aucun temps d'incantation pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +5, Magie +5.\n\nÀ VÉRIFIER : l'élément de Taille supplémentaire n'est pas précisé à l'écran ; la Hâte vaut a priori pour le Chevalier Oignon seul."
+    },
     {
      "id": "c-sagesse-interdite-scellee",
      "type": "超絶",
