@@ -379,6 +379,14 @@
         <datalist id="liste-types"></datalist>
       </div>
       <div class="champ">
+        <label for="capa-categorie">Catégorie</label>
+        <select id="capa-categorie">
+          <option value="">Non précisée</option>
+          <option value="physique">Physique</option>
+          <option value="magique">Magique</option>
+        </select>
+      </div>
+      <div class="champ">
         <label for="capa-jp">Nom japonais</label>
         <input type="text" id="capa-jp">
       </div>
@@ -649,6 +657,7 @@
         if (!Array.isArray(p.capacites)) p.capacites = [];
         if (!Array.isArray(p.elements)) p.elements = [];
         if (!CATEGORIES[p.categorie]) p.categorie = "";
+        p.capacites.forEach((c) => { if (!CATEGORIES[c.categorie]) c.categorie = ""; });
       });
     }
 
@@ -969,7 +978,7 @@
       const rond = $("detail-cercle");
       rond.innerHTML = "";
       rond.append(...cercle(c, "span").childNodes);
-      $("detail-type").textContent = c.type || "";
+      $("detail-type").textContent = [c.type, CATEGORIES[c.categorie]].filter(Boolean).join(" · ");
       $("detail-fr").textContent = c.nomFR || "(pas encore traduit)";
       $("detail-jp").textContent = c.nomJP || "";
       const els = $("detail-elements");
@@ -1092,6 +1101,7 @@
       imageCapaChoisie = null;
       $("titre-capa").textContent = c ? "Modifier la capacité" : "Ajouter une capacité";
       $("capa-type").value = c ? c.type || "" : "";
+      $("capa-categorie").value = c ? c.categorie || "" : (p.categorie || "");
       $("capa-jp").value = c ? c.nomJP || "" : "";
       $("capa-fr").value = c ? c.nomFR || "" : "";
       $("capa-effet").value = c ? c.effet || "" : "";
@@ -1120,10 +1130,11 @@
       const { p } = capaCourante;
       let c = capaCourante.c;
       if (!c) {
-        c = { id: idUnique("c"), type: "", nomJP: "", nomFR: "", elements: [], effet: "", image: "" };
+        c = { id: idUnique("c"), type: "", categorie: "", nomJP: "", nomFR: "", elements: [], effet: "", image: "" };
         p.capacites.push(c);
       }
       c.type = $("capa-type").value.trim();
+      c.categorie = $("capa-categorie").value;
       c.nomJP = $("capa-jp").value.trim();
       c.nomFR = $("capa-fr").value.trim();
       c.effet = $("capa-effet").value.trim();
