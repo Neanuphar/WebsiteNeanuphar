@@ -1,6 +1,6 @@
 {
- "revision": 1,
- "maj": "2026-10-22T05:00:00.000Z",
+ "revision": 2,
+ "maj": "2026-10-22T06:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -8,16 +8,97 @@
    "nomJP": "光の戦士",
    "serie": "I",
    "categorie": "physique",
-   "elements": ["sacre"],
+   "elements": [
+    "sacre"
+   ],
    "sprite": "images/guerrier-de-la-lumiere/sprite.png",
    "capacites": [
+    {
+     "id": "c-changement-de-classe",
+     "type": "初期",
+     "nomJP": "クラスチェンジ",
+     "nomFR": "Changement de classe",
+     "elements": [],
+     "image": "images/guerrier-de-la-lumiere/changement-de-classe.webp",
+     "effet": "Réservée au Guerrier de la Lumière.\n\n• Pendant un temps : attaque et magie du Guerrier augmentées (effet moyen).\n• Défense et défense magique augmentées (effet faible)."
+    },
+    {
+     "id": "c-epee-radieuse",
+     "type": "超必殺",
+     "nomJP": "レディアントソード",
+     "nomFR": "Épée radieuse",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/guerrier-de-la-lumiere/epee-radieuse.webp",
+     "effet": "Réservée au Guerrier de la Lumière.\n\n• 8 coups physiques puissants sur tous les ennemis.\n• Toute l'équipe gagne une image (分身) qui bloque 1 attaque physique.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lumiere-classique",
+     "type": "超絶",
+     "nomJP": "クラシックオブライト",
+     "nomFR": "Lumière classique",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/guerrier-de-la-lumiere/lumiere-classique.webp",
+     "effet": "Réservée au Guerrier de la Lumière.\n\nATTAQUE\n• 10 coups physiques Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Sacré.\n• Active le mode EX [Guerrier de la prophétie].\n\nMODE EX [GUERRIER DE LA PROPHÉTIE] (pendant un temps)\n• Boost des compétences Chevalier (ナイト), effet max : moyen.\n• À la fin du mode : déclenche l'attaque [Bright Finish], qui peut dépasser le plafond de dégâts.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-bouclier-de-lumiere",
+     "type": "Chain",
+     "nomJP": "シールドオブライト",
+     "nomFR": "Bouclier de lumière",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/guerrier-de-la-lumiere/bouclier-de-lumiere.webp",
+     "effet": "Réservée au Guerrier de la Lumière. Chaîne élémentaire (属性リミットチェイン).\n\nATTAQUE\n• Lance une chaîne Sacré (jusqu'à 99 chaînes).\n• 11 coups physiques Sacré sur un ennemi.\n• Soin automatique de toute l'équipe à chaque perte de PV, jusqu'à 2000 PV soignés au total.\n\nPENDANT LA CHAÎNE\n• Élément Sacré renforcé pour toute l'équipe (effet faible).\n• La chaîne avance avec les attaques Sacré.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-ame-persistante",
+     "type": "閃技",
+     "nomJP": "リマインソウル",
+     "nomFR": "Âme persistante",
+     "elements": [],
+     "image": "images/guerrier-de-la-lumiere/ame-persistante.webp",
+     "effet": "Réservée au Guerrier de la Lumière. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Toute l'équipe passe en état « Tenir bon » (踏みとどまる) : elle survit à un coup qui devrait la mettre KO.\n• Le Guerrier n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-surame",
+     "type": "覚醒",
+     "nomJP": "オーバーソウル",
+     "nomFR": "Surâme",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/guerrier-de-la-lumiere/surame.webp",
+     "effet": "Réservée au Guerrier de la Lumière. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques puissants Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque Sacré de toute l'équipe +3 niveaux.\n• Pendant un temps : imprégnation Sacré.\n• Pendant un temps : mode Éveil Sacré, et plafond de dégâts +1 niveau.\n\nMODE ÉVEIL SACRÉ\n• Compétences Sacré utilisables à l'infini.\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-chaine-sacree",
+     "type": "真奥義",
+     "nomJP": "ホーリーチェーン",
+     "nomFR": "Chaîne sacrée",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/guerrier-de-la-lumiere/chaine-sacree.webp",
+     "effet": "Réservée au Guerrier de la Lumière. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Guerrier de la Lumière].\n• Pendant un temps : imprégnation Sacré renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : CHAÎNE SACRÉE\n• 20 coups physiques Sacré + non-élémentaire sur un ennemi.\n• Puis un coup physique Sacré + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – GUERRIER DE LA LUMIÈRE]\n• Plus le Guerrier inflige de dégâts pendant cet état, plus la Chaîne sacrée devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques du Guerrier augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
     {
      "id": "c-eveil-crossover",
      "type": "D覚醒",
      "nomJP": "覚醒クロスオーバー",
      "nomFR": "Éveil Crossover",
-     "elements": ["sacre", "neutre"],
-     "effet": "Réservée au Guerrier de la Lumière.\n\nATTAQUE\n• 7 coups physiques puissants Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprègne le Guerrier de l'élément Sacré [重式] et augmente son plafond de dégâts de 1 niveau.\n• Active le mode D-Éveil Sacré I et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences (アビリティ) Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée renforce le mode, jusqu'à 3 paliers : temps d'attente des compétences Sacré équipées réduit, et taux de critique 50 / 75 / 100 %.\n\nDUAL SHIFT\n• Fait passer le Guerrier en mode D-Éveil Sacré II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré déclenche l'attaque supplémentaire D Bright Shift.\n\nATTAQUE SUPPLÉMENTAIRE : D BRIGHT SHIFT\nSelon le nombre d'alliés de FF I encore en vie :\n• 0 à 3 : baisse brève de la défense, de la défense magique et de l'esprit d'un ennemi (effet très fort) + pendant un temps, attaque Sacré de toute l'équipe +2 niveaux.\n• 4 ou plus : pendant 2 tours, plafond de dégâts du Guerrier +1 niveau et dégâts fatals (フェイタルダメージ) +20 %.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré du Guerrier +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Guerrier de la Lumière] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'étiquette 対乾坤一擲, le type d'imprégnation [重式] et l'effet exact des « dégâts fatals ».",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "effet": "Réservée au Guerrier de la Lumière.\n\nATTAQUE\n• 7 coups physiques puissants Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Sacré renforcée [重式] et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Sacré I et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences (アビリティ) Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée renforce le mode, jusqu'à 3 paliers : temps d'attente des compétences Sacré équipées réduit, et taux de critique 50 / 75 / 100 %.\n\nDUAL SHIFT\n• Fait passer le Guerrier en mode D-Éveil Sacré II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré déclenche l'attaque supplémentaire D Bright Shift.\n\nATTAQUE SUPPLÉMENTAIRE : D BRIGHT SHIFT\nSelon le nombre d'alliés de FF I encore en vie :\n• 0 à 3 : baisse brève de la défense, de la défense magique et de l'esprit d'un ennemi (effet très fort) + pendant un temps, attaque Sacré de toute l'équipe +2 niveaux.\n• 4 ou plus : pendant 2 tours, plafond de dégâts du Guerrier +1 niveau et dégâts fatals (フェイタルダメージ) +20 %.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré du Guerrier +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Guerrier de la Lumière] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'étiquette 対乾坤一擲 et l'effet exact des « dégâts fatals ».",
      "image": "images/guerrier-de-la-lumiere/eveil-crossover.webp"
     }
    ]
