@@ -1,6 +1,6 @@
 {
- "revision": 32,
- "maj": "2026-10-22T09:24:18.000Z",
+ "revision": 33,
+ "maj": "2026-10-22T09:31:38.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2434,6 +2434,241 @@
      ],
      "image": "images/chevalier-oignon/tornade-iii.webp",
      "effet": "Réservée au Chevalier Oignon. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Chevalier Oignon Vent].\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : TORNADE [III]\n• 20 attaques magiques Vent + non-élémentaire sur un ennemi.\n• Puis une attaque magique Vent + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – CHEVALIER OIGNON VENT]\n• Plus le Chevalier Oignon inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques du Chevalier Oignon augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "nuage-des-tenebres",
+   "nom": "Nuage des Ténèbres",
+   "nomJP": "暗闇の雲",
+   "serie": "III",
+   "categorie": "magique",
+   "elements": [
+    "tenebres",
+    "foudre",
+    "sacre"
+   ],
+   "sprite": "images/nuage-des-tenebres/sprite.png",
+   "capacites": [
+    {
+     "id": "c-tentacules-de-douleur",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "痛みの触手",
+     "nomFR": "Tentacules de douleur",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/tentacules-de-douleur.webp",
+     "effet": "Réservée au Nuage des Ténèbres.\n\n• 3 attaques magiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-canon-a-ondes-antiaerien",
+     "type": "超必殺",
+     "categorie": "magique",
+     "nomJP": "高射式 波動砲",
+     "nomFR": "Canon à ondes antiaérien",
+     "elements": [
+      "tenebres",
+      "sacre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-antiaerien.webp",
+     "effet": "Réservée au Nuage des Ténèbres.\n\nATTAQUE\n• 5 attaques magiques Ténèbres + Sacré sur tous les ennemis.\n• Pendant un temps : imprégnation Ténèbres.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-canon-a-ondes-zero",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "零式 波動砲",
+     "nomFR": "Canon à ondes zéro",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-zero.webp",
+     "effet": "Réservée au Nuage des Ténèbres.\n\nATTAQUE\n• 6 attaques magiques puissantes Ténèbres + non-élémentaire sur tous les ennemis.\n• Pendant un temps : magie et esprit de toute l'équipe augmentés (effet moyen).\n• Arrêt de mort (死の宣告, compte de 30) sur toute l'équipe.\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Sphère d'ondes explosive (炸裂式 波動球, école Magie noire) : 3 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et dégâts des compétences Arts sombres du Nuage des Ténèbres augmentés pendant 3 tours (effet faible).\n• Sphère d'ondes renforcée (強化式 波動球, école Magie noire) : 2 attaques magiques Ténèbres + non-élémentaire sur un ennemi ; pendant un temps, défense du Nuage des Ténèbres réduite et magie augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : l'écran dit bien « Arrêt de mort sur toute l'équipe » (味方全体に死の宣告) ; la Hâte vaut a priori pour toute l'équipe."
+    },
+    {
+     "id": "c-tentacules-lointains",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "隔たりの触手",
+     "nomFR": "Tentacules lointains",
+     "elements": [
+      "tenebres",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/tentacules-lointains.webp",
+     "effet": "Réservée au Nuage des Ténèbres.\n\nATTAQUE\n• 10 attaques magiques Ténèbres + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : dégâts des compétences Ténèbres augmentés (effet moyen).\n• Temps d'attente réduit de 3 tours.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-liens-tisses-foudre-du-nuage",
+     "type": "LBLC",
+     "categorie": "magique",
+     "nomJP": "紡絆・暗闇の雲雷",
+     "nomFR": "Liens tissés – Foudre du Nuage des Ténèbres",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/liens-tisses-foudre-du-nuage.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Foudre (jusqu'à 150 chaînes). Si une chaîne Foudre est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques magiques Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Nuage des Ténèbres Foudre].\n• La prochaine jauge ATB du Nuage des Ténèbres se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Foudre.\n\nMODE CHAIN FORCE – NUAGE DES TÉNÈBRES FOUDRE (チェインフォースモード・暗闇の雲雷)\n• Chaque compétence Foudre utilisée : attaque supplémentaire [Guide de la foudre – Nuage des Ténèbres] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DE LA FOUDRE – NUAGE DES TÉNÈBRES (雷の導・暗闇の雲)\n• 6 attaques magiques Foudre + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente du Nuage des Ténèbres réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-eclair-plongeant-nuage",
+     "type": "LB閃",
+     "categorie": "magique",
+     "nomJP": "降閃【暗闇の雲】",
+     "nomFR": "Éclair plongeant [Nuage des Ténèbres]",
+     "elements": [
+      "tenebres",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/eclair-plongeant-nuage.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• Consomme la jauge de Limite, sans temps d'attente.\n• 10 attaques magiques Ténèbres + Foudre + non-élémentaire sur un ennemi.\n• Brièvement : résistance Ténèbres et Foudre de l'ennemi −4 niveaux.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Ténèbres et Foudre augmentée, débloquée au niveau d'entraînement 7.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-voile-des-tenebres",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "闇の衣",
+     "nomFR": "Voile des ténèbres",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/nuage-des-tenebres/voile-des-tenebres.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Le Nuage des Ténèbres n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-debordement-de-foudre",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "雷の氾濫",
+     "nomFR": "Débordement de foudre",
+     "elements": [
+      "foudre"
+     ],
+     "image": "images/nuage-des-tenebres/debordement-de-foudre.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Foudre renforcée [重式].\n• Le Nuage des Ténèbres n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-mur-d-ondes-anti-magie",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "耐魔式 波動壁",
+     "nomFR": "Mur d'ondes anti-magie",
+     "elements": [],
+     "image": "images/nuage-des-tenebres/mur-d-ondes-anti-magie.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 3 fois.\n\n• Sans temps d'attente : barrière magique pour toute l'équipe, qui bloque 1 attaque magique (sauf certaines).\n• Hâte pour toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-canon-a-ondes-convergent",
+     "type": "OFlow",
+     "categorie": "magique",
+     "nomJP": "収束式 波動砲",
+     "nomFR": "Canon à ondes convergent",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-convergent.webp",
+     "effet": "Réservée au Nuage des Ténèbres.\n\nATTAQUE\n• Attaque magique ultra-puissante Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; encore plus puissante si l'ennemi est faible ou légèrement faible aux Ténèbres.\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : le sens du type OFlow (ne consomme qu'un segment de jauge)."
+    },
+    {
+     "id": "c-canon-a-ondes-de-represailles",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "報復式 波動砲",
+     "nomFR": "Canon à ondes de représailles",
+     "elements": [
+      "tenebres",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-de-represailles.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques puissantes Ténèbres + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Barrière pour toute l'équipe : renvoie à l'attaquant une partie des dégâts reçus, en dégâts Ténèbres.\n• Pendant un temps : mode Éveil Ténèbres, et plafond de dégâts +1 niveau.\n\nMODE ÉVEIL TÉNÈBRES (闇覚醒モード)\n• Compétences Ténèbres utilisables à l'infini.\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : « dégâts niv. 3 » est sans doute le niveau atteint au niveau d'entraînement actuel (3 sur 15)."
+    },
+    {
+     "id": "c-canon-a-ondes-a-dispersion",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "散弾式 波動砲",
+     "nomFR": "Canon à ondes à dispersion",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-a-dispersion.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 15 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Tant que le mode Synchro dure : état [Tentacules] (触手状態).\n• Toutes les 2 compétences Synchro utilisées : attaque supplémentaire [Présage des nuées sombres].\n\nCOMPÉTENCES SYNCHRO\n• Sphère d'ondes en rafale (連弾式 波動球, école Arts sombres, déclenchée par une compétence Ténèbres) : 6 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et temps d'attente réduit d'1 tour.\n• Sphère d'ondes chargée (装弾式 波動球, école Arts sombres, déclenchée par une compétence Ténèbres) : l'effet change selon l'état [Tentacules] :\n  – sans l'état : attaque magique Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ;\n  – avec l'état : pareil, et brièvement, défense, défense magique et esprit de l'ennemi réduits (effet très fort), puis fin de l'état [Tentacules].\n\nATTAQUE SUPPLÉMENTAIRE : PRÉSAGE DES NUÉES SOMBRES (暗雲の兆し)\n• Dégâts Ténèbres de toute l'équipe augmentés pendant 1 tour (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対乾坤一擲."
+    },
+    {
+     "id": "c-canon-a-ondes-a-diffusion",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "散射式 波動砲",
+     "nomFR": "Canon à ondes à diffusion",
+     "elements": [
+      "tenebres",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-a-diffusion.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 15 attaques magiques Ténèbres + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Foudre de l'ennemi −2 niveaux.\n• Pendant un temps : imprégnation Foudre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Chaque Canon jaillissant utilisé : attaque supplémentaire [Tentacules affaiblissants], dont la puissance et l'effet dépendent du niveau de l'état [Débordement des ténèbres].\n\nCOMPÉTENCES SYNCHRO\n• Canon guidé (誘導砲, école Arts sombres, déclenchée par une compétence Foudre) : 6 attaques magiques Ténèbres + Foudre + non-élémentaire sur un ennemi ; dégâts des compétences Foudre du Nuage des Ténèbres augmentés pendant 2 tours (effet moyen) ; état [Débordement des ténèbres] (闇の氾濫状態) +1 niveau (2 max).\n• Canon jaillissant (噴流砲, école Arts sombres, déclenchée par une compétence Foudre) : attaque magique Ténèbres + Foudre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nATTAQUE SUPPLÉMENTAIRE : TENTACULES AFFAIBLISSANTS (弱化の触手)\nSelon le niveau de l'état [Débordement des ténèbres] :\n• Niveau 0 : temps d'attente du Nuage des Ténèbres réduit de 2 tours.\n• Niveau 1 : attaque magique Ténèbres + Foudre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; brièvement, défense, défense magique et esprit de l'ennemi réduits (effet très fort) ; consomme tout l'état.\n• Niveau 2 : pareil, et en plus, pendant un temps, résistance Foudre de l'ennemi −1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対乾坤一擲."
+    },
+    {
+     "id": "c-canon-a-ondes-souterrain",
+     "type": "O奥義",
+     "categorie": "magique",
+     "nomJP": "潜地式 波動砲",
+     "nomFR": "Canon à ondes souterrain",
+     "elements": [
+      "tenebres",
+      "foudre"
+     ],
+     "image": "images/nuage-des-tenebres/canon-a-ondes-souterrain.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques magiques ultra-puissantes Ténèbres + Foudre sur un ennemi.\n• Puis une attaque magique Ténèbres + Foudre qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-super-canon-a-ondes",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "超波動砲",
+     "nomFR": "Super canon à ondes",
+     "elements": [
+      "tenebres",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/super-canon-a-ondes.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Nuage des Ténèbres].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Double élément.\n\n2E ACTIVATION : SUPER CANON À ONDES\n• 20 attaques magiques Ténèbres + Foudre + non-élémentaire sur un ennemi.\n• Puis une attaque magique Ténèbres + Foudre + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – NUAGE DES TÉNÈBRES]\n• Plus le Nuage des Ténèbres inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• Si le Nuage des Ténèbres utilise une compétence Ténèbres ou Foudre à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques du Nuage des Ténèbres augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-tentacules-lointains-ultimes",
+     "type": "究極",
+     "categorie": "magique",
+     "nomJP": "究極隔たりの触手",
+     "nomFR": "Tentacules lointains ultimes",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/tentacules-lointains-ultimes.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• Toutes les 2 compétences Ténèbres utilisées : attaque supplémentaire [Frappe du cœur – Nuage des Ténèbres] (2 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives du Nuage des Ténèbres (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max du Nuage des Ténèbres +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – NUAGE DES TÉNÈBRES (心撃・暗闇の雲闇)\n• Brièvement : magie et défense magique de l'ennemi réduites (effet fort).\n• Temps d'attente du Nuage des Ténèbres réduit de 2 tours.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Tentacules lointains Kai (隔たりの触手改, école Arts sombres), remplace Tentacules lointains (5 attaques magiques Ténèbres + Foudre sur une cible) : 5 attaques magiques Ténèbres + Foudre sur une cible ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Canon à ondes Kai (はどうほう改, école Arts sombres), remplace Canon à ondes (attaque magique Ténèbres sur un ennemi, qui peut dépasser le plafond de dégâts) : même attaque, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    },
+    {
+     "id": "c-eveil-canon-a-ondes-antiaerien",
+     "type": "D覚醒",
+     "categorie": "magique",
+     "nomJP": "覚醒高射式 波動砲",
+     "nomFR": "Éveil – Canon à ondes antiaérien",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/nuage-des-tenebres/eveil-canon-a-ondes-antiaerien.webp",
+     "effet": "Réservée au Nuage des Ténèbres. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit du Nuage des Ténèbres augmentés (effet fort), et imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Ténèbres I [Nuage des Ténèbres] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL TÉNÈBRES I (avant la Dual Shift)\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 2 fois de plus.\n• Chaque compétence Ténèbres équipée utilisée : attaque supplémentaire [D Projectile d'ondes].\n\nDUAL SHIFT\n• Fait passer le Nuage des Ténèbres en mode D-Éveil Ténèbres II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL TÉNÈBRES II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n• La jauge de capacités spéciales se remplit plus vite en attaquant ou en utilisant une compétence (effet moyen).\n• À la fin du mode : le Nuage des Ténèbres n'a aucun temps d'attente pendant 2 tours.\n\nATTAQUE SUPPLÉMENTAIRE : D PROJECTILE D'ONDES (D波動弾)\n• 4 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Tous les 2 déclenchements : temps d'attente du Nuage des Ténèbres réduit d'1 tour.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Ténèbres du Nuage des Ténèbres +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Ténèbres I et II [Nuage des Ténèbres] et le mode Éveil Ténèbres.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
     }
    ]
   }
