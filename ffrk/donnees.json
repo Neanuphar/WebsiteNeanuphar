@@ -1,6 +1,6 @@
 {
- "revision": 36,
- "maj": "2026-10-22T09:44:16.000Z",
+ "revision": 37,
+ "maj": "2026-10-22T09:49:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -3160,6 +3160,179 @@
      ],
      "image": "images/kain/eveil-gungnir.webp",
      "effet": "Réservée à Kain. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques Saut puissantes Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Foudre renforcée [重式], et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Fierté du dragon I [Kain Foudre] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL FIERTÉ DU DRAGON I (avant la Dual Shift)\n• Boost des compétences Chevalier dragon, effet max : moyen.\n• Les compétences Chevalier dragon se lancent 2 fois de plus.\n• Chaque compétence Chevalier dragon utilisée renforce le mode : temps d'attente des compétences équipées réduit (jusqu'à 3 paliers).\n• Toutes les 3 compétences Chevalier dragon utilisées : attaque supplémentaire [D Plongeon du dragon].\n\nDUAL SHIFT\n• Fait passer Kain en mode D-Éveil Fierté du dragon II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL FIERTÉ DU DRAGON II (après la Dual Shift)\n• Plafond de dégâts +2 niveaux.\n• Boost des compétences Chevalier dragon, effet max : moyen.\n• Les compétences Chevalier dragon se lancent 1 fois de plus.\n• Les attaques Saut n'ont plus de temps d'attente.\n• Taux de critique à 100 %.\n\nATTAQUE SUPPLÉMENTAIRE : D PLONGEON DU DRAGON (Dドラグーンダイブ)\n• Attaque physique à distance Foudre + Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Chevalier dragon de Kain +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Fierté du dragon I et II [Kain Foudre] et le mode Éveil Fierté du dragon.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
+    }
+   ]
+  },
+  {
+   "id": "rydia",
+   "nom": "Rydia",
+   "nomJP": "リディア",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "eau",
+    "terre",
+    "sacre"
+   ],
+   "sprite": "images/rydia/sprite.png",
+   "capacites": [
+    {
+     "id": "c-invocation-de-chimere-i",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "幻獣召喚I",
+     "nomFR": "Invocation de chimère I",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/rydia/invocation-de-chimere-i.webp",
+     "effet": "Réservée à Rydia.\n\n• Attaque d'Invocation non-élémentaire sur tous les ennemis."
+    },
+    {
+     "id": "c-cri-dechirant-de-la-fillette",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "悲痛なる少女の叫び",
+     "nomFR": "Cri déchirant de la fillette",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/rydia/cri-dechirant-de-la-fillette.webp",
+     "effet": "Réservée à Rydia.\n\nATTAQUE\n• 5 attaques d'Invocation puissantes Terre + non-élémentaire sur tous les ennemis.\n• Pendant un temps : imprégnation Terre, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Frappe de la terre (大地の一撃, école Invocation) : 4 attaques d'Invocation Terre + non-élémentaire sur un ennemi.\n• Rugissement de la terre (大地の咆哮, école Invocation) : 2 attaques d'Invocation Terre + non-élémentaire sur tous les ennemis.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-loi-du-monde-des-chimeres",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "幻獣界の掟",
+     "nomFR": "Loi du monde des chimères",
+     "elements": [
+      "eau",
+      "sacre"
+     ],
+     "image": "images/rydia/loi-du-monde-des-chimeres.webp",
+     "effet": "Réservée à Rydia.\n\nATTAQUE\n• 6 attaques d'Invocation puissantes Eau + Sacré sur tous les ennemis.\n• Pendant un temps : résistance Eau des ennemis −2 niveaux.\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Bénédiction du roi des chimères (幻獣王の加護, école Invocation) : 4 attaques d'Invocation Eau + Sacré sur un ennemi, et temps d'incantation des attaques magiques de Rydia réduit de 2 tours.\n• Bénédiction de la reine des chimères (幻獣王妃の加護, école Invocation) : 2 attaques d'Invocation Eau + Sacré sur un ennemi, et rend 1 utilisation à la compétence à qui il en reste le moins.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-invocation-rencontre-fatidique",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "幻獣召喚・宿命の邂逅",
+     "nomFR": "Invocation de chimère – Rencontre fatidique",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/rydia/invocation-rencontre-fatidique.webp",
+     "effet": "Réservée à Rydia.\n\nATTAQUE\n• 10 attaques d'Invocation Eau + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Eau, magie de Rydia augmentée (effet moyen) et défense augmentée (effet faible).\n• Chaque compétence Eau utilisée : attaque supplémentaire [Raz-de-marée] (タイダルフラッド) : 5 attaques d'Invocation Eau + non-élémentaire sur un ennemi.\n• Au bout d'un certain temps : rend 2 utilisations à l'une de ses compétences.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-titan-g",
+     "type": "LBG召喚",
+     "categorie": "magique",
+     "nomJP": "Gタイタン",
+     "nomFR": "Titan G",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/rydia/titan-g.webp",
+     "effet": "Réservée à Rydia. Limit Break d'invocation de gardien, utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : l'équipe ne peut plus être contrôlée, et Titan est invoqué pour un court moment.\n• Les statistiques de Titan dépendent de la quantité de jauge de Limite consommée.\n\nTITAN (gardien)\n• Aucune résistance ni faiblesse élémentaire.\n• Insensible à toutes les altérations d'état.\n\nCOMPÉTENCES DU GARDIEN (école Magie noire)\n• Protection de la terre G (Gだいちのまもり) : sans temps d'attente, 2 attaques magiques Terre + non-élémentaire sur tous les ennemis, et barrière de réduction de dégâts sur Titan, 2 fois (effet très fort).\n• Frappe de la terre G (Gだいちのいちげき) : sans temps d'attente, attaque magique Terre + non-élémentaire sur tous les ennemis, qui peut dépasser le plafond de dégâts.\n\nCAPACITÉ SPÉCIALE DU GARDIEN : COLÈRE DE LA TERRE G (Gだいちのいかり)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• 10 attaques magiques Terre + non-élémentaire sur tous les ennemis, puis une qui peut dépasser le plafond de dégâts.\n• Met fin à l'invocation.\n\nEFFETS DONNÉS À TITAN À L'INVOCATION\n• Carapace, Blindage et Hâte.\n• Jauge ATB pleine au début de l'invocation.\n• Pendant un temps : défense et défense magique augmentées (effet très fort).\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +2 niveaux.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts augmentés (niv. 1).\n• Barrière de réduction de dégâts, 1 fois (niv. 1), débloquée au niveau d'entraînement 3."
+    },
+    {
+     "id": "c-secret-du-village-de-mist",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ミストの村の秘伝",
+     "nomFR": "Secret du village de Mist",
+     "elements": [],
+     "image": "images/rydia/secret-du-village-de-mist.webp",
+     "effet": "Réservée à Rydia. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : temps d'attente des attaques magiques de Rydia réduit.\n• Pendant un temps : boost des compétences Invocation, effet max : moyen.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-mur-de-mist",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ミストウォール",
+     "nomFR": "Mur de Mist",
+     "elements": [
+      "eau",
+      "terre",
+      "sacre"
+     ],
+     "image": "images/rydia/mur-de-mist.webp",
+     "effet": "Réservée à Rydia. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Rend 2 utilisations à l'une de ses compétences Invocation.\n• Pendant un temps : mode Triple élément II.\n\nMODE TRIPLE ÉLÉMENT II (トライエレメントモードII)\n• Si Rydia utilise une compétence Eau, Terre ou Sacré à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-invocation-roi-des-chimeres",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "召喚・幻獣王",
+     "nomFR": "Invocation – Roi des chimères",
+     "elements": [
+      "eau",
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/rydia/invocation-roi-des-chimeres.webp",
+     "effet": "Réservée à Rydia. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques d'Invocation Eau + Terre + Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Éveil Invocation, et plafond de dégâts +1 niveau.\n• Active le mode Triple élément et le mode Serment au monde des chimères.\n\nMODE ÉVEIL INVOCATION (召喚覚醒モード)\n• Compétences Invocation utilisables à l'infini.\n• Boost des compétences Invocation, effet max : moyen.\n• Les compétences Invocation se lancent 1 fois de plus.\n\nMODE TRIPLE ÉLÉMENT (トライエレメントモード)\n• Si Rydia utilise une compétence Eau, Terre ou Sacré à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nMODE SERMENT AU MONDE DES CHIMÈRES (幻界への誓願モード)\n• Chaque compétence Invocation utilisée renforce le mode (jusqu'à 3 paliers) : dégâts des compétences Invocation de Rydia augmentés (effet max : moyen) et leur temps d'attente réduit.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-la-force-d-affronter-le-destin",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "運命に立ち向かう力",
+     "nomFR": "La force d'affronter le destin",
+     "elements": [
+      "eau",
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/rydia/la-force-d-affronter-le-destin.webp",
+     "effet": "Réservée à Rydia. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques d'Invocation Eau + Terre + Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque Eau, Terre et Sacré de Rydia +2 niveaux.\n• Pendant un temps : mode Éveil Incantation éclair, et plafond de dégâts +2 niveaux.\n• Active le mode Triple élément II.\n• À la fin du mode Éveil Incantation éclair : attaque supplémentaire [Frappe de Mist].\n\nMODE ÉVEIL INCANTATION ÉCLAIR (瞬唱覚醒モード)\n• Compétences Invocation utilisables à l'infini.\n• Boost des compétences Invocation, effet max : moyen.\n• Les compétences Invocation n'ont plus de temps d'attente.\n\nMODE TRIPLE ÉLÉMENT II (トライエレメントモードII)\n• Si Rydia utilise une compétence Eau, Terre ou Sacré à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DE MIST (ミストの一撃)\n• Attaque d'Invocation Eau + Terre + Sacré + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Rend 2 utilisations à l'une de ses compétences Invocation.\n• Rydia n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-coeur-brise",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "ブロークンハート",
+     "nomFR": "Cœur brisé",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/rydia/coeur-brise.webp",
+     "effet": "Réservée à Rydia. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques d'Invocation puissantes Eau + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Eau renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Soin automatique de Rydia à chaque perte de PV, jusqu'à 10 000 PV soignés au total.\n• Tant que le mode Synchro dure : état [Monde des chimères] (幻界状態).\n\nCOMPÉTENCES SYNCHRO\n• Protection obscure du roi des chimères (幻獣王の冥護, école Invocation, déclenchée par une compétence Eau) : 6 attaques d'Invocation Eau + non-élémentaire sur un ennemi.\n• Rugissement du roi des chimères (幻獣王の咆哮, école Invocation, déclenchée par une compétence Eau) : sur tous les ennemis, l'effet change selon l'état [Monde des chimères] :\n  – sans l'état : 4 attaques d'Invocation Eau + non-élémentaire ;\n  – avec l'état : 4 attaques, barrière de réduction de dégâts sur Rydia, 4 fois (effet fort), et fin de l'état [Monde des chimères].\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 3).\n\nÀ VÉRIFIER : les niveaux 3 sont sans doute ceux atteints au niveau d'entraînement actuel (3 sur 5)."
+    },
+    {
+     "id": "c-appelle-moi-reine",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "コールミークイーン",
+     "nomFR": "Appelle-moi reine",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/rydia/appelle-moi-reine.webp",
+     "effet": "Réservée à Rydia. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques d'Invocation Eau + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Eau renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Flux temporel différent.\n\nCOMPÉTENCES SYNCHRO\n• Canonnade du roi des chimères (幻獣王の轟砲, école Invocation, déclenchée par une compétence Eau) : 6 attaques d'Invocation Eau + non-élémentaire sur un ennemi, plus puissantes s'il est faible ou légèrement faible à l'Eau ; dégâts des compétences Eau de Rydia augmentés pendant 1 tour (effet moyen).\n• Frappe du roi des chimères (幻獣王の一撃, école Invocation, déclenchée par une compétence Eau) : attaque d'Invocation Eau + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; temps d'attente des compétences Invocation réduit de 2 tours ; rend 2 utilisations à l'une de ses compétences.\n\nMODE FLUX TEMPOREL DIFFÉRENT (異なる時の流れモード)\n• Tant que le mode Synchro dure : chaque compétence Synchro utilisée déclenche l'attaque supplémentaire [Interférence du monde des chimères], dont l'effet change à chaque fois.\n• Après 3 Interférences, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : INTERFÉRENCE DU MONDE DES CHIMÈRES (幻界からの干渉)\n• 1re et 2e fois : attaque d'Invocation Eau + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts, et temps d'attente de Rydia réduit d'1 tour.\n• 3e fois : pareil, et Rydia n'a aucun temps d'attente pendant 1 tour ; dégâts Eau augmentés pendant 1 tour (effet fort).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-raz-de-maree",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "おおつなみ",
+     "nomFR": "Raz-de-marée",
+     "elements": [
+      "eau",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/rydia/raz-de-maree.webp",
+     "effet": "Réservée à Rydia. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Rydia Eau Sacré].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Double élément.\n\n2E ACTIVATION : RAZ-DE-MARÉE\n• 20 attaques d'Invocation Eau + Sacré + non-élémentaire sur un ennemi.\n• Puis une attaque d'Invocation Eau + Sacré + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – RYDIA EAU SACRÉ]\n• Plus Rydia inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• Si Rydia utilise une compétence Eau ou Sacré à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Rydia augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
     }
    ]
   }
