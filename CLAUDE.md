@@ -21,6 +21,7 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 ├── ffrk/
 │   ├── index.html     ← Wiki FFRK (persos et capacités spéciales)
 │   ├── donnees.json   ← données du wiki (créé au premier enregistrement)
+│   ├── fond.jpg       ← illustration officielle FFRK, déjà floutée, en fond de page
 │   └── images/<perso>/← sprites et icônes de capacités
 └── CNAME              ← créé par GitHub Pages pour neanuphar.fr : ne pas supprimer
 ```

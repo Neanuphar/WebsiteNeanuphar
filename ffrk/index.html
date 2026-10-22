@@ -36,6 +36,22 @@
       line-height: 1.5;
     }
     main { max-width: 900px; margin: 0 auto; padding: 20px 16px 64px; }
+
+    /* ---- Fond : illustration floutée, voilée pour garder le texte lisible ---- */
+    :root { --voile: rgba(244, 241, 234, .72); }
+    @media (prefers-color-scheme: dark) { :root { --voile: rgba(22, 24, 27, .62); } }
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+    body::before {
+      background: url("fond.jpg") 70% center / cover no-repeat;
+      transform: scale(1.04); /* cache le bord flou de l'image */
+    }
+    body::after { background: var(--voile); }
     a { color: var(--accent); }
     .haut { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
     .retour { color: var(--accent); text-decoration: none; }
@@ -600,7 +616,12 @@
           shaBase = distant.sha;
           if (distant.donnees) donnees = distant.donnees;
         } else {
-          const rep = await fetch(`${DEPOT.fichier}?t=${Date.now()}`);
+          let rep;
+          try {
+            rep = await fetch(`${DEPOT.fichier}?t=${Date.now()}`);
+          } catch (e) {
+            throw new Error("Impossible de charger le wiki (pas de connexion ?).");
+          }
           if (rep.ok) donnees = await rep.json();
         }
         normaliser();
