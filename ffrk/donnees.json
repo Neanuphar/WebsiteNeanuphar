@@ -1,6 +1,6 @@
 {
- "revision": 9,
- "maj": "2026-10-22T11:00:00.000Z",
+ "revision": 10,
+ "maj": "2026-10-22T12:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -621,6 +621,113 @@
      ],
      "image": "images/matoya/dechainement-magique.webp",
      "effet": "Réservée à Matoya. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Feu + Glace + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Éveil Sorcière, et plafond de dégâts +1 niveau.\n• Active le mode Œil de cristal II.\n• Effet bonus selon le nombre d'alliés de FF I encore en vie (voir plus bas).\n\nMODE ÉVEIL SORCIÈRE (魔女覚醒モード)\n• Compétences Sorcière utilisables à l'infini.\n• Boost des compétences Sorcière, effet max : moyen.\n• Les compétences Sorcière se lancent 1 fois de plus.\n\nMODE ŒIL DE CRISTAL II (クォーツアイモードII)\n• À sa prochaine action, si Matoya utilise une compétence Feu, Glace ou Foudre, elle reçoit pendant un temps l'imprégnation renforcée [重式] de cet élément.\n\nEFFET BONUS SELON LES ALLIÉS DE FF I EN VIE\n• 0 ou 1 : Matoya n'a aucun temps d'attente pendant 1 tour + pendant un temps, attaque Feu, Glace et Foudre +1 niveau.\n• 2 ou 3 : toute l'équipe n'a aucun temps d'attente pendant 1 tour + pendant un temps, attaque de tous les éléments +1 niveau.\n• 4 ou plus : toute l'équipe n'a aucun temps d'attente pendant 1 tour + pendant un temps, attaque de tous les éléments +2 niveaux + dégâts augmentés en frappant une faiblesse, même légère (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    }
+   ]
+  },
+  {
+   "id": "voleur",
+   "nom": "Voleur",
+   "nomJP": "シーフ",
+   "serie": "I",
+   "categorie": "physique",
+   "elements": [
+    "vent",
+    "poison"
+   ],
+   "sprite": "images/voleur/sprite.png",
+   "capacites": [
+    {
+     "id": "c-tour-empoisonne",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "ポイズントリック",
+     "nomFR": "Tour empoisonné",
+     "elements": [
+      "poison"
+     ],
+     "image": "images/voleur/tour-empoisonne.webp",
+     "effet": "Réservée au Voleur.\n\n• Sans temps d'attente : attaque physique Poison sur un ennemi."
+    },
+    {
+     "id": "c-brise-invisible",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "インビジブレイク",
+     "nomFR": "Brise invisible",
+     "elements": [
+      "vent",
+      "poison"
+     ],
+     "image": "images/voleur/brise-invisible.webp",
+     "effet": "Réservée au Voleur.\n\nATTAQUE\n• Sans temps d'attente : 10 coups physiques puissants Vent + Poison, répartis au hasard, sur un ennemi.\n• Pendant un temps : attaque et défense de l'ennemi réduites (effet fort).\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Tour de tempête (ストームトリック, école Voleur) : 4 coups physiques Vent + Poison sur un ennemi, et temps d'attente des compétences Voleur réduit de 2 tours.\n• Brise-tempête (ストームブレイク, école Voleur) : 2 coups physiques Vent + Poison sur un ennemi, et pendant un temps, sa défense est réduite (effet fort).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-propulsion-du-vent",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ウインドドライブ",
+     "nomFR": "Propulsion du vent",
+     "elements": [
+      "vent"
+     ],
+     "image": "images/voleur/propulsion-du-vent.webp",
+     "effet": "Réservée au Voleur. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Le Voleur n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-voleurs-lunatiques",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "ルナティックシーブズ",
+     "nomFR": "Voleurs lunatiques",
+     "elements": [
+      "vent",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/voleur/voleurs-lunatiques.webp",
+     "effet": "Réservée au Voleur. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 15 coups physiques Vent + Poison + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque et esprit de toute l'équipe augmentés (effet moyen), défense et défense magique augmentées (effet faible).\n• Aucun temps d'attente pendant 1 tour.\n• Pendant un temps : mode Éveil Voleur, et plafond de dégâts +1 niveau.\n• Quand le Voleur utilise une compétence Voleur : attaque supplémentaire [Tour renforcé] (1 fois max).\n\nMODE ÉVEIL VOLEUR (シーフ覚醒モード)\n• Compétences Voleur utilisables à l'infini.\n• Boost des compétences Voleur, effet max : moyen.\n• Les compétences Voleur se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : TOUR RENFORCÉ (ブーストトリック)\n• Pendant 3 tours : dégâts des compétences Voleur augmentés (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Statistiques du Voleur augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'étiquette 対ウェポンブレイク・攻, et si « aucun temps d'attente pendant 1 tour » concerne le Voleur ou toute l'équipe."
+    },
+    {
+     "id": "c-rafale-du-croissant",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "クレセントゲイル",
+     "nomFR": "Rafale du croissant",
+     "elements": [
+      "vent",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/voleur/rafale-du-croissant.webp",
+     "effet": "Réservée au Voleur. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques Vent + Poison + non-élémentaire sur un ennemi.\n• Pendant un temps : taux de critique de toute l'équipe à 50 %.\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Active le mode Double élément III.\n• À chaque compétence Voleur : pendant un temps, le taux de critique de l'équipe monte (5 paliers : 60 / 70 / 80 / 90 / 100 %), et attaque supplémentaire [Voleurs empoisonnés].\n• Effet bonus si au moins 3 alliés sont imprégnés de Poison (voir plus bas).\n\nCOMPÉTENCES SYNCHRO (déclenchées par une compétence Voleur)\n• Lame creuse (ホロウエッジ, école Voleur) : 6 coups physiques Vent + Poison + non-élémentaire sur un ennemi, et temps d'attente des héros de FF I réduit de 1 tour.\n• Taille de dague (ダガースラッシュ, école Voleur) : 3 coups physiques rapides Vent + Poison + non-élémentaire sur un ennemi, et pendant 3 tours, dégâts des compétences Vent ou Poison du Voleur augmentés (effet moyen).\n\nMODE DOUBLE ÉLÉMENT III (ツインエレメントモードIII)\n• À sa prochaine action, si le Voleur utilise une compétence Vent ou Poison, il reçoit pendant un temps l'imprégnation renforcée [重式] de cet élément (effet moyen).\n\nEFFET BONUS : 3 ALLIÉS OU PLUS IMPRÉGNÉS DE POISON\n• Pendant un temps : taux de critique de toute l'équipe à 100 %.\n\nATTAQUE SUPPLÉMENTAIRE : VOLEURS EMPOISONNÉS (ポイズンシーブズ)\n• 5 coups physiques Vent + Poison + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque Poison du Voleur +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-brise-invisible-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極インビジブレイク",
+     "nomFR": "Brise invisible ultime",
+     "elements": [
+      "vent",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/voleur/brise-invisible-ultime.webp",
+     "effet": "Réservée au Voleur. Utilisable 1 fois.\n\nATTAQUE\n• 7 coups physiques puissants Vent + Poison + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Vent ou Poison renforcée [重式] (effet moyen), selon l'élément de l'attaque.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Vent ou Poison poussée à l'extrême (+20 %).\n• En utilisant une compétence Voleur : attaque supplémentaire [Frappe du cœur – Voleur (I)], selon le nombre de Voleurs alliés en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive du Voleur (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Voleur se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max du Voleur +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – VOLEUR (I) (心撃・シーフ(I))\n• 0 à 3 Voleurs alliés en vie : pendant 1 tour, les compétences Voleur du Voleur se lancent 1 fois de plus, leurs dégâts augmentent (effet moyen) et elles n'ont aucun temps d'attente.\n• 4 ou plus : les mêmes effets pour toute l'équipe.\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Brise invisible Kai (インビジブレイク改, école Voleur) : 6 coups physiques Vent + Poison sur un ennemi. Après 3 utilisations : plafond de dégâts +1 niveau.\n• Version normale, Brise invisible (インビジブレイク) : 6 coups physiques Vent + Poison sur un ennemi, avec un long temps d'attente qui raccourcit à chaque utilisation (3 paliers max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    },
+    {
+     "id": "c-tourbillon-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星ダストデビル",
+     "nomFR": "Tourbillon polaire",
+     "elements": [
+      "vent",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/voleur/tourbillon-polaire.webp",
+     "effet": "Réservée au Voleur. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB du Voleur se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Voleur (I)] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Tourbillon polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – VOLEUR (I) (星撃・シーフ(I))\n• 10 coups physiques sur un ennemi : Vent + non-élémentaire ou Poison + non-élémentaire, selon l'élément dont le Voleur est imprégné.\n• Tant que le mode Maître dure, son renforcement du héros (5 paliers : 30 / 35 / 40 / 45 / 50 %) et son plafond de dégâts (5 paliers : niv. 3 à 7) augmentent.\n\nATTAQUE MAÎTRE : TOURBILLON POLAIRE\n• Coup physique Vent + Poison + non-élémentaire qui perce la défense (effet moyen), avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : plafond de dégâts du Voleur +9 niveaux, aucun temps d'attente, et renforcement du héros à 50 %.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Vent et Poison du Voleur augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離 et du « renforcement du héros » (英雄強化)."
     }
    ]
   }
