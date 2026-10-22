@@ -88,6 +88,30 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 - Pour modifier `donnees.json` directement (par exemple pour ajouter un perso à partir de captures d'écran) : `git pull` d'abord, garder le format, augmenter `revision` de 1, puis commit et push.
 - Icônes de capacité : environ 160 px, fond transparent. Sprites : PNG sans lissage.
 
+### Ajouter un perso à partir de captures d'écran (procédure habituelle)
+
+La propriétaire envoie, pour un perso : la grille de l'onglet 必殺技 (fiche du perso, avec le sprite en haut à gauche et le type, par ex. 「魔女/魔法万能タイプ」), puis l'écran de détail de chaque capacité **possédée** (cercles en couleur dans la grille ; les grisés ne sont pas possédés et ne vont pas dans le wiki). Les longues capacités arrivent en plusieurs captures (défilement). Ignorer les écrans 英雄の記憶 et セット可能種別.
+
+1. `git pull`. Outils : `pip install pillow numpy --break-system-packages` si besoin.
+2. Sprite : `python3 _outils/ffrk/sprite.py <grille.jpg> ffrk/images/<id>/sprite.png --apercu /tmp/apercu.png`. Regarder l'aperçu ; s'il est brouillé, relancer avec `--pas 5.1`.
+3. Icônes : pour chaque capacité, sur la capture du **haut** de son écran de détail, `python3 _outils/ffrk/icone.py <capture.jpg> ffrk/images/<id>/<nom-de-la-capacite>.webp`. Un score < 250 veut dire que ce n'est pas la bonne capture (souvent une capture défilée) ou qu'il faut `--y`. Vérifier toutes les icônes ensemble sur une planche avant de continuer : bien associer chaque capture à sa capacité, l'ordre d'envoi n'est pas fiable.
+4. Ajouter le perso dans `ffrk/donnees.json` (format ci-dessus), `revision` +1.
+   - `id` : nom français en minuscules avec tirets. `nom` : nom français usuel (Guerrier de la Lumière, Voleur, Super Moine…). `serie` : le chiffre romain affiché.
+   - `categorie` du perso : 物理… → physique, 魔法… (y compris 魔法万能) → magique, 回復/支援 → soutien.
+   - `elements` du perso : les éléments de ses capacités d'attaque (pas « neutre »). Un perso qui ne fait que soigner n'en a pas.
+   - Capacités rangées par type : 初期, 専用, 超必殺, Burst, 超絶, Chain, LB閃, 閃技, 覚醒, S奥義, 真奥義, A神技, C神技, M神技, 究極, D覚醒. Ajouter un type nouveau à `TYPES` dans `ffrk/index.html`.
+   - Capacité : `categorie` physique / magique selon 物理 / 魔法 dans le texte ; soutien si elle n'attaque pas. `elements` : ceux du texte, avec « neutre » pour 無属性.
+5. Traduction de l'effet (`effet`), en français, complète, avec le même style que les persos existants (relire Garland ou le Voleur comme modèle) :
+   - Commencer par « Réservée à X. » puis « Utilisable N fois. » si 回数 est indiqué.
+   - Sections en MAJUSCULES : ATTAQUE / EFFET, puis chaque mode, compétences Burst ou Synchro, attaque supplémentaire, BONUS D'ENTRAÎNEMENT (超錬, avec le niveau d'entraînement qui débloque), BONUS D'APPRENTISSAGE (修得時).
+   - Lexique déjà utilisé : まとい = imprégnation, 【重式】 = renforcée [重式], 限界突破 = plafond de dégâts, 待機時間 = temps d'attente, アビリティ = compétence, 追撃 = attaque supplémentaire, ヘイスト = Hâte, プロテス = Carapace, シェル = Blindage, リジェネ = Récup, エスナ = Esuna, 踏みとどまる = Tenir bon, 必殺技ゲージ = jauge de capacités spéciales, リミットゲージ = jauge de Limite, ATBゲージの蓄積時間を1回なしにする = la prochaine jauge ATB se remplit instantanément (1 fois), 英雄強化 = renforcement du héros, ヘヴィチャージ = Charge lourde.
+   - Noms de capacités : traduire le sens (ou l'anglais caché derrière le katakana) en français, garder le japonais dans `nomJP`.
+   - Ce qui est incertain : le signaler à la fin de l'effet par « À VÉRIFIER : … ». Ne jamais inventer.
+6. Tester (serveur local, page du perso : nombre de cercles, images chargées, aucune erreur), commit « Wiki FFRK : <perso> », push.
+7. Répondre avec un tableau type / nom japonais / traduction / catégorie, et la liste de ce qui est à vérifier.
+
+Les dossiers qui commencent par `_` (comme `_outils/`) ne sont pas publiés par GitHub Pages.
+
 ## Méthode de travail
 
 - Un commit après chaque modification qui marche, avec un message clair en français.
