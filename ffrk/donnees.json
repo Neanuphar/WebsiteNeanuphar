@@ -1,6 +1,6 @@
 {
- "revision": 22,
- "maj": "2026-10-22T05:52:19.000Z",
+ "revision": 23,
+ "maj": "2026-10-22T05:59:58.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1844,6 +1844,107 @@
      ],
      "image": "images/scott/epee-du-mirage-ardent-ultime.webp",
      "effet": "Réservée à Scott. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Feu renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Feu poussée à l'extrême (+20 %).\n• Toutes les 2 compétences Magilame utilisées : attaque supplémentaire [Frappe du cœur – Scott], selon le nombre d'alliés Chevaliers mystiques (魔法剣士) ou de FF II encore en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Scott (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Magilame se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Scott +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – SCOTT (心撃・スコット)\n• 0 à 3 alliés Chevaliers mystiques ou de FF II en vie : pendant 3 tours, dégâts de Scott contre un point faible ou légèrement faible augmentés (effet moyen).\n• 4 ou plus : pendant 3 tours, même bonus pour toute l'équipe.\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Anneau d'amour Kai (愛のリング改, école Magilame), remplace Anneau d'amour (6 attaques physiques Feu sur un ennemi, plus puissantes si Hilda ou Gordon est dans l'équipe) : 6 attaques physiques Feu sur un ennemi ; après 3 utilisations, plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "luneth",
+   "nom": "Luneth",
+   "nomJP": "ルーネス",
+   "serie": "III",
+   "categorie": "physique",
+   "elements": [
+    "vent"
+   ],
+   "sprite": "images/luneth/sprite.png",
+   "capacites": [
+    {
+     "id": "c-marque-du-guerrier",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "戦士の印",
+     "nomFR": "Marque du guerrier",
+     "elements": [],
+     "image": "images/luneth/marque-du-guerrier.webp",
+     "effet": "Réservée à Luneth.\n\n• Pendant un temps : attaque de Luneth augmentée (effet moyen)."
+    },
+    {
+     "id": "c-vent-eternel",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "悠久の風",
+     "nomFR": "Vent éternel",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/luneth/vent-eternel.webp",
+     "effet": "Réservée à Luneth.\n\nATTAQUE\n• 8 attaques physiques à distance puissantes Vent + non-élémentaire sur un ennemi.\n• Forte chance d'annuler l'action de l'ennemi (行動キャンセル).\n• Pendant un temps : imprégnation Vent, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Enchaînement de la bourrasque (疾風の連撃, école Combat) : 4 attaques physiques à distance Vent + non-élémentaire sur un ennemi, avec une chance moyenne d'annuler son action.\n• Assaut de la tempête (暴風の猛撃, école Combat) : 2 attaques physiques à distance Vent + non-élémentaire sur tous les ennemis ; pendant un temps, défense magique de Luneth réduite et attaque augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-eclair-de-vent-luneth",
+     "type": "LB閃",
+     "categorie": "physique",
+     "nomJP": "風閃【ルーネス】",
+     "nomFR": "Éclair de vent [Luneth]",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/luneth/eclair-de-vent-luneth.webp",
+     "effet": "Réservée à Luneth. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• Consomme la jauge de Limite, sans temps d'attente.\n• Attaque physique Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Remplit 1 segment de la jauge de Limite.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Vent augmentée, débloquée au niveau d'entraînement 7.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-elu-de-la-revelation-du-vent",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "風の啓示受けし者",
+     "nomFR": "Élu de la révélation du vent",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/luneth/elu-de-la-revelation-du-vent.webp",
+     "effet": "Réservée à Luneth. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent.\n• Pendant un temps : mode Éveil Vent, et plafond de dégâts +1 niveau.\n• Les Sauts de Luneth deviennent des attaques à atterrissage immédiat (即時着地攻撃).\n\nMODE ÉVEIL VENT (風覚醒モード)\n• Compétences Vent utilisables à l'infini.\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-guerrier-qui-court-sur-les-nuages",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "雲を駆ける戦士",
+     "nomFR": "Guerrier qui court sur les nuages",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/luneth/guerrier-qui-court-sur-les-nuages.webp",
+     "effet": "Réservée à Luneth. Utilisable 1 fois. Étiquette 対フルブレイク.\n\nATTAQUE\n• 15 attaques physiques à distance Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Pendant un temps : mode Éveil Vent, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Vent utilisées : attaque supplémentaire [Transe explosive].\n• Effet en plus selon le nombre d'alliés de FF III encore en vie (plus bas).\n\nMODE ÉVEIL VENT (風覚醒モード)\n• Compétences Vent utilisables à l'infini.\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent se lancent 1 fois de plus.\n\nEFFET SELON LES ALLIÉS DE FF III EN VIE (pendant un temps)\n• 0 ou 1 : dégâts des attaques alliées qui touchent un point faible ou légèrement faible augmentés (effet très faible).\n• 2 ou 3 : pareil, avec un effet faible.\n• 4 ou plus : pareil, avec un effet moyen.\n\nATTAQUE SUPPLÉMENTAIRE : TRANSE EXPLOSIVE (ブラストランス)\nL'effet change selon le nombre d'alliés parmi Arc, Refia et Ingus :\n• 0 ou 1 : attaque physique à distance Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• 2 : pareil, avec un taux de critique de 100 %.\n• 3 : pareil, avec un taux de critique de 100 % et des dégâts critiques encore augmentés.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク."
+    },
+    {
+     "id": "c-vent-d-argent",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "白銀の風",
+     "nomFR": "Vent d'argent",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/luneth/vent-d-argent.webp",
+     "effet": "Réservée à Luneth. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques Saut puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Cœur vaillant.\n\nCOMPÉTENCES SYNCHRO\n• Bond de la bourrasque (疾風の跳躍, école Chevalier dragon, déclenchée par une compétence Vent) : 6 attaques Saut Vent + non-élémentaire sur un ennemi, sans temps en l'air.\n• Lance de la tempête (暴風の槍撃, école Célérité, déclenchée par une compétence Vent) : sans temps d'attente, 3 attaques physiques Vent + non-élémentaire sur un ennemi.\n\nMODE CŒUR VAILLANT (強き心モード)\n• Quand Luneth a utilisé 3 fois Lance de la tempête : attaque supplémentaire [Tourbillon éternel], dont l'effet dépend du nombre d'alliés de FF III en vie, puis le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : TOURBILLON ÉTERNEL (悠久の風陣)\n• 0 ou 1 allié de FF III en vie : pendant 3 tours, dégâts des compétences Vent de Luneth augmentés (effet moyen), aucun temps d'attente, et ses compétences Vent se lancent 1 fois de plus.\n• 2 ou plus : pareil, et en plus plafond de dégâts +1 niveau pendant 3 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-eveil-guerrier-qui-court-sur-les-nuages",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒雲を駆ける戦士",
+     "nomFR": "Éveil – Guerrier qui court sur les nuages",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/luneth/eveil-guerrier-qui-court-sur-les-nuages.webp",
+     "effet": "Réservée à Luneth. Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Vent + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Vent renforcée [重式] et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Vent I [Luneth] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL VENT I (avant la Dual Shift)\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent se lancent 2 fois de plus.\n• Chaque compétence Vent utilisée renforce le mode, jusqu'à 3 paliers : temps d'attente des compétences Vent équipées réduit, et taux de critique 50 / 75 / 100 %.\n\nDUAL SHIFT\n• Fait passer Luneth en mode D-Éveil Vent II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL VENT II (après la Dual Shift)\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent n'ont plus de temps d'attente.\n• Chaque compétence Vent déclenche l'attaque supplémentaire [D Éclair éternel].\n\nATTAQUE SUPPLÉMENTAIRE : D ÉCLAIR ÉTERNEL (D悠久の一閃)\nSelon le nombre d'alliés de FF III encore en vie :\n• 0 à 3 : pendant un temps, résistance Vent de l'ennemi −3 niveaux, et baisse brève de sa défense, défense magique et esprit (effet fort).\n• 4 ou plus : attaque physique à distance Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts, et pendant un temps, résistance de l'ennemi à tous les éléments −3 niveaux.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Vent de Luneth +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Vent I et II [Luneth] et le mode Éveil Vent.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対乾坤一擲."
     }
    ]
   }
