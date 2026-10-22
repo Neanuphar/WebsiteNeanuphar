@@ -1,6 +1,6 @@
 {
- "revision": 41,
- "maj": "2026-10-22T14:29:31.000Z",
+ "revision": 42,
+ "maj": "2026-10-22T14:31:01.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -4375,6 +4375,108 @@
      "elements": [],
      "image": "images/ursula/point-vital.webp",
      "effet": "Réservée à Ursula.\n\n• Faible chance d'infliger Mort à un ennemi."
+    }
+   ]
+  },
+  {
+   "id": "lena",
+   "nom": "Lena",
+   "nomJP": "レナ",
+   "serie": "V",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/lena/sprite.png",
+   "capacites": [
+    {
+     "id": "c-recup-de-groupe",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "全体リジェネ",
+     "nomFR": "Récup de groupe",
+     "elements": [],
+     "image": "images/lena/recup-de-groupe.webp",
+     "effet": "Réservée à Lena.\n\n• Récup pour toute l'équipe."
+    },
+    {
+     "id": "c-fierte-de-tycoon",
+     "type": "超必殺",
+     "categorie": "soutien",
+     "nomJP": "タイクーンプラウド",
+     "nomFR": "Fierté de Tycoon",
+     "elements": [],
+     "image": "images/lena/fierte-de-tycoon.webp",
+     "effet": "Réservée à Lena.\n\nEFFET\n• Gros soin de toute l'équipe.\n• Pendant un temps : défense magique de toute l'équipe augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-tendre-bienveillance",
+     "type": "Burst",
+     "categorie": "soutien",
+     "nomJP": "温かい恵愛",
+     "nomFR": "Tendre bienveillance",
+     "elements": [],
+     "image": "images/lena/tendre-bienveillance.webp",
+     "effet": "Réservée à Lena.\n\nEFFET\n• Gros soin de toute l'équipe.\n• Pendant un temps : résistance Glace de toute l'équipe +1 niveau.\n• Hâte et mode Burst pour Lena.\n\nCOMPÉTENCES BURST (mode Burst)\n• Sceau de Tycoon (タイクーンの印, école Magie blanche) : sans temps d'attente, gros soin d'un allié, et pendant un temps, esprit augmenté (effet moyen).\n• Sollicitude pour la vie (生命へのいたわり, école Magie blanche) : petit soin de toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-coeur-de-l-eau-sollicitude",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "水の心「いたわり」",
+     "nomFR": "Cœur de l'eau « Sollicitude »",
+     "elements": [],
+     "image": "images/lena/coeur-de-l-eau-sollicitude.webp",
+     "effet": "Réservée à Lena.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Récup forte (リジェネガ) pour toute l'équipe : 2000 PV soignés à chaque fois.\n• Pendant un temps : résistance Eau et Glace de toute l'équipe +1 niveau.\n• Pendant un temps : temps d'attente de Lena réduit.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-princesse-de-tycoon",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "タイクーン・プリンセス",
+     "nomFR": "Princesse de Tycoon",
+     "elements": [],
+     "image": "images/lena/princesse-de-tycoon.webp",
+     "effet": "Réservée à Lena.\n\nEFFET\n• Gros soin de toute l'équipe.\n• Tenir bon pour toute l'équipe.\n• Barrière pour toute l'équipe : annule les attaques reçues, jusqu'à 30 % des PV max.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-garde-de-tycoon",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "タイクーンガード",
+     "nomFR": "Garde de Tycoon",
+     "elements": [],
+     "image": "images/lena/garde-de-tycoon.webp",
+     "effet": "Réservée à Lena. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Carapace, Blindage et Hâte pour toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-ailes-de-grociana-polaire",
+     "type": "M神技",
+     "categorie": "magique",
+     "nomJP": "極星グロシアーナの翼",
+     "nomFR": "Ailes de Grociana polaire",
+     "elements": [
+      "feu",
+      "glace",
+      "foudre",
+      "terre",
+      "vent",
+      "eau",
+      "sacre",
+      "tenebres",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/lena/ailes-de-grociana-polaire.webp",
+     "effet": "Réservée à Lena. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : PV max de toute l'équipe +2000.\n• Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Lena se remplit instantanément (1 fois).\n• Effet en plus, qui change selon que Lena est en Écho des souvenirs (記憶の共鳴) ou non (plus bas).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +1 niveau.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Lena], qui change selon l'Écho des souvenirs (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Ailes de Grociana polaire].\n\nEFFET EN PLUS SELON L'ÉCHO DES SOUVENIRS (pendant un temps, pour toute l'équipe)\n• Sans Écho : mode Apprentissage – Lena Univers (習得モード・レナ万象) : dégâts Feu +5 %.\n• Avec Écho : mode Apprentissage – Lena Chroniques (習得モード・レナ古記) : dégâts +5 %.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – LENA (星撃・レナ)\n• Sans Écho : brièvement, Déblindage (défense magique réduite) +1 niveau sur un ennemi ; le bonus de dégâts Feu des alliés en mode Lena Univers augmente (5 paliers : 10 / 15 / 20 / 25 / 30 %).\n• Avec Écho : 10 attaques Magie blanche de tous les éléments + non-élémentaire sur un ennemi ; le bonus de dégâts des alliés en mode Lena Chroniques augmente (5 paliers : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : AILES DE GROCIANA POLAIRE\n• Attaque Magie blanche de tous les éléments + non-élémentaire sur un ennemi, qui ignore la défense magique, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• La prochaine jauge ATB des alliés imprégnés de Feu se remplit plus vite (1 fois).\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque de tous les éléments de Lena augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : グロシアーナ transcrit « Grociana » (nom à confirmer) ; ce qui active l'Écho des souvenirs n'est pas dit à l'écran."
+    },
+    {
+     "id": "c-eveil-gardienne-de-la-vie-et-de-l-ame",
+     "type": "D覚醒",
+     "categorie": "soutien",
+     "nomJP": "覚醒命と魂の護り手",
+     "nomFR": "Éveil – Gardienne de la vie et de l'âme",
+     "elements": [],
+     "image": "images/lena/eveil-gardienne-de-la-vie-et-de-l-ame.webp",
+     "effet": "Réservée à Lena. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin extrême de toute l'équipe, avec plafond +1 niveau ; ou, si des alliés sont KO, réanimation (avec énormément de PV).\n• Hâte, et temps d'attente réduit de 2 tours.\n• Pendant un temps : plafond de dégâts de Lena +1 niveau.\n• Active le mode D-Éveil Double métier I [Lena] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL DOUBLE MÉTIER I (avant la Dual Shift)\n• Chaque compétence Magie blanche ou Danseuse utilisée renforce le mode (jusqu'à 3 paliers) : temps d'attente de ces compétences réduit, et soins augmentés (effet max : moyen).\n• Chaque compétence Magie blanche : attaque supplémentaire [D Évangile de la sainte].\n• Chaque compétence Danseuse : attaque supplémentaire [D Cœur bienveillant].\n\nDUAL SHIFT\n• Fait passer Lena en mode D-Éveil Double métier II.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL DOUBLE MÉTIER II (après la Dual Shift)\n• Les compétences Magie blanche n'ont plus de temps d'attente.\n• Chaque compétence Magie blanche : attaque supplémentaire [D Serment bienveillant].\n\nATTAQUE SUPPLÉMENTAIRE : D ÉVANGILE DE LA SAINTE (D聖女の福音)\n• Soin automatique de toute l'équipe à chaque perte de PV ; la quantité dépend du niveau d'affinage (精錬度) de la compétence utilisée (5 paliers).\n\nATTAQUE SUPPLÉMENTAIRE : D CŒUR BIENVEILLANT (D恵愛の心)\n• Soin de toute l'équipe ; la quantité dépend du niveau d'affinage de la compétence utilisée (5 paliers).\n\nATTAQUE SUPPLÉMENTAIRE : D SERMENT BIENVEILLANT (D優しき誓い)\n• Soin moyen de toute l'équipe, Récup forte, et temps d'attente réduit d'1 tour.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Soins des compétences Magie blanche de Lena +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Double métier I et II [Lena] et le mode Éveil Double métier.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Barrière de réduction de dégâts sur Lena, 1 fois (niv. 1), débloquée au niveau d'entraînement 3.\n\nÀ VÉRIFIER : Wジョブ traduit « Double métier » ; la Hâte et la réduction de 2 tours valent a priori pour toute l'équipe."
     }
    ]
   }
