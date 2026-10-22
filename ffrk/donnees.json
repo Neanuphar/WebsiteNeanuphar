@@ -1,6 +1,6 @@
 {
- "revision": 35,
- "maj": "2026-10-22T09:38:37.000Z",
+ "revision": 36,
+ "maj": "2026-10-22T09:44:16.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2971,6 +2971,195 @@
      ],
      "image": "images/cecil-paladin/eveil-lune-radieuse.webp",
      "effet": "Réservée à Cecil (Paladin). Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques puissantes Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Sacré renforcée [重式], et plafond de dégâts +1 niveau.\n• Dégâts des compétences Sacré augmentés pendant 2 tours (effet fort).\n• Active le mode D-Éveil Sacré I [Cecil (Paladin) II] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [D Plongeon du paladin] (2 fois max).\n\nDUAL SHIFT\n• Fait passer Cecil en mode D-Éveil Sacré II.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [D Plongeon sacré].\n\nATTAQUE SUPPLÉMENTAIRE : D PLONGEON DU PALADIN (Dパラディンダイブ)\n• 7 attaques Sacré + non-élémentaire, physiques ou de Magie blanche selon les statistiques de Cecil, sur un ennemi.\n\nATTAQUE SUPPLÉMENTAIRE : D PLONGEON SACRÉ (Dホーリーダイブ)\n• Attaque Sacré + non-élémentaire, physique ou de Magie blanche selon les statistiques de Cecil, sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Temps d'attente de Cecil réduit de 3 tours.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré de Cecil +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Cecil (Paladin) II] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "kain",
+   "nom": "Kain",
+   "nomJP": "カイン",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "foudre",
+    "tenebres"
+   ],
+   "sprite": "images/kain/sprite.png",
+   "capacites": [
+    {
+     "id": "c-double-saut",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "Wジャンプ",
+     "nomFR": "Double saut",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/kain/double-saut.webp",
+     "effet": "Réservée à Kain.\n\n• Attaque Saut non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-triple-frappe-sans-egale",
+     "type": "専用",
+     "categorie": "physique",
+     "nomJP": "無双三段",
+     "nomFR": "Triple frappe sans égale",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/kain/triple-frappe-sans-egale.webp",
+     "effet": "Réservée à Kain.\n\n• 3 attaques physiques non-élémentaires sur un ennemi.\n• Forte chance de Paralysie."
+    },
+    {
+     "id": "c-elan-ascendant",
+     "type": "超必殺",
+     "categorie": "physique",
+     "nomJP": "ライジングドライヴ",
+     "nomFR": "Élan ascendant",
+     "elements": [],
+     "image": "images/kain/elan-ascendant.webp",
+     "effet": "Réservée à Kain.\n\nATTAQUE\n• 4 attaques Saut puissantes sur un ennemi.\n• Pendant 3 tours : les Sauts de Kain deviennent des attaques à atterrissage immédiat (即時着地攻撃).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'écran ne précise pas d'élément (probablement non-élémentaire)."
+    },
+    {
+     "id": "c-fierte-du-dragon",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "プライドオブドラグーン",
+     "nomFR": "Fierté du dragon",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/kain/fierte-du-dragon.webp",
+     "effet": "Réservée à Kain.\n\nATTAQUE\n• 4 attaques Saut puissantes Foudre + non-élémentaire sur tous les ennemis.\n• Pendant un temps : imprégnation Foudre, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Sang foudroyant des chevaliers dragons (竜騎士団の雷血, école Chevalier dragon) : 2 attaques physiques à distance Foudre sur un ennemi, et pendant 2 tours, les Sauts de Kain deviennent des attaques à atterrissage immédiat.\n• Épée fière du dragon (誇りの竜剣, école Chevalier dragon) : 2 attaques physiques à distance Foudre sur un ennemi, et rend 1 utilisation à la compétence à qui il en reste le moins.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-estoc-des-tenebres",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "ダークネススラスト",
+     "nomFR": "Estoc des ténèbres",
+     "elements": [
+      "foudre",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/kain/estoc-des-tenebres.webp",
+     "effet": "Réservée à Kain.\n\nATTAQUE\n• 10 attaques Saut puissantes Foudre + Ténèbres + non-élémentaire sur un ennemi.\n• Active le mode Double élément II.\n• Pendant un temps : les attaques Saut de Kain n'ont plus de temps d'attente ni de temps en l'air.\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• Si Kain utilise une compétence Foudre ou Ténèbres à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-double-plongeon-du-dragon",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "デュアルドラゴンダイブ",
+     "nomFR": "Double plongeon du dragon",
+     "elements": [
+      "foudre",
+      "tenebres"
+     ],
+     "image": "images/kain/double-plongeon-du-dragon.webp",
+     "effet": "Réservée à Kain. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 4 attaques Saut ultra-puissantes Foudre + Ténèbres sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 2).\n• Temps d'attente de la Limit Break réduit (niv. 3).\n\nÀ VÉRIFIER : les niveaux 2 et 3 sont sans doute ceux atteints au niveau d'entraînement actuel (3 sur 5)."
+    },
+    {
+     "id": "c-manteau-de-foudre-du-dragon",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "竜即雷衣",
+     "nomFR": "Manteau de foudre du dragon",
+     "elements": [
+      "foudre"
+     ],
+     "image": "images/kain/manteau-de-foudre-du-dragon.webp",
+     "effet": "Réservée à Kain. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : imprégnation Foudre renforcée [重式].\n• Temps d'attente de Kain réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-projectile-plongeant-du-dragon",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "竜即降弾",
+     "nomFR": "Projectile plongeant du dragon",
+     "elements": [],
+     "image": "images/kain/projectile-plongeant-du-dragon.webp",
+     "effet": "Réservée à Kain. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : les Sauts de Kain deviennent des attaques à atterrissage immédiat.\n• Kain n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-rage-du-dragon",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "レイジオブドラグーン",
+     "nomFR": "Rage du dragon",
+     "elements": [
+      "foudre",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/kain/rage-du-dragon.webp",
+     "effet": "Réservée à Kain. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques Saut Foudre + Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Éveil Fierté du dragon, et plafond de dégâts +1 niveau.\n• Active le mode Double élément et le mode Chevalier qui fend les cieux.\n\nMODE ÉVEIL FIERTÉ DU DRAGON (ドラグーンプライド覚醒モード)\n• Compétences Chevalier dragon utilisables à l'infini.\n• Boost des compétences Chevalier dragon, effet max : moyen.\n• Les compétences Chevalier dragon se lancent 1 fois de plus.\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• Si Kain utilise une compétence Foudre ou Ténèbres à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nMODE CHEVALIER QUI FEND LES CIEUX (天翔る騎士モード)\n• Dégâts critiques de Kain augmentés.\n• Chaque compétence Foudre ou Ténèbres utilisée : taux de critique de Kain à 25 %, puis 50 %, 75 % et 100 % (4 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-javelot-croise",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "クロスジャベリン",
+     "nomFR": "Javelot croisé",
+     "elements": [
+      "foudre",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/kain/javelot-croise.webp",
+     "effet": "Réservée à Kain. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques Saut Foudre + Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Double élément III.\n\nCOMPÉTENCES SYNCHRO\n• Poignard de l'ombre (シャドウスタッブ, école Chevalier dragon, déclenchée par une compétence Foudre ou Ténèbres) : attaque Saut Foudre + Ténèbres + non-élémentaire sur un ennemi, sans temps en l'air. L'effet change selon l'état [Dragon maléfique, sa moitié] (半身たる邪竜) :\n  – sans l'état : 4 attaques, et plafond de dégâts de Kain +1 niveau pendant 1 tour ;\n  – avec l'état : 8 attaques, plafond de dégâts +1 niveau pendant 1 tour, et consomme 1 charge de l'état.\n• Vengeur de l'ombre (シャドウアヴェンジャー, école Chevalier dragon, déclenchée par une compétence Chevalier dragon) : 3 attaques Saut Foudre + Ténèbres + non-élémentaire sur un ennemi, sans temps en l'air ; pendant 2 tours, taux de critique de Kain à 100 % et dégâts des compétences Chevalier dragon augmentés (effet moyen) ; tant que le mode Synchro dure, donne 2 charges de l'état [Dragon maléfique, sa moitié].\n\nMODE DOUBLE ÉLÉMENT III (ツインエレメントモードIII)\n• Si Kain utilise une compétence Foudre ou Ténèbres à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-plongeon-du-dragonnier",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "ドラグナーズダイブ",
+     "nomFR": "Plongeon du dragonnier",
+     "elements": [
+      "foudre"
+     ],
+     "image": "images/kain/plongeon-du-dragonnier.webp",
+     "effet": "Réservée à Kain. Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques Saut ultra-puissantes Foudre sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-saut-supreme",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ジャンプ・極",
+     "nomFR": "Saut suprême",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/kain/saut-supreme.webp",
+     "effet": "Réservée à Kain. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Kain Foudre].\n• Pendant un temps : imprégnation Foudre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : SAUT SUPRÊME\n• 20 attaques Saut Foudre + non-élémentaire sur un ennemi.\n• Puis une attaque Saut Foudre + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – KAIN FOUDRE]\n• Plus Kain inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Kain augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-lance-de-kain-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星ランスオブカイン",
+     "nomFR": "Lance de Kain polaire",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/kain/lance-de-kain-polaire.webp",
+     "effet": "Réservée à Kain. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Kain se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Kain Foudre] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Lance de Kain polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – KAIN FOUDRE (星撃・カイン雷)\n• 10 attaques Saut Foudre + non-élémentaire sur un ennemi, sans temps en l'air.\n• Tant que le mode Maître dure, le renforcement du héros de Kain augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %) et son plafond de dégâts change (5 paliers : niveaux 3 / 4 / 5 / 6 / 7).\n\nATTAQUE MAÎTRE : LANCE DE KAIN POLAIRE\n• Attaque Saut Foudre + non-élémentaire sur un ennemi, sans temps en l'air, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : vrai plafond de dégâts de Kain +1 niveau, et Kain n'a aucun temps d'attente.\n• Pendant 1 tour : renforcement du héros 50 %.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Foudre de Kain augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    },
+    {
+     "id": "c-eveil-gungnir",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒グングニル",
+     "nomFR": "Éveil – Gungnir",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/kain/eveil-gungnir.webp",
+     "effet": "Réservée à Kain. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques Saut puissantes Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Foudre renforcée [重式], et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Fierté du dragon I [Kain Foudre] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL FIERTÉ DU DRAGON I (avant la Dual Shift)\n• Boost des compétences Chevalier dragon, effet max : moyen.\n• Les compétences Chevalier dragon se lancent 2 fois de plus.\n• Chaque compétence Chevalier dragon utilisée renforce le mode : temps d'attente des compétences équipées réduit (jusqu'à 3 paliers).\n• Toutes les 3 compétences Chevalier dragon utilisées : attaque supplémentaire [D Plongeon du dragon].\n\nDUAL SHIFT\n• Fait passer Kain en mode D-Éveil Fierté du dragon II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL FIERTÉ DU DRAGON II (après la Dual Shift)\n• Plafond de dégâts +2 niveaux.\n• Boost des compétences Chevalier dragon, effet max : moyen.\n• Les compétences Chevalier dragon se lancent 1 fois de plus.\n• Les attaques Saut n'ont plus de temps d'attente.\n• Taux de critique à 100 %.\n\nATTAQUE SUPPLÉMENTAIRE : D PLONGEON DU DRAGON (Dドラグーンダイブ)\n• Attaque physique à distance Foudre + Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Chevalier dragon de Kain +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Fierté du dragon I et II [Kain Foudre] et le mode Éveil Fierté du dragon.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
     }
    ]
   }
