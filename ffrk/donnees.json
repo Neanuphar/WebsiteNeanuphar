@@ -1,6 +1,6 @@
 {
- "revision": 28,
- "maj": "2026-10-22T08:57:27.000Z",
+ "revision": 29,
+ "maj": "2026-10-22T08:59:42.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -986,7 +986,7 @@
      "type": "初期",
      "categorie": "physique",
      "nomJP": "熟練の斧",
-     "nomFR": "Hache experte",
+     "nomFR": "Hache de l'expert",
      "elements": [
       "neutre"
      ],
@@ -1004,10 +1004,9 @@
       "neutre"
      ],
      "image": "images/guy/impact-de-gaia-polaire.webp",
-     "effet": "Réservée à Guy. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : toute l'équipe reçoit le mode Acquisition – Guy.\n• Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Guy se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +4 niveaux.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Guy] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Impact de Gaïa polaire].\n\nMODE ACQUISITION – GUY (習得モード・ガイ)\n• Dégâts Terre de Guy augmentés (5 %).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – GUY (星撃・ガイ)\n• 10 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Le bonus de dégâts Terre de toute l'équipe ayant le mode Acquisition – Guy évolue (5 paliers max : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : IMPACT DE GAÏA POLAIRE\n• Attaque physique Terre + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : dégâts Terre de toute l'équipe augmentés (30 %).\n• Met fin au mode Maître de Guy.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre de Guy augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離, et la progression des paliers de la Frappe stellaire (probablement un palier par déclenchement)."
+     "effet": "Réservée à Guy. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Apprentissage – Guy pour toute l'équipe.\n• Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Guy se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +4 niveaux.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Guy] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Impact de Gaïa polaire].\n\nMODE APPRENTISSAGE – GUY (習得モード・ガイ)\n• Dégâts Terre de Guy augmentés (5 %).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – GUY (星撃・ガイ)\n• 10 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Le bonus de dégâts Terre des alliés en mode Apprentissage – Guy augmente (5 paliers : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : IMPACT DE GAÏA POLAIRE\n• Attaque physique Terre + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : dégâts Terre de toute l'équipe augmentés (30 %).\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre de Guy augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
     }
-   ],
-   "recheck": true
+   ]
   },
   {
    "id": "leonhart",
@@ -1040,7 +1039,7 @@
       "tenebres"
      ],
      "image": "images/leonhart/rose-des-tenebres.webp",
-     "effet": "Réservée à Leonhart. Utilisable 1 fois.\n\nATTAQUE\n• 5 attaques physiques ultra-puissantes Ténèbres sur un ennemi : ils ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+     "effet": "Réservée à Leonhart. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 5 attaques physiques ultra-puissantes Ténèbres sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
     },
     {
      "id": "c-chevalier-noir-de-la-trahison",
@@ -1053,7 +1052,7 @@
       "neutre"
      ],
      "image": "images/leonhart/chevalier-noir-de-la-trahison.webp",
-     "effet": "Réservée à Leonhart. Utilisable 2 fois (1 par temps).\n\nATTAQUE (en 2 temps)\n• 1re utilisation, Libération du vrai arcane (真奥義解放) : sans consommer de jauge ni temps d'attente, Leonhart reçoit [Vrai arcane renforcé – Leonhart] ; pendant un temps : imprégnation Ténèbres renforcée [重式] et plafond de dégâts +1 niveau.\n• 2e utilisation, Chevalier noir de la trahison (背信の闇騎士) : 20 attaques physiques Ténèbres + non-élémentaire sur un ennemi, plus une attaque physique Ténèbres + non-élémentaire pouvant dépasser le plafond de dégâts. Met fin au Vrai arcane renforcé – Leonhart.\n\nRENFORCEMENT DU VRAI OUGI – LEONHART (真奥義強化・レオンハルト)\n• Selon la quantité de dégâts infligés pendant ce mode, la puissance de [Chevalier noir de la trahison] et son plafond de dégâts augmentent (2 paliers max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Leonhart augmentées après la 1re utilisation (niv. 3).\n• Temps d'attente de la 2e utilisation réduit (niv. 3).\n• Consommation de jauge de la 2e utilisation réduite de 1, débloquée au niveau d'entraînement 10.\n\nÀ VÉRIFIER : le sens de 背信 (traduit « de la trahison »)."
+     "effet": "Réservée à Leonhart. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Leonhart].\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : CHEVALIER NOIR DE LA TRAHISON\n• 20 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Puis une attaque physique Ténèbres + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – LEONHART]\n• Plus Leonhart inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Leonhart augmentées (niv. 3).\n• Temps d'attente de la 2e activation réduit (niv. 3).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
     },
     {
      "id": "c-arme-des-tenebres-ultime",
@@ -1066,10 +1065,9 @@
       "neutre"
      ],
      "image": "images/leonhart/arme-des-tenebres-ultime.webp",
-     "effet": "Réservée à Leonhart. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• En utilisant une compétence Ténèbres : attaque supplémentaire [Frappe du cœur – Leonhart], selon le nombre d'alliés de FF II en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Leonhart (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Leonhart +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – LEONHART (心撃・レオンハルト)\n• 0 à 3 alliés de FF II en vie : pendant 3 tours, dégâts physiques de toute l'équipe augmentés (effet faible).\n• 4 alliés de FF II ou plus : pendant 3 tours, dégâts des héros de FF II augmentés (effet moyen).\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Briseur de ténèbres Kai (ダークネスブレイカー改, école Arts sombres) : 6 attaques physiques Ténèbres sur un ennemi. Plus forte, avec plafond de dégâts +1 niveau, après 3 utilisations.\n• Version normale, Briseur de ténèbres (ダークネスブレイカー) : 6 attaques physiques Ténèbres sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+     "effet": "Réservée à Leonhart. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• Quand Leonhart utilise une compétence Ténèbres : attaque supplémentaire [Frappe du cœur – Leonhart], selon le nombre d'alliés de FF II en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Leonhart (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Leonhart +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – LEONHART (心撃・レオンハルト)\n• 0 à 3 alliés de FF II en vie : pendant 3 tours, dégâts physiques de toute l'équipe augmentés (effet faible).\n• 4 alliés de FF II ou plus : pendant 3 tours, dégâts des héros de FF II augmentés (effet moyen).\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Briseur de ténèbres Kai (ダークネスブレイカー改, école Arts sombres), remplace Briseur de ténèbres (6 attaques physiques Ténèbres sur un ennemi) : 6 attaques physiques Ténèbres sur un ennemi ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
-   ],
-   "recheck": true
+   ]
   },
   {
    "id": "minwu",
