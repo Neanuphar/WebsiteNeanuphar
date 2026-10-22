@@ -12,6 +12,8 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 ├── index.html         ← page d'accueil : une carte par outil
 ├── silhouette/
 │   └── index.html     ← Atelier Silhouette
+├── detourage/
+│   └── index.html     ← Détourage (fond auto, baguette, gomme, restaurer)
 ├── smash/
 │   └── index.html     ← Checklist Smash Ultimate
 ├── recettes/

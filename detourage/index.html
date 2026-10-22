@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Détourage</title>
+  <style>
+    :root {
+      --fond: #f4f1ea;
+      --carte: #ffffff;
+      --texte: #1f1d1a;
+      --doux: #6b665e;
+      --accent: #2f7d6d;
+      --bord: #e2ddd2;
+      --damier-a: #e9e5dc;
+      --damier-b: #f7f5f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fond: #16181b;
+        --carte: #202328;
+        --texte: #ece9e2;
+        --doux: #9a968e;
+        --accent: #5cc2aa;
+        --bord: #2e3238;
+        --damier-a: #2a2d33;
+        --damier-b: #23262b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .retour {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+    .retour:hover { text-decoration: underline; }
+    h1 { font-size: 1.8rem; margin: 0 0 4px; }
+    .sous-titre { color: var(--doux); margin: 0 0 24px; }
+
+    .atelier {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 16px;
+      align-items: start;
+    }
+    @media (max-width: 820px) {
+      .atelier { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    .scene {
+      position: relative;
+      min-height: 380px;
+      max-height: 75vh;
+      overflow: auto;
+      display: flex;
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      background-color: var(--damier-b);
+      background-image:
+        linear-gradient(45deg, var(--damier-a) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--damier-a) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--damier-a) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--damier-a) 75%);
+      background-size: 24px 24px;
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+    }
+    .scene.apercu-noir { background: #000; }
+    .scene.apercu-blanc { background: #fff; }
+    .scene.survol { outline: 3px dashed var(--accent); outline-offset: -8px; }
+    .scene .cadre { margin: auto; padding: 16px; position: relative; }
+    .scene canvas {
+      display: none;
+      touch-action: none;
+      cursor: crosshair;
+    }
+    .scene.pixel canvas { image-rendering: pixelated; }
+    .scene.pleine canvas { display: block; }
+    .scene.mode-pinceau canvas { cursor: none; }
+    .curseur {
+      position: absolute;
+      pointer-events: none;
+      border: 1px solid #fff;
+      box-shadow: 0 0 0 1px #000;
+      border-radius: 50%;
+      display: none;
+    }
+    .vide {
+      margin: auto;
+      text-align: center;
+      color: var(--doux);
+      max-width: 340px;
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+    }
+    .scene.pleine .vide { display: none; }
+    .vide strong { color: var(--texte); display: block; margin-bottom: 4px; }
+
+    .panneau {
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .groupe { padding: 12px 0; border-bottom: 1px solid var(--bord); }
+    .groupe:first-child { padding-top: 0; }
+    .groupe:last-child { border-bottom: none; padding-bottom: 0; }
+    .groupe h2 {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--doux);
+      margin: 0 0 8px;
+    }
+    .ligne {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 6px 0;
+    }
+    .ligne label { flex: 1; }
+    input[type="range"] { width: 100%; accent-color: var(--accent); }
+    input[type="checkbox"] { accent-color: var(--accent); }
+    .valeur { color: var(--doux); font-variant-numeric: tabular-nums; min-width: 3ch; text-align: right; }
+
+    button {
+      font: inherit;
+      width: 100%;
+      padding: 9px 12px;
+      margin: 4px 0;
+      border-radius: 8px;
+      border: 1px solid var(--bord);
+      background: var(--fond);
+      color: var(--texte);
+      cursor: pointer;
+    }
+    button:hover:not(:disabled) { border-color: var(--accent); }
+    button.principal {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--carte);
+      font-weight: 600;
+    }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+
+    .segments {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--bord);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .segments button {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      padding: 7px 4px;
+      font-size: .9rem;
+      background: var(--carte);
+    }
+    .segments button + button { border-left: 1px solid var(--bord); }
+    .segments button[aria-pressed="true"] { background: var(--accent); color: var(--carte); font-weight: 600; }
+    .deux { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .deux button { margin: 0; }
+
+    .aide { font-size: .85rem; color: var(--doux); margin: 6px 0 0; }
+    .statut { font-size: .9rem; color: var(--accent); min-height: 1.5em; margin: 8px 0 0; }
+    .masque { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .photos {
+      margin-top: 16px;
+      font-size: .9rem;
+      color: var(--doux);
+      background: var(--carte);
+      border: 1px solid var(--bord);
+      border-radius: 12px;
+      padding: 12px 16px;
+    }
+    .photos strong { color: var(--texte); }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="retour" href="../index.html">← Accueil</a>
+    <h1>Détourage</h1>
+    <p class="sous-titre">Retire le fond d'une image pour obtenir un PNG transparent. Idéal pour les sprites, logos et images sur fond uni.</p>
+
+    <div class="atelier">
+      <div class="scene" id="scene">
+        <div class="vide" id="vide" tabindex="0" role="button">
+          <strong>Ajoute une image</strong>
+          Glisse-la ici, colle-la avec Ctrl+V, ou clique pour la choisir.
+        </div>
+        <div class="cadre">
+          <canvas id="toile"></canvas>
+          <div class="curseur" id="curseur"></div>
+        </div>
+      </div>
+
+      <div class="panneau">
+        <div class="groupe">
+          <button class="principal" id="btn-charger">Choisir une image</button>
+          <input type="file" id="fichier" accept="image/*" class="masque">
+          <button id="btn-auto" disabled>Retirer le fond automatiquement</button>
+          <p class="aide">Détecte la couleur des bords et l'efface. Marche sur un fond d'une seule couleur.</p>
+        </div>
+
+        <div class="groupe">
+          <h2>Outil</h2>
+          <div class="segments" id="outils">
+            <button type="button" data-outil="baguette" aria-pressed="true">Baguette</button>
+            <button type="button" data-outil="gomme" aria-pressed="false">Gomme</button>
+            <button type="button" data-outil="restaurer" aria-pressed="false">Restaurer</button>
+          </div>
+          <p class="aide" id="aide-outil"></p>
+
+          <div id="reglages-baguette">
+            <div class="ligne">
+              <label for="tolerance">Tolérance</label>
+              <span class="valeur" id="val-tolerance">25</span>
+            </div>
+            <input type="range" id="tolerance" min="0" max="100" value="25">
+            <div class="ligne">
+              <label for="partout">Effacer cette couleur dans toute l'image</label>
+              <input type="checkbox" id="partout">
+            </div>
+          </div>
+
+          <div id="reglages-pinceau" hidden>
+            <div class="ligne">
+              <label for="taille">Taille du pinceau</label>
+              <span class="valeur" id="val-taille">20</span>
+            </div>
+            <input type="range" id="taille" min="1" max="120" value="20">
+          </div>
+        </div>
+
+        <div class="groupe">
+          <h2>Affichage</h2>
+          <div class="ligne">
+            <label for="zoom">Zoom</label>
+            <span class="valeur" id="val-zoom">100 %</span>
+          </div>
+          <input type="range" id="zoom" min="10" max="1600" step="10" value="100">
+          <p class="aide">Fond d'aperçu, pour repérer les restes :</p>
+          <div class="segments" id="apercus">
+            <button type="button" data-apercu="damier" aria-pressed="true">Damier</button>
+            <button type="button" data-apercu="noir" aria-pressed="false">Noir</button>
+            <button type="button" data-apercu="blanc" aria-pressed="false">Blanc</button>
+          </div>
+        </div>
+
+        <div class="groupe">
+          <div class="deux">
+            <button id="btn-annuler" disabled title="Ctrl+Z">Annuler</button>
+            <button id="btn-reset" disabled>Recommencer</button>
+          </div>
+          <button class="principal" id="btn-telecharger" disabled>Télécharger en PNG</button>
+          <button id="btn-copier" disabled>Copier l'image</button>
+          <p class="statut" id="statut" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="photos">
+      <strong>Pour une photo avec un fond compliqué</strong> (une personne dans une pièce, un animal dans l'herbe), cet outil ne suffit pas.
+      Utilise plutôt Paint sur Windows 11 (bouton « Supprimer l'arrière-plan ») ou GIMP, puis reviens ici pour nettoyer à la gomme si besoin.
+    </p>
+  </main>
+
+  <script>
+    // ===== Réglages modifiables =====
+    const TAILLE_MAX = 1600;          // côté max de l'image, en pixels
+    const SEUIL_ALPHA = 20;           // en dessous, un pixel compte comme transparent
+    const MEMOIRE_ANNULER = 150e6;    // octets max gardés pour « Annuler »
+    const NOM_FICHIER = "detoure.png";
+    const AIDES = {
+      baguette: "Clique sur une couleur pour effacer la zone qui la touche.",
+      gomme: "Efface là où tu passes.",
+      restaurer: "Remet l'image d'origine là où tu passes, pour corriger une erreur.",
+    };
+
+    // ===== Éléments =====
+    const $ = (id) => document.getElementById(id);
+    const scene = $("scene");
+    const toile = $("toile");
+    const ctx = toile.getContext("2d", { willReadFrequently: true });
+    const curseur = $("curseur");
+    const champFichier = $("fichier");
+    const statut = $("statut");
+
+    // ===== État =====
+    let original = null;        // canvas avec l'image d'origine
+    let historique = [];
+    let maxHistorique = 10;
+    let outil = "baguette";
+    let zoom = 1;
+    let dessine = false;
+    let dernierPoint = null;
+
+    // ===== Chargement =====
+    function chargerFichier(fichier) {
+      if (!fichier || !fichier.type.startsWith("image/")) return direStatut("Ce fichier n'est pas une image.");
+      const url = URL.createObjectURL(fichier);
+      const img = new Image();
+      img.onload = () => {
+        const echelle = Math.min(1, TAILLE_MAX / Math.max(img.width, img.height));
+        const l = Math.max(1, Math.round(img.width * echelle));
+        const h = Math.max(1, Math.round(img.height * echelle));
+        original = document.createElement("canvas");
+        original.width = l;
+        original.height = h;
+        original.getContext("2d").drawImage(img, 0, 0, l, h);
+        URL.revokeObjectURL(url);
+
+        toile.width = l;
+        toile.height = h;
+        ctx.clearRect(0, 0, l, h);
+        ctx.drawImage(original, 0, 0);
+        historique = [];
+        maxHistorique = Math.max(3, Math.min(20, Math.floor(MEMOIRE_ANNULER / (l * h * 4))));
+
+        scene.classList.add("pleine");
+        ["btn-auto", "btn-reset", "btn-telecharger", "btn-copier"].forEach((id) => ($(id).disabled = false));
+        majAnnuler();
+        zoomAjuste();
+        direStatut(echelle < 1 ? `Image réduite à ${l} × ${h} pixels.` : "");
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); direStatut("Impossible de lire cette image."); };
+      img.src = url;
+    }
+
+    // ===== Annuler =====
+    function memoriser() {
+      historique.push(ctx.getImageData(0, 0, toile.width, toile.height));
+      if (historique.length > maxHistorique) historique.shift();
+      majAnnuler();
+    }
+    function annuler() {
+      const etat = historique.pop();
+      if (etat) ctx.putImageData(etat, 0, 0);
+      majAnnuler();
+    }
+    function majAnnuler() {
+      $("btn-annuler").disabled = historique.length === 0;
+    }
+
+    // ===== Effacer par couleur =====
+    // depart : liste d'indices de pixels d'où partir ; ref : couleur [r, g, b]
+    function effacerZone(depart, ref, tolerance, partout) {
+      const l = toile.width, h = toile.height;
+      const donnees = ctx.getImageData(0, 0, l, h);
+      const p = donnees.data;
+      const max = (tolerance / 100) * 441;
+      const seuil = max * max;
+      const proche = (i) => {
+        const o = i * 4;
+        if (p[o + 3] < SEUIL_ALPHA) return true;
+        const dr = p[o] - ref[0], dg = p[o + 1] - ref[1], db = p[o + 2] - ref[2];
+        return dr * dr + dg * dg + db * db <= seuil;
+      };
+      let n = 0;
+      if (partout) {
+        for (let i = 0; i < l * h; i++) {
+          if (p[i * 4 + 3] >= SEUIL_ALPHA && proche(i)) { p[i * 4 + 3] = 0; n++; }
+        }
+      } else {
+        const vu = new Uint8Array(l * h);
+        const pile = [];
+        const ajouter = (i) => { if (!vu[i] && proche(i)) { vu[i] = 1; pile.push(i); } };
+        depart.forEach(ajouter);
+        while (pile.length) {
+          const i = pile.pop();
+          if (p[i * 4 + 3] !== 0) { p[i * 4 + 3] = 0; n++; }
+          const x = i % l;
+          if (x > 0) ajouter(i - 1);
+          if (x < l - 1) ajouter(i + 1);
+          if (i >= l) ajouter(i - l);
+          if (i < (h - 1) * l) ajouter(i + l);
+        }
+      }
+      ctx.putImageData(donnees, 0, 0);
+      return n;
+    }
+
+    function retirerFondAuto() {
+      const l = toile.width, h = toile.height;
+      const p = ctx.getImageData(0, 0, l, h).data;
+      const coins = [0, l - 1, (h - 1) * l, (h - 1) * l + l - 1]
+        .filter((i) => p[i * 4 + 3] >= SEUIL_ALPHA)
+        .map((i) => [p[i * 4], p[i * 4 + 1], p[i * 4 + 2]]);
+      if (!coins.length) return direStatut("Les coins sont déjà transparents : utilise la baguette sur ce qui reste.");
+      // Couleur de fond : la plus fréquente parmi les coins
+      const ref = coins.reduce((m, c) => {
+        const score = coins.filter((x) => (x[0] - c[0]) ** 2 + (x[1] - c[1]) ** 2 + (x[2] - c[2]) ** 2 < 400).length;
+        return score > m.score ? { c, score } : m;
+      }, { c: coins[0], score: 0 }).c;
+      const bords = [];
+      for (let x = 0; x < l; x++) bords.push(x, (h - 1) * l + x);
+      for (let y = 0; y < h; y++) bords.push(y * l, y * l + l - 1);
+      memoriser();
+      const n = effacerZone(bords, ref, Number($("tolerance").value), false);
+      direStatut(n ? "Fond retiré. Vérifie sur fond noir et blanc, puis nettoie à la gomme si besoin." : "Aucun fond uni trouvé : essaie d'augmenter la tolérance.");
+    }
+
+    function baguette(x, y) {
+      const i = y * toile.width + x;
+      const o = ctx.getImageData(x, y, 1, 1).data;
+      if (o[3] < SEUIL_ALPHA) return direStatut("Ce pixel est déjà transparent.");
+      memoriser();
+      const n = effacerZone([i], [o[0], o[1], o[2]], Number($("tolerance").value), $("partout").checked);
+      direStatut(n + " pixels effacés.");
+    }
+
+    // ===== Pinceaux =====
+    function tamponner(x, y) {
+      const r = Number($("taille").value) / 2;
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      if (outil === "gomme") {
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.fill();
+      } else {
+        ctx.clip();
+        ctx.drawImage(original, 0, 0);
+      }
+      ctx.restore();
+    }
+    function trait(a, b) {
+      const r = Number($("taille").value) / 2;
+      const pas = Math.max(1, r / 3);
+      const d = Math.hypot(b.x - a.x, b.y - a.y);
+      const n = Math.max(1, Math.ceil(d / pas));
+      for (let k = 1; k <= n; k++) tamponner(a.x + (b.x - a.x) * k / n, a.y + (b.y - a.y) * k / n);
+    }
+
+    function pointImage(e) {
+      const rect = toile.getBoundingClientRect();
+      return {
+        x: (e.clientX - rect.left) * toile.width / rect.width,
+        y: (e.clientY - rect.top) * toile.height / rect.height,
+      };
+    }
+
+    toile.addEventListener("pointerdown", (e) => {
+      if (!original) return;
+      const pt = pointImage(e);
+      if (outil === "baguette") {
+        const x = Math.floor(pt.x), y = Math.floor(pt.y);
+        if (x >= 0 && y >= 0 && x < toile.width && y < toile.height) baguette(x, y);
+        return;
+      }
+      memoriser();
+      dessine = true;
+      dernierPoint = pt;
+      toile.setPointerCapture(e.pointerId);
+      tamponner(pt.x, pt.y);
+    });
+    toile.addEventListener("pointermove", (e) => {
+      majCurseur(e);
+      if (!dessine) return;
+      const pt = pointImage(e);
+      trait(dernierPoint, pt);
+      dernierPoint = pt;
+    });
+    const finTrait = () => { dessine = false; dernierPoint = null; };
+    toile.addEventListener("pointerup", finTrait);
+    toile.addEventListener("pointercancel", finTrait);
+    toile.addEventListener("pointerleave", () => { curseur.style.display = "none"; });
+
+    function majCurseur(e) {
+      if (outil === "baguette") { curseur.style.display = "none"; return; }
+      const rect = toile.getBoundingClientRect();
+      const cadre = toile.parentElement.getBoundingClientRect();
+      const d = Number($("taille").value) * rect.width / toile.width;
+      curseur.style.display = "block";
+      curseur.style.width = curseur.style.height = d + "px";
+      curseur.style.left = (e.clientX - cadre.left - d / 2) + "px";
+      curseur.style.top = (e.clientY - cadre.top - d / 2) + "px";
+    }
+
+    // ===== Zoom et aperçu =====
+    function appliquerZoom(z) {
+      zoom = z;
+      $("zoom").value = Math.round(z * 100);
+      $("val-zoom").textContent = Math.round(z * 100) + " %";
+      toile.style.width = toile.width * z + "px";
+      toile.style.height = toile.height * z + "px";
+      scene.classList.toggle("pixel", z > 1);
+    }
+    function zoomAjuste() {
+      const dispo = scene.clientWidth - 40;
+      const dispoH = Math.max(300, window.innerHeight * 0.7 - 40);
+      let z = Math.min(dispo / toile.width, dispoH / toile.height);
+      // Petites images (sprites) : zoom entier pour garder les pixels nets
+      z = z >= 1 ? Math.min(16, Math.floor(z)) : Math.max(0.1, z);
+      appliquerZoom(z);
+    }
+
+    function choisir(groupe, attribut, valeur) {
+      groupe.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", b.dataset[attribut] === valeur));
+    }
+
+    $("outils").addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      outil = b.dataset.outil;
+      choisir($("outils"), "outil", outil);
+      $("aide-outil").textContent = AIDES[outil];
+      $("reglages-baguette").hidden = outil !== "baguette";
+      $("reglages-pinceau").hidden = outil === "baguette";
+      scene.classList.toggle("mode-pinceau", outil !== "baguette");
+    });
+    $("aide-outil").textContent = AIDES[outil];
+
+    $("apercus").addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      choisir($("apercus"), "apercu", b.dataset.apercu);
+      scene.classList.toggle("apercu-noir", b.dataset.apercu === "noir");
+      scene.classList.toggle("apercu-blanc", b.dataset.apercu === "blanc");
+    });
+
+    // ===== Export =====
+    function versBlob() { return new Promise((ok) => toile.toBlob(ok, "image/png")); }
+
+    async function telecharger() {
+      const blob = await versBlob();
+      if (!blob) return direStatut("Export impossible.");
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = NOM_FICHIER;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      direStatut("Image téléchargée.");
+    }
+    async function copier() {
+      try {
+        const blob = await versBlob();
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+        direStatut("Image copiée.");
+      } catch (e) {
+        direStatut("Copie impossible dans ce navigateur. Utilise « Télécharger ».");
+      }
+    }
+
+    function direStatut(t) { statut.textContent = t; }
+
+    // ===== Événements =====
+    $("btn-charger").addEventListener("click", () => champFichier.click());
+    $("vide").addEventListener("click", () => champFichier.click());
+    $("vide").addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); champFichier.click(); }
+    });
+    champFichier.addEventListener("change", () => { chargerFichier(champFichier.files[0]); champFichier.value = ""; });
+
+    scene.addEventListener("dragover", (e) => { e.preventDefault(); scene.classList.add("survol"); });
+    scene.addEventListener("dragleave", () => scene.classList.remove("survol"));
+    scene.addEventListener("drop", (e) => {
+      e.preventDefault();
+      scene.classList.remove("survol");
+      chargerFichier(e.dataTransfer.files[0]);
+    });
+    window.addEventListener("paste", (e) => {
+      const items = e.clipboardData ? [...e.clipboardData.items] : [];
+      const image = items.find((it) => it.type.startsWith("image/"));
+      if (image) chargerFichier(image.getAsFile());
+    });
+    window.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z" && original) { e.preventDefault(); annuler(); }
+    });
+
+    $("btn-auto").addEventListener("click", retirerFondAuto);
+    $("btn-annuler").addEventListener("click", annuler);
+    $("btn-reset").addEventListener("click", () => {
+      if (!original) return;
+      memoriser();
+      ctx.clearRect(0, 0, toile.width, toile.height);
+      ctx.drawImage(original, 0, 0);
+      direStatut("Image remise à l'origine. « Annuler » revient en arrière.");
+    });
+    $("btn-telecharger").addEventListener("click", telecharger);
+    $("btn-copier").addEventListener("click", copier);
+
+    $("tolerance").addEventListener("input", (e) => ($("val-tolerance").textContent = e.target.value));
+    $("taille").addEventListener("input", (e) => ($("val-taille").textContent = e.target.value));
+    $("zoom").addEventListener("input", (e) => original && appliquerZoom(Number(e.target.value) / 100));
+  </script>
+</body>
+</html>
