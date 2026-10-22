@@ -1,6 +1,6 @@
 {
- "revision": 26,
- "maj": "2026-10-22T06:33:13.000Z",
+ "revision": 27,
+ "maj": "2026-10-22T06:33:27.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1564,7 +1564,7 @@
       "neutre"
      ],
      "image": "images/josef/pugilat-du-dur-a-cuire.webp",
-     "effet": "Réservée à Josef. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Glace renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Chevaleresque.\n\nCOMPÉTENCES SYNCHRO\n• Poing brise-glace (砕氷拳打, école Moine, déclenchée par une compétence Moine) : 6 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Posture du gardien (仁王立ち, école 物理補助, déclenchée par une compétence Moine) : déclenche l'effet [Posture du gardien], qui dépend du niveau de l'état Dur à cuire (0 à 2), puis remet cet état à 0.\n\nMODE CHEVALERESQUE (義侠モード)\n• Tant que le mode Synchro dure : chaque Poing brise-glace utilisé par Josef renforce l'état Dur à cuire d'1 niveau (2 max).\n\nEFFET [POSTURE DU GARDIEN] SELON L'ÉTAT DUR À CUIRE\n• Niveau 0 : Josef n'a aucun temps d'attente pendant 2 tours.\n• Niveau 1 : barrière de réduction de dégâts pour toute l'équipe, 2 fois (effet moyen).\n• Niveau 2 : pendant un temps, taux de critique de toute l'équipe à 100 %.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+     "effet": "Réservée à Josef. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Glace renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Chevaleresque.\n\nCOMPÉTENCES SYNCHRO\n• Poing brise-glace (砕氷拳打, école Moine, déclenchée par une compétence Moine) : 6 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Posture du gardien (仁王立ち, école Soutien physique, déclenchée par une compétence Moine) : déclenche l'effet [Posture du gardien], qui dépend du niveau de l'état Dur à cuire (0 à 2), puis remet cet état à 0.\n\nMODE CHEVALERESQUE (義侠モード)\n• Tant que le mode Synchro dure : chaque Poing brise-glace utilisé par Josef renforce l'état Dur à cuire d'1 niveau (2 max).\n\nEFFET [POSTURE DU GARDIEN] SELON L'ÉTAT DUR À CUIRE\n• Niveau 0 : Josef n'a aucun temps d'attente pendant 2 tours.\n• Niveau 1 : barrière de réduction de dégâts pour toute l'équipe, 2 fois (effet moyen).\n• Niveau 2 : pendant un temps, taux de critique de toute l'équipe à 100 %.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
     },
     {
      "id": "c-le-dur-a-cuire-des-plaines-enneigees",
