@@ -18,6 +18,7 @@ from PIL import Image
 p = argparse.ArgumentParser()
 p.add_argument("capture"); p.add_argument("sortie")
 p.add_argument("--apercu"); p.add_argument("--pas", type=float)
+p.add_argument("--blanc", type=float, default=999, help="ex. 225 : un gris plus clair n'est pas du fond (perso en blanc coupé)")
 a = p.parse_args()
 
 im = Image.open(a.capture).convert("RGB")
@@ -56,7 +57,7 @@ for j in range(R):
         n[j, i] = np.median(A[int(cy) - 1:int(cy) + 2, int(cx) - 1:int(cx) + 2].reshape(-1, 3), axis=0)
 
 lum = n.mean(2); sat = n.max(2) - n.min(2)
-gris = (lum > 30) & (sat <= 8)
+gris = (lum > 30) & (sat <= 8) & (lum < a.blanc)   # le blanc pur (vêtement) n'est jamais du fond
 fond = np.zeros((R, C), bool); q = deque()
 for j in range(R):
     for i in range(C):

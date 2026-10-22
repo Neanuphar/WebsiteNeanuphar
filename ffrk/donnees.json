@@ -1,6 +1,6 @@
 {
- "revision": 23,
- "maj": "2026-10-22T05:59:58.000Z",
+ "revision": 24,
+ "maj": "2026-10-22T06:08:57.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1945,6 +1945,164 @@
      ],
      "image": "images/luneth/eveil-guerrier-qui-court-sur-les-nuages.webp",
      "effet": "Réservée à Luneth. Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Vent + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Vent renforcée [重式] et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Vent I [Luneth] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL VENT I (avant la Dual Shift)\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent se lancent 2 fois de plus.\n• Chaque compétence Vent utilisée renforce le mode, jusqu'à 3 paliers : temps d'attente des compétences Vent équipées réduit, et taux de critique 50 / 75 / 100 %.\n\nDUAL SHIFT\n• Fait passer Luneth en mode D-Éveil Vent II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL VENT II (après la Dual Shift)\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent n'ont plus de temps d'attente.\n• Chaque compétence Vent déclenche l'attaque supplémentaire [D Éclair éternel].\n\nATTAQUE SUPPLÉMENTAIRE : D ÉCLAIR ÉTERNEL (D悠久の一閃)\nSelon le nombre d'alliés de FF III encore en vie :\n• 0 à 3 : pendant un temps, résistance Vent de l'ennemi −3 niveaux, et baisse brève de sa défense, défense magique et esprit (effet fort).\n• 4 ou plus : attaque physique à distance Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts, et pendant un temps, résistance de l'ennemi à tous les éléments −3 niveaux.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Vent de Luneth +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Vent I et II [Luneth] et le mode Éveil Vent.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対乾坤一擲."
+    }
+   ]
+  },
+  {
+   "id": "arc",
+   "nom": "Arc",
+   "nomJP": "アルクゥ",
+   "serie": "III",
+   "categorie": "magique",
+   "elements": [
+    "sacre",
+    "eau"
+   ],
+   "sprite": "images/arc/sprite.png",
+   "capacites": [
+    {
+     "id": "c-blindage-de-groupe",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "全体シェル",
+     "nomFR": "Blindage de groupe",
+     "elements": [],
+     "image": "images/arc/blindage-de-groupe.webp",
+     "effet": "Réservée à Arc.\n\n• Blindage pour toute l'équipe."
+    },
+    {
+     "id": "c-evangile-de-la-bienveillance",
+     "type": "超必殺",
+     "categorie": "soutien",
+     "nomJP": "慈愛の福音",
+     "nomFR": "Évangile de la bienveillance",
+     "elements": [],
+     "image": "images/arc/evangile-de-la-bienveillance.webp",
+     "effet": "Réservée à Arc.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Image (分身) pour toute l'équipe, qui bloque 1 attaque physique.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-pluie-d-eau-sacree",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "降りそそぐ神水",
+     "nomFR": "Pluie d'eau sacrée",
+     "elements": [],
+     "image": "images/arc/pluie-d-eau-sacree.webp",
+     "effet": "Réservée à Arc.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Pendant un temps : défense magique de toute l'équipe augmentée (effet fort).\n• Pendant un temps : mode Brave pour Arc, et niveau Brave mis à 2.\n\nCOMPÉTENCE BRAVE : SOURCE DE VIE (命脈の泉, école Magie blanche)\nSans temps d'attente, selon le niveau Brave :\n• Niveau 0 : petit soin d'un allié.\n• Niveau 1 : petit soin de toute l'équipe.\n• Niveau 2 : soin moyen de toute l'équipe.\n• Niveau 3 : soin moyen de toute l'équipe et Tenir bon.\nLe niveau Brave monte quand Arc utilise une compétence Magie blanche.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-aurore-du-coeur-vaillant",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "勇心の来光",
+     "nomFR": "Aurore du cœur vaillant",
+     "elements": [
+      "sacre",
+      "eau"
+     ],
+     "image": "images/arc/aurore-du-coeur-vaillant.webp",
+     "effet": "Réservée à Arc.\n\nATTAQUE\n• 8 attaques Magie blanche puissantes Sacré + Eau sur un ennemi.\n• Pendant un temps : imprégnation Sacré, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Dia Eau (ディアウォータ, école Magie blanche) : 4 attaques Magie blanche Sacré + Eau sur un ennemi.\n• Dia Soin (ディアケアル, école Magie blanche) : soin énorme d'un allié, et pendant un temps, esprit augmenté (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-liens-tisses-eau-d-arc",
+     "type": "LBLC",
+     "categorie": "magique",
+     "nomJP": "紡絆・アルクゥ水",
+     "nomFR": "Liens tissés – Eau d'Arc",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/arc/liens-tisses-eau-d-arc.webp",
+     "effet": "Réservée à Arc. Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Eau (jusqu'à 150 chaînes). Si une chaîne Eau est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques Eau + non-élémentaire sur un ennemi (Invocation ou Magie blanche selon les statistiques d'Arc), avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Arc Eau].\n• La prochaine jauge ATB d'Arc se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Eau.\n\nMODE CHAIN FORCE – ARC EAU (チェインフォースモード・アルクゥ水)\n• Toutes les 50 chaînes Eau : attaque supplémentaire [Guide de l'eau – Arc] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DE L'EAU – ARC (水の導・アルクゥ)\n• Attaque Eau + non-élémentaire sur un ennemi (Invocation ou Magie blanche selon les statistiques d'Arc), qui peut dépasser le plafond de dégâts ; plus puissante à chaque déclenchement.\n• Temps d'attente des compétences Eau d'Arc réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente d'Arc réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-aurore-radieuse-du-coeur-doux",
+     "type": "C神技",
+     "categorie": "magique",
+     "nomJP": "耀光優心の極光",
+     "nomFR": "Aurore radieuse du cœur doux",
+     "elements": [
+      "sacre",
+      "eau",
+      "neutre"
+     ],
+     "image": "images/arc/aurore-radieuse-du-coeur-doux.webp",
+     "effet": "Réservée à Arc. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques puissantes Sacré + Eau + non-élémentaire sur un ennemi (Invocation ou Magie blanche selon les statistiques d'Arc), avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation renforcée [重式] Sacré ou Eau, selon l'élément avec lequel la capacité s'est lancée.\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Sacré ou Eau, effet max : moyen.\n• Les compétences Sacré ou Eau se lancent 1 fois de plus.\n• Les compétences Sacré ou Eau ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 6 attaques spéciales Sacré + Eau + non-élémentaire sur un ennemi (Invocation ou Magie blanche selon les statistiques d'Arc), avec plafond de dégâts +1 niveau.\n• Pendant 2 tours : plafond de dégâts d'Arc +1 niveau.\n• Temps d'attente d'Arc réduit de 2 tours.\n• Dégâts des attaques magiques augmentés pendant 2 tours (effet moyen).\n• Pendant 2 tours : les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB d'Arc se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : comment on déclenche la Force du cristal, et l'effet de la Force du cristal III (pas décrit à l'écran)."
+    }
+   ]
+  },
+  {
+   "id": "refia",
+   "nom": "Refia",
+   "nomJP": "レフィア",
+   "serie": "III",
+   "categorie": "physique",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/refia/sprite.png",
+   "capacites": [
+    {
+     "id": "c-arts-martiaux",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "マーシャルアーツ",
+     "nomFR": "Arts martiaux",
+     "elements": [],
+     "image": "images/refia/arts-martiaux.webp",
+     "effet": "Réservée à Refia.\n\n• Pendant un temps : précision et attaque de Refia augmentées (effet moyen)."
+    },
+    {
+     "id": "c-danse-de-guerre-d-asura",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "修羅戦舞",
+     "nomFR": "Danse de guerre d'Asura",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/refia/danse-de-guerre-d-asura.webp",
+     "effet": "Réservée à Refia.\n\nATTAQUE\n• 8 attaques physiques puissantes Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : taux de critique de Refia à 50 %.\n• Pendant un temps : imprégnation Feu, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Secret de la flamme (焔の極意, école Moine) : 4 attaques physiques à distance Feu + non-élémentaire sur un ennemi, avec des dégâts critiques augmentés.\n• Cercle de flammes d'Asura (修羅の炎陣, école Moine) : 2 attaques physiques à distance Feu + non-élémentaire sur tous les ennemis ; pendant un temps, défense de Refia réduite et attaque augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-flamme-de-l-amour",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "愛の燈火",
+     "nomFR": "Flamme de l'amour",
+     "elements": [
+      "feu"
+     ],
+     "image": "images/refia/flamme-de-l-amour.webp",
+     "effet": "Réservée à Refia. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Feu renforcée [重式].\n• Remplit 1 segment de la jauge de capacités spéciales de Refia.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-apprentissage-du-forgeron",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "鍛冶屋の修行",
+     "nomFR": "Apprentissage du forgeron",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/refia/apprentissage-du-forgeron.webp",
+     "effet": "Réservée à Refia. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Feu renforcée [重式].\n• Pendant un temps : mode Éveil Feu, plafond de dégâts +1 niveau et mode [Fille du forgeron fugueuse].\n• Dégâts des compétences Feu augmentés pendant 3 tours (effet fort).\n\nMODE ÉVEIL FEU (炎覚醒モード)\n• Compétences Feu utilisables à l'infini.\n• Boost des compétences Feu, effet max : moyen.\n• Les compétences Feu se lancent 1 fois de plus.\n\nMODE FILLE DU FORGERON FUGUEUSE (鍛冶屋の家出娘モード)\n• Taux de critique de Refia à 100 %.\n• Temps d'attente des compétences Feu réduit.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-aura-radieuse-de-la-flamme-d-amour",
+     "type": "C神技",
+     "categorie": "physique",
+     "nomJP": "耀光愛炎気円",
+     "nomFR": "Aura radieuse de la flamme d'amour",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/refia/aura-radieuse-de-la-flamme-d-amour.webp",
+     "effet": "Réservée à Refia. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Feu renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n• Effet en plus selon le nombre d'alliés Moines ou de FF III encore en vie (plus bas).\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Feu, effet max : moyen.\n• Les compétences Feu se lancent 1 fois de plus.\n• Les compétences Feu ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 4 attaques physiques spéciales Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant 1 tour : plafond de dégâts de Refia +1 niveau.\n• Temps d'attente de Refia réduit d'1 tour.\n• Pendant 1 tour : les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB de Refia se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nEFFET SELON LES ALLIÉS MOINES OU DE FF III EN VIE\n• 0 à 3 : dégâts physiques de Refia augmentés pendant 3 tours (effet moyen).\n• 4 ou plus : pendant un temps, dégâts physiques de toute l'équipe augmentés (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : comment on déclenche la Force du cristal, et l'effet de la Force du cristal III (pas décrit à l'écran)."
     }
    ]
   }
