@@ -1,6 +1,6 @@
 {
- "revision": 29,
- "maj": "2026-10-22T08:59:42.000Z",
+ "revision": 30,
+ "maj": "2026-10-22T09:07:11.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -2100,6 +2100,128 @@
      ],
      "image": "images/refia/aura-radieuse-de-la-flamme-d-amour.webp",
      "effet": "Réservée à Refia. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Feu renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n• Effet en plus selon le nombre d'alliés Moines ou de FF III encore en vie (plus bas).\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Feu, effet max : moyen.\n• Les compétences Feu se lancent 1 fois de plus.\n• Les compétences Feu ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : 4 attaques physiques spéciales Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant 1 tour : plafond de dégâts de Refia +1 niveau.\n• Temps d'attente de Refia réduit d'1 tour.\n• Pendant 1 tour : les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB de Refia se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nEFFET SELON LES ALLIÉS MOINES OU DE FF III EN VIE\n• 0 à 3 : dégâts physiques de Refia augmentés pendant 3 tours (effet moyen).\n• 4 ou plus : pendant un temps, dégâts physiques de toute l'équipe augmentés (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : comment on déclenche la Force du cristal, et l'effet de la Force du cristal III (pas décrit à l'écran)."
+    }
+   ]
+  },
+  {
+   "id": "desch",
+   "nom": "Desch",
+   "nomJP": "デッシュ",
+   "serie": "III",
+   "categorie": "magique",
+   "elements": [
+    "foudre"
+   ],
+   "sprite": "images/desch/sprite.png",
+   "capacites": [
+    {
+     "id": "c-attaque-de-soutien",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "援護攻撃",
+     "nomFR": "Attaque de soutien",
+     "elements": [
+      "foudre"
+     ],
+     "image": "images/desch/attaque-de-soutien.webp",
+     "effet": "Réservée à Desch.\n\n• 3 attaques magiques Foudre sur des ennemis pris au hasard."
+    },
+    {
+     "id": "c-colere-d-owen",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "オーエンの怒り",
+     "nomFR": "Colère d'Owen",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/desch/colere-d-owen.webp",
+     "effet": "Réservée à Desch. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Foudre.\n• Pendant un temps : mode Éveil Foudre, et plafond de dégâts +1 niveau.\n• Chaque compétence Foudre utilisée : attaque supplémentaire [Tonnerre galant], selon le nombre d'héroïnes dans l'équipe.\n\nMODE ÉVEIL FOUDRE (雷覚醒モード)\n• Compétences Foudre utilisables à l'infini.\n• Boost des compétences Foudre, effet max : moyen.\n• Les compétences Foudre se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : TONNERRE GALANT (ジェントルサンダー)\nSelon le nombre d'héroïnes dans l'équipe :\n• 0 ou 1 : 4 attaques magiques Foudre + non-élémentaire sur un ennemi.\n• 2 : 4 attaques magiques Foudre + non-élémentaire sur un ennemi, et temps d'attente des alliés de la même rangée que Desch réduit d'1 tour.\n• 3 : pareil, et pendant un temps, attaque Foudre de toute l'équipe +1 niveau.\n• 4 ou plus : pareil, avec 6 attaques au lieu de 4.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-tonnerre-de-la-mission-ultime",
+     "type": "究極",
+     "categorie": "magique",
+     "nomJP": "究極使命の雷霆",
+     "nomFR": "Tonnerre de la mission ultime",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/desch/tonnerre-de-la-mission-ultime.webp",
+     "effet": "Réservée à Desch. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Foudre renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Foudre poussée à l'extrême (+20 %).\n• Chaque fois qu'un autre allié utilise une compétence Foudre : Desch lance l'attaque supplémentaire [Frappe du cœur – Desch] (4 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Desch (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Foudre se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Desch +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – DESCH (心撃・デッシュ)\nL'effet change si l'allié qui a utilisé la compétence Foudre est une héroïne :\n• Sinon : brièvement, résistance Foudre de l'ennemi −1 niveau.\n• Si c'est une héroïne : pareil, et attaque Foudre de cette alliée +1 niveau.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Tonnerre primordial Kai (太古の迅雷改, école Magie noire), remplace Tonnerre primordial (6 attaques magiques Foudre sur un ennemi) : 6 attaques magiques Foudre sur un ennemi ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Éclair antique Kai (古代の雷閃改, école Magie noire), remplace Éclair antique (4 attaques magiques Foudre sur un ennemi ; toutes les 3 utilisations par Desch, attaque Foudre de toute l'équipe +1 niveau pendant un temps) : 4 attaques magiques Foudre sur un ennemi, avec un temps d'attente plus court ; toutes les 2 utilisations par Desch, attaque Foudre de toute l'équipe +1 niveau pendant un temps.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    },
+    {
+     "id": "c-eveil-colere-d-owen",
+     "type": "D覚醒",
+     "categorie": "magique",
+     "nomJP": "覚醒オーエンの怒り",
+     "nomFR": "Éveil – Colère d'Owen",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/desch/eveil-colere-d-owen.webp",
+     "effet": "Réservée à Desch. Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 7 attaques magiques puissantes Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Brièvement : défense, défense magique et esprit de l'ennemi réduits (effet très fort).\n• Pendant un temps : magie et esprit de Desch augmentés (effet fort), et imprégnation Foudre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Foudre I [Desch] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL FOUDRE I (avant la Dual Shift)\n• Boost des compétences Foudre, effet max : moyen.\n• Les compétences Foudre se lancent 2 fois de plus.\n• Chaque compétence Foudre utilisée renforce le mode : temps d'attente des compétences Foudre équipées réduit (jusqu'à 3 paliers).\n\nDUAL SHIFT\n• Fait passer Desch en mode D-Éveil Foudre II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL FOUDRE II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Foudre, effet max : moyen.\n• Les compétences Foudre se lancent 1 fois de plus.\n• Chaque compétence Foudre utilisée : attaque supplémentaire [D Fil de vie], selon le nombre d'héroïnes dans l'équipe.\n\nATTAQUE SUPPLÉMENTAIRE : D FIL DE VIE (D命脈)\n• 0 à 3 héroïnes : temps d'attente des alliés de la même rangée que Desch réduit d'1 tour.\n• 4 ou plus : pareil, et dégâts des compétences Foudre de toute l'équipe augmentés pendant 1 tour (effet moyen).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Foudre de Desch +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Foudre I et II [Desch] et le mode Éveil Foudre.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 5).\n• Dégâts de la capacité augmentés (niv. 2).\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II) ; les niveaux des bonus d'entraînement sont ceux affichés au niveau d'entraînement 5 (sur 10) de la propriétaire."
+    }
+   ]
+  },
+  {
+   "id": "ingus",
+   "nom": "Ingus",
+   "nomJP": "イングズ",
+   "serie": "III",
+   "categorie": "physique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/ingus/sprite.png",
+   "capacites": [
+    {
+     "id": "c-protection",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "まもる",
+     "nomFR": "Protection",
+     "elements": [],
+     "image": "images/ingus/protection.webp",
+     "effet": "Réservée à Ingus.\n\n• Carapace et Blindage sur Ingus."
+    },
+    {
+     "id": "c-sd-ingus",
+     "type": "LBSD",
+     "categorie": "soutien",
+     "nomJP": "SD・イングズ",
+     "nomFR": "SD – Ingus",
+     "elements": [],
+     "image": "images/ingus/sd-ingus.webp",
+     "effet": "Réservée à Ingus. Limit Break, utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Soul Drive [Ingus].\n• La prochaine jauge ATB d'Ingus se remplit instantanément (1 fois).\n\nMODE SOUL DRIVE [INGUS] (ソウルドライブモード)\n• Les capacités spéciales consomment 1 segment de jauge en moins.\n• Les capacités spéciales n'ont pas de temps d'attente.\n• Plafond de dégâts des capacités spéciales +1 niveau.\n• Dégâts des capacités spéciales augmentés (effet fort).\n• Quand Ingus lance une capacité spéciale : sa prochaine jauge ATB se remplit instantanément (1 fois), et le mode prend fin.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Pendant 1 tour : plafond de dégâts d'Ingus +1 niveau, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-impact-titanesque",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "ティターンインパクト",
+     "nomFR": "Impact titanesque",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/ingus/impact-titanesque.webp",
+     "effet": "Réservée à Ingus. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 5 attaques physiques ultra-puissantes Terre sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-assaut-des-chevaliers",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "ナイツアサルト",
+     "nomFR": "Assaut des chevaliers",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/ingus/assaut-des-chevaliers.webp",
+     "effet": "Réservée à Ingus. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet moyen).\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Escorte.\n\nCOMPÉTENCES SYNCHRO\n• Ruée titanesque (ティターンラッシュ, école Chevalier, déclenchée par une compétence Terre) : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Charge titanesque (ティターンチャージ, école Chevalier, déclenchée par une compétence Terre) : 3 attaques physiques Terre + non-élémentaire sur un ennemi, et dégâts des compétences Terre d'Ingus augmentés pendant 3 tours (effet moyen).\n\nMODE ESCORTE (護衛モード)\n• Pendant un temps : quand la barrière de réduction de dégâts d'Ingus est consommée, attaque supplémentaire [Garde de l'Égide].\n• Après 4 Gardes de l'Égide, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : GARDE DE L'ÉGIDE (イージスガード)\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet moyen).\n• Toute l'équipe récupère 1500 PV.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
     }
    ]
   }
