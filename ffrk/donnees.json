@@ -1,5 +1,5 @@
 {
- "revision": 14,
+ "revision": 15,
  "maj": "2026-10-22T04:30:59.000Z",
  "persos": [
   {
@@ -1052,7 +1052,7 @@
       "neutre"
      ],
      "image": "images/leonhart/chevalier-noir-de-la-trahison.webp",
-     "effet": "Réservée à Leonhart. Utilisable 2 fois (1 par temps).\n\nATTAQUE (en 2 temps)\n• 1re utilisation, Libération du Vrai Ougi (真奥義解放) : sans consommer de jauge ni temps d'attente, Leonhart reçoit [Renforcement du Vrai Ougi – Leonhart] ; pendant un temps : imprégnation Ténèbres renforcée [重式] et plafond de dégâts +1 niveau.\n• 2e utilisation, Chevalier noir de la trahison (背信の闇騎士) : 20 coups physiques Ténèbres + non-élémentaire sur un ennemi, plus une attaque physique Ténèbres + non-élémentaire pouvant dépasser le plafond de dégâts. Met fin au Renforcement du Vrai Ougi – Leonhart.\n\nRENFORCEMENT DU VRAI OUGI – LEONHART (真奥義強化・レオンハルト)\n• Selon la quantité de dégâts infligés pendant ce mode, la puissance de [Chevalier noir de la trahison] et son plafond de dégâts augmentent (2 paliers max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Leonhart augmentées après la 1re utilisation (niv. 3).\n• Temps d'attente de la 2e utilisation réduit (niv. 3).\n• Consommation de jauge de la 2e utilisation réduite de 1, débloquée au niveau d'entraînement 10.\n\nÀ VÉRIFIER : le sens de 背信 (traduit « de la trahison »), et le terme 奥義 (gardé « Ougi »)."
+     "effet": "Réservée à Leonhart. Utilisable 2 fois (1 par temps).\n\nATTAQUE (en 2 temps)\n• 1re utilisation, Libération du vrai arcane (真奥義解放) : sans consommer de jauge ni temps d'attente, Leonhart reçoit [Vrai arcane renforcé – Leonhart] ; pendant un temps : imprégnation Ténèbres renforcée [重式] et plafond de dégâts +1 niveau.\n• 2e utilisation, Chevalier noir de la trahison (背信の闇騎士) : 20 coups physiques Ténèbres + non-élémentaire sur un ennemi, plus une attaque physique Ténèbres + non-élémentaire pouvant dépasser le plafond de dégâts. Met fin au Vrai arcane renforcé – Leonhart.\n\nRENFORCEMENT DU VRAI OUGI – LEONHART (真奥義強化・レオンハルト)\n• Selon la quantité de dégâts infligés pendant ce mode, la puissance de [Chevalier noir de la trahison] et son plafond de dégâts augmentent (2 paliers max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Leonhart augmentées après la 1re utilisation (niv. 3).\n• Temps d'attente de la 2e utilisation réduit (niv. 3).\n• Consommation de jauge de la 2e utilisation réduite de 1, débloquée au niveau d'entraînement 10.\n\nÀ VÉRIFIER : le sens de 背信 (traduit « de la trahison »)."
     },
     {
      "id": "c-arme-des-tenebres-ultime",
