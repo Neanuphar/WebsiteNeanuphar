@@ -74,7 +74,8 @@
     input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
     /* ---- Recherche et filtres ---- */
-    .filtres { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+    .filtres { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 8px; margin: 8px 0; }
+    @media (max-width: 480px) { .filtres { grid-template-columns: minmax(0, 1fr); } }
     .elements { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 16px; }
     .puce {
       font-size: .85rem;
@@ -129,6 +130,9 @@
     }
     .avatar img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
     .compte { font-size: .75rem; color: var(--accent); }
+    .points-perso { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
+    .points-perso span { width: 11px; height: 11px; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); }
+    .entete-perso .elements { margin: 6px 0 0; }
     .ajout { border-style: dashed; color: var(--accent); justify-content: center; min-height: 150px; }
     .ajout .plus { font-size: 2rem; line-height: 1; }
 
@@ -304,6 +308,11 @@
         <select id="perso-serie"></select>
       </div>
       <div class="champ">
+        <span class="label">Éléments</span>
+        <div class="elements" id="perso-elements"></div>
+        <p class="aide">Ceux qui servent à le retrouver dans la recherche.</p>
+      </div>
+      <div class="champ">
         <span class="label">Sprite</span>
         <div class="apercu-image">
           <div class="avatar" id="perso-apercu">?</div>
@@ -440,7 +449,7 @@
     let aRefaire = false;
     let nonEnregistre = false;
     let enConflit = false;
-    const filtres = { texte: "", serie: "", type: "", elements: new Set() };
+    const filtres = { texte: "", serie: "", elements: new Set() };
 
     const $ = (id) => document.getElementById(id);
 
@@ -603,7 +612,10 @@
     }
     function normaliser() {
       if (!donnees || !Array.isArray(donnees.persos)) donnees = { revision: 0, persos: [] };
-      donnees.persos.forEach((p) => { if (!Array.isArray(p.capacites)) p.capacites = []; });
+      donnees.persos.forEach((p) => {
+        if (!Array.isArray(p.capacites)) p.capacites = [];
+        if (!Array.isArray(p.elements)) p.elements = [];
+      });
     }
 
     // ===== Enregistrement (un seul commit par enregistrement) =====
@@ -731,25 +743,18 @@
       vue.append(el("h1", "", "Wiki FFRK"));
       vue.append(el("p", "sous-titre", "Les capacités spéciales de mes persos, traduites."));
 
+      const zoneFiltres = el("div", "filtres");
       const recherche = el("input");
       recherche.type = "search";
-      recherche.placeholder = "Chercher un perso ou une capacité…";
+      recherche.placeholder = "Chercher un perso…";
       recherche.value = filtres.texte;
-      recherche.setAttribute("aria-label", "Recherche");
-      vue.append(recherche);
-
-      const zoneFiltres = el("div", "filtres");
+      recherche.setAttribute("aria-label", "Chercher un perso");
       const selSerie = el("select");
       selSerie.setAttribute("aria-label", "Jeu");
       selSerie.append(new Option("Tous les jeux", ""));
       SERIES.forEach((s) => selSerie.append(new Option(s === "Autres" ? "Autres" : "FF " + s, s)));
       selSerie.value = filtres.serie;
-      const selType = el("select");
-      selType.setAttribute("aria-label", "Type de capacité");
-      selType.append(new Option("Tous les types", ""));
-      typesConnus().forEach((t) => selType.append(new Option(t, t)));
-      selType.value = filtres.type;
-      zoneFiltres.append(selSerie, selType);
+      zoneFiltres.append(recherche, selSerie);
       vue.append(zoneFiltres);
 
       const puces = el("div", "elements");
@@ -765,43 +770,24 @@
       });
       vue.append(puces);
 
-      const zoneResultats = el("div", "resultats");
       const zonePersos = el("div");
-      vue.append(zoneResultats, zonePersos);
+      vue.append(zonePersos);
 
       function remplir() {
         const q = sansAccents(filtres.texte.trim());
-        const filtreCapa = filtres.type || filtres.elements.size;
-
-        // Capacités qui correspondent
-        const capas = [];
-        donnees.persos.forEach((p) => {
-          if (filtres.serie && p.serie !== filtres.serie) return;
-          p.capacites.forEach((c) => {
-            const texteOk = !q || sansAccents([c.nomFR, c.nomJP, c.effet, c.type].join(" ")).includes(q);
-            const typeOk = !filtres.type || c.type === filtres.type;
-            const elOk = !filtres.elements.size || (c.elements || []).some((x) => filtres.elements.has(x));
-            if (texteOk && typeOk && elOk && (q || filtreCapa)) capas.push([p, c]);
-          });
-        });
-        zoneResultats.innerHTML = "";
-        if (q || filtreCapa) {
-          zoneResultats.append(el("h2", "", `Capacités (${capas.length})`));
-          if (!capas.length) zoneResultats.append(el("p", "vide", "Aucune capacité ne correspond."));
-          capas.slice(0, 200).forEach(([p, c]) => zoneResultats.append(ligneCapacite(p, c)));
-        }
-
-        // Persos
+        const filtreActif = q || filtres.serie || filtres.elements.size;
+        // Un perso s'affiche s'il a au moins un des éléments cochés
         const persos = donnees.persos
           .filter((p) => !filtres.serie || p.serie === filtres.serie)
           .filter((p) => !q || sansAccents(p.nom + " " + (p.nomJP || "")).includes(q))
-          .filter((p) => !filtreCapa || capas.some(([pp]) => pp === p))
+          .filter((p) => !filtres.elements.size || (p.elements || []).some((x) => filtres.elements.has(x)))
           .sort(triPersos);
         zonePersos.innerHTML = "";
         zonePersos.append(el("h2", "titre-section", `Persos (${persos.length})`));
+        if (filtreActif && !persos.length && donnees.persos.length) zonePersos.append(el("p", "vide", "Aucun perso ne correspond."));
         const grille = el("div", "grille-persos");
         persos.forEach((p) => grille.append(cartePerso(p)));
-        if (editable() && !filtreCapa) {
+        if (editable() && !filtreActif) {
           const ajout = el("button", "carte-perso ajout");
           ajout.type = "button";
           ajout.append(el("span", "plus", "+"), el("span", "", "Ajouter un perso"));
@@ -818,7 +804,6 @@
 
       recherche.addEventListener("input", () => { filtres.texte = recherche.value; remplir(); });
       selSerie.addEventListener("change", () => { filtres.serie = selSerie.value; remplir(); });
-      selType.addEventListener("change", () => { filtres.type = selType.value; remplir(); });
       remplir();
     }
 
@@ -826,12 +811,6 @@
       const sa = SERIES.indexOf(a.serie), sb = SERIES.indexOf(b.serie);
       return (sa === sb ? 0 : (sa < 0 ? 99 : sa) - (sb < 0 ? 99 : sb)) || a.nom.localeCompare(b.nom, "fr");
     }
-    function typesConnus() {
-      const s = new Set(TYPES);
-      donnees.persos.forEach((p) => p.capacites.forEach((c) => c.type && s.add(c.type)));
-      return [...s];
-    }
-
     function avatar(p) {
       const a = el("div", "avatar");
       if (p && p.sprite) a.append(imageAvecSecours(p.sprite));
@@ -844,8 +823,22 @@
       a.append(avatar(p), el("span", "nom", p.nom));
       if (p.nomJP) a.append(el("span", "jp", p.nomJP));
       a.append(el("span", "serie", p.serie === "Autres" ? "Autres" : "FF " + p.serie));
+      if (p.elements && p.elements.length) a.append(pointsElements(p.elements));
       if (p.capacites.length) a.append(el("span", "compte", p.capacites.length + " capacité" + (p.capacites.length > 1 ? "s" : "")));
       return a;
+    }
+    function pointsElements(ids) {
+      const zone = el("span", "points-perso");
+      ids.forEach((id) => {
+        const e = ELEMENTS.find((x) => x.id === id);
+        if (!e) return;
+        const s = el("span");
+        s.style.background = e.couleur;
+        s.title = e.nom;
+        zone.append(s);
+      });
+      zone.setAttribute("aria-label", ids.map((id) => (ELEMENTS.find((x) => x.id === id) || {}).nom).filter(Boolean).join(", "));
+      return zone;
     }
 
     function puceElement(e, fixe) {
@@ -871,21 +864,6 @@
       return b;
     }
 
-    function ligneCapacite(p, c) {
-      const b = el("button", "ligne-capacite");
-      b.type = "button";
-      b.append(cercle(c, "span"));
-      const infos = el("div", "infos");
-      infos.append(el("div", "", c.nomFR || c.nomJP || "(sans nom)"));
-      infos.append(el("div", "perso", [p.nom, c.type].filter(Boolean).join(" · ")));
-      b.append(infos);
-      b.addEventListener("click", () => {
-        location.hash = "#/perso/" + encodeURIComponent(p.id);
-        setTimeout(() => ouvrirDetail(p, c), 0);
-      });
-      return b;
-    }
-
     // ===== Vue : fiche perso =====
     function vuePerso(p) {
       const vue = $("vue");
@@ -901,6 +879,14 @@
       infos.append(el("h2", "", p.nom));
       if (p.nomJP) infos.append(el("div", "jp", p.nomJP));
       infos.append(el("div", "jp", p.serie === "Autres" ? "Autres jeux" : "Final Fantasy " + p.serie));
+      if (p.elements.length) {
+        const els = el("div", "elements");
+        p.elements.forEach((id) => {
+          const e = ELEMENTS.find((x) => x.id === id);
+          if (e) els.append(puceElement(e, true));
+        });
+        infos.append(els);
+      }
       if (editable()) {
         const actions = el("div", "actions");
         const modif = el("button", "petit", "Modifier le perso");
@@ -975,6 +961,12 @@
     let persoCourant = null;
     let spriteChoisi = null; // Blob
     SERIES.forEach((s) => $("perso-serie").append(new Option(s === "Autres" ? "Autres" : "Final Fantasy " + s, s)));
+    ELEMENTS.forEach((e) => {
+      const b = puceElement(e);
+      b.dataset.id = e.id;
+      b.addEventListener("click", () => b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"));
+      $("perso-elements").append(b);
+    });
 
     function ouvrirPerso(p) {
       persoCourant = p;
@@ -983,6 +975,8 @@
       $("perso-nom").value = p ? p.nom : "";
       $("perso-jp").value = p ? p.nomJP || "" : "";
       $("perso-serie").value = p ? p.serie : (filtres.serie || "I");
+      $("perso-elements").querySelectorAll(".puce").forEach((b) =>
+        b.setAttribute("aria-pressed", !!(p && p.elements.includes(b.dataset.id))));
       $("perso-supprimer").hidden = !p;
       const ap = $("perso-apercu");
       ap.replaceWith(Object.assign(avatar(p), { id: "perso-apercu" }));
@@ -1009,12 +1003,13 @@
       if (!p) {
         let id = slug(nom), n = 2;
         while (donnees.persos.some((x) => x.id === id)) id = slug(nom) + "-" + n++;
-        p = { id, nom, nomJP: "", serie: "I", sprite: "", capacites: [] };
+        p = { id, nom, nomJP: "", serie: "I", elements: [], sprite: "", capacites: [] };
         donnees.persos.push(p);
       }
       p.nom = nom;
       p.nomJP = $("perso-jp").value.trim();
       p.serie = $("perso-serie").value;
+      p.elements = [...$("perso-elements").querySelectorAll('.puce[aria-pressed="true"]')].map((b) => b.dataset.id);
       if (spriteChoisi) {
         retirerImage(p.sprite);
         p.sprite = ajouterImage(p.id, spriteChoisi);

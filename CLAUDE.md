@@ -80,7 +80,8 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 ## Wiki FFRK (`ffrk/`) — exception aux règles « un seul fichier » et « hors ligne »
 
 - Les données sont dans `ffrk/donnees.json`, les images dans `ffrk/images/<id-du-perso>/`. Les chemins d'images dans le JSON sont relatifs au dossier `ffrk/` (`images/relm/xxx.webp`).
-- Format : `{ revision, maj, persos: [{ id, nom, nomJP, serie, sprite, capacites: [{ id, type, nomJP, nomFR, elements, effet, image }] }] }`. `serie` vaut une valeur de `SERIES`, `elements` des `id` de `ELEMENTS` (voir le haut du script).
+- Format : `{ revision, maj, persos: [{ id, nom, nomJP, serie, elements, sprite, capacites: [{ id, type, nomJP, nomFR, elements, effet, image }] }] }`. `serie` vaut une valeur de `SERIES`, `elements` des `id` de `ELEMENTS` (voir le haut du script).
+- La recherche ne porte que sur les persos : nom, nom japonais, jeu, et les `elements` du perso (un perso s'affiche s'il a au moins un des éléments cochés). Les éléments des capacités servent seulement à l'affichage du détail.
 - La page enregistre elle-même dans ce repo via l'API GitHub, avec une clé (token) que la propriétaire colle dans la page. La clé reste dans son navigateur : ne jamais l'écrire dans le repo.
 - Chaque enregistrement depuis la page fait un seul commit (« Wiki FFRK : mise à jour »). La page refuse d'écraser le fichier s'il a changé ailleurs entre-temps.
 - Pour modifier `donnees.json` directement (par exemple pour ajouter un perso à partir de captures d'écran) : `git pull` d'abord, garder le format, augmenter `revision` de 1, puis commit et push.
