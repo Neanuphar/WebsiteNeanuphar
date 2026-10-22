@@ -1,6 +1,6 @@
 {
- "revision": 11,
- "maj": "2026-10-22T04:10:18.000Z",
+ "revision": 12,
+ "maj": "2026-10-22T13:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -840,6 +840,133 @@
      ],
      "image": "images/firion/flamme-des-armes-eveillee.webp",
      "effet": "Réservée à Firion. Utilisable 1 fois.\n\nATTAQUE\n• 7 coups physiques puissants Sacré + Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Double élément II, le mode Éveil D Guerrier loyal – I [Flamme sacrée de Firion] et la Résonance des souvenirs.\n\nMODE ÉVEIL D GUERRIER LOYAL – I [FLAMME SACRÉE DE FIRION] (avant le Dual Shift)\n• Boost des compétences Samouraï ou Chevalier, effet max : moyen.\n• Les compétences Samouraï ou Chevalier se lancent 2 fois de plus.\n• À chaque compétence Samouraï ou Chevalier utilisée, l'effet monte : le temps d'attente des compétences Samouraï ou Chevalier équipées par Firion est réduit (3 paliers max).\n\nMODE ÉVEIL D GUERRIER LOYAL – II [FLAMME SACRÉE DE FIRION] (après le Dual Shift)\n• Aucun temps d'attente.\n• Dégâts des capacités spéciales et des Limit Break augmentés (effet moyen).\n• Quand Firion utilise une capacité spéciale ou une Limit Break : la prochaine jauge ATB se remplit instantanément (1 fois), aucun temps d'attente pendant 1 tour, et taux de critique à 100 % pendant 3 tours.\nModes de la même catégorie : Éveil D Guerrier loyal – II, Éveil D Guerrier loyal – I, Éveil Guerrier loyal.\n\nDUAL SHIFT (デュアルシフト)\n• Firion reçoit le mode Éveil D Guerrier loyal – II [Flamme sacrée de Firion].\n• Quel que soit le moment du Dual Shift, le mode II dure 1 tour (que Firion ait agi 1, 2, 3, 4 ou 5 fois après le mode I ; à partir de la 6e action, comme à la 5e).\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• À sa prochaine action, si Firion utilise une compétence Sacré ou Feu, il reçoit pendant un temps l'imprégnation renforcée [重式] de l'élément correspondant.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Samouraï ou Chevalier de Firion augmentés (5 %).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : comment se déclenche le Dual Shift (non précisé sur les captures), le sens de 義士 (traduit « Guerrier loyal »), et le nom : バーン pourrait être « Burn »."
+    }
+   ]
+  },
+  {
+   "id": "maria",
+   "nom": "Maria",
+   "nomJP": "マリア",
+   "serie": "II",
+   "categorie": "magique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/maria/sprite.png",
+   "capacites": [
+    {
+     "id": "c-arc-de-l-expert",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "熟練の弓",
+     "nomFR": "Arc de l'expert",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/maria/arc-de-l-expert.webp",
+     "effet": "Réservée à Maria.\n\n• Attaque physique à distance non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-meteore-16",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "メテオ16",
+     "nomFR": "Météore 16",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/maria/meteore-16.webp",
+     "effet": "Réservée à Maria.\n\nATTAQUE\n• 8 attaques magiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Brise (ブレイク, école Magie noire) : attaque magique Terre + non-élémentaire sur un ennemi, en 3 à 6 coups (plus la magie de Maria est élevée, plus il y en a), avec une faible chance de Pétrification.\n• Flamme du soleil (太陽の炎, école Magie noire) : 2 attaques magiques Terre + Feu sur tous les ennemis, et pendant un temps, défense de Maria réduite et magie augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-magma-32",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "マグマ32",
+     "nomFR": "Magma 32",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/maria/magma-32.webp",
+     "effet": "Réservée à Maria.\n\n• 10 attaques magiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre, magie de Maria augmentée (effet moyen) et défense augmentée (effet faible).\n• Pendant un temps : Double Magie noire (黒魔法アビリティダブル).\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : l'effet exact de la Double Magie noire (probablement : deux compétences Magie noire d'affilée)."
+    },
+    {
+     "id": "c-foi-8",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "フェイス8",
+     "nomFR": "Foi 8",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/maria/foi-8.webp",
+     "effet": "Réservée à Maria. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : attaque Terre de Maria +2 niveaux.\n• Temps d'attente de Maria réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-impregnation-de-terre-16",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "ちまとい16",
+     "nomFR": "Imprégnation de terre 16",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/maria/impregnation-de-terre-16.webp",
+     "effet": "Réservée à Maria. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Maria n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-sagittaire-64",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "サジタリウス64",
+     "nomFR": "Sagittaire 64",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/maria/sagittaire-64.webp",
+     "effet": "Réservée à Maria. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre.\n• Pendant un temps : mode Éveil Terre, et plafond de dégâts +1 niveau.\n• Toutes les 3 compétences Terre utilisées : attaque supplémentaire [Kaus Australis].\n\nMODE ÉVEIL TERRE (地覚醒モード)\n• Compétences Terre utilisables à l'infini.\n• Boost des compétences Terre, effet max : moyen.\n• Les compétences Terre se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : KAUS AUSTRALIS (カウス・アウストラリス)\n• Attaque magique Terre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-armageddon-99",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "アルマゲドン99",
+     "nomFR": "Armageddon 99",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/maria/armageddon-99.webp",
+     "effet": "Réservée à Maria. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n\nCOMPÉTENCES SYNCHRO\n• Brise 8 (ブレイク8, école Magie noire, déclenchée par une compétence Terre) : 4, 6 ou 8 attaques magiques Terre + non-élémentaire sur un ennemi ; le nombre de coups augmente à chaque déclenchement.\n• Concentration 8 (しゅうちゅう8, école Magie noire, déclenchée par une compétence Magie noire) : sans temps d'attente, au tour suivant, la prochaine compétence Terre de Maria se lance 1 fois de plus, et pendant un temps, attaque Terre +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : la fin de l'écran n'était pas visible ; d'autres bonus d'entraînement ou conditions de déblocage peuvent manquer."
+    },
+    {
+     "id": "c-galaxia-99",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "ガラクシア99",
+     "nomFR": "Galaxia 99",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/maria/galaxia-99.webp",
+     "effet": "Réservée à Maria. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Maria].\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : GALAXIA 99\n• 20 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Puis une attaque magique Terre + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – MARIA]\n• Plus Maria utilise de compétences Terre pendant cet état, plus Galaxia 99 devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Maria augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-fleche-comete-ultime-128",
+     "type": "究極",
+     "categorie": "magique",
+     "nomJP": "究極コメットアロー128",
+     "nomFR": "Flèche comète ultime 128",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/maria/fleche-comete-ultime-128.webp",
+     "effet": "Réservée à Maria. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Terre poussée à l'extrême (+20 %).\n• Toutes les 3 compétences Terre utilisées : attaque supplémentaire [Frappe du cœur – Maria] (1 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Maria (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Terre se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Maria +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – MARIA (心撃・マリア)\n• Pendant un temps : attaque Terre de Maria +2 niveaux.\n• Ses compétences Terre n'ont aucun temps d'attente pendant 3 tours.\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Explosion 8 Kai (ばくは8改, école Magie noire) : 6 attaques magiques Terre sur un ennemi. Après 3 utilisations : plus puissante, et plafond de dégâts +1 niveau.\n• Version normale, Explosion 8 (ばくは8) : 6 attaques magiques Terre sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
    ]
   }
