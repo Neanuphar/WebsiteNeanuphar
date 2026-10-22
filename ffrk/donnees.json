@@ -1,6 +1,6 @@
 {
- "revision": 16,
- "maj": "2026-10-22T04:30:59.000Z",
+ "revision": 17,
+ "maj": "2026-10-22T04:44:53.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1071,6 +1071,157 @@
     }
    ],
    "recheck": true
+  },
+  {
+   "id": "minwu",
+   "nom": "Minwu",
+   "nomJP": "ミンウ",
+   "serie": "II",
+   "categorie": "magique",
+   "elements": [
+    "sacre"
+   ],
+   "sprite": "images/minwu/sprite.png",
+   "capacites": [
+    {
+     "id": "c-resurrection",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "リバイヴ",
+     "nomFR": "Résurrection",
+     "elements": [],
+     "image": "images/minwu/resurrection.webp",
+     "effet": "Réservée à Minwu.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Soin automatique à chaque perte de PV, jusqu'à 2000 PV soignés au total.\n• Barrière qui annule les dégâts reçus, jusqu'à 30 % des PV max.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-sceau-eclatant",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "ブライトシギル",
+     "nomFR": "Sceau éclatant",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/sceau-eclatant.webp",
+     "effet": "Réservée à Minwu.\n\nATTAQUE\n• 10 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Temps d'attente de Minwu réduit d'1 tour.\n• Pendant un temps : imprégnation Sacré.\n• Pendant un temps : dégâts des compétences Magie blanche augmentés (effet moyen), et chaque compétence Magie blanche utilisée réduit le temps d'attente de Minwu d'1 tour.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-liens-tisses-sacre-de-minwu",
+     "type": "LBLC",
+     "categorie": "magique",
+     "nomJP": "紡絆・ミンウ聖",
+     "nomFR": "Liens tissés – Sacré de Minwu",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/liens-tisses-sacre-de-minwu.webp",
+     "effet": "Réservée à Minwu. Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Sacré (jusqu'à 150 chaînes). Si une chaîne Sacré est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques Magie blanche Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Minwu Sacré].\n• La prochaine jauge ATB de Minwu se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Sacré.\n\nMODE CHAIN FORCE – MINWU SACRÉ (チェインフォースモード・ミンウ聖)\n• Toutes les 50 chaînes Sacré : attaque supplémentaire [Guide sacré – Minwu] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE SACRÉ – MINWU (聖の導・ミンウ)\n• Attaque Magie blanche Sacré + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante à chaque déclenchement.\n• Temps d'attente des compétences Sacré de Minwu réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Minwu réduit d'1 tour, débloqué au niveau d'entraînement 5.\n\nÀ VÉRIFIER : la quantité de jauge de Limite consommée (l'écran semble montrer 1 segment sur 3)."
+    },
+    {
+     "id": "c-art-secret-radieux",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "光輝なる秘術",
+     "nomFR": "Art secret radieux",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/minwu/art-secret-radieux.webp",
+     "effet": "Réservée à Minwu. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : imprégnation Sacré renforcée [重式].\n• Temps d'attente de Minwu réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-levee-du-sceau",
+     "type": "閃技",
+     "categorie": "magique",
+     "nomJP": "封印解除",
+     "nomFR": "Levée du sceau",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/minwu/levee-du-sceau.webp",
+     "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nATTAQUE\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Attaque Magie blanche Sacré sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante si l'ennemi est faible ou légèrement faible (微弱) au Sacré.\n• Pendant un temps : imprégnation Sacré renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-sceau-sacre-de-mysidia",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "ミシディアの聖印",
+     "nomFR": "Sceau sacré de Mysidia",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/sceau-sacre-de-mysidia.webp",
+     "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Sacré.\n• Pendant un temps : mode Éveil Magie blanche, et plafond de dégâts +1 niveau.\n• Active le mode Destin.\n\nMODE ÉVEIL MAGIE BLANCHE (白魔法覚醒モード)\n• Compétences Magie blanche utilisables à l'infini.\n• Boost des compétences Magie blanche, effet max : moyen.\n• Les compétences Magie blanche se lancent 1 fois de plus.\n\nMODE DESTIN (天命モード, pendant un temps)\n• Certaines statistiques de Minwu augmentées (effet moyen).\n• Forte chance qu'une compétence Magie blanche se lance encore 1 fois.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-miracle-99",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "ホーリー99",
+     "nomFR": "Miracle 99",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/miracle-99.webp",
+     "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Sacré renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Sacré utilisées : pendant un temps, attaque Sacré de Minwu +2 niveaux.\n\nCOMPÉTENCES SYNCHRO\n• Adia 66 (アディア66, école Magie blanche, déclenchée par une compétence Magie blanche) : 6 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Dia 33 (ディア33, école Magie blanche, déclenchée par une compétence Magie blanche) : 3 attaques Magie blanche Sacré + non-élémentaire sur un ennemi, et dégâts des compétences Sacré de Minwu augmentés pendant 3 tours (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-ultima-supreme",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "アルテマ・極",
+     "nomFR": "Ultima suprême",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/ultima-supreme.webp",
+     "effet": "Réservée à Minwu. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Minwu].\n• Pendant un temps : imprégnation Sacré renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : ULTIMA SUPRÊME\n• 20 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Puis une attaque Magie blanche Sacré + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – MINWU]\n• Plus Minwu inflige de dégâts pendant cet état, plus Ultima suprême devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Minwu augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-eclat-blanc-de-l-aube-polaire",
+     "type": "M神技",
+     "categorie": "magique",
+     "nomJP": "極星黎明の白輝",
+     "nomFR": "Éclat blanc de l'aube polaire",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/eclat-blanc-de-l-aube-polaire.webp",
+     "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Minwu se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Minwu] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Éclat blanc de l'aube polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – MINWU (星撃・ミンウ)\n• 10 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Tant que le mode Maître dure, le renforcement du héros de Minwu augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %) et son plafond de dégâts change (5 paliers : niveaux 3 / 4 / 5 / 6 / 7).\n\nATTAQUE MAÎTRE : ÉCLAT BLANC DE L'AUBE POLAIRE\n• Attaque Magie blanche Sacré + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : vrai plafond de dégâts de Minwu +1 niveau, et Minwu n'a aucun temps d'attente.\n• Pendant 1 tour : renforcement du héros 50 %.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Sacré de Minwu augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1).\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    },
+    {
+     "id": "c-sceau-eclatant-ultime",
+     "type": "究極",
+     "categorie": "magique",
+     "nomJP": "究極ブライトシギル",
+     "nomFR": "Sceau éclatant ultime",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/sceau-eclatant-ultime.webp",
+     "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques Magie blanche Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Sacré renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Sacré poussée à l'extrême (+20 %).\n• Toutes les 3 compétences Sacré utilisées : attaque supplémentaire [Frappe du cœur – Minwu] (1 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Minwu (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Sacré se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Minwu +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – MINWU (心撃・ミンウ)\n• Pendant un temps : attaque Sacré de Minwu +2 niveaux.\n• Brièvement : esprit augmenté (effet fort).\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Miracle 8 Kai (ホーリー8改, école Magie blanche), remplace Miracle 8 : 6 attaques Magie blanche Sacré sur un ennemi ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Descellement du destin Kai (天命の解印改, école Magie blanche), remplace Descellement du destin : 4 attaques Magie blanche Sacré sur un ennemi, avec un temps d'attente plus court que la version normale ; toutes les 2 utilisations par Minwu, résistance Sacré de l'ennemi −1 niveau pendant un temps.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    },
+    {
+     "id": "c-eveil-descellement-du-destin",
+     "type": "D覚醒",
+     "categorie": "magique",
+     "nomJP": "覚醒天命の解印",
+     "nomFR": "Éveil – Descellement du destin",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/eveil-descellement-du-destin.webp",
+     "effet": "Réservée à Minwu. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques Magie blanche puissantes Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit de Minwu augmentés (effet fort), et imprégnation Sacré renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Magie blanche I [Minwu] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL MAGIE BLANCHE I (avant la Dual Shift)\n• Boost des compétences Magie blanche, effet max : moyen.\n• Les compétences Magie blanche se lancent 2 fois de plus.\n• Chaque compétence Magie blanche utilisée renforce le mode : temps d'attente des compétences Magie blanche équipées réduit (jusqu'à 3 paliers).\n\nDUAL SHIFT\n• Fait passer Minwu en mode D-Éveil Magie blanche II (retire le mode I).\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL MAGIE BLANCHE II (après la Dual Shift)\n• Plafond de dégâts +2 niveaux.\n• Boost des compétences Magie blanche, effet max : moyen.\n• Les compétences Magie blanche se lancent 1 fois de plus.\n• Les compétences Magie blanche n'ont plus de temps d'attente.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Magie blanche de Minwu +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Magie blanche I et II [Minwu] et le mode Éveil Magie blanche.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II, à confirmer)."
+    }
+   ]
   }
  ]
 }
