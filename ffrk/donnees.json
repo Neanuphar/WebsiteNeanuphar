@@ -1,6 +1,6 @@
 {
- "revision": 20,
- "maj": "2026-10-22T05:36:52.000Z",
+ "revision": 21,
+ "maj": "2026-10-22T05:48:13.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1578,6 +1578,170 @@
      ],
      "image": "images/josef/le-dur-a-cuire-des-plaines-enneigees.webp",
      "effet": "Réservée à Josef. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : résistance Glace d'un ennemi −2 niveaux.\n• Pendant un temps : attaque Glace de toute l'équipe +2 niveaux.\n• Active l'état [Vrai arcane renforcé – Josef].\n\n2E ACTIVATION : LE DUR À CUIRE DES PLAINES ENNEIGÉES\n• 10 attaques physiques Glace + non-élémentaire sur un ennemi.\n• Puis une attaque physique Glace + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – JOSEF]\n• Plus Josef utilise de compétences Moine pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Josef augmentées (niv. 3).\n• Temps d'attente de la 2e activation réduit (niv. 3).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "empereur",
+   "nom": "Empereur",
+   "nomJP": "皇帝",
+   "serie": "II",
+   "categorie": "magique",
+   "elements": [
+    "tenebres",
+    "terre",
+    "vent"
+   ],
+   "sprite": "images/empereur/sprite.png",
+   "capacites": [
+    {
+     "id": "c-lenteur-9",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "スロウ9",
+     "nomFR": "Lenteur 9",
+     "elements": [],
+     "image": "images/empereur/lenteur-9.webp",
+     "effet": "Réservée à l'Empereur.\n\n• Faible chance d'infliger Lenteur à tous les ennemis."
+    },
+    {
+     "id": "c-porte-de-l-enfer",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "地獄の門",
+     "nomFR": "Porte de l'enfer",
+     "elements": [
+      "terre",
+      "tenebres"
+     ],
+     "image": "images/empereur/porte-de-l-enfer.webp",
+     "effet": "Réservée à l'Empereur.\n\nATTAQUE\n• 8 attaques magiques puissantes Terre + Ténèbres sur un ennemi.\n• Pendant un temps : imprégnation Terre, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Piège impitoyable (無情の陥穽, école Magie noire) : 4 attaques magiques Terre + Ténèbres sur un ennemi, et temps d'attente de l'Empereur réduit de 2 tours.\n• Blason d'ébène (漆黒の紋章, école Magie noire) : 2 attaques magiques Terre + Ténèbres sur un ennemi, et pendant un temps, magie de l'ennemi réduite (effet fort).\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-onde-imperiale",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "カイザーウェーブ",
+     "nomFR": "Onde impériale",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent"
+     ],
+     "image": "images/empereur/onde-imperiale.webp",
+     "effet": "Réservée à l'Empereur.\n\nATTAQUE\n• 10 attaques magiques puissantes Ténèbres + Terre + Vent sur un ennemi.\n• Pendant un temps : résistance Ténèbres, Terre et Vent de l'ennemi −2 niveaux.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Pendant un temps : mode Triple élément.\n\nMODE TRIPLE ÉLÉMENT (トライエレメントモード)\n• Si l'Empereur utilise une compétence Ténèbres, Terre ou Vent à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-invasion-32",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "しんりゃく32",
+     "nomFR": "Invasion 32",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/empereur/invasion-32.webp",
+     "effet": "Réservée à l'Empereur. Chaîne élémentaire (属性リミットチェイン).\n\nEFFET\n• Lance une chaîne Terre (jusqu'à 150 chaînes).\n• Élément Terre renforcé pour toute l'équipe (effet fort).\n• Pendant un temps : magie de toute l'équipe augmentée (effet fort).\n\nPENDANT LA CHAÎNE\n• Élément Terre renforcé pour toute l'équipe (effet fort).\n• La chaîne avance avec les attaques Terre.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-commandement-de-l-ambitieux",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "野心家の采配",
+     "nomFR": "Commandement de l'ambitieux",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent"
+     ],
+     "image": "images/empereur/commandement-de-l-ambitieux.webp",
+     "effet": "Réservée à l'Empereur. Utilisable 3 fois.\n\n• Sans temps d'attente : temps d'attente de l'Empereur réduit d'1 tour.\n• Pendant un temps : mode Tyran.\n\nMODE TYRAN (暴君モード)\n• Si l'Empereur utilise une compétence Ténèbres, Terre ou Vent à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-tornade-de-la-peur",
+     "type": "閃技",
+     "categorie": "magique",
+     "nomJP": "フィアトルネード",
+     "nomFR": "Tornade de la peur",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent"
+     ],
+     "image": "images/empereur/tornade-de-la-peur.webp",
+     "effet": "Réservée à l'Empereur. Utilisable 1 fois.\n\nATTAQUE\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Attaque magique Ténèbres + Terre + Vent sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante si l'ennemi est faible ou légèrement faible aux Ténèbres, à la Terre ou au Vent.\n• Pendant un temps : mode Triple élément II.\n\nMODE TRIPLE ÉLÉMENT II (トライエレメントモードII)\n• Si l'Empereur utilise une compétence Ténèbres, Terre ou Vent à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-domination-des-elements",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "ドミネートエレメンツ",
+     "nomFR": "Domination des éléments",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent",
+      "neutre"
+     ],
+     "image": "images/empereur/domination-des-elements.webp",
+     "effet": "Réservée à l'Empereur. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Terre + Vent + Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque Terre, Vent et Ténèbres de l'Empereur +3 niveaux.\n• Pendant un temps : mode Éveil impérial, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Terre, Vent ou Ténèbres utilisées : attaque supplémentaire [Brise-résistance] de l'élément correspondant.\n\nMODE ÉVEIL IMPÉRIAL (インペリアル覚醒モード)\n• Compétences Terre, Vent et Ténèbres utilisables à l'infini.\n• Boost de ces compétences, effet max : moyen.\n• Ces compétences se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : BRISE-RÉSISTANCE (レジストブレイク)\n• Pendant un temps : résistance de l'ennemi à l'élément correspondant (Terre, Vent ou Ténèbres) −1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-dominateur-du-monde",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "ワールドドミネーター",
+     "nomFR": "Dominateur du monde",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent",
+      "neutre"
+     ],
+     "image": "images/empereur/dominateur-du-monde.webp",
+     "effet": "Réservée à l'Empereur. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques puissantes Ténèbres + Terre + Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Triple élément III.\n• Toutes les 2 compétences Synchro utilisées : attaque supplémentaire [Vent rugissant des ténèbres].\n\nCOMPÉTENCES SYNCHRO\n• Tempête des ténèbres (冥闇の暴風, école Magie noire, déclenchée par une compétence Magie noire ou Arts sombres) : 6 attaques magiques Ténèbres + Terre + Vent + non-élémentaire sur un ennemi.\n• Tornade des ténèbres (冥闇の竜巻, école Magie noire, déclenchée par une compétence Magie noire ou Arts sombres) : attaque magique Ténèbres + Terre + Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts, et dégâts des compétences Magie noire de l'Empereur augmentés pendant 3 tours (effet moyen).\n\nMODE TRIPLE ÉLÉMENT III (トライエレメントモードIII)\n• Si l'Empereur utilise une compétence Ténèbres, Terre ou Vent à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : VENT RUGISSANT DES TÉNÈBRES (冥闇の轟風)\n• Attaque magique Ténèbres + Terre + Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Pendant un temps : résistance Ténèbres, Terre et Vent de l'ennemi −1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : l'école 暗黒 traduite « Arts sombres »."
+    },
+    {
+     "id": "c-magie-supreme-du-neant",
+     "type": "O奥義",
+     "categorie": "magique",
+     "nomJP": "魔界最上位魔術・虚無",
+     "nomFR": "Magie suprême de l'Outre-monde – Néant",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent"
+     ],
+     "image": "images/empereur/magie-supreme-du-neant.webp",
+     "effet": "Réservée à l'Empereur. Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques magiques ultra-puissantes Terre + Vent + Ténèbres sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : le sens du type O奥義 ; 魔界 traduit « Outre-monde » (littéralement « monde démoniaque »)."
+    },
+    {
+     "id": "c-eruption-maudite",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "カーズフレアー",
+     "nomFR": "Éruption maudite",
+     "elements": [
+      "tenebres",
+      "terre",
+      "vent",
+      "neutre"
+     ],
+     "image": "images/empereur/eruption-maudite.webp",
+     "effet": "Réservée à l'Empereur. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : résistance Ténèbres, Terre et Vent d'un ennemi −1 niveau.\n• Pendant un temps : attaque Ténèbres, Terre et Vent de toute l'équipe +1 niveau.\n• Active l'état [Vrai arcane renforcé – Empereur].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : ÉRUPTION MAUDITE\n• 10 attaques magiques Ténèbres + Terre + Vent + non-élémentaire sur un ennemi.\n• Puis une attaque magique Ténèbres + Terre + Vent + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – EMPEREUR]\n• Plus l'Empereur utilise de compétences Ténèbres, Terre ou Vent pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de l'Empereur augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-liens-tisses-terre-de-l-empereur",
+     "type": "LBLC",
+     "categorie": "magique",
+     "nomJP": "紡絆・皇帝地",
+     "nomFR": "Liens tissés – Terre de l'Empereur",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/empereur/liens-tisses-terre-de-l-empereur.webp",
+     "effet": "Réservée à l'Empereur. Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Terre (jusqu'à 150 chaînes). Si une chaîne Terre est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25), et à la fin de la capacité, le compteur de chaînes de tous les ennemis monte de 10.\n• 10 attaques magiques Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Empereur Terre].\n• La prochaine jauge ATB de l'Empereur se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Terre.\n\nMODE CHAIN FORCE – EMPEREUR TERRE (チェインフォースモード・皇帝地)\n• Quand l'Empereur utilise une compétence Terre : attaque supplémentaire [Guide de la terre – Empereur] (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DE LA TERRE – EMPEREUR (地の導・皇帝)\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de l'Empereur réduit d'1 tour, débloqué au niveau d'entraînement 5."
     }
    ]
   }
