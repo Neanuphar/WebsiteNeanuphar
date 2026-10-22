@@ -1,6 +1,6 @@
 {
- "revision": 39,
- "maj": "2026-10-22T10:11:27.000Z",
+ "revision": 40,
+ "maj": "2026-10-22T14:26:08.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -3894,6 +3894,19 @@
      "effet": "Réservée à Golbez.\n\nATTAQUE\n• 10 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres, magie de Golbez augmentée (effet moyen) et défense augmentée (effet faible).\n• Soin automatique à chaque perte de PV, jusqu'à 6000 PV soignés au total.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
     },
     {
+     "id": "c-viens-dragon-noir",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "参れ、黒竜！",
+     "nomFR": "Viens, Dragon noir !",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/golbez/viens-dragon-noir.webp",
+     "effet": "Réservée à Golbez.\n\nATTAQUE\n• 10 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Dégâts égaux à 99 % des PV actuels, qui peuvent dépasser le plafond de dégâts.\n• Barrière sur Golbez qui annule les attaques reçues, jusqu'à 100 % de ses PV max.\n• Active le mode Dragon noir.\n\nMODE DRAGON NOIR (黒竜モード, tant que la barrière dure)\n• Les compétences Arts sombres se lancent 1 fois de plus.\n• Quand la barrière prend fin : attaque supplémentaire [Voie magique d'ébène] (漆黒の魔道).\n\nBONUS D'APPRENTISSAGE\n• Magie +10.\n\nÀ VÉRIFIER : la cible des dégâts de 99 % des PV actuels (« qui peuvent dépasser le plafond » laisse penser que c'est l'ennemi) ; l'effet de Voie magique d'ébène n'est pas décrit à l'écran."
+    },
+    {
      "id": "c-miasme-des-chaines-noires",
      "type": "Chain",
      "categorie": "soutien",
@@ -3989,6 +4002,179 @@
      ],
      "image": "images/golbez/meteore-noir-ultime.webp",
      "effet": "Réservée à Golbez. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• Toutes les 2 compétences Ténèbres utilisées : attaque supplémentaire [Frappe du cœur – Golbez] (2 fois max).\n• Temps d'attente des attaques magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Golbez (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Golbez +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – GOLBEZ (心撃・ゴルベーザ)\n• Pendant un temps : attaque Ténèbres de toute l'équipe +1 niveau.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Dragon noir Kai (こくりゅう改, école Arts sombres), remplace Dragon noir (6 attaques magiques Ténèbres sur un ennemi) : 6 attaques magiques Ténèbres sur un ennemi ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Roc de l'abîme Kai (アビスロック改, école Arts sombres), remplace Roc de l'abîme (5 attaques magiques Ténèbres sur un ennemi, et brièvement, résistance Ténèbres −1 niveau) : même effet, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "cid-iv",
+   "nom": "Cid (IV)",
+   "nomJP": "シド",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "foudre"
+   ],
+   "sprite": "images/cid-iv/sprite.png",
+   "capacites": [
+    {
+     "id": "c-vitalite",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "バイタリティ",
+     "nomFR": "Vitalité",
+     "elements": [],
+     "image": "images/cid-iv/vitalite.webp",
+     "effet": "Réservée à Cid (IV).\n\n• Pendant un temps : attaque et défense de Cid augmentées (effet faible)."
+    },
+    {
+     "id": "c-piege",
+     "type": "超必殺",
+     "categorie": "physique",
+     "nomJP": "しかける",
+     "nomFR": "Piège",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/cid-iv/piege.webp",
+     "effet": "Réservée à Cid (IV).\n\nATTAQUE\n• 5 attaques physiques puissantes Foudre + non-élémentaire, au hasard, sur un ennemi.\n• Pendant un temps : résistance Foudre de l'ennemi −2 niveaux.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-liens-tisses-cid-iv",
+     "type": "LBLC",
+     "categorie": "physique",
+     "nomJP": "紡絆・シド(IV)",
+     "nomFR": "Liens tissés – Cid (IV)",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/cid-iv/liens-tisses-cid-iv.webp",
+     "effet": "Réservée à Cid (IV). Limit Break, chaîne de série (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne FF IV (jusqu'à 150 chaînes). Si une chaîne FF IV est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques physiques à distance Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Cid (IV)].\n• La prochaine jauge ATB de Cid se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques des héros de FF IV de l'équipe.\n\nMODE CHAIN FORCE – CID (IV) (チェインフォースモード・シド(IV))\n• Toutes les 50 chaînes FF IV : attaque supplémentaire [Guide des liens – Cid (IV)] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DES LIENS – CID (IV) (絆の導・シド(IV))\n• Attaque physique à distance Foudre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante à chaque déclenchement.\n• Temps d'attente des compétences Foudre de Cid réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Cid réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    }
+   ]
+  },
+  {
+   "id": "theodor",
+   "nom": "Theodor",
+   "nomJP": "セオドア",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "sacre"
+   ],
+   "sprite": "images/theodor/sprite.png",
+   "capacites": [
+    {
+     "id": "c-double-ruee",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "ツインラッシュ",
+     "nomFR": "Double ruée",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/theodor/double-ruee.webp",
+     "effet": "Réservée à Theodor.\n\nATTAQUE\n• 10 attaques physiques puissantes Sacré + non-élémentaire sur un ennemi.\n• Theodor n'a aucun temps d'attente pendant 1 tour.\n• Pendant un temps : imprégnation Sacré.\n• Pendant un temps : chaque compétence Sacré utilisée réduit le temps d'attente de la prochaine attaque physique des alliés du premier rang.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lien-sacre",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "ホーリーバンド",
+     "nomFR": "Lien sacré",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/theodor/lien-sacre.webp",
+     "effet": "Réservée à Theodor. Chaîne élémentaire (属性リミットチェイン).\n\nEFFET\n• Lance une chaîne Sacré (jusqu'à 150 chaînes).\n• Élément Sacré renforcé pour toute l'équipe (effet fort).\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort).\n\nPENDANT LA CHAÎNE\n• Élément Sacré renforcé pour toute l'équipe (effet fort).\n• La chaîne avance avec les attaques Sacré.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-double-bravoure-seconde",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "バイブレイ・セカンド",
+     "nomFR": "Double bravoure – Seconde",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/theodor/double-bravoure-seconde.webp",
+     "effet": "Réservée à Theodor. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 4 attaques physiques ultra-puissantes Sacré sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n• Temps d'attente de Theodor réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1).\n\nÀ VÉRIFIER : バイブレイ traduit « Double bravoure » (bi + brave, à confirmer)."
+    },
+    {
+     "id": "c-eclairs-enchaines-theodor",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・セオドア",
+     "nomFR": "Éclairs enchaînés – Theodor",
+     "elements": [],
+     "image": "images/theodor/eclairs-enchaines-theodor.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois. Étiquette 対ウェポンブレイク・攻.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Brièvement : attaque, esprit, défense et défense magique de toute l'équipe augmentés (effet faible).\n• La prochaine jauge ATB de Theodor se remplit plus vite (1 fois).\n• Theodor n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Sacré de Theodor augmentée, débloquée au niveau d'entraînement 5.\n• Barrière de réduction de dégâts sur Theodor, 1 fois (niv. 5), débloquée au niveau d'entraînement 10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対ウェポンブレイク・攻."
+    },
+    {
+     "id": "c-double-bravoure-croix",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "バイブレイ・クロス",
+     "nomFR": "Double bravoure – Croix",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/theodor/double-bravoure-croix.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Sacré.\n• Pendant un temps : mode Éveil Sacré, et plafond de dégâts +1 niveau.\n• Active le mode Nouvelles ailes rouges.\n\nMODE ÉVEIL SACRÉ (聖覚醒モード)\n• Compétences Sacré utilisables à l'infini.\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 1 fois de plus.\n\nMODE NOUVELLES AILES ROUGES (新たなる赤き翼モード)\n• Pendant 3 tours : taux de critique de Theodor à 100 %.\n• Pendant 3 tours : dégâts Sacré augmentés (effet fort).\n• Pendant 3 tours : aucun temps d'attente.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-vraie-taille-croisee",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "真・クロススラッシュ",
+     "nomFR": "Vraie taille croisée",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/theodor/vraie-taille-croisee.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois. Étiquette 対フルブレイク.\n\nATTAQUE\n• 15 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Pendant un temps : mode Éveil Sacré, et plafond de dégâts +1 niveau.\n• Effet en plus selon le nombre d'alliés de FF IV encore en vie (plus bas).\n\nMODE ÉVEIL SACRÉ (聖覚醒モード)\n• Compétences Sacré utilisables à l'infini.\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 1 fois de plus.\n\nEFFET SELON LES ALLIÉS DE FF IV EN VIE\nDégâts des compétences Sacré de Theodor augmentés (effet moyen), et ses compétences Sacré se lancent 1 fois de plus, pendant :\n• 0 ou 1 : 1 tour.\n• 2 ou 3 : 2 tours.\n• 4 ou plus : 3 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク."
+    },
+    {
+     "id": "c-lame-avancee",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "アドバンスブレード",
+     "nomFR": "Lame avancée",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/theodor/lame-avancee.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Sacré renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Barrière magique sur Theodor, qui bloque 2 attaques magiques.\n• Toutes les 3 compétences Synchro utilisées : attaque supplémentaire [Lame d'après].\n\nCOMPÉTENCES SYNCHRO\n• Taille croisée sacrée (ホーリークロスラッシュ, école Chevalier, déclenchée par une compétence Sacré) : 5 attaques physiques Sacré + non-élémentaire sur un ennemi, 7 si Theodor a une barrière magique ; dégâts des compétences Sacré de Theodor augmentés pendant 1 tour (effet moyen).\n• Éveil (かくせい, école Chevalier, déclenchée par une compétence Sacré) : sans temps d'attente, temps d'attente de Theodor réduit de 2 tours, et taux de critique à 100 % pendant 2 tours.\n\nATTAQUE SUPPLÉMENTAIRE : LAME D'APRÈS (アフターブレード)\n• Attaque physique Sacré + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Barrière magique sur Theodor, qui bloque 1 attaque magique.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-poussee-scintillante",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "グリームスラスター",
+     "nomFR": "Poussée scintillante",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/theodor/poussee-scintillante.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques physiques ultra-puissantes Sacré sur un ennemi.\n• Puis une attaque physique Sacré qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-epee-croissant-grondement",
+     "type": "A神技",
+     "categorie": "physique",
+     "nomJP": "轟・クレセントソード",
+     "nomFR": "Épée croissant – Grondement",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/theodor/epee-croissant-grondement.webp",
+     "effet": "Réservée à Theodor. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accélération [Theodor].\n• La prochaine jauge ATB de Theodor se remplit instantanément (1 fois).\n\nMODE ACCÉLÉRATION [THEODOR] (アクセルモード)\n• Boost des compétences Sacré, effet max : fort.\n• Chaque compétence Sacré utilisée : attaque supplémentaire [Frappe grondante – Theodor].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE GRONDANTE – THEODOR (轟撃・セオドア)\n• 6 attaques physiques Sacré + non-élémentaire sur un ennemi.\n• Brièvement : attaque Sacré de Theodor +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Theodor réduit d'1 tour, débloqué au niveau d'entraînement 5."
     }
    ]
   }
