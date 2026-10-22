@@ -1,5 +1,5 @@
 {
- "revision": 3,
+ "revision": 4,
  "maj": "2026-10-22T06:00:00.000Z",
  "persos": [
   {
@@ -16,7 +16,7 @@
     {
      "id": "c-changement-de-classe",
      "type": "初期",
-     "categorie": "",
+     "categorie": "soutien",
      "nomJP": "クラスチェンジ",
      "nomFR": "Changement de classe",
      "elements": [],
@@ -63,7 +63,7 @@
     {
      "id": "c-ame-persistante",
      "type": "閃技",
-     "categorie": "",
+     "categorie": "soutien",
      "nomJP": "リマインソウル",
      "nomFR": "Âme persistante",
      "elements": [],
