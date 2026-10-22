@@ -1,6 +1,6 @@
 {
- "revision": 6,
- "maj": "2026-10-22T08:00:00.000Z",
+ "revision": 7,
+ "maj": "2026-10-22T09:00:00.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -300,6 +300,87 @@
      "elements": [],
      "image": "images/sarah/chant-noble.webp",
      "effet": "Réservée à Sarah. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : très gros soin de toute l'équipe, ou résurrection des alliés KO (avec énormément de PV).\n• « Tenir bon » (踏みとどまる) et Hâte pour toute l'équipe.\n• Temps d'attente réduit de 2 tours.\n• Effet bonus si le Guerrier de la Lumière ou Garland est dans l'équipe (voir plus bas).\n• Pendant un temps : mode Éveil Princesse de Cornelia.\n\nMODE ÉVEIL PRINCESSE DE CORNELIA (コーネリア王女覚醒モード)\n• Compétences Magie blanche et Barde utilisables à l'infini.\n• Temps d'attente de ses compétences Magie blanche et Barde réduit.\n• Chaque compétence Magie blanche ou Barde déclenche l'attaque supplémentaire [Voix de guérison] (ヒーリングボイス) : soin de toute l'équipe, plus fort selon le niveau de raffinement de la compétence utilisée (5 paliers max).\n\nEFFET BONUS SELON L'ÉQUIPE\n• Avec le Guerrier de la Lumière : pendant un temps, attaque Sacré de toute l'équipe +1 niveau, et soin automatique à chaque perte de PV (2000 PV au total).\n• Avec Garland : pendant un temps, attaque Ténèbres de toute l'équipe +1 niveau, et le même soin automatique.\n• Avec les deux : attaque Sacré et Ténèbres de toute l'équipe +2 niveaux, et le même soin automatique.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Sarah augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    }
+   ]
+  },
+  {
+   "id": "wol",
+   "nom": "Wol",
+   "nomJP": "ウォル",
+   "serie": "I",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "sacre"
+   ],
+   "sprite": "images/wol/sprite.png",
+   "capacites": [
+    {
+     "id": "c-hachis-d-oignon",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "たまねぎみじん切り",
+     "nomFR": "Hachis d'oignon",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/wol/hachis-d-oignon.webp",
+     "effet": "Réservée à Wol.\n\n• 3 coups physiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-hurlement-infernal",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "ヘルハウリング",
+     "nomFR": "Hurlement infernal",
+     "elements": [
+      "terre",
+      "sacre"
+     ],
+     "image": "images/wol/hurlement-infernal.webp",
+     "effet": "Réservée à Wol.\n\nEFFET\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort).\n• Hâte.\n• Wol passe en mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Impact infernal (ヘルインパクト, école 物理ヘヴィ) : 3 coups physiques Terre + Sacré sur un ennemi, et pendant un temps, Charge lourde +1 niveau (max 2).\n• Brise lourde (ヘヴィブレイク, école 物理ヘヴィ) : 4 coups physiques Terre + Sacré sur un ennemi, baisse son attaque et sa magie selon le niveau de Charge lourde (2 paliers max), puis met fin à la Charge lourde.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-taille-circulaire-veritable",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "真ラウンドスラッシュ",
+     "nomFR": "Taille circulaire véritable",
+     "elements": [
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/wol/taille-circulaire-veritable.webp",
+     "effet": "Réservée à Wol.\n\n• Sans temps d'attente : 10 coups physiques Terre + Sacré + non-élémentaire sur un ennemi.\n• Brièvement : défense, défense magique et esprit de l'ennemi réduits (effet très fort).\n• Pendant un temps : mode Double élément II. À sa prochaine action, si Wol utilise une compétence Terre ou Sacré, il reçoit pendant un temps l'imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'étiquette 対乾坤一擲."
+    },
+    {
+     "id": "c-lame-runique",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "ルーンセイバー",
+     "nomFR": "Lame runique",
+     "elements": [
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/wol/lame-runique.webp",
+     "effet": "Réservée à Wol. Utilisable 1 fois.\n\nATTAQUE\n• 15 coups physiques Terre + Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance de l'ennemi à Terre et Sacré −2 niveaux.\n• Pendant un temps : mode Éveil Guerrier d'une autre légende, et plafond de dégâts +1 niveau.\n• Pendant un temps : temps d'attente de Wol réduit.\n• Active le mode Double élément.\n\nMODE ÉVEIL GUERRIER D'UNE AUTRE LÉGENDE (異説の戦士覚醒モード)\n• Compétences Terre ou Sacré utilisables à l'infini.\n• Boost des compétences Terre ou Sacré, effet max : moyen.\n• Les compétences Terre ou Sacré se lancent 1 fois de plus.\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• À sa prochaine action, si Wol utilise une compétence Terre ou Sacré, il reçoit pendant un temps l'imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-surdestruction-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星デストロイオーバー",
+     "nomFR": "Surdestruction polaire",
+     "elements": [
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/wol/surdestruction-polaire.webp",
+     "effet": "Réservée à Wol. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Wol se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Wol] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Surdestruction polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – WOL (星撃・ウォル)\n• 10 coups physiques sur un ennemi : Terre + non-élémentaire ou Sacré + non-élémentaire, selon l'élément dont Wol est imprégné.\n• Brièvement : Déprotection (デプロテ, défense réduite) +1 niveau sur l'ennemi.\n• Tant que le mode Maître dure, le renforcement du héros de Wol augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %).\n\nATTAQUE MAÎTRE : SURDESTRUCTION POLAIRE\n• Coup physique Terre + Sacré + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Brièvement : Déprotection +3 niveaux sur l'ennemi.\n• Wol n'a aucun temps d'attente pendant 1 tour.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n• Attaque Terre et Sacré de Wol augmentée, débloquée au niveau d'entraînement 5.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離 et du « renforcement du héros » (英雄強化)."
     }
    ]
   }
