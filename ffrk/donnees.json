@@ -1,6 +1,6 @@
 {
- "revision": 37,
- "maj": "2026-10-22T09:49:00.000Z",
+ "revision": 38,
+ "maj": "2026-10-22T10:05:33.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -3333,6 +3333,328 @@
      ],
      "image": "images/rydia/raz-de-maree.webp",
      "effet": "Réservée à Rydia. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Rydia Eau Sacré].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Double élément.\n\n2E ACTIVATION : RAZ-DE-MARÉE\n• 20 attaques d'Invocation Eau + Sacré + non-élémentaire sur un ennemi.\n• Puis une attaque d'Invocation Eau + Sacré + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – RYDIA EAU SACRÉ]\n• Plus Rydia inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (1 palier max).\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• Si Rydia utilise une compétence Eau ou Sacré à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Rydia augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "rosa",
+   "nom": "Rosa",
+   "nomJP": "ローザ",
+   "serie": "IV",
+   "categorie": "soutien",
+   "elements": [
+    "sacre"
+   ],
+   "sprite": "images/rosa/sprite.png",
+   "capacites": [
+    {
+     "id": "c-arc-infaillible",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "必中の弓",
+     "nomFR": "Arc infaillible",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/rosa/arc-infaillible.webp",
+     "effet": "Réservée à Rosa.\n\n• Attaque physique à distance non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-benediction-de-la-deesse",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "女神の祝福",
+     "nomFR": "Bénédiction de la déesse",
+     "elements": [],
+     "image": "images/rosa/benediction-de-la-deesse.webp",
+     "effet": "Réservée à Rosa.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Soin automatique à chaque perte de PV, jusqu'à 2000 PV soignés au total.\n• Barrière magique pour toute l'équipe, qui bloque 1 attaque magique (sauf certaines).\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-miracle-du-mage-blanc-iv",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "白魔道士の奇跡【IV】",
+     "nomFR": "Miracle du mage blanc [IV]",
+     "elements": [],
+     "image": "images/rosa/miracle-du-mage-blanc-iv.webp",
+     "effet": "Réservée à Rosa.\n\nEFFET\n• Sans temps d'attente : gros soin de toute l'équipe.\n• Récup forte (リジェネガ) pour toute l'équipe : 2000 PV soignés à chaque fois.\n• Temps d'attente réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10.\n\nÀ VÉRIFIER : le texte ne précise pas si la réduction de 2 tours vaut pour Rosa ou pour toute l'équipe."
+    },
+    {
+     "id": "c-liens-tisses-rosa",
+     "type": "LBLC",
+     "categorie": "magique",
+     "nomJP": "紡絆・ローザ",
+     "nomFR": "Liens tissés – Rosa",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/rosa/liens-tisses-rosa.webp",
+     "effet": "Réservée à Rosa. Limit Break, chaîne de série (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne FF IV (jusqu'à 150 chaînes). Si une chaîne FF IV est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25), et à la fin de la capacité, le compteur de chaînes de tous les ennemis monte de 10.\n• 10 attaques Magie blanche Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Rosa].\n• La prochaine jauge ATB de Rosa se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques des héros de FF IV de l'équipe.\n\nMODE CHAIN FORCE – ROSA (チェインフォースモード・ローザ)\n• Chaque compétence Magie blanche utilisée : attaque supplémentaire [Guide des liens – Rosa] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DES LIENS – ROSA (絆の導・ローザ)\n• Temps d'attente de toute l'équipe réduit d'1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Rosa réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-tir-lunaire-polaire",
+     "type": "M神技",
+     "categorie": "magique",
+     "nomJP": "極星ルナシューティング",
+     "nomFR": "Tir lunaire polaire",
+     "elements": [
+      "feu",
+      "glace",
+      "foudre",
+      "terre",
+      "vent",
+      "eau",
+      "sacre",
+      "tenebres",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/rosa/tir-lunaire-polaire.webp",
+     "effet": "Réservée à Rosa. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : PV max de toute l'équipe +2000.\n• Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Rosa se remplit instantanément (1 fois).\n• Effet en plus, qui change selon que Rosa est en Écho des souvenirs (記憶の共鳴) ou non (plus bas).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +1 niveau.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Rosa], qui change selon l'Écho des souvenirs (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Tir lunaire polaire].\n\nEFFET EN PLUS SELON L'ÉCHO DES SOUVENIRS (pendant un temps, pour toute l'équipe)\n• Sans Écho : mode Apprentissage – Rosa Univers (習得モード・ローザ万象) : dégâts Sacré +5 %.\n• Avec Écho : mode Apprentissage – Rosa Chroniques (習得モード・ローザ古記) : dégâts +5 %.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – ROSA (星撃・ローザ)\n• Sans Écho : brièvement, Déblindage (デシェル, défense magique réduite) +1 niveau sur un ennemi ; le bonus de dégâts Sacré des alliés en mode Rosa Univers augmente (5 paliers : 10 / 15 / 20 / 25 / 30 %).\n• Avec Écho : 10 attaques Magie blanche de tous les éléments + non-élémentaire sur un ennemi ; le bonus de dégâts des alliés en mode Rosa Chroniques augmente (5 paliers : 10 / 15 / 20 / 25 / 30 %).\n\nATTAQUE MAÎTRE : TIR LUNAIRE POLAIRE\n• Attaque Magie blanche de tous les éléments + non-élémentaire sur un ennemi, qui ignore la défense magique, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• La prochaine jauge ATB des alliés imprégnés de Sacré se remplit plus vite (1 fois).\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque de tous les éléments de Rosa augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : 記憶の共鳴 (« Écho des souvenirs ») n'est pas la Résonance des souvenirs (記憶の共振) des Éveils D ; ce qui l'active n'est pas dit à l'écran."
+    }
+   ]
+  },
+  {
+   "id": "edward",
+   "nom": "Edward",
+   "nomJP": "ギルバート",
+   "serie": "IV",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/edward/sprite.png",
+   "capacites": [
+    {
+     "id": "c-potion",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "くすり",
+     "nomFR": "Potion",
+     "elements": [],
+     "image": "images/edward/potion.webp",
+     "effet": "Réservée à Edward.\n\n• Soin moyen d'un allié."
+    },
+    {
+     "id": "c-chant-mirage",
+     "type": "超絶",
+     "categorie": "soutien",
+     "nomJP": "ミラージュソング",
+     "nomFR": "Chant mirage",
+     "elements": [],
+     "image": "images/edward/chant-mirage.webp",
+     "effet": "Réservée à Edward.\n\nEFFET\n• Sans temps d'attente : Récup forte (リジェネガ) pour toute l'équipe.\n• Barrière pour toute l'équipe : annule les attaques reçues, jusqu'à 30 % des PV max.\n• Rend 1 utilisation à l'une de ses compétences.\n• Temps d'attente d'Edward réduit de 3 tours.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-melodie-radieuse-de-l-ame",
+     "type": "C神技",
+     "categorie": "soutien",
+     "nomJP": "耀光魂の調べ",
+     "nomFR": "Mélodie radieuse de l'âme",
+     "elements": [],
+     "image": "images/edward/melodie-radieuse-de-l-ame.webp",
+     "effet": "Réservée à Edward. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : attaque des ennemis réduite (effet faible), défense et défense magique réduites (effet très fort).\n• Pendant un temps : attaque, magie et esprit de toute l'équipe augmentés (effet fort), défense magique augmentée (effet faible).\n• Temps d'attente réduit de 3 tours.\n• Pendant un temps : mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Temps d'attente des compétences Barde réduit.\n• Les compétences Barde ne décomptent pas leur nombre d'utilisations.\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : pendant 1 tour, plafond de dégâts de toute l'équipe +1 niveau.\n• Pendant 1 tour : les attaques percent la défense et la défense magique (effet fort).\n• La prochaine jauge ATB d'Edward se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques d'Edward augmentées (niv. 1).\n• Barrière de réduction de dégâts sur Edward, 1 fois (niv. 1), débloquée au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le texte ne dit pas si la réduction de 3 tours vaut pour Edward ou pour toute l'équipe ; l'effet de la Force du cristal III n'est pas décrit."
+    }
+   ]
+  },
+  {
+   "id": "yang",
+   "nom": "Yang",
+   "nomJP": "ヤン",
+   "serie": "IV",
+   "categorie": "physique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/yang/sprite.png",
+   "capacites": [
+    {
+     "id": "c-coup-de-pied-iv",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "けり【IV】",
+     "nomFR": "Coup de pied [IV]",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/yang/coup-de-pied-iv.webp",
+     "effet": "Réservée à Yang.\n\n• Attaque physique non-élémentaire sur tous les ennemis."
+    },
+    {
+     "id": "c-paume-celeste-des-sept-etoiles",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "七星地天掌",
+     "nomFR": "Paume céleste des sept étoiles",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yang/paume-celeste-des-sept-etoiles.webp",
+     "effet": "Réservée à Yang.\n\nATTAQUE\n• 7 attaques physiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Rafale brise-roc (崩岩連打, école Moine) : 4 attaques physiques Terre + non-élémentaire sur un ennemi, 5 si Yang est en mode Ruée.\n• Assaut fulgurant (爆進連撃, école Moine) : 4 attaques physiques Terre + non-élémentaire sur un ennemi ; pendant un temps, défense et défense magique de Yang réduites (effet fort) et mode Ruée (猛進モード : temps d'attente réduit).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-entrainement-sans-fin",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "終わりなき修行",
+     "nomFR": "Entraînement sans fin",
+     "elements": [],
+     "image": "images/yang/entrainement-sans-fin.webp",
+     "effet": "Réservée à Yang. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Temps d'attente de Yang réduit de 3 tours.\n• Remplit 1 segment de sa jauge de capacités spéciales.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-coup-de-pied-de-l-amour",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "愛の蹴撃",
+     "nomFR": "Coup de pied de l'amour",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yang/coup-de-pied-de-l-amour.webp",
+     "effet": "Réservée à Yang. Utilisable 1 fois. Étiquette 対フルブレイク.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Pendant un temps : mode Éveil Moine, et plafond de dégâts +1 niveau.\n• Effet en plus selon le nombre d'alliés de FF IV encore en vie (plus bas).\n\nMODE ÉVEIL MOINE (モンク覚醒モード)\n• Compétences Moine utilisables à l'infini.\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine se lancent 1 fois de plus.\n\nEFFET SELON LES ALLIÉS DE FF IV EN VIE\n• 0 ou 1 : Yang n'a aucun temps d'attente pendant 1 tour.\n• 2 ou 3 : toute l'équipe n'a aucun temps d'attente pendant 1 tour ; pendant un temps, dégâts des alliés qui touchent un point faible ou légèrement faible augmentés (effet faible).\n• 4 ou plus : pareil, avec un effet moyen.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク."
+    },
+    {
+     "id": "c-assaut-oboro",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "オボロ懸かり",
+     "nomFR": "Assaut Oboro",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yang/assaut-oboro.webp",
+     "effet": "Réservée à Yang. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Effet en plus selon le nombre d'alliés de FF IV encore en vie (plus bas).\n\nCOMPÉTENCES SYNCHRO\n• Poing de l'amour (愛の拳, école Moine, déclenchée par une compétence Moine) : 6 attaques physiques Terre + non-élémentaire sur un ennemi ; si Yang a une [Poêle de l'amour] (愛のフライパン), taux de critique de 100 % et consomme 1 Poêle.\n• Réveil de l'amour (愛の目覚まし, école Attaque physique, déclenchée par une compétence Moine) : sans temps d'attente, donne 2 Poêles de l'amour à Yang (4 max), et plafond de dégâts +1 niveau pendant 2 tours.\n\nEFFET SELON LES ALLIÉS DE FF IV EN VIE\n• 0 ou 1 : dégâts des attaques physiques de toute l'équipe augmentés pendant 3 tours (effet faible).\n• 2 ou 3 : pareil, avec un effet moyen.\n• 4 ou plus : pendant un temps, dégâts critiques de toute l'équipe augmentés, et dégâts des attaques physiques augmentés pendant 3 tours (effet moyen) ; si Ursula (アーシュラ) est dans l'équipe, Yang reçoit 2 Poêles de l'amour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-poing-sismique-celeste-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星天震拳",
+     "nomFR": "Poing sismique céleste polaire",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yang/poing-sismique-celeste-polaire.webp",
+     "effet": "Réservée à Yang. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Yang se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Yang] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Poing sismique céleste polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – YANG (星撃・ヤン)\n• 10 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Tant que le mode Maître dure, le renforcement du héros de Yang augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %) et son plafond de dégâts change (5 paliers : niveaux 3 / 4 / 5 / 6 / 7).\n\nATTAQUE MAÎTRE : POING SISMIQUE CÉLESTE POLAIRE\n• Attaque physique Terre + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour, pour Yang et Ursula : plafond de dégâts +5 niveaux, aucun temps d'attente pour les compétences Moine, et dégâts des compétences Moine augmentés (effet fort).\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre de Yang augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    }
+   ]
+  },
+  {
+   "id": "palom",
+   "nom": "Palom",
+   "nomJP": "パロム",
+   "serie": "IV",
+   "categorie": "magique",
+   "elements": [
+    "foudre",
+    "feu",
+    "glace"
+   ],
+   "sprite": "images/palom/sprite.png",
+   "capacites": [
+    {
+     "id": "c-fanfaronnade",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "つよがる",
+     "nomFR": "Fanfaronnade",
+     "elements": [],
+     "image": "images/palom/fanfaronnade.webp",
+     "effet": "Réservée à Palom.\n\n• Pendant un temps : magie de Palom augmentée (effet moyen)."
+    },
+    {
+     "id": "c-triple-desastre",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "トライディザスター",
+     "nomFR": "Triple désastre",
+     "elements": [
+      "feu",
+      "foudre",
+      "glace"
+     ],
+     "image": "images/palom/triple-desastre.webp",
+     "effet": "Réservée à Palom.\n\nATTAQUE\n• 8 attaques magiques puissantes Feu + Foudre + Glace sur un ennemi, 10 si elles touchent un point faible ou légèrement faible.\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Foudre explosive (ボムサンダー, école Magie noire) : 4 attaques magiques Feu + Foudre sur un ennemi ; si elles touchent un point faible ou légèrement faible, les attaques magiques de Palom n'ont plus de temps d'incantation pendant 1 tour.\n• Foudre glacée (アイスサンダー, école Magie noire) : pareil, en Glace + Foudre.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-bombe-rapide-grondement",
+     "type": "A神技",
+     "categorie": "magique",
+     "nomJP": "轟・ラピッドボム",
+     "nomFR": "Bombe rapide – Grondement",
+     "elements": [
+      "foudre",
+      "feu",
+      "glace",
+      "neutre"
+     ],
+     "image": "images/palom/bombe-rapide-grondement.webp",
+     "effet": "Réservée à Palom. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 attaques magiques Foudre + Feu + Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accélération [Palom].\n• La prochaine jauge ATB de Palom se remplit instantanément (1 fois).\n\nMODE ACCÉLÉRATION [PALOM] (アクセルモード)\n• Boost des compétences Foudre, Feu et Glace, effet max : fort.\n• Chaque compétence Foudre, Feu ou Glace utilisée : attaque supplémentaire [Frappe grondante – Palom].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE GRONDANTE – PALOM (轟撃・パロム)\n• 4 attaques magiques Foudre + Feu + Glace + non-élémentaire sur un ennemi.\n• Brièvement : attaque Foudre, Feu et Glace de toute l'équipe +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Palom réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-double-incantation-double-meteore",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "ふたりがけ・Wメテオ",
+     "nomFR": "Double incantation – Double Météore",
+     "elements": [
+      "foudre",
+      "feu",
+      "glace",
+      "neutre"
+     ],
+     "image": "images/palom/double-incantation-double-meteore.webp",
+     "effet": "Réservée à Palom. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Foudre + Feu + Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Triple élément III.\n• Toutes les 2 compétences Synchro utilisées : attaque supplémentaire [Bluff], qui change si Porom est dans l'équipe.\n\nCOMPÉTENCES SYNCHRO\n• Fracas de glace (アイスクラッシュ, école Magie noire, déclenchée par une compétence Magie noire) : l'effet change selon l'état [Double incantation] (ふたりがけ状態) :\n  – sans l'état : attaque magique Foudre + Feu + Glace + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ;\n  – avec l'état : 6 attaques, puis une qui peut dépasser le plafond de dégâts, et fin de l'état.\n• Magie noire en pratique ! (実践!黒魔法, école Magie noire, déclenchée par une compétence Magie noire) : sans temps d'attente, attaque magique Foudre + Feu + Glace + non-élémentaire sur un ennemi, et temps d'attente de Palom réduit de 3 tours.\n\nMODE TRIPLE ÉLÉMENT III (トライエレメントモードIII)\n• Si Palom utilise une compétence Foudre, Feu ou Glace à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : BLUFF (はったり)\n• Sans Porom : dégâts des compétences Magie noire de Palom augmentés pendant 1 tour (effet fort), et état [Double incantation].\n• Avec Porom : pareil, et en plus, pendant un temps, attaque Foudre, Feu et Glace de Palom +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 3).\n\nÀ VÉRIFIER : les niveaux 3 sont sans doute ceux atteints au niveau d'entraînement actuel (3 sur 5)."
+    }
+   ]
+  },
+  {
+   "id": "porom",
+   "nom": "Porom",
+   "nomJP": "ポロム",
+   "serie": "IV",
+   "categorie": "soutien",
+   "elements": [
+    "foudre"
+   ],
+   "sprite": "images/porom/sprite.png",
+   "capacites": [
+    {
+     "id": "c-fausses-larmes",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "うそなき",
+     "nomFR": "Fausses larmes",
+     "elements": [],
+     "image": "images/porom/fausses-larmes.webp",
+     "effet": "Réservée à Porom.\n\n• Forte chance d'infliger Confusion à un ennemi."
+    },
+    {
+     "id": "c-guide-de-la-magie-blanche",
+     "type": "覚醒",
+     "categorie": "soutien",
+     "nomJP": "白魔法の道標",
+     "nomFR": "Guide de la magie blanche",
+     "elements": [],
+     "image": "images/porom/guide-de-la-magie-blanche.webp",
+     "effet": "Réservée à Porom. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin énorme de toute l'équipe, ou réanimation des alliés KO (avec énormément de PV).\n• Temps d'attente des attaques magiques réduit de 3 tours.\n• Hâte et Tenir bon.\n• Pendant un temps : mode Éveil [Fausses larmes] pour Porom.\n\nMODE ÉVEIL FAUSSES LARMES (うそなき覚醒モード)\n• Compétences Magie blanche utilisables à l'infini.\n• Temps d'attente des compétences Magie blanche de Porom réduit.\n• Chaque compétence Magie blanche utilisée : attaque supplémentaire [Guérison divine sacrée] (聖なる神癒) : soin automatique de toute l'équipe à chaque perte de PV ; la quantité soignée dépend du niveau d'affinage (精錬度) de la compétence utilisée (5 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Porom augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10.\n\nÀ VÉRIFIER : la Hâte, Tenir bon et la réduction de temps d'attente valent a priori pour toute l'équipe (le texte ne le répète pas)."
+    },
+    {
+     "id": "c-double-incantation-soin-x",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "ふたりがけ・ケアルダ",
+     "nomFR": "Double incantation – Soin X",
+     "elements": [
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/porom/double-incantation-soin-x.webp",
+     "effet": "Réservée à Porom. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin énorme de toute l'équipe, ou réanimation des alliés KO (avec énormément de PV).\n• Temps d'attente des attaques Foudre réduit de 4 tours.\n• Pendant un temps : imprégnation Foudre.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Grande sœur responsable.\n\nCOMPÉTENCES SYNCHRO\n• Foudre blanche (白き雷, école Magie blanche, déclenchée par une compétence Magie blanche) : 3 attaques Magie blanche Foudre + non-élémentaire sur un ennemi, et petit soin de toute l'équipe, plus fort selon le nombre d'alliés imprégnés de Foudre (3 paliers).\n• Soin de Mysidia (ミシディアヒール, école Magie blanche, déclenchée par une compétence Magie blanche) : sans temps d'attente, gros soin d'un allié, et temps d'attente réduit d'1 tour.\n\nMODE GRANDE SŒUR RESPONSABLE (しっかり者の姉モード)\n• Chaque compétence Synchro utilisée par Porom : attaque supplémentaire [Cadeau précoce].\n• Après 4 Cadeaux précoces, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : CADEAU PRÉCOCE (おませな贈りもの)\n• Attaque Magie blanche qui inflige 99 999 dégâts à un ennemi.\n• Soin automatique d'un allié à chaque perte de PV, jusqu'à 2000 PV soignés.\n• Si 4 alliés de FF IV ou plus sont en vie : temps d'attente de toute l'équipe réduit d'1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Porom augmentées (niv. 1).\n\nÀ VÉRIFIER : ケアルダ traduit « Soin X » (nom français à confirmer) ; « 99 999 dégâts » est bien écrit tel quel à l'écran."
     }
    ]
   }
