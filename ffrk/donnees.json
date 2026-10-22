@@ -1,6 +1,6 @@
 {
- "revision": 17,
- "maj": "2026-10-22T04:44:53.000Z",
+ "revision": 18,
+ "maj": "2026-10-22T04:47:04.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -1083,6 +1083,41 @@
    ],
    "sprite": "images/minwu/sprite.png",
    "capacites": [
+    {
+     "id": "c-basuna-6",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "バスナ6",
+     "nomFR": "Basuna 6",
+     "elements": [],
+     "image": "images/minwu/basuna-6.webp",
+     "effet": "Réservée à Minwu.\n\n• Esuna sur un allié."
+    },
+    {
+     "id": "c-teleport-16",
+     "type": "専用",
+     "categorie": "magique",
+     "nomJP": "テレポ16",
+     "nomFR": "Téléport 16",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/minwu/teleport-16.webp",
+     "effet": "Réservée à Minwu.\n\n• 3 attaques Magie blanche non-élémentaires sur tous les ennemis.\n• Forte chance d'annuler l'action des ennemis (行動キャンセル)."
+    },
+    {
+     "id": "c-miracle-16",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "ホーリー16",
+     "nomFR": "Miracle 16",
+     "elements": [
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/minwu/miracle-16.webp",
+     "effet": "Réservée à Minwu.\n\nATTAQUE\n• 8 attaques Magie blanche puissantes Sacré + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Sacré, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Sceau exorciste (破魔の印, école Magie blanche) : 4 attaques Magie blanche Sacré + non-élémentaire sur un ennemi.\n• Lumière de guérison (快癒の光, école Magie blanche) : sans temps d'attente, soin énorme d'un allié.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
     {
      "id": "c-resurrection",
      "type": "超絶",
