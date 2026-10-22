@@ -1,0 +1,26 @@
+{
+ "revision": 1,
+ "maj": "2026-10-22T05:00:00.000Z",
+ "persos": [
+  {
+   "id": "guerrier-de-la-lumiere",
+   "nom": "Guerrier de la Lumière",
+   "nomJP": "光の戦士",
+   "serie": "I",
+   "categorie": "physique",
+   "elements": ["sacre"],
+   "sprite": "images/guerrier-de-la-lumiere/sprite.png",
+   "capacites": [
+    {
+     "id": "c-eveil-crossover",
+     "type": "D覚醒",
+     "nomJP": "覚醒クロスオーバー",
+     "nomFR": "Éveil Crossover",
+     "elements": ["sacre", "neutre"],
+     "effet": "Réservée au Guerrier de la Lumière.\n\nATTAQUE\n• 7 coups physiques puissants Sacré + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprègne le Guerrier de l'élément Sacré [重式] et augmente son plafond de dégâts de 1 niveau.\n• Active le mode D-Éveil Sacré I et la Résonance des souvenirs.\n\nMODE D-ÉVEIL SACRÉ I (avant la Dual Shift)\n• Boost des compétences (アビリティ) Sacré, effet max : moyen.\n• Les compétences Sacré se lancent 2 fois de plus.\n• Chaque compétence Sacré utilisée renforce le mode, jusqu'à 3 paliers : temps d'attente des compétences Sacré équipées réduit, et taux de critique 50 / 75 / 100 %.\n\nDUAL SHIFT\n• Fait passer le Guerrier en mode D-Éveil Sacré II. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL SACRÉ II (après la Dual Shift)\n• Boost des compétences Sacré, effet max : moyen.\n• Les compétences Sacré n'ont plus de temps d'attente.\n• Chaque compétence Sacré déclenche l'attaque supplémentaire D Bright Shift.\n\nATTAQUE SUPPLÉMENTAIRE : D BRIGHT SHIFT\nSelon le nombre d'alliés de FF I encore en vie :\n• 0 à 3 : baisse brève de la défense, de la défense magique et de l'esprit d'un ennemi (effet très fort) + pendant un temps, attaque Sacré de toute l'équipe +2 niveaux.\n• 4 ou plus : pendant 2 tours, plafond de dégâts du Guerrier +1 niveau et dégâts fatals (フェイタルダメージ) +20 %.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Sacré du Guerrier +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Sacré I et II [Guerrier de la Lumière] et le mode Éveil Sacré.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'étiquette 対乾坤一擲, le type d'imprégnation [重式] et l'effet exact des « dégâts fatals ».",
+     "image": "images/guerrier-de-la-lumiere/eveil-crossover.webp"
+    }
+   ]
+  }
+ ]
+}

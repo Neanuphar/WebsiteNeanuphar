@@ -982,6 +982,9 @@
       $("detail-modifier").hidden = !editable();
       $("detail-supprimer").hidden = !editable();
       $("fen-detail").showModal();
+      // S'ouvre en haut du texte, même si le bouton Fermer reçoit le focus
+      $("detail-fermer").focus({ preventScroll: true });
+      $("fen-detail").scrollTop = 0;
     }
     $("detail-fermer").addEventListener("click", () => $("fen-detail").close());
     $("detail-modifier").addEventListener("click", () => {
