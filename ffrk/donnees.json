@@ -1,6 +1,6 @@
 {
- "revision": 43,
- "maj": "2026-10-22T22:45:02.000Z",
+ "revision": 44,
+ "maj": "2026-10-23T04:59:47.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -4963,6 +4963,580 @@
      ],
      "image": "images/gogo-v/eveil-fantaisiste-des-fonds-marins.webp",
      "effet": "Réservée à Gogo (V). Utilisable 1 fois. Étiquette 対乾坤一擲.\n\nATTAQUE\n• 7 attaques magiques puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : magie et esprit de Gogo augmentés (effet fort), et imprégnation Eau renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Eau I [Gogo] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL EAU I (avant la Dual Shift)\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 1 fois de plus.\n• Chaque compétence Eau utilisée : attaque supplémentaire [D Symétrie abyssale].\n\nDUAL SHIFT\n• Fait passer Gogo en mode D-Éveil Eau II (retire le mode I).\n• Pendant un temps : mode D Mime des fosses marines.\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL EAU II (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Eau, effet max : moyen.\n• Les compétences Eau se lancent 1 fois de plus.\n\nMODE D MIME DES FOSSES MARINES (D海溝ものまねモード)\n• Dégâts des imitations de Gogo augmentés (effet fort).\n• Chaque fois qu'un autre allié utilise une compétence Eau : attaque supplémentaire [D Mime – Spectacle aquatique].\n• Après 3 déclenchements, le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : D SYMÉTRIE ABYSSALE (D海淵シンメトリー)\n• 4 attaques magiques Eau + non-élémentaire sur un ennemi.\n• Temps d'attente de toute l'équipe réduit d'1 tour.\n• Tous les 2 déclenchements : brièvement, défense, défense magique et esprit de l'ennemi réduits (effet fort).\n\nATTAQUE SUPPLÉMENTAIRE : D MIME – SPECTACLE AQUATIQUE (Dものまね・水演)\n• Imite la dernière action d'un allié (sauf certaines).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Eau de Gogo +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Eau I et II [Gogo] et le mode Éveil Eau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le sens de l'étiquette 対乾坤一擲 ; à partir de 5 actions, l'icône est barrée (probablement aucun tour de mode II)."
+    }
+   ]
+  },
+  {
+   "id": "faris",
+   "nom": "Faris",
+   "nomJP": "ファリス",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "vent",
+    "feu",
+    "eau"
+   ],
+   "sprite": "images/faris/sprite.png",
+   "capacites": [
+    {
+     "id": "c-maitre-des-mers",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "海の覇者",
+     "nomFR": "Maître des mers",
+     "elements": [
+      "eau"
+     ],
+     "image": "images/faris/maitre-des-mers.webp",
+     "effet": "Réservée à Faris.\n\n• Attaque physique à distance Eau sur tous les ennemis."
+    },
+    {
+     "id": "c-on-est-des-pirates",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "おれたちゃ海賊",
+     "nomFR": "On est des pirates !",
+     "elements": [
+      "vent",
+      "feu"
+     ],
+     "image": "images/faris/on-est-des-pirates.webp",
+     "effet": "Réservée à Faris.\n\nATTAQUE\n• Sans temps d'attente : 8 attaques physiques à distance puissantes Vent + Feu sur un ennemi.\n• Pendant un temps : attaque et défense de l'ennemi réduites (effet fort).\n• Hâte et mode Burst pour Faris.\n\nCOMPÉTENCES BURST (mode Burst)\n• Bombe pirate (パイレーツボム, école Soutien physique) : 2 attaques physiques à distance Vent + Feu sur un ennemi, et pendant un temps, son attaque réduite (effet fort).\n• Canon pirate (パイレーツキャノン, école Soutien physique) : 2 attaques physiques à distance Vent + Feu sur un ennemi, et pendant un temps, sa défense réduite (effet fort).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-tempete-pirate",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "パイレーツストーム",
+     "nomFR": "Tempête pirate",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/faris/tempete-pirate.webp",
+     "effet": "Réservée à Faris.\n\nATTAQUE\n• 10 attaques physiques puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Vent de l'ennemi −2 niveaux.\n• Toutes les 2 compétences Voleur utilisées : attaque supplémentaire [Vol pirate] (パイレーツスティール) : pendant un temps, résistance Vent de l'ennemi −1 niveau.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lien-eternel",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "永遠の絆",
+     "nomFR": "Lien éternel",
+     "elements": [
+      "vent"
+     ],
+     "image": "images/faris/lien-eternel.webp",
+     "effet": "Réservée à Faris. Chaîne élémentaire (属性リミットチェイン).\n\nEFFET\n• Lance une chaîne Vent (jusqu'à 150 chaînes).\n• Élément Vent renforcé pour toute l'équipe (effet fort).\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort).\n\nPENDANT LA CHAÎNE\n• Élément Vent renforcé pour toute l'équipe (effet fort).\n• La chaîne avance avec les attaques Vent.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-encouragement-vaillant",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "ブレイブエール",
+     "nomFR": "Encouragement vaillant",
+     "elements": [],
+     "image": "images/faris/encouragement-vaillant.webp",
+     "effet": "Réservée à Faris. Chaîne de série (シリーズリミットチェイン). Étiquette 対フルブレイク.\n\nEFFET\n• Sans temps d'attente : lance une chaîne FF V (jusqu'à 125 chaînes).\n• Dégâts des héros de FF V de l'équipe augmentés (effet fort).\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n\nPENDANT LA CHAÎNE\n• Dégâts des héros de FF V de l'équipe augmentés (effet fort).\n• La chaîne avance avec les attaques des héros de FF V.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク."
+    },
+    {
+     "id": "c-benediction-de-syldra",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "シルドラの恵み",
+     "nomFR": "Bénédiction de Syldra",
+     "elements": [],
+     "image": "images/faris/benediction-de-syldra.webp",
+     "effet": "Réservée à Faris. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Remplit 2 segments de la jauge de capacités spéciales de Faris.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-courage-de-la-pirate",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "女海賊の勇気",
+     "nomFR": "Courage de la pirate",
+     "elements": [
+      "vent",
+      "feu"
+     ],
+     "image": "images/faris/courage-de-la-pirate.webp",
+     "effet": "Réservée à Faris. Utilisable 3 fois.\n\n• Sans temps d'attente : temps d'attente de Faris réduit d'1 tour.\n• Pendant un temps : mode Double élément II.\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• Si Faris utilise une compétence Vent ou Feu à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-bravoure-pirate",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "パイレーツブレイブ",
+     "nomFR": "Bravoure pirate",
+     "elements": [
+      "vent",
+      "feu",
+      "neutre"
+     ],
+     "image": "images/faris/bravoure-pirate.webp",
+     "effet": "Réservée à Faris. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Vent + Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Vent et Feu de l'ennemi −2 niveaux.\n• Pendant un temps : mode Éveil Voleur, et plafond de dégâts +1 niveau.\n• Active le mode Double élément.\n• Toutes les 3 compétences Voleur utilisées : attaque supplémentaire [Double ancre] (ツインアンカー) : pendant un temps, résistance Vent et Feu de l'ennemi −1 niveau.\n\nMODE ÉVEIL VOLEUR (シーフ覚醒モード)\n• Compétences Voleur utilisables à l'infini.\n• Boost des compétences Voleur, effet max : moyen.\n• Les compétences Voleur se lancent 1 fois de plus.\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• Si Faris utilise une compétence Vent ou Feu à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-amie-irremplacable",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "かけがえのない親友",
+     "nomFR": "Amie irremplaçable",
+     "elements": [
+      "vent",
+      "feu",
+      "neutre"
+     ],
+     "image": "images/faris/amie-irremplacable.webp",
+     "effet": "Réservée à Faris. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Vent + Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Double élément III.\n• Toutes les 4 compétences Synchro utilisées : attaque supplémentaire [Lien avec l'amie].\n\nCOMPÉTENCES SYNCHRO\n• Assaut du vent (ウィンドアサルト, école Voleur, déclenchée par une compétence Vent) : 6 attaques physiques Vent + non-élémentaire sur un ennemi, avec un temps d'attente court, et brièvement, résistance Vent de l'ennemi −1 niveau.\n• Assaut des flammes (フレイムアサルト, école Voleur, déclenchée par une compétence Feu) : pareil, en Feu.\n\nMODE DOUBLE ÉLÉMENT III (ツインエレメントモードIII)\n• Si Faris utilise une compétence Vent ou Feu à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : LIEN AVEC L'AMIE (親友との絆)\n• Attaque physique à distance Vent + Feu + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n• Faris n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-arbalete-de-la-flamme-bleue",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "蒼炎の弩",
+     "nomFR": "Arbalète de la flamme bleue",
+     "elements": [
+      "vent",
+      "feu"
+     ],
+     "image": "images/faris/arbalete-de-la-flamme-bleue.webp",
+     "effet": "Réservée à Faris. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques physiques à distance ultra-puissantes Vent + Feu sur un ennemi.\n• Puis une attaque physique à distance Vent + Feu qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-arbalete-de-la-flamme-bleue-polaire",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星蒼炎の弩",
+     "nomFR": "Arbalète de la flamme bleue polaire",
+     "elements": [
+      "vent",
+      "feu",
+      "neutre"
+     ],
+     "image": "images/faris/arbalete-de-la-flamme-bleue-polaire.webp",
+     "effet": "Réservée à Faris. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Faris se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +2 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Faris II] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Arbalète de la flamme bleue polaire].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – FARIS II (星撃・ファリス・II)\n• 10 attaques physiques à distance sur un ennemi : Vent + non-élémentaire ou Feu + non-élémentaire, selon l'élément dont Faris est imprégnée.\n• Tant que le mode Maître dure, le renforcement du héros de Faris augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %) et son plafond de dégâts change (5 paliers : niveaux 3 / 4 / 5 / 6 / 7).\n\nATTAQUE MAÎTRE : ARBALÈTE DE LA FLAMME BLEUE POLAIRE\n• Attaque physique à distance Vent + Feu + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 1 tour : vrai plafond de dégâts de Faris +1 niveau, et Faris n'a aucun temps d'attente.\n• Pendant 1 tour : renforcement du héros 50 %.\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Feu et Vent de Faris augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    },
+    {
+     "id": "c-evasion-royale-eveillee",
+     "type": "T覚醒",
+     "categorie": "physique",
+     "nomJP": "戦醒ロイヤルエスケープ",
+     "nomFR": "Évasion royale éveillée",
+     "elements": [
+      "vent",
+      "feu",
+      "neutre"
+     ],
+     "image": "images/faris/evasion-royale-eveillee.webp",
+     "effet": "Réservée à Faris. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode T-Éveil.\n• Attaque de Faris +500.\n\nMODE T-ÉVEIL (T覚醒モード)\n• Boost des compétences Vent ou Feu, effet max : moyen.\n• Les compétences Vent ou Feu se lancent 2 fois de plus.\n• Compétences Vent ou Feu utilisables à l'infini.\n• Plafond de dégâts des compétences Vent ou Feu +1 niveau.\n• Dégâts des compétences Vent ou Feu +30 %.\n• Les compétences Vent ou Feu percent la défense et la défense magique (20 %).\n• Après 8 compétences Vent ou Feu, le mode prend fin.\n• Quand la jauge TP est pleine : attaque supplémentaire [TP MAX – Faris] (1 fois max).\n\nJAUGE TP : ELLE SE REMPLIT QUAND…\n• Faris subit des dégâts d'un ennemi ;\n• un allié inflige des dégâts avec une capacité spéciale, une Limit Break ou une compétence.\nLe mode T-Éveil ne se cumule avec aucun autre mode Éveil (Éveil, Éveil D) : il a la priorité. Après 6 remplissages, la compétence d'arme devient utilisable (1 seule fois, jauge TP pleine).\n\nATTAQUE SUPPLÉMENTAIRE : TP MAX – FARIS (TPMAX・ファリス)\n• Attaque physique à distance Vent + non-élémentaire ou Feu + non-élémentaire (selon l'imprégnation de Faris) sur tous les ennemis, avec vrai plafond de dégâts +1 niveau.\n\nCOMPÉTENCE D'ARME (ウェポンスキル) : ÉVASION ROYALE ÉVEILLÉE\n• Sans consommer de jauge ni temps d'attente : attaque physique à distance Vent + Feu + non-élémentaire sur un ennemi, qui ignore la défense, avec vrai plafond de dégâts +1 niveau.\n• Tant que le mode T-Éveil dure : plafond des compétences Vent ou Feu de Faris porté à +2 niveaux, et percée de défense portée à 30 %.\n• La prochaine jauge ATB de Faris se remplit instantanément (1 fois), et elle n'a aucun temps d'attente pendant 1 tour.\n• Effet en plus, selon une condition : imprégnation Vent ou Feu de Faris de 2 niveaux ou plus.\n  – Condition remplie : tant que le mode T-Éveil dure, dégâts des compétences Vent ou Feu portés à +50 %, et leur temps d'attente réduit.\n  – Sinon : pendant un temps, imprégnation renforcée [重式] (effet moyen) Vent ou Feu, selon l'élément de la compétence d'arme.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la compétence d'arme augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n• Vrai plafond de la compétence d'arme +1 niveau, débloqué au niveau d'entraînement 5.\n\nÀ VÉRIFIER : T覚醒 traduit « T-Éveil » et ウェポンスキル « compétence d'arme » ; « après 6 remplissages » est notre lecture de 条件を6回満たす."
+    }
+   ]
+  },
+  {
+   "id": "krile",
+   "nom": "Krile",
+   "nomJP": "クルル",
+   "serie": "V",
+   "categorie": "magique",
+   "elements": [
+    "feu",
+    "terre"
+   ],
+   "sprite": "images/krile/sprite.png",
+   "capacites": [
+    {
+     "id": "c-apaisement",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "なだめる",
+     "nomFR": "Apaisement",
+     "elements": [],
+     "image": "images/krile/apaisement.webp",
+     "effet": "Réservée à Krile.\n\n• Pendant un temps : attaque d'un ennemi réduite (effet moyen)."
+    },
+    {
+     "id": "c-sentence-des-flammes-infernales",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "ごうかのせんこく",
+     "nomFR": "Sentence des flammes infernales",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/krile/sentence-des-flammes-infernales.webp",
+     "effet": "Réservée à Krile.\n\nATTAQUE\n• 8 attaques magiques puissantes Feu + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Feu de l'ennemi −2 niveaux.\n• Hâte et mode Burst pour Krile.\n\nCOMPÉTENCES BURST (mode Burst)\n• Feu ardent (れっか, école Magie noire) : 4 attaques magiques Feu + non-élémentaire sur un ennemi, avec un temps d'attente court.\n• Lotus pourpre (ぐれん, école Magie noire) : 2 attaques magiques Feu + non-élémentaire sur tous les ennemis ; pendant un temps, défense de Krile réduite et magie augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-coeur-confie-espoir",
+     "type": "超絶",
+     "categorie": "magique",
+     "nomJP": "託されし心「希望」",
+     "nomFR": "Cœur confié « Espoir »",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/krile/coeur-confie-espoir.webp",
+     "effet": "Réservée à Krile.\n\nATTAQUE\n• 10 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre.\n• Temps d'attente de Krile réduit d'1 tour.\n• Pendant un temps : après une attaque Terre, le temps d'attente du tour suivant est réduit.\n• Chaque compétence Terre utilisée : attaque supplémentaire [Cœur transmis] (受け継ぐ心) : 4 attaques magiques Terre + non-élémentaire sur un ennemi, 5 si Galuf est dans l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-grande-destruction-meteorique",
+     "type": "LBOF",
+     "categorie": "magique",
+     "nomJP": "いんせき大破壊",
+     "nomFR": "Grande destruction météorique",
+     "elements": [
+      "feu",
+      "terre"
+     ],
+     "image": "images/krile/grande-destruction-meteorique.webp",
+     "effet": "Réservée à Krile. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 3 attaques magiques ultra-puissantes Feu + Terre sur un ennemi : elles ignorent la défense magique et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n• Barrière de réduction de dégâts pour toute l'équipe, 2 fois (effet fort).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-nuage-de-sable",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "すなけむり",
+     "nomFR": "Nuage de sable",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/krile/nuage-de-sable.webp",
+     "effet": "Réservée à Krile. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Temps d'attente de Krile réduit de 2 tours.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-amour-pour-son-grand-pere",
+     "type": "閃技",
+     "categorie": "magique",
+     "nomJP": "祖父を愛する心",
+     "nomFR": "Amour pour son grand-père",
+     "elements": [
+      "feu",
+      "terre"
+     ],
+     "image": "images/krile/amour-pour-son-grand-pere.webp",
+     "effet": "Réservée à Krile. Utilisable 1 fois.\n\nATTAQUE\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Attaque magique Feu + Terre sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante si Galuf est dans l'équipe.\n• Pendant un temps : mode Double élément II.\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• Si Krile utilise une compétence Feu ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-grande-migration-des-monstres",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "まじゅう大移動",
+     "nomFR": "Grande migration des monstres",
+     "elements": [
+      "feu",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/krile/grande-migration-des-monstres.webp",
+     "effet": "Réservée à Krile. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques d'Invocation Feu + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Éveil [Héritière de l'Aube], et plafond de dégâts +1 niveau.\n• Active le mode Double élément.\n• Chaque compétence Feu ou Terre utilisée : barrière pour toute l'équipe qui réduit les dégâts d'1 attaque (effet moyen).\n\nMODE ÉVEIL HÉRITIÈRE DE L'AUBE (暁の継承者覚醒モード)\n• Compétences Feu ou Terre utilisables à l'infini.\n• Boost des compétences Feu ou Terre, effet max : moyen.\n• Les compétences Feu ou Terre se lancent 1 fois de plus.\n\nMODE DOUBLE ÉLÉMENT (ツインエレメントモード)\n• Si Krile utilise une compétence Feu ou Terre à sa prochaine action : pendant un temps, imprégnation de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-attaque-de-baldesion",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "バルデシオンあたっく",
+     "nomFR": "Attaque de Baldesion",
+     "elements": [
+      "feu",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/krile/attaque-de-baldesion.webp",
+     "effet": "Réservée à Krile. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Feu + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau et mode Double élément III.\n• Chaque compétence Feu ou Terre utilisée : pendant un temps, attaque Feu et Terre de Krile +1 niveau.\n\nCOMPÉTENCES SYNCHRO\n• Magma de feu ardent (れっかのまぐま, école Magie noire, déclenchée par une compétence Feu ou Terre) : 6 attaques magiques Feu + Terre + non-élémentaire sur un ennemi, plus puissantes à chaque utilisation (3 paliers max).\n• Magma du lotus pourpre (ぐれんのまぐま, école Magie noire, déclenchée par une compétence Feu ou Terre) : 3 attaques magiques Feu + Terre + non-élémentaire sur un ennemi (6 si Galuf est dans l'équipe), et temps d'attente de Krile réduit de 2 tours.\n\nMODE DOUBLE ÉLÉMENT III (ツインエレメントモードIII)\n• Si Krile utilise une compétence Feu ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-super-colere-de-la-terre",
+     "type": "O奥義",
+     "categorie": "magique",
+     "nomJP": "ちょう・だいちのいかり",
+     "nomFR": "Super colère de la terre",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/krile/super-colere-de-la-terre.webp",
+     "effet": "Réservée à Krile. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques d'Invocation ultra-puissantes Terre sur un ennemi.\n• Puis une attaque d'Invocation Terre qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-puissance-bien-aimee",
+     "type": "真奥義",
+     "categorie": "magique",
+     "nomJP": "しんあいなるちから",
+     "nomFR": "Puissance bien-aimée",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/krile/puissance-bien-aimee.webp",
+     "effet": "Réservée à Krile. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Krile Terre].\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : PUISSANCE BIEN-AIMÉE\n• 20 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Puis une attaque magique Terre + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – KRILE TERRE]\n• Plus Krile inflige de dégâts pendant cet état, plus la 2e activation devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Krile augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "dorgann",
+   "nom": "Dorgann",
+   "nomJP": "ドルガン",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "vent"
+   ],
+   "sprite": "images/dorgann/sprite.png",
+   "capacites": [
+    {
+     "id": "c-parade-a-mains-nues",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "白刃取り",
+     "nomFR": "Parade à mains nues",
+     "elements": [],
+     "image": "images/dorgann/parade-a-mains-nues.webp",
+     "effet": "Réservée à Dorgann.\n\n• Pendant un temps : défense d'un ennemi réduite (effet faible), et attaque de Dorgann augmentée (effet faible)."
+    },
+    {
+     "id": "c-transmission-de-l-art-de-l-epee",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "剣技伝承",
+     "nomFR": "Transmission de l'art de l'épée",
+     "elements": [
+      "terre",
+      "vent",
+      "neutre"
+     ],
+     "image": "images/dorgann/transmission-de-l-art-de-l-epee.webp",
+     "effet": "Réservée à Dorgann. Utilisable 1 fois. Étiquette 対フルブレイク.\n\nATTAQUE\n• 15 attaques physiques Terre + Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Pendant un temps : mode Éveil [Bretteur de Lugor], et plafond de dégâts +1 niveau.\n• Temps d'attente réduit.\n• Mode Brave, et niveau Brave mis à 2.\n\nMODE ÉVEIL BRETTEUR DE LUGOR (ルゴルの剣士覚醒モード)\n• Compétences Terre utilisables à l'infini.\n• Boost des compétences Terre, effet max : moyen.\n• Chaque compétence Terre utilisée : attaque supplémentaire [Art de l'épée de l'Aube] (暁の剣技) : 6 attaques physiques Terre + non-élémentaire sur un ennemi ; tous les 2 déclenchements, attaque Terre de Dorgann +1 niveau pendant un temps.\n\nCOMPÉTENCE BRAVE : STYLE PROPRE – IMPOSANT (我流剣技・聳然, école Attaque physique)\n• Niveau 0 : attaque physique Terre + non-élémentaire sur un ennemi.\n• Niveaux 1 et 2 : pareil, et elle peut dépasser le plafond de dégâts.\n• Niveau 3 : pareil, et au tour suivant, la prochaine compétence Chevalier de Dorgann se lance 1 fois de plus.\nLe niveau Brave monte quand Dorgann utilise une compétence Terre.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク ; « temps d'attente réduit » sans précision de durée à l'écran."
+    }
+   ]
+  },
+  {
+   "id": "kelger",
+   "nom": "Kelger",
+   "nomJP": "ケルガー",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/kelger/sprite.png",
+   "capacites": [
+    {
+     "id": "c-croc-lupin",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "ルパインファング",
+     "nomFR": "Croc lupin",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/kelger/croc-lupin.webp",
+     "effet": "Réservée à Kelger.\n\n• 2 attaques physiques non-élémentaires sur un ennemi.\n• Image (分身) sur Kelger, qui bloque 1 attaque physique."
+    },
+    {
+     "id": "c-eveil-chef-loup-redoutable",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒剛猛なる狼の長",
+     "nomFR": "Éveil – Chef loup redoutable",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/kelger/eveil-chef-loup-redoutable.webp",
+     "effet": "Réservée à Kelger. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式], et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Ninja I [Kelger II] et la Résonance des souvenirs.\n• Dégâts des compétences Ninja augmentés pendant 2 tours (effet fort).\n\nMODE D-ÉVEIL NINJA I (avant la Dual Shift)\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 2 fois de plus.\n• Chaque compétence Ninja utilisée : attaque supplémentaire [D Sonique lupin] (Dルパインソニック) : 4 attaques physiques Terre + non-élémentaire sur un ennemi (2 fois max).\n\nDUAL SHIFT\n• Fait passer Kelger en mode D-Éveil Ninja II.\n• Rend 2 utilisations à la compétence à qui il en reste le moins.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL NINJA II (après la Dual Shift)\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja n'ont plus de temps d'attente.\n• Chaque compétence Ninja utilisée : attaque supplémentaire [D Force du loup-garou] (Dウェアウルフの力) : Kelger n'a aucun temps d'attente pendant 2 tours, et 1 segment de sa jauge de capacités spéciales se remplit.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Ninja de Kelger +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Ninja I et II [Kelger II] et le mode Éveil Ninja.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "xezat",
+   "nom": "Xezat",
+   "nomJP": "ゼザ",
+   "serie": "V",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "glace",
+    "foudre"
+   ],
+   "sprite": "images/xezat/sprite.png",
+   "capacites": [
+    {
+     "id": "c-lame-de-glace-enchainee",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "連続ブリザガ剣",
+     "nomFR": "Lame de Glacier X enchaînée",
+     "elements": [
+      "glace"
+     ],
+     "image": "images/xezat/lame-de-glace-enchainee.webp",
+     "effet": "Réservée à Xezat.\n\n• 2 attaques physiques Glace sur un ennemi.\n\nÀ VÉRIFIER : ブリザガ traduit « Glacier X » (nom français à confirmer)."
+    },
+    {
+     "id": "c-technique-supreme-eclat-de-glace",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "魔法剣絶技・氷砕鳴",
+     "nomFR": "Technique suprême de magilame – Éclat de glace",
+     "elements": [
+      "terre",
+      "glace",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/xezat/technique-supreme-eclat-de-glace.webp",
+     "effet": "Réservée à Xezat.\n\nATTAQUE\n• 10 attaques physiques Terre + Glace + Foudre + non-élémentaire sur un ennemi.\n• Temps d'attente de toute l'équipe réduit d'1 tour.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : chaque compétence Magilame utilisée réduit d'1 tour le temps d'attente de tous les alliés du premier rang.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-escrime-de-surgate",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "サーゲイト流剣術",
+     "nomFR": "Escrime de Surgate",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/xezat/escrime-de-surgate.webp",
+     "effet": "Réservée à Xezat. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Remplit 1 segment de la jauge de capacités spéciales de Xezat.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-technique-supreme-ultime-eclat-de-glace",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極魔法剣絶技・氷砕鳴",
+     "nomFR": "Technique suprême ultime – Éclat de glace",
+     "elements": [
+      "terre",
+      "glace",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/xezat/technique-supreme-ultime-eclat-de-glace.webp",
+     "effet": "Réservée à Xezat. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Terre + Glace + Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n• Effet en plus selon le nombre d'alliés en vie parmi Kelger, Galuf ou Dorgann (plus bas).\n\nMODE ULTIME – CŒUR\n• Imprégnation Terre poussée à l'extrême (+20 %).\n• Toutes les 3 compétences Terre utilisées : attaque supplémentaire [Frappe du cœur – Xezat] (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Xezat (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Terre se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Xezat +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nEFFET SELON KELGER, GALUF OU DORGANN EN VIE\n• 0 à 2 : les attaques physiques de toute l'équipe n'ont aucun temps d'attente pendant 1 tour.\n• 3 : pareil, pendant 3 tours.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – XEZAT (心撃・ゼザ)\n• Dégâts fatals (フェイタルダメージ) de toute l'équipe +10 % pendant 3 tours.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Art magilame – Terre-glace-foudre Kai (魔法剣術・砕凍雷改, école Magilame), remplace la version normale (4 attaques physiques Terre + Glace + Foudre sur un ennemi, puis une attaque Terre + Glace + Foudre plus forte en cas de critique) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Magilame royale Kai (王の魔法剣改, école Magilame), remplace Magilame royale (3 attaques physiques Terre + Glace + Foudre sur un ennemi, et Xezat n'a aucun temps d'attente pendant 1 tour) : même effet, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 3).\n• Dégâts de la capacité augmentés (niv. 1).\n\nÀ VÉRIFIER : « niv. 3 » est sans doute le niveau atteint au niveau d'entraînement actuel (3 sur 10) ; l'effet exact des « dégâts fatals »."
+    },
+    {
+     "id": "c-eveil-art-magilame-terre-glace-foudre",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒魔法剣術・砕凍雷",
+     "nomFR": "Éveil – Art magilame Terre-glace-foudre",
+     "elements": [
+      "terre",
+      "glace",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/xezat/eveil-art-magilame-terre-glace-foudre.webp",
+     "effet": "Réservée à Xezat. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Terre + Glace + Foudre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式], et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Magilame I [Xezat] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL MAGILAME I (avant la Dual Shift)\n• Boost des compétences Magilame, effet max : moyen.\n• Les compétences Magilame se lancent 2 fois de plus.\n• Chaque compétence Magilame utilisée renforce le mode : temps d'attente des compétences Magilame équipées réduit (jusqu'à 3 paliers).\n\nDUAL SHIFT\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL MAGILAME II (après la Dual Shift)\n• Boost des compétences Magilame, effet max : moyen.\n• Les compétences Magilame se lancent 1 fois de plus.\n• Les compétences Magilame n'ont plus de temps d'attente.\n• Chaque compétence Magilame utilisée : attaque supplémentaire [D Union de l'Aube], selon le nombre d'alliés en vie parmi Kelger, Galuf ou Dorgann.\n\nATTAQUE SUPPLÉMENTAIRE : D UNION DE L'AUBE (D暁の結束)\n• 0 à 2 : temps d'attente de toute l'équipe réduit de 3 tours.\n• 3 : pendant un temps, taux de critique de toute l'équipe à 100 %, et dégâts critiques augmentés.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Magilame de Xezat +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Magilame I et II [Xezat] et le mode Éveil Magilame.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "exdeath",
+   "nom": "Exdeath",
+   "nomJP": "エクスデス",
+   "serie": "V",
+   "categorie": "magique",
+   "elements": [
+    "tenebres",
+    "sacre"
+   ],
+   "sprite": "images/exdeath/sprite.png",
+   "capacites": [
+    {
+     "id": "c-trou-noir",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "ブラックホール",
+     "nomFR": "Trou noir",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/exdeath/trou-noir.webp",
+     "effet": "Réservée à Exdeath.\n\n• Attaque magique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-orbite-inconnue",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "アンノウンオービット",
+     "nomFR": "Orbite inconnue",
+     "elements": [
+      "tenebres",
+      "sacre"
+     ],
+     "image": "images/exdeath/orbite-inconnue.webp",
+     "effet": "Réservée à Exdeath. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Temps d'attente d'Exdeath réduit d'1 tour.\n• Pendant un temps : mode Double élément II.\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• Si Exdeath utilise une compétence Ténèbres ou Sacré à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Magie +5, Esprit +5."
+    },
+    {
+     "id": "c-puissance-orbitale",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "オービットパワー",
+     "nomFR": "Puissance orbitale",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/exdeath/puissance-orbitale.webp",
+     "effet": "Réservée à Exdeath. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Tenir bon.\n• Temps d'attente des attaques magiques réduit d'1 tour.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-syndrome-monochrome",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "モノクロシンドローム",
+     "nomFR": "Syndrome monochrome",
+     "elements": [
+      "tenebres",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/exdeath/syndrome-monochrome.webp",
+     "effet": "Réservée à Exdeath. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi.\n• Pendant un temps : mode Éveil [Paroxysme de la malveillance], et plafond de dégâts +1 niveau.\n• Active le mode Double élément II.\n• Toutes les 2 compétences Ténèbres ou Sacré utilisées : dégâts de ces compétences augmentés pendant 1 tour (effet moyen).\n\nMODE ÉVEIL PAROXYSME DE LA MALVEILLANCE (邪念の極み覚醒モード)\n• Compétences Ténèbres ou Sacré utilisables à l'infini.\n• Temps d'attente de ces compétences réduit selon leur niveau d'affinage (精錬度).\n• Chaque compétence Ténèbres ou Sacré utilisée : attaque supplémentaire [Tempête delta] (デルタストーム) : 6 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi, et brièvement, résistance Ténèbres et Sacré de l'ennemi −1 niveau.\n\nMODE DOUBLE ÉLÉMENT II (ツインエレメントモードII)\n• Si Exdeath utilise une compétence Ténèbres ou Sacré à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +5, Esprit +5."
+    },
+    {
+     "id": "c-desordre-spatial",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "スペースディスオーダー",
+     "nomFR": "Désordre spatial",
+     "elements": [
+      "tenebres",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/exdeath/desordre-spatial.webp",
+     "effet": "Réservée à Exdeath. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau, mode Double élément III et mode [Néant avide].\n\nCOMPÉTENCES SYNCHRO\n• Néant noir (黒き虚無, école Arts sombres, déclenchée par une compétence Ténèbres) : 6 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et dégâts des compétences Ténèbres d'Exdeath augmentés pendant 1 tour (effet moyen).\n• Néant blanc (白き虚無, école Magie blanche, déclenchée par une compétence Sacré) : 6 attaques de Magie blanche Sacré + non-élémentaire sur un ennemi, et dégâts des compétences Sacré d'Exdeath augmentés pendant 1 tour (effet moyen).\n\nMODE DOUBLE ÉLÉMENT III (ツインエレメントモードIII)\n• Si Exdeath utilise une compétence Ténèbres ou Sacré à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nMODE NÉANT AVIDE (渇望する無モード)\n• Pendant un temps : après 3 compétences Ténèbres ou Sacré, attaque supplémentaire [Débris spatiaux], puis le mode prend fin.\n\nATTAQUE SUPPLÉMENTAIRE : DÉBRIS SPATIAUX (スペースデブリ)\nL'effet dépend des dégâts infligés pendant le mode (3 paliers) :\n• Palier 1 : Débris d'Éruption.\n• Palier 2 : Débris d'Éruption + Débris de Miracle.\n• Palier 3 : Débris d'Éruption + Débris de Miracle + Débris de Météore.\nDébris d'Éruption (フレアデブリ) et Débris de Miracle (ホーリーデブリ) : chacun une attaque magique ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi, qui peut dépasser le plafond de dégâts.\nDébris de Météore (メテオデブリ) : 5 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-almageste",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "アルマゲスト",
+     "nomFR": "Almageste",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/exdeath/almageste.webp",
+     "effet": "Réservée à Exdeath. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Une seule fois pendant le mode Synchro : après 3 compétences Synchro, attaque supplémentaire [Domination du néant].\n• Une seule fois pendant le mode Synchro : après 6 compétences Synchro, Exdeath passe en état [Ambition sans fond] (底知れぬ野心).\n\nCOMPÉTENCES SYNCHRO\n• Soif de néant (無への渇望, école Arts sombres, déclenchée par une compétence Ténèbres) : l'effet change si Exdeath a des [Cœurs malveillants] (邪悪な心) :\n  – sans : 3 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et temps d'attente d'Exdeath réduit d'1 tour ;\n  – avec : 8 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et consomme 1 Cœur malveillant.\n• Convoitise maléfique (邪悪なる渇求, école Magie noire, déclenchée par une compétence Ténèbres) : l'effet change selon l'état [Ambition sans fond] :\n  – sans : 3 attaques magiques Ténèbres + non-élémentaire sur un ennemi, et temps d'attente d'Exdeath réduit d'1 tour ;\n  – avec : une attaque magique Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nATTAQUE SUPPLÉMENTAIRE : DOMINATION DU NÉANT (無の支配)\n• Les 3 prochaines jauges ATB d'Exdeath se remplissent instantanément.\n• Exdeath n'a aucun temps d'attente pendant 3 tours.\n• Exdeath reçoit 3 Cœurs malveillants.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 3).\n\nÀ VÉRIFIER : les niveaux 3 sont sans doute ceux atteints au niveau d'entraînement actuel (3 sur 5)."
+    },
+    {
+     "id": "c-grand-croix-ultime",
+     "type": "究極",
+     "categorie": "magique",
+     "nomJP": "究極グランドクロス",
+     "nomFR": "Grand-croix ultime",
+     "elements": [
+      "tenebres",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/exdeath/grand-croix-ultime.webp",
+     "effet": "Réservée à Exdeath. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques puissantes magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi, avec plafond de dégâts +1 niveau.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet fort).\n• Pendant un temps : imprégnation renforcée [重式] (effet moyen) Ténèbres ou Sacré, selon l'élément de la capacité.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres ou Sacré poussée à l'extrême (+20 %).\n• Temps d'attente des attaques magiques réduit de 10 %.\n• Quand la barrière de réduction de dégâts d'Exdeath est consommée : attaque supplémentaire [Frappe du cœur – Exdeath] (2 fois max).\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives d'Exdeath (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres ou Sacré se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max d'Exdeath +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – EXDEATH (心撃・エクスデス)\n• 2 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet fort).\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Double trou Kai (ダブルホール改, école Arts sombres), remplace Double trou (5 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré, sur un ennemi) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Grand-croix Kai (グランドクロス改, école Magie noire), remplace Grand-croix (4 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré, sur un ennemi, et brièvement, résistance Ténèbres et Sacré −1 niveau) : même effet, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
    ]
   }
