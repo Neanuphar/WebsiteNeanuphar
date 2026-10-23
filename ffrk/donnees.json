@@ -1,6 +1,6 @@
 {
- "revision": 45,
- "maj": "2026-10-23T05:07:43.000Z",
+ "revision": 46,
+ "maj": "2026-10-23T05:15:25.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -5979,6 +5979,299 @@
      "elements": [],
      "image": "images/gogo-vi/eveil-imitation-de-tous.webp",
      "effet": "Réservée à Gogo (VI). Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : attaque, magie et esprit de toute l'équipe augmentés (effet moyen).\n• Hâte, et temps d'attente réduit de 2 tours.\n• Pendant un temps : plafond de dégâts de Gogo +1 niveau.\n• Active le mode Protéiforme II, le mode D-Éveil Magie noire I [Gogo] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL MAGIE NOIRE I (avant la Dual Shift)\n• Boost des compétences Magie noire, effet max : moyen.\n• Les compétences Magie noire se lancent 1 fois de plus.\n• Temps d'attente des compétences Magie noire réduit.\n\nDUAL SHIFT\n• Fait passer Gogo en mode D-Éveil Magie noire II.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL MAGIE NOIRE II (après la Dual Shift)\n• Boost des compétences Magie noire, effet max : moyen.\n• Les compétences Magie noire n'ont plus de temps d'attente.\n• Chaque compétence Magie noire utilisée : pendant un temps, mode [D Imitation experte].\n\nMODE D IMITATION EXPERTE (D熟練のものまねモード)\n• Dégâts des imitations de Gogo augmentés (effet fort).\n• Chaque fois qu'un autre allié utilise une compétence Feu, Glace, Vent ou Terre : attaque supplémentaire [D Imitation – Renforcement].\n• Après 6 déclenchements, le mode prend fin.\n\nMODE PROTÉIFORME II (へんげんじざいモードII)\n• Si Gogo utilise une compétence Feu, Glace, Vent ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : D IMITATION – RENFORCEMENT (Dものまね・強化)\n• Dégâts des compétences Feu, Glace, Vent ou Terre de l'allié qui vient d'en utiliser une augmentés pendant 1 tour (effet moyen), et son temps d'attente réduit d'1 tour.\n• Gogo imite la dernière action de cet allié (sauf certaines).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Magie noire de Gogo +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Magie noire I et II [Gogo] et le mode Éveil Magie noire.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Gogo augmentées (niv. 1).\n• Barrière de réduction de dégâts sur Gogo, 1 fois (niv. 1), débloquée au niveau d'entraînement 6.\n\nÀ VÉRIFIER : la Hâte et la réduction de 2 tours valent a priori pour toute l'équipe."
+    }
+   ]
+  },
+  {
+   "id": "umaro",
+   "nom": "Umaro",
+   "nomJP": "ウーマロ",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "glace"
+   ],
+   "sprite": "images/umaro/sprite.png",
+   "capacites": [
+    {
+     "id": "c-charge-de-colere",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "いかりのたいあたり",
+     "nomFR": "Charge de colère",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/umaro/charge-de-colere.webp",
+     "effet": "Réservée à Umaro.\n\n• 2 attaques physiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-raclee-fracassante",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "ぼこすかどっかーん",
+     "nomFR": "Raclée fracassante",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/umaro/raclee-fracassante.webp",
+     "effet": "Réservée à Umaro. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Glace.\n• Pendant un temps : mode Éveil Glace, et plafond de dégâts +1 niveau.\n• Furie de compétences (アビリティバーサク).\n• Active le mode Explosion de colère.\n\nMODE ÉVEIL GLACE (氷覚醒モード)\n• Compétences Glace utilisables à l'infini.\n• Boost des compétences Glace, effet max : moyen.\n• Les compétences Glace se lancent 1 fois de plus.\n\nMODE EXPLOSION DE COLÈRE (いかりばくはつモード)\n• Temps d'attente d'Umaro réduit.\n• Pendant un temps : attaque Glace d'Umaro +3 niveaux.\n• Après 5 compétences Glace utilisées : attaque supplémentaire [Balayage], puis fin du mode.\n\nATTAQUE SUPPLÉMENTAIRE : BALAYAGE (なぎたおす)\n• Attaque physique Glace + non-élémentaire sur tous les ennemis, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'effet exact de la Furie de compétences (アビリティバーサク)."
+    },
+    {
+     "id": "c-frappe-du-blizzard",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "ふぶきのいちげき",
+     "nomFR": "Frappe du blizzard",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/umaro/frappe-du-blizzard.webp",
+     "effet": "Réservée à Umaro. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Glace + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Glace renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau, Furie de compétences (アビリティバーサク), et mode [Vous êtes mes amis].\n• Si Mog est dans l'équipe : Umaro reçoit 1 Enseignement du chef (親分の教え).\n• Toutes les 3 Grande avalanche utilisées : attaque supplémentaire [Coup glacial].\n\nCOMPÉTENCES SYNCHRO\n• Vague de froid (かんぱ, école Moine, Glace) : attaque physique Glace + non-élémentaire qui peut dépasser le plafond de dégâts ; tant que le mode [Vous êtes mes amis] dure, Umaro reçoit 1 Enseignement du chef (2 max) ; après 5 utilisations, mode Gloutonnerie de cerises jaunes.\n• Grande avalanche (おおなだれ, école Moine, Glace) : attaque physique Glace + non-élémentaire qui peut dépasser le plafond de dégâts.\n\nMODE [VOUS ÊTES MES AMIS] (あんたたちの仲間モード)\n• Pendant le mode Synchro, après 2 compétences Synchro utilisées : selon le nombre d'Enseignements du chef (0, 1 ou 2), passe en mode Yéti, Super yéti ou Yéti suprême, puis le mode prend fin.\n\nMODE YÉTI\n• Pendant 2 tours : taux de critique à 50 %.\n• Temps d'attente réduit de 2 tours.\n• Pendant 2 tours : les compétences Glace se lancent 1 fois de plus.\n\nMODE SUPER YÉTI\n• Pendant 3 tours : taux de critique à 75 %.\n• Temps d'attente réduit de 3 tours.\n• Pendant 3 tours : les compétences Glace se lancent 1 fois de plus.\n\nMODE YÉTI SUPRÊME\n• Pendant 3 tours : taux de critique à 100 %.\n• Temps d'attente réduit de 3 tours.\n• Pendant 3 tours : les compétences Glace se lancent 1 fois de plus.\n\nMODE GLOUTONNERIE DE CERISES JAUNES (イエローチェリー爆食)\n• Pendant le mode Synchro : défense réduite (effet fort), attaque augmentée (effet extrême), taux de critique à 100 % et dégâts critiques augmentés.\n\nATTAQUE SUPPLÉMENTAIRE : COUP GLACIAL (ごっかんのいちげき)\n• Attaque physique Glace + non-élémentaire qui peut dépasser le plafond de dégâts.\n\nEFFET FF VI\n• Au moins 2 alliés de FF VI en vie : tant que le mode [Vous êtes mes amis] dure, Umaro reçoit 1 Enseignement du chef (2 max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2."
+    },
+    {
+     "id": "c-majeste-divine-umaro",
+     "type": "O神技",
+     "categorie": "physique",
+     "nomJP": "神威・ウーマロ",
+     "nomFR": "Majesté divine – Umaro",
+     "elements": [
+      "glace"
+     ],
+     "image": "images/umaro/majeste-divine-umaro.webp",
+     "effet": "Réservée à Umaro. Utilisable 2 fois.\n\nATTAQUE\n• 7 attaques physiques Glace sur un ennemi, dont l'effet dépend des conditions (plus bas).\n• Puis 3 attaques physiques Glace qui ignorent la défense et peuvent dépasser le plafond de dégâts.\n\nEFFET SELON LE NOMBRE DE COMPÉTENCES GLACE ÉQUIPÉES DANS TOUTE L'ÉQUIPE\n• 2 ou moins : plafond de dégâts +1 niveau.\n• 3 ou 4 : plafond +2 niveaux, et plus puissantes.\n• 5 ou plus : plafond +4 niveaux, et plus puissantes.\n• 5 ou plus, et au moins 2 alliés imprégnés de Glace : plafond +5 niveaux, et plus puissantes.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2.\n\nÀ VÉRIFIER : le sens du type O神技."
+    },
+    {
+     "id": "c-cerise-jaune-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極イエローチェリー",
+     "nomFR": "Cerise jaune ultime",
+     "elements": [
+      "glace",
+      "neutre"
+     ],
+     "image": "images/umaro/cerise-jaune-ultime.webp",
+     "effet": "Réservée à Umaro. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Glace + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Glace renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n• Barrière de réduction des dégâts sur Umaro, 1 fois (effet très faible).\n\nMODE ULTIME – CŒUR\n• Imprégnation Glace poussée à l'extrême (+20 %).\n• Temps d'attente des attaques physiques réduit de 10 %.\n• Quand une barrière de réduction des dégâts d'Umaro est consommée : attaque supplémentaire [Frappe du cœur – Umaro] (5 fois max).\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives d'Umaro (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Glace se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max d'Umaro +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – UMARO (心撃・ウーマロ)\n• Temps d'attente de ses compétences Glace réduit d'1 tour.\n• Sa prochaine jauge ATB se remplit instantanément (1 fois).\n• Barrière de réduction des dégâts sur Umaro, 1 fois (effet très faible).\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Charge de rage Kai (げきどのたいあたり改, école Moine), remplace Charge de rage (6 attaques physiques Glace sur un ennemi) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Blizzard Kai (ふぶき改, école Moine), remplace Blizzard (attaque physique Glace qui peut dépasser le plafond de dégâts) : même attaque, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "kefka",
+   "nom": "Kefka",
+   "nomJP": "ケフカ",
+   "serie": "VI",
+   "categorie": "magique",
+   "elements": [
+    "tenebres",
+    "poison",
+    "feu",
+    "glace",
+    "foudre"
+   ],
+   "sprite": "images/kefka/sprite.png",
+   "capacites": [
+    {
+     "id": "c-magie-palpitante",
+     "type": "初期",
+     "categorie": "magique",
+     "nomJP": "どきどきマジック",
+     "nomFR": "Magie palpitante",
+     "elements": [
+      "feu",
+      "glace",
+      "foudre"
+     ],
+     "image": "images/kefka/magie-palpitante.webp",
+     "effet": "Réservée à Kefka.\n\n• Lance au hasard Brasier (ファイラ), Glacier (ブリザラ) ou Foudre+ (サンダラ) sur un ennemi.\n\nÀ VÉRIFIER : les noms français des sorts de niveau 2 (mêmes noms que pour Tellah)."
+    },
+    {
+     "id": "c-ailes-de-la-destruction",
+     "type": "専用",
+     "categorie": "magique",
+     "nomJP": "はかいのつばさ",
+     "nomFR": "Ailes de la destruction",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/kefka/ailes-de-la-destruction.webp",
+     "effet": "Réservée à Kefka.\n\n• 3 attaques magiques non-élémentaires sur tous les ennemis.\n• Chance moyenne d'infliger Cécité (暗闇) et Paralysie (麻痺)."
+    },
+    {
+     "id": "c-ambition-cachee",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "隠された野望",
+     "nomFR": "Ambition cachée",
+     "elements": [],
+     "image": "images/kefka/ambition-cachee.webp",
+     "effet": "Réservée à Kefka. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Temps d'attente de Kefka réduit de 3 tours.\n• Remplit 1 segment de la jauge de capacités spéciales de Kefka.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-battement-d-ailes-de-l-effondrement",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "ほうかいのはばたき",
+     "nomFR": "Battement d'ailes de l'effondrement",
+     "elements": [
+      "tenebres",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/kefka/battement-d-ailes-de-l-effondrement.webp",
+     "effet": "Réservée à Kefka. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Ténèbres + Poison + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Pendant un temps : mode Éveil Arts sombres, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Arts sombres utilisées : attaque supplémentaire [Ricanement du bouffon].\n\nMODE ÉVEIL ARTS SOMBRES (暗黒覚醒モード)\n• Compétences Arts sombres utilisables à l'infini.\n• Boost des compétences Arts sombres, effet max : moyen.\n• Les compétences Arts sombres se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : RICANEMENT DU BOUFFON (道化の嘲笑)\n• 8 attaques magiques Ténèbres + Poison + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-majeste-divine-kefka-tenebres",
+     "type": "O神技",
+     "categorie": "magique",
+     "nomJP": "神威・ケフカ闇",
+     "nomFR": "Majesté divine – Kefka Ténèbres",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/kefka/majeste-divine-kefka-tenebres.webp",
+     "effet": "Réservée à Kefka. Utilisable 2 fois.\n\nATTAQUE\n• 7 attaques magiques Ténèbres sur un ennemi, dont l'effet dépend des conditions (plus bas).\n• Puis 3 attaques magiques Ténèbres qui ignorent la défense magique et peuvent dépasser le plafond de dégâts.\n\nEFFET SELON LE NOMBRE DE COMPÉTENCES TÉNÈBRES ÉQUIPÉES DANS TOUTE L'ÉQUIPE\n• 2 ou moins : plafond de dégâts +1 niveau.\n• 3 ou 4 : plafond +2 niveaux, et plus puissantes.\n• 5 ou plus : plafond +4 niveaux, et plus puissantes.\n• 5 ou plus, et au moins 2 alliés imprégnés de Ténèbres : plafond +5 niveaux, et plus puissantes.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2.\n\nÀ VÉRIFIER : le sens du type O神技."
+    },
+    {
+     "id": "c-ricanement-du-bouffon-grondement",
+     "type": "A神技",
+     "categorie": "magique",
+     "nomJP": "轟・道化の嘲笑",
+     "nomFR": "Ricanement du bouffon – Grondement",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/kefka/ricanement-du-bouffon-grondement.webp",
+     "effet": "Réservée à Kefka. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 attaques magiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accélération [Kefka Ténèbres].\n• La prochaine jauge ATB de Kefka se remplit instantanément (1 fois).\n\nMODE ACCÉLÉRATION [KEFKA TÉNÈBRES] (アクセルモード【ケフカ闇】)\n• Boost des compétences Ténèbres, effet max : fort.\n• Temps d'attente des attaques Ténèbres réduit.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Kefka réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-ricanement-de-la-destruction-radieuse",
+     "type": "C神技",
+     "categorie": "magique",
+     "nomJP": "耀光破壊の嘲笑",
+     "nomFR": "Ricanement de la destruction radieuse",
+     "elements": [
+      "tenebres",
+      "poison",
+      "neutre"
+     ],
+     "image": "images/kefka/ricanement-de-la-destruction-radieuse.webp",
+     "effet": "Réservée à Kefka. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques magiques puissantes Ténèbres + Poison + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau et mode Cristal.\n\nMODE CRISTAL (クリスタルモード)\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n• Les compétences Ténèbres ne décomptent pas leur nombre d'utilisations.\n• Les attaques percent la défense et la défense magique (effet moyen).\n• Après 2 utilisations de la Force du cristal : attaque supplémentaire [Frappe radieuse – Kefka Ténèbres] (1 fois max).\n\nFORCE DU CRISTAL I ET II (クリスタルフォース)\n• Sans temps d'attente : attaque magique spéciale Ténèbres + Poison + non-élémentaire sur un ennemi, avec vrai plafond de dégâts +1 niveau.\n• Pendant 2 tours : plafond de dégâts de Kefka +1 niveau.\n• Dégâts des attaques magiques de Kefka augmentés pendant 2 tours (effet moyen).\n• Pendant 2 tours : les attaques percent la défense et la défense magique (effet fort).\n• Sa prochaine jauge ATB se remplit plus vite (1 fois).\n• La Force du cristal III devient utilisable après 3 actions.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE RADIEUSE – KEFKA TÉNÈBRES (光撃・ケフカ闇)\n• 8 attaques magiques Ténèbres + Poison + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet de la Force du cristal III n'est pas décrit."
+    }
+   ]
+  },
+  {
+   "id": "leo",
+   "nom": "Général Leo",
+   "nomJP": "レオ将軍",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "terre",
+    "sacre"
+   ],
+   "sprite": "images/leo/sprite.png",
+   "capacites": [
+    {
+     "id": "c-chevalerie",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "騎士道",
+     "nomFR": "Chevalerie",
+     "elements": [],
+     "image": "images/leo/chevalerie.webp",
+     "effet": "Réservée au Général Leo.\n\n• Pendant un temps : défense du Général Leo augmentée (effet moyen)."
+    },
+    {
+     "id": "c-choc-imperial",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "ショック・インペリアル",
+     "nomFR": "Choc impérial",
+     "elements": [
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/leo/choc-imperial.webp",
+     "effet": "Réservée au Général Leo.\n\nATTAQUE\n• 10 attaques physiques Terre + Sacré sur un ennemi.\n• Pendant un temps : attaque (effet moyen) et défense (effet faible) de toute l'équipe augmentées.\n• Pendant un temps : dégâts des compétences Chevalier du Général Leo augmentés (effet moyen).\n• Pendant un temps : chaque compétence Chevalier utilisée déclenche l'attaque supplémentaire [Maîtrise totale de l'épée] (剣技皆伝) : 4 attaques physiques Terre + Sacré + non-élémentaire sur un ennemi.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-eclairs-enchaines-general-leo",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・レオ将軍",
+     "nomFR": "Éclairs enchaînés – Général Leo",
+     "elements": [],
+     "image": "images/leo/eclairs-enchaines-general-leo.webp",
+     "effet": "Réservée au Général Leo. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : temps d'attente des compétences Chevalier du Général Leo réduit.\n• Sa prochaine jauge ATB se remplit instantanément (1 fois).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre du Général Leo augmentée d'un niveau, débloquée au niveau d'entraînement 5.\n• Barrière de réduction des dégâts sur le Général Leo, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-choc-supreme",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ショック・極",
+     "nomFR": "Choc suprême",
+     "elements": [
+      "terre",
+      "sacre",
+      "neutre"
+     ],
+     "image": "images/leo/choc-supreme.webp",
+     "effet": "Réservée au Général Leo. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Général Leo].\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Plafond de dégâts +1 niveau.\n\n2E ACTIVATION : CHOC SUPRÊME\n• 20 attaques physiques Terre + Sacré + non-élémentaire sur un ennemi.\n• Puis une attaque physique Terre + Sacré + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – GÉNÉRAL LEO]\n• Plus le Général Leo inflige de dégâts pendant cet état, plus Choc suprême devient puissant et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques du Général Leo augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    }
+   ]
+  },
+  {
+   "id": "ultros",
+   "nom": "Ultros",
+   "nomJP": "オルトロス",
+   "serie": "VI",
+   "categorie": "mixte",
+   "elements": [
+    "poison"
+   ],
+   "sprite": "images/ultros/sprite.png",
+   "capacites": [
+    {
+     "id": "c-encre",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "すみ",
+     "nomFR": "Encre",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/ultros/encre.webp",
+     "effet": "Réservée à Ultros.\n\n• Attaque physique à distance non-élémentaire sur un ennemi.\n• Faible chance d'infliger Cécité (暗闇)."
+    },
+    {
+     "id": "c-super-armure-ultros",
+     "type": "LB閃",
+     "categorie": "soutien",
+     "nomJP": "超装【オルトロス】",
+     "nomFR": "Super-armure [Ultros]",
+     "elements": [
+      "poison"
+     ],
+     "image": "images/ultros/super-armure-ultros.webp",
+     "effet": "Réservée à Ultros. Limit Break, utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : temps d'attente de toute l'équipe réduit d'1 tour.\n• Pendant un temps, selon les statistiques d'Ultros : dégâts fatals (フェイタルダメージ) ou dégâts de sorcellerie (ソーサリーダメージ) des alliés imprégnés de Poison augmentés de 15 %.\n• La prochaine jauge ATB d'Ultros se remplit instantanément (1 fois).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Barrière de réduction des dégâts sur toute l'équipe, 1 fois, débloquée au niveau d'entraînement 5.\n\nÀ VÉRIFIER : le nom « Super-armure » (超装)."
+    },
+    {
+     "id": "c-majeste-divine-ultros",
+     "type": "O神技",
+     "categorie": "physique",
+     "nomJP": "神威・オルトロス",
+     "nomFR": "Majesté divine – Ultros",
+     "elements": [
+      "poison"
+     ],
+     "image": "images/ultros/majeste-divine-ultros.webp",
+     "effet": "Réservée à Ultros. Utilisable 2 fois.\n\nATTAQUE\n• 7 attaques Poison sur un ennemi, physiques à distance ou magiques selon les statistiques d'Ultros, dont l'effet dépend des conditions (plus bas).\n• Puis 3 attaques Poison du même type, qui ignorent la défense (ou la défense magique) et peuvent dépasser le plafond de dégâts.\n\nEFFET SELON LE NOMBRE DE COMPÉTENCES POISON ÉQUIPÉES DANS TOUTE L'ÉQUIPE\n• 2 ou moins : plafond de dégâts +1 niveau.\n• 3 ou 4 : plafond +2 niveaux, et plus puissantes.\n• 5 ou plus : plafond +4 niveaux, et plus puissantes.\n• 5 ou plus, et au moins 2 héroïnes dans l'équipe : plafond +5 niveaux, et plus puissantes ; à la fin de la capacité, les héroïnes n'ont aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2.\n\nÀ VÉRIFIER : le sens du type O神技."
     }
    ]
   }
