@@ -1,6 +1,6 @@
 {
- "revision": 44,
- "maj": "2026-10-23T04:59:47.000Z",
+ "revision": 45,
+ "maj": "2026-10-23T05:07:43.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -5537,6 +5537,448 @@
      ],
      "image": "images/exdeath/grand-croix-ultime.webp",
      "effet": "Réservée à Exdeath. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques puissantes magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi, avec plafond de dégâts +1 niveau.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet fort).\n• Pendant un temps : imprégnation renforcée [重式] (effet moyen) Ténèbres ou Sacré, selon l'élément de la capacité.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres ou Sacré poussée à l'extrême (+20 %).\n• Temps d'attente des attaques magiques réduit de 10 %.\n• Quand la barrière de réduction de dégâts d'Exdeath est consommée : attaque supplémentaire [Frappe du cœur – Exdeath] (2 fois max).\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives d'Exdeath (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres ou Sacré se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max d'Exdeath +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – EXDEATH (心撃・エクスデス)\n• 2 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré + non-élémentaire, sur un ennemi.\n• Barrière de réduction de dégâts pour toute l'équipe, 1 fois (effet fort).\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Double trou Kai (ダブルホール改, école Arts sombres), remplace Double trou (5 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré, sur un ennemi) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Grand-croix Kai (グランドクロス改, école Magie noire), remplace Grand-croix (4 attaques magiques ou de Magie blanche selon les statistiques d'Exdeath, Ténèbres + Sacré, sur un ennemi, et brièvement, résistance Ténèbres et Sacré −1 niveau) : même effet, avec un temps d'attente plus court.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "edgar",
+   "nom": "Edgar",
+   "nomJP": "エドガー",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "poison",
+    "feu",
+    "foudre"
+   ],
+   "sprite": "images/edgar/sprite.png",
+   "capacites": [
+    {
+     "id": "c-arbalete-automatique",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "オートボウガン",
+     "nomFR": "Arbalète automatique",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/edgar/arbalete-automatique.webp",
+     "effet": "Réservée à Edgar.\n\n• Attaque physique à distance non-élémentaire sur tous les ennemis."
+    },
+    {
+     "id": "c-bravo-figaro",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "ブラボー、フィガロ！",
+     "nomFR": "Bravo, Figaro !",
+     "elements": [
+      "poison",
+      "feu",
+      "foudre"
+     ],
+     "image": "images/edgar/bravo-figaro.webp",
+     "effet": "Réservée à Edgar. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques physiques à distance ultra-puissantes Poison + Feu + Foudre sur un ennemi.\n• Puis une attaque physique à distance Poison + Feu + Foudre qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    }
+   ]
+  },
+  {
+   "id": "sabin",
+   "nom": "Sabin",
+   "nomJP": "マッシュ",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/sabin/sprite.png",
+   "capacites": [
+    {
+     "id": "c-poing-explosif",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "爆裂拳",
+     "nomFR": "Poing explosif",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/sabin/poing-explosif.webp",
+     "effet": "Réservée à Sabin.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-onde-du-vide",
+     "type": "専用",
+     "categorie": "physique",
+     "nomJP": "真空波",
+     "nomFR": "Onde du vide",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/sabin/onde-du-vide.webp",
+     "effet": "Réservée à Sabin.\n\n• 3 attaques physiques non-élémentaires sur tous les ennemis.\n• Pendant un temps : attaque de toute l'équipe augmentée (effet moyen)."
+    },
+    {
+     "id": "c-danse-du-phenix-infernal",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "煉獄・鳳凰の舞",
+     "nomFR": "Danse du phénix infernal",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/sabin/danse-du-phenix-infernal.webp",
+     "effet": "Réservée à Sabin.\n\nATTAQUE\n• 7 à 10 attaques physiques puissantes Feu + non-élémentaire sur un ennemi : plus l'attaque de Sabin est élevée, plus il y en a.\n• Pendant un temps : imprégnation Feu, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Canon de flammes (フレイムキャノン, école Moine) : 4 attaques physiques Feu + non-élémentaire sur un ennemi ; pendant un temps, chaque utilisation augmente l'attaque et la défense de Sabin (effet très faible, 8 fois max).\n• Frappe de feu (ファイアストライク, école Moine) : 2 attaques physiques Feu + non-élémentaire sur tous les ennemis.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-poing-vital",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "活命拳",
+     "nomFR": "Poing vital",
+     "elements": [],
+     "image": "images/sabin/poing-vital.webp",
+     "effet": "Réservée à Sabin. Utilisable 3 fois.\n\n• Sans temps d'attente.\n• Pendant un temps : temps d'attente des compétences Moine de Sabin réduit.\n• Pendant un temps : boost des compétences Moine, effet max : moyen.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    }
+   ]
+  },
+  {
+   "id": "shadow",
+   "nom": "Shadow",
+   "nomJP": "シャドウ",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "tenebres"
+   ],
+   "sprite": "images/shadow/sprite.png",
+   "capacites": [
+    {
+     "id": "c-lancer-de-shuriken",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "手裏剣なげ",
+     "nomFR": "Lancer de shuriken",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/shadow/lancer-de-shuriken.webp",
+     "effet": "Réservée à Shadow.\n\n• Attaque physique à distance non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-croc-sauvage",
+     "type": "専用",
+     "categorie": "physique",
+     "nomJP": "ワイルドファング",
+     "nomFR": "Croc sauvage",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/shadow/croc-sauvage.webp",
+     "effet": "Réservée à Shadow.\n\n• 4 attaques physiques à distance non-élémentaires sur un ennemi.\n• Chance moyenne d'infliger des dégâts continus (継続ダメージ)."
+    },
+    {
+     "id": "c-passe-abandonne",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "捨て去りし過去",
+     "nomFR": "Passé abandonné",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/shadow/passe-abandonne.webp",
+     "effet": "Réservée à Shadow.\n\nATTAQUE\n• Sans temps d'attente : 10 attaques physiques Ténèbres + non-élémentaire sur un ennemi pris au hasard.\n• Pendant un temps : après une attaque Ténèbres, le temps d'attente du tour suivant est réduit.\n• Pendant un temps, seulement si Shadow a des Images (分身) : chaque compétence Ninja utilisée déclenche l'attaque supplémentaire [Lame rémanente] (残影刃) : jusqu'à 2 attaques physiques Ténèbres + non-élémentaire sur un ennemi, selon le nombre d'Images.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-sans-ombre-ni-trace",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "無影無踪",
+     "nomFR": "Sans ombre ni trace",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/shadow/sans-ombre-ni-trace.webp",
+     "effet": "Réservée à Shadow. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : mode Éveil Ténèbres, et plafond de dégâts +1 niveau.\n• Les compétences Ténèbres n'ont plus de temps d'attente.\n• Toutes les 2 compétences Ténèbres utilisées : dégâts des compétences Ténèbres de Shadow augmentés pendant 1 tour (effet moyen).\n\nMODE ÉVEIL TÉNÈBRES (闇覚醒モード)\n• Compétences Ténèbres utilisables à l'infini.\n• Boost des compétences Ténèbres, effet max : moyen.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lame-remanente-grondement",
+     "type": "A神技",
+     "categorie": "physique",
+     "nomJP": "轟・残影刃",
+     "nomFR": "Lame rémanente – Grondement",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/shadow/lame-remanente-grondement.webp",
+     "effet": "Réservée à Shadow. Utilisable 1 fois.\n\nATTAQUE\n• Sans temps d'attente : 5 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode Accélération [Shadow].\n• La prochaine jauge ATB de Shadow se remplit instantanément (1 fois).\n\nMODE ACCÉLÉRATION [SHADOW] (アクセルモード)\n• Boost des compétences Ténèbres, effet max : fort.\n• Chaque compétence Ténèbres utilisée : attaque supplémentaire [Frappe grondante – Shadow].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE GRONDANTE – SHADOW (轟撃・シャドウ)\n• 6 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Brièvement : attaque Ténèbres de Shadow +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Shadow réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-majeste-divine-shadow",
+     "type": "O神技",
+     "categorie": "physique",
+     "nomJP": "神威・シャドウ",
+     "nomFR": "Majesté divine – Shadow",
+     "elements": [
+      "tenebres"
+     ],
+     "image": "images/shadow/majeste-divine-shadow.webp",
+     "effet": "Réservée à Shadow. Utilisable 2 fois.\n\nATTAQUE\n• 7 attaques physiques Ténèbres sur un ennemi, dont l'effet dépend des conditions (plus bas).\n• Puis 3 attaques physiques Ténèbres qui ignorent la défense et peuvent dépasser le plafond de dégâts.\n\nEFFET SELON LE NOMBRE DE COMPÉTENCES TÉNÈBRES ÉQUIPÉES DANS TOUTE L'ÉQUIPE\n• 2 ou moins : plafond de dégâts +1 niveau.\n• 3 ou 4 : plafond +2 niveaux, et plus puissantes.\n• 5 ou plus : plafond +4 niveaux, et plus puissantes.\n• 5 ou plus, et au moins 2 alliés imprégnés de Ténèbres : plafond +5 niveaux, et plus puissantes.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2.\n\nÀ VÉRIFIER : le sens du type O神技."
+    },
+    {
+     "id": "c-evasion-des-tenebres-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極闇遁",
+     "nomFR": "Évasion des ténèbres ultime",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/shadow/evasion-des-tenebres-ultime.webp",
+     "effet": "Réservée à Shadow. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Ténèbres poussée à l'extrême (+20 %).\n• Chaque compétence Ténèbres utilisée : attaque supplémentaire [Frappe du cœur – Shadow] (3 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Shadow (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ténèbres se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Shadow +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – SHADOW (心撃・シャドウ)\n• Dégâts des compétences Ténèbres de Shadow augmentés pendant 1 tour (effet moyen).\n• Temps d'attente de ses compétences Ténèbres réduit d'1 tour.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Croc de l'ombre Kai (シャドウファング改, école Ninja), remplace Croc de l'ombre (4 attaques physiques à distance Ténèbres infaillibles sur un ennemi, avec un temps d'attente court, puis une attaque physique à distance Ténèbres infaillible qui ignore la défense) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Instant de l'ombre Kai (影ノ刻改, école Ninja), remplace Instant de l'ombre (3, 5 ou 7 attaques physiques Ténèbres sur un ennemi selon que Shadow a 1 ou 2 Images ou plus ; pendant un temps, Shadow peut cumuler les Images (2 max), et il reçoit 1 Image) : même effet ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "cyan",
+   "nom": "Cyan",
+   "nomJP": "カイエン",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [],
+   "sprite": "images/cyan/sprite.png",
+   "capacites": [
+    {
+     "id": "c-bushido-croc",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "必殺剣・牙",
+     "nomFR": "Bushido – Croc",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/cyan/bushido-croc.webp",
+     "effet": "Réservée à Cyan.\n\n• Attaque physique non-élémentaire sur un ennemi.\n\nÀ VÉRIFIER : 必殺剣 traduit « Bushido » (nom de la technique de Cyan dans la version anglaise)."
+    },
+    {
+     "id": "c-posture-de-la-flamme",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "炎焔の型",
+     "nomFR": "Posture de la flamme",
+     "elements": [
+      "feu"
+     ],
+     "image": "images/cyan/posture-de-la-flamme.webp",
+     "effet": "Réservée à Cyan. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Feu renforcée [重式].\n• Remplit 1 segment de la jauge de capacités spéciales de Cyan.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    }
+   ]
+  },
+  {
+   "id": "gau",
+   "nom": "Gau",
+   "nomJP": "ガウ",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "vent",
+    "foudre"
+   ],
+   "sprite": "images/gau/sprite.png",
+   "capacites": [
+    {
+     "id": "c-rage",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "あばれる！",
+     "nomFR": "Rage !",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/gau/rage.webp",
+     "effet": "Réservée à Gau.\n\n• Pendant 3 tours : Gau enchaîne les attaques physiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-liens-tisses-vent-de-gau",
+     "type": "LBLC",
+     "categorie": "physique",
+     "nomJP": "紡絆・ガウ風",
+     "nomFR": "Liens tissés – Vent de Gau",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/gau/liens-tisses-vent-de-gau.webp",
+     "effet": "Réservée à Gau. Limit Break, chaîne élémentaire (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne Vent (jusqu'à 150 chaînes). Si une chaîne Vent est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques physiques Vent + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : mode Chain Force [Gau Vent].\n• La prochaine jauge ATB de Gau se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques Vent.\n\nMODE CHAIN FORCE – GAU VENT (チェインフォースモード・ガウ風)\n• Toutes les 50 chaînes Vent : attaque supplémentaire [Guide du vent – Gau] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DU VENT – GAU (風の導・ガウ)\n• Attaque physique Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts ; plus puissante à chaque déclenchement.\n• Temps d'attente des compétences Vent de Gau réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de Gau réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
+     "id": "c-bond",
+     "type": "閃技",
+     "categorie": "physique",
+     "nomJP": "とびかかる",
+     "nomFR": "Bond",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/gau/bond.webp",
+     "effet": "Réservée à Gau. Utilisable 3 fois.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-grande-rage-de-l-enfant-sauvage",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "やせいじおおあばれ",
+     "nomFR": "Grande rage de l'enfant sauvage",
+     "elements": [
+      "vent",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/gau/grande-rage-de-l-enfant-sauvage.webp",
+     "effet": "Réservée à Gau. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Vent + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent.\n• Pendant un temps : mode Éveil de la bête, et plafond de dégâts +1 niveau.\n• Les compétences Vitesse physique ou Attaque physique n'ont plus de temps d'attente.\n\nMODE ÉVEIL DE LA BÊTE (獣覚醒モード)\n• Compétences Vitesse physique ou Attaque physique utilisables à l'infini.\n• Boost de ces compétences, effet max : moyen.\n• Ces compétences se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-rage-coupeur-x",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "あばれる：Xカッター",
+     "nomFR": "Rage : Coupeur X",
+     "elements": [
+      "vent",
+      "foudre",
+      "neutre"
+     ],
+     "image": "images/gau/rage-coupeur-x.webp",
+     "effet": "Réservée à Gau. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Vent + Foudre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, plafond de dégâts +1 niveau, Furie de compétences (アビリティバーサク), mode Double élément III et mode Enfant sauvage libre.\n\nCOMPÉTENCES SYNCHRO\n• Griffes déchaînées (あらぶるかぎづめ, école Vitesse physique, déclenchée par une compétence Vitesse physique ou Attaque physique) : l'effet change selon l'état [Éveil de la bête] (けもののめざめ) :\n  – sans l'état : 6 attaques physiques Vent + Foudre + non-élémentaire sur un ennemi, et tant que le mode Synchro dure, état [Droit vers la viande séchée] (ほしにく一直線) ;\n  – avec l'état : 10 attaques physiques Vent + Foudre + non-élémentaire sur un ennemi, avec un taux de critique de 100 %, et fin de l'état [Éveil de la bête].\n• Coup de grâce (とどめのいちげき, école Vitesse physique, déclenchée par une compétence Vitesse physique ou Attaque physique) : l'effet change selon l'état [Droit vers la viande séchée] :\n  – sans l'état : attaque physique Vent + Foudre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts, et tant que le mode Synchro dure, état [Éveil de la bête] ;\n  – avec l'état : pareil, Gau n'a aucun temps d'attente pendant 1 tour, et fin de l'état [Droit vers la viande séchée].\n\nMODE DOUBLE ÉLÉMENT III (ツインエレメントモードIII)\n• Si Gau utilise une compétence Vent ou Foudre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément.\n\nMODE ENFANT SAUVAGE LIBRE (自由な野生児モード)\n• Chaque compétence Vent ou Foudre utilisée augmente les dégâts des compétences de cet élément de Gau (3 paliers max, effet fort).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : l'effet exact de la Furie de compétences (アビリティバーサク)."
+    }
+   ]
+  },
+  {
+   "id": "setzer",
+   "nom": "Setzer",
+   "nomJP": "セッツァー",
+   "serie": "VI",
+   "categorie": "physique",
+   "elements": [
+    "tenebres"
+   ],
+   "sprite": "images/setzer/sprite.png",
+   "capacites": [
+    {
+     "id": "c-des",
+     "type": "初期",
+     "categorie": "",
+     "nomJP": "ダイス",
+     "nomFR": "Dés",
+     "elements": [],
+     "image": "images/setzer/des.webp",
+     "effet": "Réservée à Setzer.\n\n• Dégâts fixes sur un ennemi, dont la puissance est tirée au hasard (6 paliers max)."
+    },
+    {
+     "id": "c-chocobo-truque",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "イカサマチョコボ",
+     "nomFR": "Chocobo truqué",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/setzer/chocobo-truque.webp",
+     "effet": "Réservée à Setzer.\n\nATTAQUE\n• 10 attaques physiques à distance puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Pendant un temps : temps d'attente de Setzer réduit.\n• Toutes les 2 compétences Soutien physique ou Tireur utilisées : attaque supplémentaire [Pari au hasard] (ランダムベット), dont le nombre d'attaques est tiré au hasard.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-des-sanglants",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "ブラッディダイス",
+     "nomFR": "Dés sanglants",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/setzer/des-sanglants.webp",
+     "effet": "Réservée à Setzer. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Chaque Lancer de cartes utilisé : attaque supplémentaire [Dés de la fortune], plus forte selon le nombre d'alliés Tireurs en vie.\n• Si 3 alliés Tireurs ou plus sont en vie : tant que le mode Synchro dure, Setzer reçoit un [Objet truqué] (イカサマのアイテム).\n\nCOMPÉTENCES SYNCHRO\n• Lancer de cartes (カードスローイング, école Tireur, déclenchée par une compétence Ténèbres) : 6 attaques physiques à distance Ténèbres + non-élémentaire sur un ennemi, et temps d'attente de Setzer réduit d'1 tour.\n• Secret de la triche (イカサマの極意, école Spéciale, déclenchée par une compétence Ténèbres) : temps d'attente court ; l'effet change selon l'Objet truqué :\n  – sans : brièvement, attaque de tous les éléments de toute l'équipe +1 niveau ;\n  – avec : pareil, mais pendant un temps (plus long).\n\nATTAQUE SUPPLÉMENTAIRE : DÉS DE LA FORTUNE (天運のダイス)\n• 2 attaques physiques à distance sur un ennemi, qui infligent chacune 19 800, 39 600, 59 400, 79 200 ou 99 000 dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    }
+   ]
+  },
+  {
+   "id": "mog",
+   "nom": "Mog",
+   "nomJP": "モグ",
+   "serie": "VI",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/mog/sprite.png",
+   "capacites": [
+    {
+     "id": "c-danse-des-feuilles",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "木の葉乱舞",
+     "nomFR": "Danse des feuilles",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/mog/danse-des-feuilles.webp",
+     "effet": "Réservée à Mog.\n\n• Attaque physique non-élémentaire sur tous les ennemis."
+    },
+    {
+     "id": "c-harmonie-legendaire",
+     "type": "専用",
+     "categorie": "soutien",
+     "nomJP": "伝説のハーモニー",
+     "nomFR": "Harmonie légendaire",
+     "elements": [],
+     "image": "images/mog/harmonie-legendaire.webp",
+     "effet": "Réservée à Mog.\n\n• Pendant un temps : attaque et magie de tous les ennemis réduites (effet fort)."
+    }
+   ]
+  },
+  {
+   "id": "gogo-vi",
+   "nom": "Gogo (VI)",
+   "nomJP": "ゴゴ",
+   "serie": "VI",
+   "categorie": "soutien",
+   "elements": [],
+   "sprite": "images/gogo-vi/sprite.png",
+   "capacites": [
+    {
+     "id": "c-imitation",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "ものまね",
+     "nomFR": "Imitation",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/gogo-vi/imitation.webp",
+     "effet": "Réservée à Gogo (VI).\n\n• Imite une partie de la dernière action d'un allié ; en cas d'échec, attaque physique non-élémentaire sur un ennemi.\n• Remplit la jauge de capacités spéciales de Gogo (effet extrême)."
+    },
+    {
+     "id": "c-imitation-ultime-danse",
+     "type": "究極",
+     "categorie": "soutien",
+     "nomJP": "究極ものまね・おどる",
+     "nomFR": "Imitation ultime – Danse",
+     "elements": [],
+     "image": "images/gogo-vi/imitation-ultime-danse.webp",
+     "effet": "Réservée à Gogo (VI). Utilisable 1 fois. Étiquettes 対乾坤一擲 et 対ウェポンブレイク・魔.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : dégâts de toute l'équipe contre un point faible ou légèrement faible augmentés (effet moyen).\n• Pendant un temps : plafond de dégâts de Gogo +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n• Effet en plus selon le nombre d'alliés en Résonance du destin (天命の共鳴) encore en vie (plus bas).\n\nMODE ULTIME – CŒUR\n• Imprégnation Feu, Glace, Vent ou Terre poussée à l'extrême (+20 %).\n• Quand Gogo utilise une compétence Feu, Glace, Vent ou Terre : pendant un temps, imprégnation renforcée [重式] (effet moyen) de cet élément (1 fois max).\n• Chaque fois qu'un autre allié utilise une compétence Feu, Glace, Vent ou Terre : attaque supplémentaire [Frappe du cœur – Gogo] (3 fois max).\n• Temps d'attente des attaques physiques ou magiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• La compétence exclusive de Gogo (plus bas) passe en version « Kai » : plus puissante, et son utilisation ne décompte pas son nombre d'utilisations.\n• Les compétences Feu, Glace, Vent ou Terre se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Gogo +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nEFFET SELON LES ALLIÉS EN RÉSONANCE DU DESTIN EN VIE\n• 0 à 3 : brièvement, défense, défense magique et esprit de l'ennemi réduits (effet très fort).\n• 4 ou plus : pendant un temps, magie et esprit de toute l'équipe augmentés (effet moyen), défense et défense magique augmentées (effet faible), et Gogo passe en état [Identité inconnue] (正体不明).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – GOGO (心撃・ゴゴ)\n• Dégâts des compétences Feu, Glace, Vent ou Terre de l'allié qui vient d'en utiliser une augmentés pendant 1 tour (effet moyen).\n• Si Gogo est en état [Identité inconnue] : en plus, la prochaine jauge ATB de cet allié se remplit plus vite (1 fois).\n\nCOMPÉTENCE EXCLUSIVE RENFORCÉE (英雄専用アビリティ極化)\n• Imitation – Magie Kai (ものまね・まほう改, école Magie noire), remplace Imitation – Magie (5 attaques Feu + Glace + Vent + Terre + non-élémentaire sur un ennemi, physiques ou magiques selon les statistiques de Gogo) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Gogo augmentées (niv. 1).\n• Barrière de réduction de dégâts sur Gogo, 1 fois (niv. 1), débloquée au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le sens des étiquettes 対乾坤一擲 et 対ウェポンブレイク・魔."
+    },
+    {
+     "id": "c-eveil-imitation-de-tous",
+     "type": "D覚醒",
+     "categorie": "soutien",
+     "nomJP": "覚醒みんなのものまね",
+     "nomFR": "Éveil – Imitation de tous",
+     "elements": [],
+     "image": "images/gogo-vi/eveil-imitation-de-tous.webp",
+     "effet": "Réservée à Gogo (VI). Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : attaque, magie et esprit de toute l'équipe augmentés (effet moyen).\n• Hâte, et temps d'attente réduit de 2 tours.\n• Pendant un temps : plafond de dégâts de Gogo +1 niveau.\n• Active le mode Protéiforme II, le mode D-Éveil Magie noire I [Gogo] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL MAGIE NOIRE I (avant la Dual Shift)\n• Boost des compétences Magie noire, effet max : moyen.\n• Les compétences Magie noire se lancent 1 fois de plus.\n• Temps d'attente des compétences Magie noire réduit.\n\nDUAL SHIFT\n• Fait passer Gogo en mode D-Éveil Magie noire II.\n• Le mode II dure toujours 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL MAGIE NOIRE II (après la Dual Shift)\n• Boost des compétences Magie noire, effet max : moyen.\n• Les compétences Magie noire n'ont plus de temps d'attente.\n• Chaque compétence Magie noire utilisée : pendant un temps, mode [D Imitation experte].\n\nMODE D IMITATION EXPERTE (D熟練のものまねモード)\n• Dégâts des imitations de Gogo augmentés (effet fort).\n• Chaque fois qu'un autre allié utilise une compétence Feu, Glace, Vent ou Terre : attaque supplémentaire [D Imitation – Renforcement].\n• Après 6 déclenchements, le mode prend fin.\n\nMODE PROTÉIFORME II (へんげんじざいモードII)\n• Si Gogo utilise une compétence Feu, Glace, Vent ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : D IMITATION – RENFORCEMENT (Dものまね・強化)\n• Dégâts des compétences Feu, Glace, Vent ou Terre de l'allié qui vient d'en utiliser une augmentés pendant 1 tour (effet moyen), et son temps d'attente réduit d'1 tour.\n• Gogo imite la dernière action de cet allié (sauf certaines).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Magie noire de Gogo +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Magie noire I et II [Gogo] et le mode Éveil Magie noire.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques de Gogo augmentées (niv. 1).\n• Barrière de réduction de dégâts sur Gogo, 1 fois (niv. 1), débloquée au niveau d'entraînement 6.\n\nÀ VÉRIFIER : la Hâte et la réduction de 2 tours valent a priori pour toute l'équipe."
     }
    ]
   }
