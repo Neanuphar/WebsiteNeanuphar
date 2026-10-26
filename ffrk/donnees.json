@@ -1,6 +1,6 @@
 {
- "revision": 49,
- "maj": "2026-10-26T12:51:06.000Z",
+ "revision": 50,
+ "maj": "2026-10-26T12:58:12.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -6572,6 +6572,44 @@
    "sprite": "images/tifa/sprite.png",
    "capacites": [
     {
+     "id": "c-ruee-de-coups",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "掌打ラッシュ",
+     "nomFR": "Ruée de coups",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/tifa/ruee-de-coups.webp",
+     "effet": "Réservée à Tifa.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-flamme-roulante",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "ローリングブレイズ",
+     "nomFR": "Flamme roulante",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/flamme-roulante.webp",
+     "effet": "Réservée à Tifa.\n\nATTAQUE\n• 8 attaques physiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Terre de l'ennemi −2 niveaux.\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Ruée du faucon (ファルコンラッシュ, école Moine) : 4 attaques physiques Terre + non-élémentaire sur un ennemi, avec un temps d'attente court.\n• Flèche de Gaïa (ガイアアロー, école Moine) : attaque physique Terre + non-élémentaire sur un ennemi, avec un temps d'attente court ; pendant un temps, taux de critique de Tifa à 50 %.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-combinaison-meteore",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "メテオコンビネーション",
+     "nomFR": "Combinaison météore",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/combinaison-meteore.webp",
+     "effet": "Réservée à Tifa.\n\nATTAQUE\n• 10 attaques physiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre, attaque augmentée (effet moyen) et défense augmentée (effet faible).\n• Pendant un temps : Double Moine (モンクアビリティダブル).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : l'effet exact de la Double Moine (probablement : deux compétences Moine en une action)."
+    },
+    {
      "id": "c-aura-de-l-eruption-terrestre",
      "type": "閃技",
      "categorie": "soutien",
@@ -6597,6 +6635,18 @@
      "effet": "Réservée à Tifa. Utilisable 3 fois.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Terre de l'ennemi −1 niveau, et attaque Terre de Tifa +1 niveau.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
     },
     {
+     "id": "c-fracas-paume-broyeuse",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "破砕・掌打クラッシュ",
+     "nomFR": "Fracas – Paume broyeuse",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/tifa/fracas-paume-broyeuse.webp",
+     "effet": "Réservée à Tifa. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 5 attaques physiques ultra-puissantes Terre sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
      "id": "c-arts-meteores",
      "type": "覚醒",
      "categorie": "physique",
@@ -6610,6 +6660,19 @@
      "effet": "Réservée à Tifa. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre.\n• Pendant un temps : mode Éveil Moine, et plafond de dégâts +1 niveau.\n• Toutes les 3 compétences Moine utilisées : attaque supplémentaire [Broyeur de Gaïa].\n\nMODE ÉVEIL MOINE (モンク覚醒モード)\n• Compétences Moine utilisables à l'infini.\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : BROYEUR DE GAÏA (ガイアクラッシャー)\n• Attaque physique Terre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le 3e bonus d'entraînement est coupé sur la capture (repris du modèle habituel des 覚醒)."
     },
     {
+     "id": "c-saltos-enchaines",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "連続サマーソルト",
+     "nomFR": "Saltos enchaînés",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/saltos-enchaines.webp",
+     "effet": "Réservée à Tifa. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : attaque de Tifa augmentée (effet moyen), défense augmentée (effet faible), et imprégnation Terre renforcée [重式].\n• Pendant un temps : mode Éveil Crash platine, et plafond de dégâts +1 niveau.\n• Temps d'attente des compétences Moine réduit.\n• Attaque Terre de Tifa +2 niveaux.\n\nMODE ÉVEIL CRASH PLATINE (プラチナクラッシュ覚醒モード)\n• Compétences Moine utilisables à l'infini.\n• Boost des compétences Moine, effet max : moyen.\n• Chaque compétence Moine utilisée : attaque supplémentaire [Rock Drive].\n\nATTAQUE SUPPLÉMENTAIRE : ROCK DRIVE (ロックドライヴ)\n• 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
      "id": "c-combo-limite",
      "type": "S奥義",
      "categorie": "physique",
@@ -6621,6 +6684,411 @@
      ],
      "image": "images/tifa/combo-limite.webp",
      "effet": "Réservée à Tifa. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Tant que le mode Synchro dure : Tifa reçoit l'état Limite terrestre (アースリミット).\n• Toutes les 2 Brise-sol utilisées, tant que le mode Synchro dure : Tifa reçoit l'état Limite terrestre.\n\nCOMPÉTENCES SYNCHRO\n• Brise-sol (グランドブレイク, école Moine, déclenchée par une compétence Terre) : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Arts de charge (チャージアーツ, école Moine, déclenchée par une compétence Terre) : sans temps d'attente, dégâts des compétences Terre de Tifa augmentés pendant 2 tours (effet moyen). Si Tifa a l'état Limite terrestre : en plus, ses 2 prochaines jauges ATB se remplissent plus vite, et l'état prend fin.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-final-heaven",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ファイナルヘヴン",
+     "nomFR": "Final Heaven",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/final-heaven.webp",
+     "effet": "Réservée à Tifa. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Tifa].\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : FINAL HEAVEN\n• 20 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Puis une attaque physique Terre + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – TIFA]\n• Plus Tifa inflige de dégâts pendant cet état, plus Final Heaven devient puissant et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Tifa augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-saltos-eveilles",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒連続サマーソルト",
+     "nomFR": "Saltos enchaînés éveillés",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/saltos-eveilles.webp",
+     "effet": "Réservée à Tifa. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques puissantes Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式] et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Moine I [Tifa II] et la Résonance des souvenirs.\n\nMODE D-ÉVEIL MOINE I [TIFA II] (avant la Dual Shift)\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine se lancent 2 fois de plus.\n• Temps d'attente réduit.\n\nDUAL SHIFT\n• Fait passer Tifa en mode D-Éveil Moine II [Tifa II]. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL MOINE II [TIFA II] (après la Dual Shift)\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine n'ont plus de temps d'attente.\n• Chaque compétence Moine utilisée : attaque supplémentaire [D Aura de combat].\n\nATTAQUE SUPPLÉMENTAIRE : D AURA DE COMBAT (D闘気)\n• Pendant 3 tours : dégâts des compétences Moine de Tifa augmentés (effet moyen) et plafond de dégâts +1 niveau.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Moine de Tifa +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Moine I et II [Tifa II] et le mode Éveil Moine.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "aerith",
+   "nom": "Aerith",
+   "nomJP": "エアリス",
+   "serie": "VII",
+   "categorie": "soutien",
+   "elements": [
+    "sacre"
+   ],
+   "sprite": "images/aerith/sprite.png",
+   "capacites": [
+    {
+     "id": "c-sceau-du-mal",
+     "type": "初期",
+     "categorie": "soutien",
+     "nomJP": "邪気封印",
+     "nomFR": "Sceau du mal",
+     "elements": [],
+     "image": "images/aerith/sceau-du-mal.webp",
+     "effet": "Réservée à Aerith.\n\n• Forte chance d'infliger Stop et Mutisme à tous les ennemis."
+    },
+    {
+     "id": "c-pulsation-de-vie",
+     "type": "超必殺",
+     "categorie": "soutien",
+     "nomJP": "生命の鼓動",
+     "nomFR": "Pulsation de vie",
+     "elements": [],
+     "image": "images/aerith/pulsation-de-vie.webp",
+     "effet": "Réservée à Aerith.\n\n• Soin moyen de toute l'équipe.\n• Auto-Vie (リレイズ) sur toute l'équipe (PV au retour : moyen).\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-materia-blanche",
+     "type": "Burst",
+     "categorie": "magique",
+     "nomJP": "ホワイトマテリア",
+     "nomFR": "Materia blanche",
+     "elements": [
+      "sacre"
+     ],
+     "image": "images/aerith/materia-blanche.webp",
+     "effet": "Réservée à Aerith.\n\nATTAQUE\n• 5 attaques de Magie blanche Sacré sur tous les ennemis.\n• Gros soin de toute l'équipe.\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Mystère des Cetra (セトラの神秘, école Magie blanche) : soin énorme d'un allié, et pendant un temps son esprit augmente (effet moyen).\n• Prière offerte à la planète (星に捧ぐ祈り, école Magie blanche) : petit soin de toute l'équipe.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-eclairs-enchaines-aerith",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・エアリス",
+     "nomFR": "Éclairs enchaînés – Aerith",
+     "elements": [],
+     "image": "images/aerith/eclairs-enchaines-aerith.webp",
+     "effet": "Réservée à Aerith. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : attaque et esprit de toute l'équipe augmentés (effet moyen), défense augmentée (effet faible).\n• Temps d'attente de toute l'équipe réduit de 2 tours.\n• La prochaine jauge ATB d'Aerith se remplit plus vite (1 fois).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Statistiques d'Aerith augmentées, débloqué au niveau d'entraînement 5.\n• Barrière de réduction des dégâts sur Aerith, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-pulsation-de-la-planete",
+     "type": "覚醒",
+     "categorie": "soutien",
+     "nomJP": "星の鼓動",
+     "nomFR": "Pulsation de la planète",
+     "elements": [],
+     "image": "images/aerith/pulsation-de-la-planete.webp",
+     "effet": "Réservée à Aerith. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin énorme de toute l'équipe, ou réanimation des alliés KO (avec énormément de PV).\n• Temps d'attente des attaques physiques de l'équipe réduit de 3 tours.\n• Hâte et Tenir bon.\n• Pendant un temps : mode Éveil Prière de la planète.\n\nMODE ÉVEIL PRIÈRE DE LA PLANÈTE (星の祈り覚醒モード)\n• Compétences Magie blanche utilisables à l'infini.\n• Temps d'attente des compétences Magie blanche d'Aerith réduit.\n• Chaque compétence Magie blanche utilisée : attaque supplémentaire [Pulsation sacrée].\n\nATTAQUE SUPPLÉMENTAIRE : PULSATION SACRÉE (聖なる波動)\n• Récup sur toute l'équipe : soin à chaque perte de PV, dont la force dépend du niveau d'affinage de la compétence utilisée (5 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Aerith augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-pulsation-vitale-de-la-planete",
+     "type": "覚醒",
+     "categorie": "soutien",
+     "nomJP": "星命の鼓動",
+     "nomFR": "Pulsation vitale de la planète",
+     "elements": [],
+     "image": "images/aerith/pulsation-vitale-de-la-planete.webp",
+     "effet": "Réservée à Aerith. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin énorme de toute l'équipe, ou réanimation des alliés KO (avec énormément de PV).\n• Hâte, Récup forte et Esuna sur toute l'équipe.\n• Pendant un temps : temps d'attente des attaques physiques de l'équipe réduit.\n• Pendant un temps : mode Éveil Pouvoir des Cetra.\n\nMODE ÉVEIL POUVOIR DES CETRA (セトラの力覚醒モード)\n• Compétences Magie blanche utilisables à l'infini.\n• Temps d'attente des compétences Magie blanche réduit selon leur niveau d'affinage.\n• Chaque compétence Magie blanche utilisée : attaque supplémentaire [Prière à la planète].\n\nATTAQUE SUPPLÉMENTAIRE : PRIÈRE À LA PLANÈTE (星への祈り)\n• Petit soin de toute l'équipe.\n• Tous les 3 déclenchements : chaque allié récupère 1 utilisation d'une de ses compétences.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Statistiques de Aerith augmentées (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Esprit +10."
+    },
+    {
+     "id": "c-priere-salvatrice-ultime",
+     "type": "究極",
+     "categorie": "soutien",
+     "nomJP": "究極救星の祈り",
+     "nomFR": "Prière salvatrice ultime",
+     "elements": [],
+     "image": "images/aerith/priere-salvatrice-ultime.webp",
+     "effet": "Réservée à Aerith. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : soin énorme de toute l'équipe, avec plafond de dégâts +1 niveau, ou réanimation des alliés KO (avec énormément de PV).\n• Hâte, et aucun temps d'attente pour les attaques physiques pendant 1 tour.\n• Pendant un temps : état [Soin auto ultime – Aerith].\n• Temps d'attente d'Aerith réduit, et plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Chaque compétence Magie blanche utilisée : attaque supplémentaire [Frappe du cœur – Aerith].\n• Temps d'attente de la Magie blanche réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives d'Aerith (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Magie blanche se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Aerith +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nÉTAT [SOIN AUTO ULTIME – AERITH] (究極オートリケア)\n• Quand ses PV sont bas, Aerith se soigne automatiquement à chaque perte de PV. L'état prend fin après 6000 PV soignés au total.\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – AERITH (心撃・エアリス)\n• Petit soin de toute l'équipe.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Vent de guérison Kai (癒しの風改, école Magie blanche), remplace Vent de guérison (petit soin de toute l'équipe, avec un temps d'attente long) : petit soin de toute l'équipe ; toutes les 2 utilisations, temps d'attente de toute l'équipe réduit d'1 tour.\n• Souffle de la brise Kai (そよ風の息吹改, école Magie blanche), remplace Souffle de la brise (pendant un court moment, attaque de toute l'équipe augmentée selon le niveau Salvateur d'Aerith, effet max : moyen ; Aerith gagne le niveau Salvateur 1, ou +1 niveau s'il est déjà actif (niveau 3 max) ; soigne 1500 PV à toute l'équipe) : même effet, mais soigne 2500 PV.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Soins de la capacité augmentés (niv. 1).\n• Barrière de réduction des dégâts sur Aerith, 1 fois (niv. 1), débloquée au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "red-xiii",
+   "nom": "Red XIII",
+   "nomJP": "レッドXIII",
+   "serie": "VII",
+   "categorie": "magique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/red-xiii/sprite.png",
+   "capacites": [
+    {
+     "id": "c-croc-glissant",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "スレッドファング",
+     "nomFR": "Croc glissant",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/red-xiii/croc-glissant.webp",
+     "effet": "Réservée à Red XIII.\n\n• Attaque physique non-élémentaire sur un ennemi.\n\nÀ VÉRIFIER : le nom (« Sled Fang » en anglais)."
+    },
+    {
+     "id": "c-eclairs-enchaines-red-xiii-terre",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "連閃・レッドXIII地",
+     "nomFR": "Éclairs enchaînés – Red XIII Terre",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/red-xiii/eclairs-enchaines-red-xiii-terre.webp",
+     "effet": "Réservée à Red XIII. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• La prochaine jauge ATB de Red XIII se remplit instantanément (1 fois).\n• Red XIII n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Terre de Red XIII augmentée d'un niveau, débloquée au niveau d'entraînement 5.\n• Barrière de réduction des dégâts sur Red XIII, 1 fois (niv. 5), débloquée au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-expansion-terrestre",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "アースエクスパンド",
+     "nomFR": "Expansion terrestre",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/red-xiii/expansion-terrestre.webp",
+     "effet": "Réservée à Red XIII. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Red XIII n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-rayon-lunatique",
+     "type": "覚醒",
+     "categorie": "magique",
+     "nomJP": "ルナティックレイ",
+     "nomFR": "Rayon lunatique",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/red-xiii/rayon-lunatique.webp",
+     "effet": "Réservée à Red XIII. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Toute l'équipe n'a aucun temps d'attente pendant 1 tour.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Pendant un temps : mode Éveil Terre, et plafond de dégâts +1 niveau.\n• Active le mode [Fils de Seto].\n\nMODE ÉVEIL TERRE (地覚醒モード)\n• Compétences Terre utilisables à l'infini.\n• Boost des compétences Terre, effet max : moyen.\n• Les compétences Terre se lancent 1 fois de plus.\n\nMODE [FILS DE SETO] (セトの息子モード)\n• Chaque compétence Terre utilisée : pendant un temps, attaque Terre de toute l'équipe +1 niveau, et barrière de réduction des dégâts 1 fois (effet moyen).\n• Après 3 compétences Terre : fin du mode.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Magie +10."
+    },
+    {
+     "id": "c-haute-comete",
+     "type": "S奥義",
+     "categorie": "magique",
+     "nomJP": "コメットハイ",
+     "nomFR": "Haute comète",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/red-xiii/haute-comete.webp",
+     "effet": "Réservée à Red XIII. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques magiques puissantes Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Sa prochaine jauge ATB se remplit plus vite (1 fois).\n\nCOMPÉTENCES SYNCHRO\n• Grand croc (グランドファング, école Magie noire, déclenchée par une compétence Terre) : 6 attaques magiques Terre + non-élémentaire sur un ennemi.\n• Grand hurlement (グランドハウリング, école Soutien physique, déclenchée par une compétence Terre) : temps d'attente de toute l'équipe réduit d'1 tour, et dégâts des attaques Terre de Red XIII augmentés pendant 1 tour (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1).\n\nÀ VÉRIFIER : le nom « Haute comète » (jeu de mots japonais sur « Lunatic High »)."
+    },
+    {
+     "id": "c-majeste-divine-red-xiii",
+     "type": "O神技",
+     "categorie": "magique",
+     "nomJP": "神威・レッドXIII",
+     "nomFR": "Majesté divine – Red XIII",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/red-xiii/majeste-divine-red-xiii.webp",
+     "effet": "Réservée à Red XIII. Utilisable 2 fois.\n\nATTAQUE\n• 7 attaques magiques Terre sur un ennemi, dont l'effet dépend des conditions (plus bas).\n• Puis 3 attaques magiques Terre qui ignorent la défense magique et peuvent dépasser le plafond de dégâts.\n\nEFFET SELON LE NOMBRE DE COMPÉTENCES TERRE ÉQUIPÉES DANS TOUTE L'ÉQUIPE\n• 2 ou moins : plafond de dégâts +1 niveau.\n• 3 ou 4 : plafond +2 niveaux, et plus puissantes.\n• 5 ou plus : plafond +4 niveaux, et plus puissantes.\n• 5 ou plus, et au moins 2 alliés imprégnés de Terre : plafond +5 niveaux, et plus puissantes.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2.\n\nÀ VÉRIFIER : le sens du type O神技."
+    }
+   ]
+  },
+  {
+   "id": "yuffie",
+   "nom": "Yuffie",
+   "nomJP": "ユフィ",
+   "serie": "VII",
+   "categorie": "physique",
+   "elements": [
+    "eau",
+    "terre"
+   ],
+   "sprite": "images/yuffie/sprite.png",
+   "capacites": [
+    {
+     "id": "c-vif-comme-l-eclair",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "疾風迅雷",
+     "nomFR": "Vif comme l'éclair",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/yuffie/vif-comme-l-eclair.webp",
+     "effet": "Réservée à Yuffie.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-fin-des-vivants",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "生者必滅",
+     "nomFR": "Fin des vivants",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/yuffie/fin-des-vivants.webp",
+     "effet": "Réservée à Yuffie.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques à distance puissantes Eau + non-élémentaire sur tous les ennemis.\n• Pendant un temps : résistance Eau des ennemis −2 niveaux.\n• Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Art de l'eau – Clone (水遁・分身の術, école Ninja) : 2 attaques physiques à distance Eau + non-élémentaire sur un ennemi, avec un temps d'attente court ; Yuffie reçoit une Image qui bloque 1 attaque physique.\n• Art de l'eau – Source (水遁・豊水の術, école Ninja) : attaque physique à distance Eau + non-élémentaire sur un ennemi, avec un temps d'attente court ; rend 1 utilisation à la compétence de Yuffie qui en a le moins.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-gardienne-de-wutai",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "ウータイの守護神",
+     "nomFR": "Gardienne de Wutai",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/yuffie/gardienne-de-wutai.webp",
+     "effet": "Réservée à Yuffie.\n\nATTAQUE\n• 5 attaques physiques à distance puissantes Eau + non-élémentaire sur tous les ennemis.\n• Pendant un temps : imprégnation Eau, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Art de l'eau – Taille dispersée (水遁・散切の術, école Ninja) : 4 attaques physiques à distance Eau + non-élémentaire sur un ennemi, avec un temps d'attente court.\n• Art de l'eau – Érosion (水遁・浸蝕の術, école Ninja) : 2 attaques physiques à distance Eau + non-élémentaire sur un ennemi ; attaque et défense de l'ennemi réduites (effet faible) ; attaque et défense de Yuffie augmentées (effet faible).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-style-personnel-camouflage",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "我流・迷彩",
+     "nomFR": "Style personnel – Camouflage",
+     "elements": [
+      "eau",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yuffie/style-personnel-camouflage.webp",
+     "effet": "Réservée à Yuffie.\n\nATTAQUE\n• Sans temps d'attente : 10 attaques physiques à distance puissantes Eau + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : mode [Materia liée II], et dégâts des compétences Ninja augmentés (effet moyen).\n\nMODE [MATERIA LIÉE II] (連結マテリアモードII)\n• Si Yuffie utilise une compétence Eau ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lien-destin-de-yuffie",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "絆・ユフィ天命",
+     "nomFR": "Lien – Destin de Yuffie",
+     "elements": [],
+     "image": "images/yuffie/lien-destin-de-yuffie.webp",
+     "effet": "Réservée à Yuffie. Chaîne de métier (ジョブリミットチェイン).\n\nEFFET\n• Sans temps d'attente : lance une chaîne Ninja (jusqu'à 150 chaînes).\n• Dégâts des attaques Ninja des alliés augmentés (effet fort).\n• Pendant un temps : attaque de toute l'équipe augmentée (effet fort), et Hâte.\n\nPENDANT LA CHAÎNE\n• Dégâts des attaques Ninja des alliés augmentés (effet fort).\n• La chaîne avance avec les attaques Ninja.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-art-de-l-eau-eau-dormante",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "水遁・止水の術",
+     "nomFR": "Art de l'eau – Eau dormante",
+     "elements": [
+      "eau"
+     ],
+     "image": "images/yuffie/art-de-l-eau-eau-dormante.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Eau renforcée [重式].\n• Yuffie n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-force-sereine",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "抜山止水",
+     "nomFR": "Force sereine",
+     "elements": [
+      "eau",
+      "terre"
+     ],
+     "image": "images/yuffie/force-sereine.webp",
+     "effet": "Réservée à Yuffie. Utilisable 3 fois.\n\n• Sans temps d'attente : temps d'attente de Yuffie réduit d'1 tour.\n• Pendant un temps : mode [Materia liée II].\n\nMODE [MATERIA LIÉE II] (連結マテリアモードII)\n• Si Yuffie utilise une compétence Eau ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-sublimation-revers-de-manche",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "昇華・鎧袖一触",
+     "nomFR": "Sublimation – Revers de manche",
+     "elements": [
+      "eau",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yuffie/sublimation-revers-de-manche.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Eau + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : taux de critique de Yuffie à 100 %.\n• Pendant un temps : mode Éveil Ninja, et plafond de dégâts +1 niveau.\n• Active le mode [Materia liée II].\n• À la prochaine compétence Ninja : attaque supplémentaire [Cœur de ninja] (1 fois max).\n• Yuffie peut cumuler les Images (2 max), et elle reçoit 2 Images.\n\nMODE ÉVEIL NINJA (忍者覚醒モード)\n• Compétences Ninja utilisables à l'infini.\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 1 fois de plus.\n\nMODE [MATERIA LIÉE II] (連結マテリアモードII)\n• Si Yuffie utilise une compétence Eau ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : CŒUR DE NINJA (忍ぶ心)\n• Pendant 3 tours : dégâts des compétences Ninja de Yuffie augmentés (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-style-personnel-fete-de-la-terre",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "我流・地祭",
+     "nomFR": "Style personnel – Fête de la terre",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/yuffie/style-personnel-fete-de-la-terre.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 3 attaques physiques à distance ultra-puissantes Terre sur un ennemi, qui peuvent dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-style-personnel-fete-sanglante",
+     "type": "O奥義",
+     "categorie": "physique",
+     "nomJP": "我流・血祭",
+     "nomFR": "Style personnel – Fête sanglante",
+     "elements": [
+      "eau"
+     ],
+     "image": "images/yuffie/style-personnel-fete-sanglante.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 20 attaques physiques à distance ultra-puissantes Eau sur un ennemi.\n• Puis une attaque physique à distance Eau qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-toute-la-creation",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "森羅万象",
+     "nomFR": "Toute la création",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/yuffie/toute-la-creation.webp",
+     "effet": "Réservée à Yuffie. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Yuffie Eau].\n• Pendant un temps : imprégnation Eau renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : TOUTE LA CRÉATION\n• 20 attaques physiques à distance Eau + non-élémentaire sur un ennemi.\n• Puis une attaque physique à distance Eau + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – YUFFIE EAU]\n• Plus Yuffie inflige de dégâts pendant cet état, plus Toute la création devient puissante et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Yuffie augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-style-personnel-eau-dispersee-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極我流・無月散水",
+     "nomFR": "Style personnel ultime – Eau dispersée sans lune",
+     "elements": [
+      "eau",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yuffie/style-personnel-eau-dispersee-ultime.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Eau renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Imprégnation Eau poussée à l'extrême (+20 %).\n• Chaque compétence Ninja utilisée : attaque supplémentaire [Frappe du cœur – Yuffie Eau], dont l'effet change à chaque déclenchement (3 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Yuffie (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ninja se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Yuffie +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – YUFFIE EAU (心撃・ユフィ水)\n• 1re fois : 6 attaques physiques à distance Eau + Terre + non-élémentaire sur un ennemi.\n• 2e fois : 8 attaques. 3e fois : 10 attaques.\n• À chaque fois : sa prochaine jauge ATB se remplit plus vite (1 fois), et ses compétences Ninja n'ont aucun temps d'attente pendant 1 tour.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Style personnel – Esprit serein Kai (我流・明鏡止水改, école Ninja), remplace Style personnel – Esprit serein (4, 5 ou 6 attaques physiques Eau + Terre sur un ennemi selon que Yuffie a 0, 1, ou 2 Images ou plus ; pendant un temps, Yuffie peut cumuler les Images (2 max), et elle reçoit 1 Image) : même effet ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Revers de manche Kai (鎧袖一触改, école Ninja), remplace Revers de manche (4 attaques physiques à distance Eau + Terre sur un ennemi, ou 8 si Yuffie a au moins 2 Images, avec un temps d'attente long) : 8 attaques physiques à distance Eau + Terre, avec un temps d'attente plus court.\n• Fière allure Kai (意気揚揚改, école Ninja), remplace Fière allure (6 attaques de ninjutsu Eau + Terre sur un ennemi) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    },
+    {
+     "id": "c-fin-des-vivants-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極生者必滅",
+     "nomFR": "Fin des vivants ultime",
+     "elements": [
+      "terre",
+      "eau",
+      "neutre"
+     ],
+     "image": "images/yuffie/fin-des-vivants-ultime.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois. Étiquette 対ウェポンブレイク・攻.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Terre + Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n• Effet en plus selon le nombre de Ninjas de l'équipe encore en vie (plus bas).\n\nEFFET SELON LES NINJAS EN VIE\n• 0 à 3 : pendant un temps, attaque Terre de Yuffie +2 niveaux.\n• 4 ou plus : pendant un court moment, attaque et esprit de toute l'équipe augmentés (effet moyen), défense et défense magique augmentées (effet faible) ; temps d'attente des compétences Ninja réduit d'1 tour.\n\nMODE ULTIME – CŒUR\n• Imprégnation Terre poussée à l'extrême (+20 %).\n• Chaque compétence Terre utilisée : attaque supplémentaire [Frappe du cœur – Yuffie Terre] (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Yuffie (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Ninja se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Yuffie +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – YUFFIE TERRE (心撃・ユフィ地)\n• 8 attaques physiques à distance Terre + non-élémentaire sur un ennemi.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Style personnel – Esprit serein Kai (我流・明鏡止水改, école Ninja), remplace Style personnel – Esprit serein (4, 5 ou 6 attaques physiques Eau + Terre sur un ennemi selon que Yuffie a 0, 1, ou 2 Images ou plus ; pendant un temps, Yuffie peut cumuler les Images (2 max), et elle reçoit 1 Image) : même effet ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n• Revers de manche Kai (鎧袖一触改, école Ninja), remplace Revers de manche (4 attaques physiques à distance Eau + Terre sur un ennemi, ou 8 si Yuffie a au moins 2 Images, avec un temps d'attente long) : 8 attaques physiques à distance Eau + Terre, avec un temps d'attente plus court.\n• Fière allure Kai (意気揚揚改, école Ninja), remplace Fière allure (6 attaques de ninjutsu Eau + Terre sur un ennemi) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : le sens de l'étiquette 対ウェポンブレイク・攻 ; « Ninjas » = probablement les alliés de type Ninja."
+    },
+    {
+     "id": "c-revers-de-manche-eveille",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒鎧袖一触",
+     "nomFR": "Revers de manche éveillé",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/yuffie/revers-de-manche-eveille.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Eau + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : imprégnation Eau renforcée [重式] et plafond de dégâts +1 niveau.\n• Active le mode D-Éveil Ninja I [Yuffie Eau] et la Résonance des souvenirs.\n• Yuffie peut cumuler les Images (2 max), et chaque compétence Ninja lui donne 1 Image.\n\nMODE D-ÉVEIL NINJA I [YUFFIE EAU] (avant la Dual Shift)\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 2 fois de plus.\n• Temps d'attente des compétences Ninja équipées réduit.\n\nDUAL SHIFT\n• Fait passer Yuffie en mode D-Éveil Ninja II [Yuffie Eau] (retire le mode I), et lui donne 2 Images.\n• Durée du mode II selon le nombre d'actions faites depuis le mode I : 1 action → 3 tours, 2 → 3 tours, 3 → 2 tours, 4 → 1 tour, 5 et plus → icône barrée.\n\nMODE D-ÉVEIL NINJA II [YUFFIE EAU] (après la Dual Shift)\n• Plafond de dégâts +1 niveau.\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 1 fois de plus.\n• Taux de critique à 100 %.\n• Les compétences Ninja n'ont plus de temps d'attente.\n• Chaque compétence Ninja utilisée : attaque supplémentaire [D Style personnel – Tourbillon].\n\nATTAQUE SUPPLÉMENTAIRE : D STYLE PERSONNEL – TOURBILLON (D我流・水渦)\n• Attaque physique Eau + non-élémentaire sur un ennemi, qui ignore la défense.\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Ninja de Yuffie +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Ninja I et II [Yuffie Eau] et le mode Éveil Ninja.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 3).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'icône barrée (5e action et plus) veut sans doute dire que le mode II ne se déclenche plus."
+    },
+    {
+     "id": "c-style-personnel-camouflage-eveille",
+     "type": "D覚醒",
+     "categorie": "physique",
+     "nomJP": "覚醒我流・迷彩",
+     "nomFR": "Style personnel – Camouflage éveillé",
+     "elements": [
+      "eau",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yuffie/style-personnel-camouflage-eveille.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Eau + Terre + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active le mode [Materia liée II], le mode D-Éveil Ninja I [Yuffie] et la Résonance des souvenirs.\n• Yuffie n'a aucun temps d'attente pendant 1 tour.\n\nMODE D-ÉVEIL NINJA I [YUFFIE] (avant la Dual Shift)\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 2 fois de plus.\n• Chaque compétence Ninja utilisée augmente les dégâts fatals (フェイタルダメージ) des compétences Ninja équipées par Yuffie, jusqu'à 4 paliers (5 / 10 / 15 / 20 %).\n\nDUAL SHIFT\n• Fait passer Yuffie en mode D-Éveil Ninja II [Yuffie]. Ce mode dure 1 tour, quel que soit le moment où la Dual Shift se déclenche.\n\nMODE D-ÉVEIL NINJA II [YUFFIE] (après la Dual Shift)\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja n'ont plus de temps d'attente.\n• Chaque compétence Ninja utilisée : attaque supplémentaire [D Art de l'élan].\n\nMODE [MATERIA LIÉE II] (連結マテリアモードII)\n• Si Yuffie utilise une compétence Eau ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : D ART DE L'ÉLAN (D躍進の術)\n• Pendant un temps : dégâts des compétences Ninja de Yuffie augmentés (effet moyen).\n\nRÉSONANCE DES SOUVENIRS (記憶の共振)\n• Dégâts des compétences Ninja de Yuffie +5 %.\n\nNE SE CUMULE PAS AVEC\nLes modes D-Éveil Ninja I et II [Yuffie] et le mode Éveil Ninja.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
     }
    ]
   }
