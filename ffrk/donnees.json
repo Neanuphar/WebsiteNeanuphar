@@ -1,6 +1,6 @@
 {
- "revision": 46,
- "maj": "2026-10-23T05:15:25.000Z",
+ "revision": 47,
+ "maj": "2026-10-26T12:21:57.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -6272,6 +6272,190 @@
      ],
      "image": "images/ultros/majeste-divine-ultros.webp",
      "effet": "Réservée à Ultros. Utilisable 2 fois.\n\nATTAQUE\n• 7 attaques Poison sur un ennemi, physiques à distance ou magiques selon les statistiques d'Ultros, dont l'effet dépend des conditions (plus bas).\n• Puis 3 attaques Poison du même type, qui ignorent la défense (ou la défense magique) et peuvent dépasser le plafond de dégâts.\n\nEFFET SELON LE NOMBRE DE COMPÉTENCES POISON ÉQUIPÉES DANS TOUTE L'ÉQUIPE\n• 2 ou moins : plafond de dégâts +1 niveau.\n• 3 ou 4 : plafond +2 niveaux, et plus puissantes.\n• 5 ou plus : plafond +4 niveaux, et plus puissantes.\n• 5 ou plus, et au moins 2 héroïnes dans l'équipe : plafond +5 niveaux, et plus puissantes ; à la fin de la capacité, les héroïnes n'ont aucun temps d'attente pendant 1 tour.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 2.\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 2.\n\nÀ VÉRIFIER : le sens du type O神技."
+    }
+   ]
+  },
+  {
+   "id": "cloud",
+   "nom": "Cloud",
+   "nomJP": "クラウド",
+   "serie": "VII",
+   "categorie": "physique",
+   "elements": [
+    "vent",
+    "tenebres"
+   ],
+   "sprite": "images/cloud/sprite.png",
+   "capacites": [
+    {
+     "id": "c-rupture-sonique",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "ソニックブレイク",
+     "nomFR": "Rupture sonique",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/cloud/rupture-sonique.webp",
+     "effet": "Réservée à Cloud.\n\n• 3 attaques physiques non-élémentaires sur un ennemi."
+    },
+    {
+     "id": "c-moto-c",
+     "type": "Burst",
+     "categorie": "physique",
+     "nomJP": "C・モーターサイクル",
+     "nomFR": "Moto C",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/cloud/moto-c.webp",
+     "effet": "Réservée à Cloud.\n\nATTAQUE\n• 8 attaques physiques puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent, Hâte et mode Burst.\n\nCOMPÉTENCES BURST (mode Burst)\n• Ruée sonique (ソニックラッシュ, école Attaque physique) : 4 attaques physiques Vent + non-élémentaire sur un ennemi, d'autant plus puissantes que l'attaque de Cloud est élevée.\n• Coup tranchant (スラッシュブロウ, école Attaque physique) : 2 attaques physiques Vent + non-élémentaire sur tous les ennemis ; pendant un temps, défense de Cloud réduite et attaque augmentée (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-taillade-croisee-suprematie",
+     "type": "超絶",
+     "categorie": "physique",
+     "nomJP": "凶斬り・覇",
+     "nomFR": "Taillade croisée – Suprématie",
+     "elements": [
+      "vent",
+      "tenebres"
+     ],
+     "image": "images/cloud/taillade-croisee-suprematie.webp",
+     "effet": "Réservée à Cloud.\n\nATTAQUE\n• 5 attaques physiques puissantes Vent + Ténèbres sur un ennemi.\n• Pendant un temps : taux de critique de Cloud à 100 %.\n• Active le mode EX [SOLDAT].\n\nMODE EX [SOLDAT] (EXモード【ソルジャー】, pendant un temps)\n• La plupart des attaques physiques de Cloud peuvent dépasser le plafond de dégâts, et leurs dégâts sont augmentés (effet moyen).\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-puissance-du-mako",
+     "type": "閃技",
+     "categorie": "physique",
+     "nomJP": "魔晄の力!",
+     "nomFR": "Puissance du Mako !",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/cloud/puissance-du-mako.webp",
+     "effet": "Réservée à Cloud. Utilisable 3 fois.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-abysses-du-mako",
+     "type": "閃技",
+     "categorie": "physique",
+     "nomJP": "魔晄の深淵",
+     "nomFR": "Abysses du Mako",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/abysses-du-mako.webp",
+     "effet": "Réservée à Cloud. Utilisable 3 fois.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-croc-aerien",
+     "type": "閃技",
+     "categorie": "physique",
+     "nomJP": "空牙",
+     "nomFR": "Croc aérien",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/cloud/croc-aerien.webp",
+     "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nATTAQUE\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• 6 attaques physiques Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式].\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-lame-sonique",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "ソニックブレード",
+     "nomFR": "Lame sonique",
+     "elements": [
+      "vent",
+      "tenebres"
+     ],
+     "image": "images/cloud/lame-sonique.webp",
+     "effet": "Réservée à Cloud. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 4 attaques physiques ultra-puissantes Vent + Ténèbres sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
+     "id": "c-venue-celeste",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "天来",
+     "nomFR": "Venue céleste",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/cloud/venue-celeste.webp",
+     "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent.\n• Pendant un temps : mode Éveil Vent, et plafond de dégâts +1 niveau.\n• Pendant un temps : taux de critique à 100 %.\n• Temps d'attente réduit.\n• Active le mode [Cloudy Wolf].\n\nMODE ÉVEIL VENT (風覚醒モード)\n• Compétences Vent utilisables à l'infini.\n• Boost des compétences Vent, effet max : moyen.\n• Les compétences Vent se lancent 1 fois de plus.\n\nMODE [CLOUDY WOLF] (クラウディウルフモード)\n• Après 3 compétences Vent utilisées : remplit 1 segment de la jauge de capacités spéciales de Cloud, Cloud n'a aucun temps d'attente pendant 1 tour, puis le mode prend fin.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 5).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-fremissement-des-cellules-s",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "S細胞胎動",
+     "nomFR": "Frémissement des cellules S",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/fremissement-des-cellules-s.webp",
+     "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Ténèbres.\n• Taux de critique à 100 %.\n• Pendant un temps : mode Éveil Physique lourd, et plafond de dégâts +2 niveaux.\n\nMODE ÉVEIL PHYSIQUE LOURD (物理ヘヴィ覚醒モード)\n• Compétences Physique lourd utilisables à l'infini.\n• Boost des compétences Physique lourd, effet max : moyen.\n• Chaque compétence Physique lourd utilisée : pendant un temps, Cloud gagne 1 palier de Charge lourde (2 max).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : la durée du taux de critique à 100 % (le texte ne dit pas « pendant un temps »)."
+    },
+    {
+     "id": "c-taillade-croisee-supreme",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "凶斬り・極",
+     "nomFR": "Taillade croisée suprême",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/cloud/taillade-croisee-supreme.webp",
+     "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n\nCOMPÉTENCES SYNCHRO\n• Ruée sonique Kai (ソニックラッシュ改, école Magilame, déclenchée par une compétence Vent) : 6 attaques physiques Vent + non-élémentaire sur un ennemi ; dégâts des compétences Vent de Cloud augmentés pendant 1 tour (effet fort) ; tant que le mode Synchro dure, Cloud passe en état Mako profond (魔晄深化).\n• Impact tranchant (スラッシュインパクト, école Magilame, déclenchée par une compétence Vent) : attaque physique Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts et qui est plus puissante si Cloud est en état Mako profond ; met fin à cet état.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
+     "id": "c-omnislash",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "超究武神覇斬",
+     "nomFR": "Omnislash",
+     "elements": [
+      "vent",
+      "neutre"
+     ],
+     "image": "images/cloud/omnislash.webp",
+     "effet": "Réservée à Cloud. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Cloud].\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : OMNISLASH\n• 20 attaques physiques à distance Vent + non-élémentaire sur un ennemi.\n• Puis une attaque physique à distance Vent + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – CLOUD]\n• Plus Cloud inflige de dégâts pendant cet état, plus Omnislash devient puissant et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Cloud augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-taillade-croisee-polaire-historia",
+     "type": "M神技",
+     "categorie": "physique",
+     "nomJP": "極星凶斬り・ヒストリア",
+     "nomFR": "Taillade croisée polaire – Historia",
+     "elements": [
+      "vent",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/taillade-croisee-polaire-historia.webp",
+     "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente. Pendant un temps : mode Maître.\n• La prochaine jauge ATB de Cloud se remplit instantanément (1 fois).\n• Barrière 万象剥離 (1 fois).\n\nMODE MAÎTRE (マスターモード)\n• Plafond de dégâts +4 niveaux.\n• Renforcement du héros (英雄強化) : 25 %.\n• Peut lancer une capacité spéciale sans consommer de jauge, et sans temps d'attente pour une capacité spéciale ou une Limit Break (1 fois max).\n• À intervalles réguliers : attaque supplémentaire [Frappe stellaire – Cloud] (5 fois max).\n• Au bout d'un certain temps : attaque Maître [Taillade croisée polaire – Historia].\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE STELLAIRE – CLOUD (星撃・クラウド)\n• 10 attaques physiques sur un ennemi : Vent + non-élémentaire ou Ténèbres + non-élémentaire, selon l'élément dont Cloud est imprégné.\n• Tant que le mode Maître dure, le renforcement du héros de Cloud augmente (5 paliers : 30 / 35 / 40 / 45 / 50 %).\n\nATTAQUE MAÎTRE : TAILLADE CROISÉE POLAIRE – HISTORIA\n• Attaque physique Vent + Ténèbres + non-élémentaire sur un ennemi, avec vrai plafond de dégâts (真限界突破) +1 niveau.\n• Pendant 2 tours : vrai plafond de dégâts de Cloud +1 niveau, et Cloud n'a aucun temps d'attente.\n• Sa prochaine jauge ATB se remplit plus vite (1 fois).\n• Met fin au mode Maître.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Attaque Vent et Ténèbres de Cloud augmentée, débloquée au niveau d'entraînement 5.\n• Dégâts de l'attaque Maître augmentés (niv. 1), débloqué au niveau d'entraînement 3.\n\nÀ VÉRIFIER : l'effet exact de la barrière 万象剥離."
+    },
+    {
+     "id": "c-chocobo-et-mog-g",
+     "type": "LBG召喚",
+     "categorie": "physique",
+     "nomJP": "Gチョコボ&モーグリ",
+     "nomFR": "Chocobo et Mog G",
+     "elements": [
+      "vent",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/chocobo-et-mog-g.webp",
+     "effet": "Réservée à Cloud. Limit Break d'invocation de gardien, utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : l'équipe ne peut plus être contrôlée, et Chocobo et Mog sont invoqués pour un court moment.\n• Les statistiques du gardien dépendent de la quantité de jauge de Limite consommée.\n\nCHOCOBO ET MOG (gardien)\n• Aucune résistance ni faiblesse élémentaire.\n• Insensible à toutes les altérations d'état.\n\nCOMPÉTENCES DU GARDIEN (école Attaque physique)\n• Coup de patte Chocobo G (Gチョコボキック) : sans temps d'attente, 6 attaques physiques Vent + non-élémentaire sur un ennemi, et plafond de dégâts du gardien +1 niveau pendant 1 tour.\n• Météore Chocobo G (Gチョコメテオ) : sans temps d'attente, attaque physique Vent + non-élémentaire sur tous les ennemis, qui peut dépasser le plafond de dégâts ; pendant un temps, attaque Vent du gardien +3 niveaux.\n\nCAPACITÉ SPÉCIALE DU GARDIEN : CAPACITÉ SPÉCIALE G !! (G必殺技!!)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• 10 attaques physiques Vent + Ténèbres + non-élémentaire sur un ennemi, puis une qui peut dépasser le plafond de dégâts.\n• Met fin à l'invocation. À la fin : temps d'attente de Cloud réduit de 2 tours, et dégâts Vent augmentés pendant 2 tours (effet moyen).\n\nEFFETS DONNÉS AU GARDIEN À L'INVOCATION\n• Carapace, Blindage et Hâte.\n• Jauge ATB pleine au début de l'invocation.\n• Pendant un temps : défense et défense magique augmentées (effet très fort).\n• Pendant un temps : imprégnation Vent renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +2 niveaux.\n• Tenir bon.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts augmentés (niv. 1).\n• Barrière de réduction de dégâts, 1 fois (niv. 1), débloquée au niveau d'entraînement 3."
     }
    ]
   }
