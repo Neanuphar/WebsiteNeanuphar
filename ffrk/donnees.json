@@ -1,6 +1,6 @@
 {
- "revision": 48,
- "maj": "2026-10-26T12:26:14.000Z",
+ "revision": 49,
+ "maj": "2026-10-26T12:51:06.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -6509,6 +6509,118 @@
      ],
      "image": "images/cloud/chocobo-et-mog-g.webp",
      "effet": "Réservée à Cloud. Limit Break d'invocation de gardien, utilisable 1 fois.\n\nEFFET\n• Sans temps d'attente : l'équipe ne peut plus être contrôlée, et Chocobo et Mog sont invoqués pour un court moment.\n• Les statistiques du gardien dépendent de la quantité de jauge de Limite consommée.\n\nCHOCOBO ET MOG (gardien)\n• Aucune résistance ni faiblesse élémentaire.\n• Insensible à toutes les altérations d'état.\n\nCOMPÉTENCES DU GARDIEN (école Attaque physique)\n• Coup de patte Chocobo G (Gチョコボキック) : sans temps d'attente, 6 attaques physiques Vent + non-élémentaire sur un ennemi, et plafond de dégâts du gardien +1 niveau pendant 1 tour.\n• Météore Chocobo G (Gチョコメテオ) : sans temps d'attente, attaque physique Vent + non-élémentaire sur tous les ennemis, qui peut dépasser le plafond de dégâts ; pendant un temps, attaque Vent du gardien +3 niveaux.\n\nCAPACITÉ SPÉCIALE DU GARDIEN : CAPACITÉ SPÉCIALE G !! (G必殺技!!)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• 10 attaques physiques Vent + Ténèbres + non-élémentaire sur un ennemi, puis une qui peut dépasser le plafond de dégâts.\n• Met fin à l'invocation. À la fin : temps d'attente de Cloud réduit de 2 tours, et dégâts Vent augmentés pendant 2 tours (effet moyen).\n\nEFFETS DONNÉS AU GARDIEN À L'INVOCATION\n• Carapace, Blindage et Hâte.\n• Jauge ATB pleine au début de l'invocation.\n• Pendant un temps : défense et défense magique augmentées (effet très fort).\n• Pendant un temps : imprégnation Vent renforcée [重式] (effet fort).\n• Pendant un temps : plafond de dégâts +2 niveaux.\n• Tenir bon.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts augmentés (niv. 1).\n• Barrière de réduction de dégâts, 1 fois (niv. 1), débloquée au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "barret",
+   "nom": "Barret",
+   "nomJP": "バレット",
+   "serie": "VII",
+   "categorie": "soutien",
+   "elements": [
+    "feu"
+   ],
+   "sprite": "images/barret/sprite.png",
+   "capacites": [
+    {
+     "id": "c-tir-lourd",
+     "type": "初期",
+     "categorie": "physique",
+     "nomJP": "ヘビーショット",
+     "nomFR": "Tir lourd",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/barret/tir-lourd.webp",
+     "effet": "Réservée à Barret.\n\n• Attaque physique à distance non-élémentaire sur un ennemi."
+    },
+    {
+     "id": "c-c-est-moi-le-chef",
+     "type": "Chain",
+     "categorie": "soutien",
+     "nomJP": "リーダーはオレだ!",
+     "nomFR": "C'est moi le chef !",
+     "elements": [],
+     "image": "images/barret/c-est-moi-le-chef.webp",
+     "effet": "Réservée à Barret. Chaîne de série (シリーズリミットチェイン). Étiquette 対フルブレイク.\n\nEFFET\n• Sans temps d'attente : lance une chaîne FF VII (jusqu'à 125 chaînes).\n• Dégâts des héros de FF VII de l'équipe augmentés (effet fort).\n• Pendant un temps : attaque et magie de toute l'équipe augmentées (effet moyen), défense et défense magique augmentées (effet faible).\n• Barret n'a aucun temps d'attente pendant 1 tour.\n\nPENDANT LA CHAÎNE\n• Dégâts des héros de FF VII de l'équipe augmentés (effet fort).\n• La chaîne avance avec les attaques des héros de FF VII.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le sens exact de l'étiquette 対フルブレイク."
+    },
+    {
+     "id": "c-catastrophe-ultime",
+     "type": "究極",
+     "categorie": "physique",
+     "nomJP": "究極カタストロフィ",
+     "nomFR": "Catastrophe ultime",
+     "elements": [
+      "feu",
+      "neutre"
+     ],
+     "image": "images/barret/catastrophe-ultime.webp",
+     "effet": "Réservée à Barret. Utilisable 1 fois.\n\nATTAQUE\n• 7 attaques physiques à distance puissantes Feu + non-élémentaire sur un ennemi, avec plafond de dégâts +1 niveau.\n• Pendant un temps : défense et défense magique de l'ennemi réduites (effet fort).\n• La prochaine jauge ATB de toute l'équipe se remplit plus vite (1 fois).\n• Pendant un temps : plafond de dégâts +1 niveau.\n• Active les modes Ultime – Cœur, Technique et Corps.\n\nMODE ULTIME – CŒUR\n• Quand Barret utilise une compétence Machiniste ou Soutien physique : attaque supplémentaire [Frappe du cœur – Barret], selon les alliés de FF VII en vie (1 fois max).\n• Temps d'attente des attaques physiques réduit de 10 %.\n\nMODE ULTIME – TECHNIQUE\n• Les compétences exclusives de Barret (plus bas) passent en version « Kai » : plus puissantes, et leur utilisation ne décompte pas leur nombre d'utilisations.\n• Les compétences Machiniste se lancent 1 fois de plus.\n\nMODE ULTIME – CORPS\n• PV max de Barret +1500.\n• À sa prochaine action : barrière contre les altérations d'état (1 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : FRAPPE DU CŒUR – BARRET (心撃・バレット)\n• 0 à 3 alliés de FF VII en vie : temps d'attente de toute l'équipe réduit d'1 tour.\n• 4 ou plus : pendant un temps, taux de critique de toute l'équipe à 100 % ; Barret n'a aucun temps d'attente pendant 1 tour ; pendant un temps, imprégnation Feu renforcée [重式] sur Barret.\n\nCOMPÉTENCES EXCLUSIVES RENFORCÉES (英雄専用アビリティ極化)\n• Âme d'AVALANCHE Kai (アバランチソウル改, école Soutien physique), remplace Âme d'AVALANCHE (avec un temps d'attente court : donne 2 segments de la jauge de capacités spéciales de Barret à un allié, et temps d'attente de Barret réduit de 2 tours) : même effet, sans temps d'attente.\n• Colère maximale Kai (アンガーマックス改, école Machiniste), remplace Colère maximale (7 attaques physiques à distance Feu sur un ennemi) : même attaque ; après 3 utilisations, plus puissante et plafond de dégâts +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Temps d'attente de la capacité réduit (niv. 1).\n• Dégâts de la capacité augmentés (niv. 1), débloqué au niveau d'entraînement 3."
+    }
+   ]
+  },
+  {
+   "id": "tifa",
+   "nom": "Tifa",
+   "nomJP": "ティファ",
+   "serie": "VII",
+   "categorie": "physique",
+   "elements": [
+    "terre"
+   ],
+   "sprite": "images/tifa/sprite.png",
+   "capacites": [
+    {
+     "id": "c-aura-de-l-eruption-terrestre",
+     "type": "閃技",
+     "categorie": "soutien",
+     "nomJP": "大地噴出闘衣",
+     "nomFR": "Aura de l'éruption terrestre",
+     "elements": [
+      "terre"
+     ],
+     "image": "images/tifa/aura-de-l-eruption-terrestre.webp",
+     "effet": "Réservée à Tifa. Utilisable 1 fois.\n\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Pendant un temps : imprégnation Terre renforcée [重式].\n• Tifa n'a aucun temps d'attente pendant 1 tour.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-paume-brise-roc",
+     "type": "閃技",
+     "categorie": "physique",
+     "nomJP": "掌打破岩",
+     "nomFR": "Paume brise-roc",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/paume-brise-roc.webp",
+     "effet": "Réservée à Tifa. Utilisable 3 fois.\n\nATTAQUE\n• Sans temps d'attente : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : résistance Terre de l'ennemi −1 niveau, et attaque Terre de Tifa +1 niveau.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-arts-meteores",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "メテオアーツ",
+     "nomFR": "Arts météores",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/arts-meteores.webp",
+     "effet": "Réservée à Tifa. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre.\n• Pendant un temps : mode Éveil Moine, et plafond de dégâts +1 niveau.\n• Toutes les 3 compétences Moine utilisées : attaque supplémentaire [Broyeur de Gaïa].\n\nMODE ÉVEIL MOINE (モンク覚醒モード)\n• Compétences Moine utilisables à l'infini.\n• Boost des compétences Moine, effet max : moyen.\n• Les compétences Moine se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : BROYEUR DE GAÏA (ガイアクラッシャー)\n• Attaque physique Terre + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10.\n\nÀ VÉRIFIER : le 3e bonus d'entraînement est coupé sur la capture (repris du modèle habituel des 覚醒)."
+    },
+    {
+     "id": "c-combo-limite",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "リミットコンボ",
+     "nomFR": "Combo Limite",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/tifa/combo-limite.webp",
+     "effet": "Réservée à Tifa. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Terre renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Tant que le mode Synchro dure : Tifa reçoit l'état Limite terrestre (アースリミット).\n• Toutes les 2 Brise-sol utilisées, tant que le mode Synchro dure : Tifa reçoit l'état Limite terrestre.\n\nCOMPÉTENCES SYNCHRO\n• Brise-sol (グランドブレイク, école Moine, déclenchée par une compétence Terre) : 6 attaques physiques Terre + non-élémentaire sur un ennemi.\n• Arts de charge (チャージアーツ, école Moine, déclenchée par une compétence Terre) : sans temps d'attente, dégâts des compétences Terre de Tifa augmentés pendant 2 tours (effet moyen). Si Tifa a l'état Limite terrestre : en plus, ses 2 prochaines jauges ATB se remplissent plus vite, et l'état prend fin.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
     }
    ]
   }
