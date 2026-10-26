@@ -1,6 +1,6 @@
 {
- "revision": 50,
- "maj": "2026-10-26T12:58:12.000Z",
+ "revision": 51,
+ "maj": "2026-10-26T13:04:53.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -6985,6 +6985,19 @@
      "effet": "Réservée à Yuffie. Utilisable 3 fois.\n\n• Sans temps d'attente : temps d'attente de Yuffie réduit d'1 tour.\n• Pendant un temps : mode [Materia liée II].\n\nMODE [MATERIA LIÉE II] (連結マテリアモードII)\n• Si Yuffie utilise une compétence Eau ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
     },
     {
+     "id": "c-style-personnel-kunai-volants",
+     "type": "LBOF",
+     "categorie": "physique",
+     "nomJP": "我流・飛苦無",
+     "nomFR": "Style personnel – Kunai volants",
+     "elements": [
+      "eau",
+      "terre"
+     ],
+     "image": "images/yuffie/style-personnel-kunai-volants.webp",
+     "effet": "Réservée à Yuffie. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 3 attaques physiques à distance ultra-puissantes Eau + Terre sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n• Toute l'équipe reçoit 1 Image.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
+    },
+    {
      "id": "c-sublimation-revers-de-manche",
      "type": "覚醒",
      "categorie": "physique",
@@ -6997,6 +7010,46 @@
      ],
      "image": "images/yuffie/sublimation-revers-de-manche.webp",
      "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Eau + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : taux de critique de Yuffie à 100 %.\n• Pendant un temps : mode Éveil Ninja, et plafond de dégâts +1 niveau.\n• Active le mode [Materia liée II].\n• À la prochaine compétence Ninja : attaque supplémentaire [Cœur de ninja] (1 fois max).\n• Yuffie peut cumuler les Images (2 max), et elle reçoit 2 Images.\n\nMODE ÉVEIL NINJA (忍者覚醒モード)\n• Compétences Ninja utilisables à l'infini.\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 1 fois de plus.\n\nMODE [MATERIA LIÉE II] (連結マテリアモードII)\n• Si Yuffie utilise une compétence Eau ou Terre à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément.\n\nATTAQUE SUPPLÉMENTAIRE : CŒUR DE NINJA (忍ぶ心)\n• Pendant 3 tours : dégâts des compétences Ninja de Yuffie augmentés (effet moyen).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-sublimation-fin-des-vivants",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "昇華・生者必滅",
+     "nomFR": "Sublimation – Fin des vivants",
+     "elements": [
+      "eau",
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yuffie/sublimation-fin-des-vivants.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Eau + Terre + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Eau.\n• Pendant un temps : mode Éveil Ninja, et plafond de dégâts +1 niveau.\n• Toutes les 2 compétences Ninja utilisées : attaque supplémentaire [Vitesse fugace].\n\nMODE ÉVEIL NINJA (忍者覚醒モード)\n• Compétences Ninja utilisables à l'infini.\n• Boost des compétences Ninja, effet max : moyen.\n• Les compétences Ninja se lancent 1 fois de plus.\n\nATTAQUE SUPPLÉMENTAIRE : VITESSE FUGACE (無常迅速)\n• 6, 8 ou 10 attaques physiques à distance Eau + Terre + non-élémentaire sur un ennemi, selon que Yuffie a 0, 1, ou 2 Images ou plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 3).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-sublimation-force-titanesque",
+     "type": "覚醒",
+     "categorie": "physique",
+     "nomJP": "昇華・抜山蓋世",
+     "nomFR": "Sublimation – Force titanesque",
+     "elements": [
+      "terre",
+      "neutre"
+     ],
+     "image": "images/yuffie/sublimation-force-titanesque.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance Terre + non-élémentaire sur un ennemi.\n• Toute l'équipe reçoit une Image, qui bloque 1 attaque physique.\n• Pendant un temps : imprégnation Terre.\n• Pendant un temps : mode Éveil Terre éclair, et plafond de dégâts +1 niveau.\n• Toutes les 3 compétences Terre utilisées : attaque supplémentaire [Ciel et terre].\n\nMODE ÉVEIL TERRE ÉCLAIR (瞬地覚醒モード)\n• Compétences Terre utilisables à l'infini.\n• Boost des compétences Terre, effet max : moyen.\n• Les compétences Terre n'ont plus de temps d'attente.\n\nATTAQUE SUPPLÉMENTAIRE : CIEL ET TERRE (天上天下)\n• Pendant un temps : résistance Terre de l'ennemi −1 niveau, et attaque Terre de Yuffie +1 niveau.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1), débloqué au niveau d'entraînement 6.\n• 1 utilisation de plus, débloquée au niveau d'entraînement 15.\n\nBONUS D'APPRENTISSAGE\n• Attaque +10."
+    },
+    {
+     "id": "c-style-personnel-eau-dispersee-sans-lune",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "我流・無月散水",
+     "nomFR": "Style personnel – Eau dispersée sans lune",
+     "elements": [
+      "eau",
+      "neutre"
+     ],
+     "image": "images/yuffie/style-personnel-eau-dispersee-sans-lune.webp",
+     "effet": "Réservée à Yuffie. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques à distance puissantes Eau + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Eau renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n\nCOMPÉTENCES SYNCHRO\n• Miroir d'eau – Clone (水鏡・分身の術, école Ninja, déclenchée par une compétence Ninja) : 4, 6 ou 8 attaques physiques à distance Eau + non-élémentaire sur un ennemi selon le nombre d'Images, avec un temps d'attente court ; Yuffie reçoit 1 Image.\n• Rive – Art de l'élan (水畔・躍進の術, école Ninja, déclenchée par une compétence Ninja) : sans temps d'attente, dégâts des compétences Eau de Yuffie augmentés pendant 1 tour (effet moyen), et au tour suivant ses compétences Eau se lancent 1 fois de plus.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
     },
     {
      "id": "c-style-personnel-fete-de-la-terre",
