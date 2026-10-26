@@ -1,6 +1,6 @@
 {
- "revision": 47,
- "maj": "2026-10-26T12:21:57.000Z",
+ "revision": 48,
+ "maj": "2026-10-26T12:26:14.000Z",
  "persos": [
   {
    "id": "guerrier-de-la-lumiere",
@@ -6300,6 +6300,18 @@
      "effet": "Réservée à Cloud.\n\n• 3 attaques physiques non-élémentaires sur un ennemi."
     },
     {
+     "id": "c-bravoure",
+     "type": "専用",
+     "categorie": "physique",
+     "nomJP": "ブレイバー",
+     "nomFR": "Bravoure",
+     "elements": [
+      "neutre"
+     ],
+     "image": "images/cloud/bravoure.webp",
+     "effet": "Réservée à Cloud.\n\n• Attaque physique non-élémentaire sur un ennemi."
+    },
+    {
      "id": "c-moto-c",
      "type": "Burst",
      "categorie": "physique",
@@ -6378,6 +6390,20 @@
      "effet": "Réservée à Cloud. Limit Break, utilisable 1 fois.\n\nATTAQUE\n• 4 attaques physiques ultra-puissantes Vent + Ténèbres sur un ennemi : elles ignorent la défense, ont un taux de critique de 100 % et peuvent dépasser le plafond de dégâts.\n• Consomme de la jauge de Limite : la puissance dépend de la quantité de jauge consommée.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Effet de la jauge de Limite augmenté (niv. 1).\n• Temps d'attente de la Limit Break réduit (niv. 1)."
     },
     {
+     "id": "c-liens-tisses-cloud",
+     "type": "LBLC",
+     "categorie": "physique",
+     "nomJP": "紡絆・クラウド",
+     "nomFR": "Liens tissés – Cloud",
+     "elements": [
+      "vent",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/liens-tisses-cloud.webp",
+     "effet": "Réservée à Cloud. Limit Break, chaîne de série (リミットチェイン). Utilisable 1 fois.\n\nATTAQUE\n• Consomme de la jauge de Limite, sans temps d'attente.\n• Lance une chaîne de série FF VII (jusqu'à 150 chaînes). Si une chaîne FF VII est déjà en cours : son nombre maximum de chaînes est dépassé (plafond +25).\n• 10 attaques physiques sur un ennemi, avec plafond de dégâts +1 niveau : Vent + non-élémentaire ou Ténèbres + non-élémentaire, selon l'élément dont Cloud est imprégné.\n• Pendant un temps : mode Chain Force [Cloud].\n• La prochaine jauge ATB de Cloud se remplit instantanément (1 fois).\n\nPENDANT LA CHAÎNE\n• Aucun effet.\n• La chaîne avance avec les attaques des héros de FF VII de l'équipe.\n\nMODE CHAIN FORCE – CLOUD (チェインフォースモード・クラウド)\n• Tous les 50 de la chaîne FF VII : attaque supplémentaire [Guide des liens – Cloud] (2 fois max).\n\nATTAQUE SUPPLÉMENTAIRE : GUIDE DES LIENS – CLOUD (絆の導・クラウド)\n• Attaque physique Vent + Ténèbres + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts et devient plus puissante à chaque déclenchement.\n• Temps d'attente des compétences Vent ou Ténèbres de Cloud réduit de 2 tours.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de Cloud réduit d'1 tour, débloqué au niveau d'entraînement 5."
+    },
+    {
      "id": "c-venue-celeste",
      "type": "覚醒",
      "categorie": "physique",
@@ -6417,6 +6443,20 @@
      "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques puissantes Vent + non-élémentaire sur un ennemi.\n• Pendant un temps : imprégnation Vent renforcée [重式] (effet fort).\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n\nCOMPÉTENCES SYNCHRO\n• Ruée sonique Kai (ソニックラッシュ改, école Magilame, déclenchée par une compétence Vent) : 6 attaques physiques Vent + non-élémentaire sur un ennemi ; dégâts des compétences Vent de Cloud augmentés pendant 1 tour (effet fort) ; tant que le mode Synchro dure, Cloud passe en état Mako profond (魔晄深化).\n• Impact tranchant (スラッシュインパクト, école Magilame, déclenchée par une compétence Vent) : attaque physique Vent + non-élémentaire sur un ennemi, qui peut dépasser le plafond de dégâts et qui est plus puissante si Cloud est en état Mako profond ; met fin à cet état.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
     },
     {
+     "id": "c-frappe-mako",
+     "type": "S奥義",
+     "categorie": "physique",
+     "nomJP": "魔晄撃",
+     "nomFR": "Frappe Mako",
+     "elements": [
+      "vent",
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/frappe-mako.webp",
+     "effet": "Réservée à Cloud. Utilisable 1 fois.\n\nATTAQUE\n• 15 attaques physiques Vent + Ténèbres + non-élémentaire sur un ennemi.\n• Pendant un temps : mode Synchro, et plafond de dégâts +1 niveau.\n• Active les modes [Materia liée III] et [Insigne du SOLDAT].\n• Cloud reçoit les états Infusion de Mako (魔晄付与) et Infusion de cellules de Jenova (ジェノバ細胞付与).\n\nCOMPÉTENCES SYNCHRO\n• Œil du dragon-croc (牙龍点睛, école Attaque physique, déclenchée par une compétence Vent ou Ténèbres) : attaque physique Vent + Ténèbres + non-élémentaire sur un ennemi, qui change selon l'état Infusion de Mako. Sans l'état : 6 attaques, et Cloud reçoit l'état. Avec l'état : 7 attaques, temps d'attente de Cloud réduit d'1 tour, et l'état prend fin.\n• Œil du dragon intérieur (我龍点睛, école Attaque physique, déclenchée par une compétence Vent ou Ténèbres) : attaque physique Vent + Ténèbres + non-élémentaire sur un ennemi, qui change selon l'état Infusion de cellules de Jenova. Sans l'état : 6 attaques, et Cloud reçoit l'état. Avec l'état : 4 attaques puissantes, et l'état prend fin.\n\nMODE [MATERIA LIÉE III] (連結マテリアモードIII)\n• Si Cloud utilise une compétence Vent ou Ténèbres à sa prochaine action : pendant un temps, imprégnation renforcée [重式] de cet élément (effet moyen).\n\nMODE [INSIGNE DU SOLDAT] (ソルジャーの証モード)\n• Chaque compétence Vent ou Ténèbres utilisée : attaque supplémentaire [Force baignée de Mako], dont l'effet change à chaque déclenchement.\n• Après 4 déclenchements : fin du mode.\n\nATTAQUE SUPPLÉMENTAIRE : FORCE BAIGNÉE DE MAKO (魔晄浴びし力)\n• Pendant 1 tour : taux de critique à 100 % et dégâts critiques augmentés, plus un bonus de plafond de dégâts qui baisse à chaque fois.\n• 1re fois : plafond +8 niveaux. 2e : +6. 3e : +4. 4e : +2.\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Dégâts de la capacité augmentés (niv. 1).\n• Temps d'attente de la capacité réduit (niv. 1)."
+    },
+    {
      "id": "c-omnislash",
      "type": "真奥義",
      "categorie": "physique",
@@ -6428,6 +6468,19 @@
      ],
      "image": "images/cloud/omnislash.webp",
      "effet": "Réservée à Cloud. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Cloud].\n• Pendant un temps : imprégnation Vent renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : OMNISLASH\n• 20 attaques physiques à distance Vent + non-élémentaire sur un ennemi.\n• Puis une attaque physique à distance Vent + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – CLOUD]\n• Plus Cloud inflige de dégâts pendant cet état, plus Omnislash devient puissant et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Cloud augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
+    },
+    {
+     "id": "c-fleau-des-tenebres-supreme",
+     "type": "真奥義",
+     "categorie": "physique",
+     "nomJP": "ダークネスハザード・極",
+     "nomFR": "Fléau des ténèbres suprême",
+     "elements": [
+      "tenebres",
+      "neutre"
+     ],
+     "image": "images/cloud/fleau-des-tenebres-supreme.webp",
+     "effet": "Réservée à Cloud. Se lance en 2 fois.\n\n1RE ACTIVATION : LIBÉRATION DU VRAI ARCANE (真奥義解放)\n• Ne consomme pas de jauge et n'a pas de temps d'attente.\n• Active l'état [Vrai arcane renforcé – Cloud Ténèbres].\n• Pendant un temps : imprégnation Ténèbres renforcée [重式].\n• Pendant un temps : plafond de dégâts +1 niveau.\n\n2E ACTIVATION : FLÉAU DES TÉNÈBRES SUPRÊME\n• 20 attaques physiques Ténèbres + non-élémentaire sur un ennemi.\n• Puis une attaque physique Ténèbres + non-élémentaire qui peut dépasser le plafond de dégâts.\n• Met fin à l'état [Vrai arcane renforcé].\n\nÉTAT [VRAI ARCANE RENFORCÉ – CLOUD TÉNÈBRES]\n• Plus Cloud inflige de dégâts pendant cet état, plus Fléau des ténèbres suprême devient puissant et plus son plafond de dégâts monte (jusqu'à 2 paliers).\n\nBONUS D'ENTRAÎNEMENT (超錬)\n• Après la 1re activation : statistiques de Cloud augmentées (niv. 1).\n• Temps d'attente de la 2e activation réduit (niv. 1).\n• La 2e activation consomme 1 segment de jauge en moins, débloqué au niveau d'entraînement 10."
     },
     {
      "id": "c-taillade-croisee-polaire-historia",
