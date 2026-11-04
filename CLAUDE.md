@@ -18,6 +18,9 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 │   └── index.html     ← Checklist Smash Ultimate
 ├── recettes/
 │   └── index.html     ← Mes recettes (liste dans le tableau RECETTES)
+├── sport/
+│   ├── index.html     ← Sport (séance, programmes, minuteur, progrès)
+│   └── donnees.json   ← séances, programmes, exercices ajoutés à la main
 ├── ffrk/
 │   ├── index.html     ← Wiki FFRK (persos et capacités spéciales)
 │   ├── donnees.json   ← données du wiki (créé au premier enregistrement)
@@ -77,6 +80,12 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 - Pas de crochets pour ce qui ne double pas : températures, temps, taille des boules, dimensions du plat.
 - Les étapes et les notes ne sont pas recalculées : y éviter les quantités, renvoyer plutôt aux ingrédients (« le sucre pour les fruits »).
 - Quand une info manque dans une recette donnée, la compléter seulement avec une valeur standard et le signaler (« environ », estimation).
+
+## Sport (`sport/`) — même exception que le wiki FFRK
+
+- Données dans `sport/donnees.json` : `{ revision, maj, programmes: [{ id, nom, lieu, exercices: [{ nom, series, objectif, repos }] }], seances: [{ id, date, programme, exercices: [{ nom, series: [{ reps, poids, duree }] }], notes }], exercices: [{ nom, mesure }] }`. `lieu` : `"salle"` ou `"maison"`. `mesure` : `"poids"` (répétitions + kg), `"reps"` ou `"duree"` (secondes). `repos` en secondes.
+- Enregistrement par l'API GitHub avec la même clé que le wiki FFRK (commit « Sport : mise à jour »). La séance en cours et les modifications pas encore envoyées restent dans le navigateur (localStorage) : la page marche à la salle sans réseau et renvoie dès que possible.
+- Exercices proposés : tableau `EXERCICES_BASE` en haut du script. Pas de données de santé ni de mensurations dans ce fichier (le repo peut être public).
 
 ## Wiki FFRK (`ffrk/`) — exception aux règles « un seul fichier » et « hors ligne »
 

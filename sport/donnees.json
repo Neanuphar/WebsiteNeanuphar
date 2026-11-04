@@ -1,0 +1,94 @@
+{
+ "revision": 1,
+ "maj": "2026-11-04T19:22:05.000Z",
+ "programmes": [
+  {
+   "id": "p-full-body-salle",
+   "nom": "Full body (exemple)",
+   "lieu": "salle",
+   "exercices": [
+    {
+     "nom": "Squat",
+     "series": 3,
+     "objectif": "8 à 10",
+     "repos": 120
+    },
+    {
+     "nom": "Développé couché",
+     "series": 3,
+     "objectif": "8 à 10",
+     "repos": 120
+    },
+    {
+     "nom": "Rowing barre",
+     "series": 3,
+     "objectif": "10",
+     "repos": 90
+    },
+    {
+     "nom": "Développé militaire",
+     "series": 3,
+     "objectif": "10",
+     "repos": 90
+    },
+    {
+     "nom": "Hip thrust",
+     "series": 3,
+     "objectif": "10 à 12",
+     "repos": 90
+    },
+    {
+     "nom": "Gainage",
+     "series": 3,
+     "objectif": "30 s",
+     "repos": 60
+    }
+   ]
+  },
+  {
+   "id": "p-renfo-maison",
+   "nom": "Renfo maison (exemple)",
+   "lieu": "maison",
+   "exercices": [
+    {
+     "nom": "Pompes",
+     "series": 3,
+     "objectif": "max",
+     "repos": 60
+    },
+    {
+     "nom": "Squat au poids du corps",
+     "series": 3,
+     "objectif": "15",
+     "repos": 60
+    },
+    {
+     "nom": "Fentes",
+     "series": 3,
+     "objectif": "10 par jambe",
+     "repos": 60
+    },
+    {
+     "nom": "Pont fessier",
+     "series": 3,
+     "objectif": "15",
+     "repos": 45
+    },
+    {
+     "nom": "Gainage",
+     "series": 3,
+     "objectif": "30 s",
+     "repos": 45
+    },
+    {
+     "nom": "Gainage latéral",
+     "series": 2,
+     "objectif": "20 s par côté",
+     "repos": 45
+    }
+   ]
+  }
+ ],
+ "seances": [],
+ "exercices": []
+}
