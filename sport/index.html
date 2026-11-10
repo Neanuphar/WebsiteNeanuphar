@@ -115,6 +115,11 @@
     .exo details.comment { margin-top: 6px; font-size: .9rem; }
     .exo details.comment summary { cursor: pointer; color: var(--accent); font-size: .85rem; }
     .exo details.comment p { margin: 4px 0 0; white-space: pre-line; }
+    .video { position: relative; width: 100%; aspect-ratio: 16 / 9; margin-top: 8px; border-radius: 10px; overflow: hidden; background: #000; }
+    .video.verticale { aspect-ratio: 9 / 16; max-width: 300px; margin-left: auto; margin-right: auto; }
+    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .liens-exo { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 6px; font-size: .85rem; }
+    .liens-exo a { color: var(--accent); }
     .series { width: 100%; border-collapse: collapse; margin-top: 8px; }
     .series th { font-size: .8rem; font-weight: 600; color: var(--doux); text-align: left; padding: 0 4px 4px; }
     .series td { padding: 3px 4px; vertical-align: middle; }
@@ -347,6 +352,27 @@
     </form>
   </dialog>
 
+  <!-- Fenêtre : explication d'un exercice -->
+  <dialog id="fen-exo">
+    <form class="fenetre" method="dialog" id="form-exo">
+      <h2 id="titre-exo">Exercice</h2>
+      <div class="champ">
+        <label for="exo-description">Comment faire</label>
+        <textarea id="exo-description" rows="6" placeholder="Position, mouvement, erreurs à éviter…"></textarea>
+      </div>
+      <div class="champ">
+        <label for="exo-video">Lien de la vidéo YouTube</label>
+        <input type="url" id="exo-video" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off">
+        <p class="aide">Colle le lien copié depuis YouTube (bouton Partager). Les Shorts marchent aussi. Laisse vide pour ne pas mettre de vidéo.</p>
+        <p class="aide" id="exo-erreur" style="color: var(--danger)"></p>
+      </div>
+      <div class="boutons">
+        <button type="button" id="exo-annuler">Annuler</button>
+        <button type="submit" class="principal">Enregistrer</button>
+      </div>
+    </form>
+  </dialog>
+
   <!-- Fenêtre : conflit -->
   <dialog id="fen-conflit">
     <div class="fenetre">
@@ -453,10 +479,25 @@
       return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
     }
     function kg(n) { return (Math.round(n * 10) / 10).toLocaleString("fr-FR") + " kg"; }
-    function descriptionDe(nom) {
+    function infoExo(nom) {
       const n = (nom || "").trim().toLowerCase();
-      const e = donnees.exercices.find((x) => x.nom.toLowerCase() === n && x.description);
-      return e ? e.description : "";
+      return donnees.exercices.find((x) => x.nom.toLowerCase() === n) || null;
+    }
+    // Lien YouTube -> { id, verticale } (watch?v=, youtu.be/, shorts/, embed/), sinon null
+    function idYoutube(lien) {
+      let u;
+      try { u = new URL((lien || "").trim()); } catch (e) { return null; }
+      const hote = u.hostname.replace(/^(www|m|music)\./, "");
+      let id = null, verticale = false;
+      if (hote === "youtu.be") id = u.pathname.slice(1).split("/")[0];
+      else if (hote === "youtube.com" || hote === "youtube-nocookie.com") {
+        if (u.pathname === "/watch") id = u.searchParams.get("v");
+        else {
+          const m = u.pathname.match(/^\/(shorts|embed|live)\/([^/?#]+)/);
+          if (m) { id = m[2]; verticale = m[1] === "shorts"; }
+        }
+      }
+      return id && /^[\w-]{6,20}$/.test(id) ? { id, verticale } : null;
     }
     function mesureDe(nom) {
       const n = (nom || "").trim().toLowerCase();
@@ -832,10 +873,36 @@
       act.lastChild.title = "Retirer l'exercice";
       t.append(titre, act);
       c.append(t);
-      const desc = descriptionDe(e.nom);
-      if (desc) {
+      const info = infoExo(e.nom) || {};
+      const yt = idYoutube(info.video);
+      if (info.description || yt || token) {
         const det = el("details", "comment");
-        det.append(el("summary", null, "Comment faire"), el("p", null, desc));
+        const rien = !info.description && !yt;
+        det.append(el("summary", null, rien ? "Ajouter une explication ou une vidéo" : yt ? "Comment faire ▶" : "Comment faire"));
+        if (info.description) det.append(el("p", null, info.description));
+        const liens = el("div", "liens-exo");
+        if (yt) {
+          // la vidéo ne se charge qu'à l'ouverture, pour ne pas alourdir la page
+          det.addEventListener("toggle", () => {
+            if (!det.open || det.querySelector(".video")) return;
+            const v = el("div", "video" + (yt.verticale ? " verticale" : ""));
+            const f = el("iframe");
+            f.src = `https://www.youtube-nocookie.com/embed/${yt.id}?rel=0&playsinline=1`;
+            f.title = "Vidéo : " + e.nom;
+            f.allow = "encrypted-media; picture-in-picture; fullscreen";
+            f.allowFullscreen = true;
+            f.loading = "lazy";
+            v.append(f);
+            det.insertBefore(v, liens);
+          });
+          const a = el("a", null, "Ouvrir sur YouTube");
+          a.href = info.video;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          liens.append(a);
+        }
+        if (token) liens.append(bouton(rien ? "Ajouter" : "Modifier", "petit", () => ouvrirExo(e.nom)));
+        if (liens.children.length) det.append(liens);
         c.append(det);
       }
 
@@ -1405,6 +1472,34 @@
       afficherEtat("");
       afficherTout();
     });
+    // ===== Fenêtre : explication d'un exercice =====
+    let exoEdite = "";
+    function ouvrirExo(nom) {
+      exoEdite = nom;
+      const info = infoExo(nom) || {};
+      $("titre-exo").textContent = nom;
+      $("exo-description").value = info.description || "";
+      $("exo-video").value = info.video || "";
+      $("exo-erreur").textContent = "";
+      $("fen-exo").showModal();
+    }
+    $("exo-annuler").addEventListener("click", () => $("fen-exo").close());
+    $("form-exo").addEventListener("submit", (ev) => {
+      const video = $("exo-video").value.trim();
+      if (video && !idYoutube(video)) {
+        ev.preventDefault();
+        $("exo-erreur").textContent = "Ce lien n'est pas reconnu comme une vidéo YouTube.";
+        return;
+      }
+      let info = infoExo(exoEdite);
+      if (!info) { info = { nom: exoEdite, mesure: mesureDe(exoEdite) }; donnees.exercices.push(info); }
+      const desc = $("exo-description").value.trim();
+      if (desc) info.description = desc; else delete info.description;
+      if (video) info.video = video; else delete info.video;
+      modifie();
+      afficherSeance();
+    });
+
     $("conflit-exporter").addEventListener("click", exporter);
     $("conflit-recharger").addEventListener("click", () => { nonEnregistre = false; ecrire(CLE_ATTENTE, ""); location.reload(); });
     window.addEventListener("beforeunload", (e) => { if (nonEnregistre) { e.preventDefault(); e.returnValue = ""; } });
