@@ -1,6 +1,6 @@
 {
- "revision": 3,
- "maj": "2026-11-10T06:38:26.000Z",
+ "revision": 4,
+ "maj": "2026-11-10T06:39:01.000Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -106,6 +106,12 @@
      "repos": 15
     },
     {
+     "nom": "Tractions",
+     "series": 3,
+     "objectif": "max (sinon 5 négatives lentes)",
+     "repos": 120
+    },
+    {
      "nom": "Pompes",
      "series": 4,
      "objectif": "8 à 12 (avec poignées)",
@@ -127,12 +133,6 @@
      "nom": "Élévations latérales",
      "series": 3,
      "objectif": "12 à 15",
-     "repos": 60
-    },
-    {
-     "nom": "Curl biceps",
-     "series": 3,
-     "objectif": "10 à 12",
      "repos": 60
     },
     {
