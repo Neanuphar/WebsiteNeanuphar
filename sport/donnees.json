@@ -1,6 +1,6 @@
 {
- "revision": 12,
- "maj": "2026-11-10T08:29:58.434Z",
+ "revision": 13,
+ "maj": "2026-11-10T08:42:25.128Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -187,7 +187,190 @@
    ]
   }
  ],
- "seances": [],
+ "seances": [
+  {
+   "id": "s-mwac79lhwzx3",
+   "date": "2026-11-10",
+   "programme": "Cardio + haut du corps (45 min)",
+   "exercices": [
+    {
+     "nom": "Corde à sauter",
+     "series": [
+      {
+       "duree": 45
+      },
+      {
+       "duree": 45
+      }
+     ]
+    },
+    {
+     "nom": "Rotations d'épaules",
+     "series": [
+      {
+       "duree": 30
+      }
+     ]
+    },
+    {
+     "nom": "Mobilité des poignets",
+     "series": [
+      {
+       "duree": 30
+      }
+     ]
+    },
+    {
+     "nom": "Écarté avec élastique",
+     "series": [
+      {
+       "reps": 15
+      },
+      {
+       "reps": 15
+      }
+     ]
+    },
+    {
+     "nom": "Rotation externe avec élastique",
+     "series": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "nom": "Tractions scapulaires",
+     "series": [
+      {
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Pompes sur les genoux",
+     "series": [
+      {
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "nom": "Tractions",
+     "series": [
+      {
+       "reps": 4
+      },
+      {
+       "reps": 3
+      },
+      {
+       "reps": 3
+      }
+     ]
+    },
+    {
+     "nom": "Pompes",
+     "series": [
+      {
+       "reps": 8
+      },
+      {
+       "reps": 8
+      },
+      {
+       "reps": 10
+      },
+      {
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "nom": "Rowing haltère",
+     "series": [
+      {
+       "reps": 10,
+       "poids": 8
+      },
+      {
+       "reps": 10,
+       "poids": 8
+      },
+      {
+       "reps": 10,
+       "poids": 8
+      }
+     ]
+    },
+    {
+     "nom": "Développé militaire",
+     "series": [
+      {
+       "reps": 10,
+       "poids": 8
+      },
+      {
+       "reps": 8,
+       "poids": 8
+      },
+      {
+       "reps": 8,
+       "poids": 6
+      }
+     ]
+    },
+    {
+     "nom": "Élévations latérales",
+     "series": [
+      {
+       "reps": 12,
+       "poids": 4
+      },
+      {
+       "reps": 12,
+       "poids": 4
+      },
+      {
+       "reps": 15,
+       "poids": 3
+      }
+     ]
+    },
+    {
+     "nom": "Extension triceps",
+     "series": [
+      {
+       "reps": 12,
+       "poids": 8
+      },
+      {
+       "reps": 12,
+       "poids": 8
+      },
+      {
+       "reps": 10,
+       "poids": 8
+      }
+     ]
+    },
+    {
+     "nom": "Gainage",
+     "series": [
+      {
+       "duree": 45
+      },
+      {
+       "duree": 45
+      }
+     ]
+    }
+   ]
+  }
+ ],
  "exercices": [
   {
    "nom": "Jumping jacks",
