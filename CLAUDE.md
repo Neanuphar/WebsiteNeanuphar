@@ -83,7 +83,7 @@ Objectif : un site simple et fiable, pas un projet d'apprentissage. Le code est 
 
 ## Sport (`sport/`) — même exception que le wiki FFRK
 
-- Données dans `sport/donnees.json` : `{ revision, maj, programmes: [{ id, nom, lieu, exercices: [{ nom, series, objectif, repos, partie }] }], seances: [{ id, date, programme, exercices: [{ nom, series: [{ reps, poids, duree }] }], notes }], exercices: [{ nom, mesure }] }`. `lieu` : `"salle"` ou `"maison"`. `mesure` : `"poids"` (répétitions + kg), `"reps"` ou `"duree"` (secondes). `repos` en secondes. `partie` : `"echauffement"` ou absent (séance).
+- Données dans `sport/donnees.json` : `{ revision, maj, programmes: [{ id, nom, lieu, exercices: [{ nom, series, objectif, repos, partie }] }], seances: [{ id, date, programme, exercices: [{ nom, series: [{ reps, poids, duree }] }], notes }], exercices: [{ nom, mesure, description }] }`. `lieu` : `"salle"` ou `"maison"`. `mesure` : `"poids"` (répétitions + kg), `"reps"` ou `"duree"` (secondes). `repos` en secondes. `partie` : `"echauffement"` ou absent (séance). `description` (facultatif) : « Comment faire » affiché sous l'exercice pendant la séance, retrouvé par le nom de l'exercice.
 - Enregistrement par l'API GitHub avec la même clé que le wiki FFRK (commit « Sport : mise à jour »). La séance en cours et les modifications pas encore envoyées restent dans le navigateur (localStorage) : la page marche à la salle sans réseau et renvoie dès que possible.
 - Exercices proposés : tableau `EXERCICES_BASE` en haut du script. Pas de données de santé ni de mensurations dans ce fichier (le repo peut être public).
 

@@ -112,6 +112,9 @@
     /* ---- Séance ---- */
     .exo .cible { font-size: .85rem; color: var(--doux); }
     .exo .precedent { font-size: .85rem; color: var(--accent); }
+    .exo details.comment { margin-top: 6px; font-size: .9rem; }
+    .exo details.comment summary { cursor: pointer; color: var(--accent); font-size: .85rem; }
+    .exo details.comment p { margin: 4px 0 0; white-space: pre-line; }
     .series { width: 100%; border-collapse: collapse; margin-top: 8px; }
     .series th { font-size: .8rem; font-weight: 600; color: var(--doux); text-align: left; padding: 0 4px 4px; }
     .series td { padding: 3px 4px; vertical-align: middle; }
@@ -450,6 +453,11 @@
       return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
     }
     function kg(n) { return (Math.round(n * 10) / 10).toLocaleString("fr-FR") + " kg"; }
+    function descriptionDe(nom) {
+      const n = (nom || "").trim().toLowerCase();
+      const e = donnees.exercices.find((x) => x.nom.toLowerCase() === n && x.description);
+      return e ? e.description : "";
+    }
     function mesureDe(nom) {
       const n = (nom || "").trim().toLowerCase();
       const e = donnees.exercices.find((x) => x.nom.toLowerCase() === n) || EXERCICES_BASE.find((x) => x.nom.toLowerCase() === n);
@@ -824,6 +832,12 @@
       act.lastChild.title = "Retirer l'exercice";
       t.append(titre, act);
       c.append(t);
+      const desc = descriptionDe(e.nom);
+      if (desc) {
+        const det = el("details", "comment");
+        det.append(el("summary", null, "Comment faire"), el("p", null, desc));
+        c.append(det);
+      }
 
       const tab = el("table", "series");
       const th = el("tr");

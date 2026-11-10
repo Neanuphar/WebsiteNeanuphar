@@ -1,6 +1,6 @@
 {
- "revision": 6,
- "maj": "2026-11-10T06:45:25.000Z",
+ "revision": 7,
+ "maj": "2026-11-10T06:46:40.000Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -199,7 +199,8 @@
   },
   {
    "nom": "Rotations d'épaules",
-   "mesure": "duree"
+   "mesure": "duree",
+   "description": "Debout, bras tendus sur les côtés. Fais des cercles, petits puis de plus en plus grands : 15 s vers l'avant, 15 s vers l'arrière."
   },
   {
    "nom": "Pompes piquées",
@@ -219,23 +220,68 @@
   },
   {
    "nom": "Écarté avec élastique",
-   "mesure": "reps"
+   "mesure": "reps",
+   "description": "Debout, bras tendus devant toi à hauteur d'épaules, l'élastique dans les mains. Écarte les bras sur les côtés en serrant les omoplates, puis reviens lentement. Épaules basses, loin des oreilles."
   },
   {
    "nom": "Mobilité des poignets",
-   "mesure": "duree"
+   "mesure": "duree",
+   "description": "Mains croisées doigts entrelacés, fais des cercles dans un sens puis dans l'autre. Termine à quatre pattes, mains à plat, en te balançant doucement d'avant en arrière."
   },
   {
    "nom": "Rotation externe avec élastique",
-   "mesure": "reps"
+   "mesure": "reps",
+   "description": "Coudes collés au corps et pliés à 90°, avant-bras vers l'avant, l'élastique autour des poignets. Écarte les avant-bras vers l'extérieur sans décoller les coudes, puis reviens lentement. Petit mouvement, sans forcer."
   },
   {
    "nom": "Tractions scapulaires",
-   "mesure": "reps"
+   "mesure": "reps",
+   "description": "Suspendue à la barre, bras tendus. Sans plier les coudes, tire les épaules vers le bas (comme pour les éloigner des oreilles) : le corps monte de quelques centimètres. Tiens 1 s, relâche doucement."
   },
   {
    "nom": "Pompes sur les genoux",
-   "mesure": "reps"
+   "mesure": "reps",
+   "description": "Mains un peu plus larges que les épaules, genoux au sol. Le corps forme une ligne des genoux à la tête. Descends la poitrine près du sol, coudes à environ 45° du corps, puis pousse. Juste pour chauffer : faciles."
+  },
+  {
+   "nom": "Corde à sauter",
+   "mesure": "duree",
+   "description": "Petits sauts sur la pointe des pieds, genoux souples. Ce sont les poignets qui font tourner la corde, pas les bras. Rythme tranquille : c'est pour chauffer, pas pour s'épuiser."
+  },
+  {
+   "nom": "Tractions",
+   "mesure": "reps",
+   "description": "Mains en pronation (paumes vers l'avant), un peu plus larges que les épaules. Pars bras tendus, tire les épaules vers le bas puis monte jusqu'à passer le menton au-dessus de la barre. Redescends en contrôlant, sans te laisser tomber, et sans te balancer.\nSi tu n'y arrives pas encore : monte en sautant ou avec une chaise, puis redescends le plus lentement possible (3 à 5 s). C'est une « négative »."
+  },
+  {
+   "nom": "Pompes",
+   "mesure": "reps",
+   "description": "Avec les poignées, mains un peu plus larges que les épaules. Gainage serré : le corps est une planche des talons à la tête, les fesses ne montent pas et le ventre ne tombe pas. Descends jusqu'à ce que la poitrine soit au niveau des poignées, coudes à environ 45° du corps, puis pousse.\nSi tu bloques avant 8 : termine la série sur les genoux."
+  },
+  {
+   "nom": "Rowing haltère",
+   "mesure": "poids",
+   "description": "Un genou et une main posés sur une chaise ou un lit, dos plat parallèle au sol. L'haltère pend bras tendu. Tire-le vers la hanche (pas vers l'épaule) en gardant le coude près du corps, serre l'omoplate en haut, redescends lentement. Toutes les répétitions d'un bras, puis l'autre."
+  },
+  {
+   "nom": "Développé militaire",
+   "mesure": "poids",
+   "description": "Debout ou assise dos droit, un haltère dans chaque main à hauteur d'épaules, paumes vers l'avant. Pousse vers le haut jusqu'à bras presque tendus, puis redescends à hauteur d'épaules. Serre les fesses et le ventre pour ne pas cambrer le bas du dos."
+  },
+  {
+   "nom": "Élévations latérales",
+   "mesure": "poids",
+   "description": "Debout, un haltère léger dans chaque main le long du corps, coudes très légèrement fléchis. Monte les bras sur les côtés jusqu'à hauteur d'épaules (pas plus haut), redescends lentement. Pas d'élan : si tu dois te balancer, c'est trop lourd."
+  },
+  {
+   "nom": "Extension triceps",
+   "mesure": "poids",
+   "description": "Debout ou assise, un haltère tenu à deux mains au-dessus de la tête. Garde les coudes pointés vers le plafond et proches de la tête, descends l'haltère derrière la nuque en pliant seulement les coudes, puis remonte. Seuls les avant-bras bougent."
+  },
+  {
+   "nom": "Gainage",
+   "mesure": "duree",
+   "description": "Sur les avant-bras et la pointe des pieds, coudes sous les épaules. Le corps forme une ligne droite : fesses ni en l'air ni affaissées, ventre rentré, regard vers le sol. Respire normalement. Si la position se casse avant la fin, arrête la série."
   }
  ]
 }
