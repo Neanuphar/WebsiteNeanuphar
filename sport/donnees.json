@@ -1,6 +1,6 @@
 {
- "revision": 9,
- "maj": "2026-11-10T07:05:53.778Z",
+ "revision": 10,
+ "maj": "2026-11-10T07:06:53.643Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -267,7 +267,8 @@
   {
    "nom": "Développé militaire",
    "mesure": "poids",
-   "description": "Debout ou assise dos droit, un haltère dans chaque main à hauteur d'épaules, paumes vers l'avant. Pousse vers le haut jusqu'à bras presque tendus, puis redescends à hauteur d'épaules. Serre les fesses et le ventre pour ne pas cambrer le bas du dos."
+   "description": "Debout ou assise dos droit, un haltère dans chaque main à hauteur d'épaules, paumes vers l'avant. Pousse vers le haut jusqu'à bras presque tendus, puis redescends à hauteur d'épaules. Serre les fesses et le ventre pour ne pas cambrer le bas du dos.",
+   "video": "https://www.youtube.com/watch?v=t7ZU2bG49ZE"
   },
   {
    "nom": "Élévations latérales",
