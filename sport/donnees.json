@@ -1,6 +1,6 @@
 {
- "revision": 5,
- "maj": "2026-11-10T06:42:15.000Z",
+ "revision": 6,
+ "maj": "2026-11-10T06:45:25.000Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -95,9 +95,23 @@
    "exercices": [
     {
      "nom": "Corde à sauter",
-     "series": 3,
+     "series": 2,
      "objectif": "45 s",
      "repos": 15,
+     "partie": "echauffement"
+    },
+    {
+     "nom": "Rotations d'épaules",
+     "series": 1,
+     "objectif": "30 s (avant puis arrière)",
+     "repos": 0,
+     "partie": "echauffement"
+    },
+    {
+     "nom": "Mobilité des poignets",
+     "series": 1,
+     "objectif": "30 s",
+     "repos": 0,
      "partie": "echauffement"
     },
     {
@@ -105,6 +119,27 @@
      "series": 2,
      "objectif": "15",
      "repos": 15,
+     "partie": "echauffement"
+    },
+    {
+     "nom": "Rotation externe avec élastique",
+     "series": 2,
+     "objectif": "12",
+     "repos": 15,
+     "partie": "echauffement"
+    },
+    {
+     "nom": "Tractions scapulaires",
+     "series": 1,
+     "objectif": "8",
+     "repos": 30,
+     "partie": "echauffement"
+    },
+    {
+     "nom": "Pompes sur les genoux",
+     "series": 1,
+     "objectif": "10 faciles",
+     "repos": 30,
      "partie": "echauffement"
     },
     {
@@ -184,6 +219,22 @@
   },
   {
    "nom": "Écarté avec élastique",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Mobilité des poignets",
+   "mesure": "duree"
+  },
+  {
+   "nom": "Rotation externe avec élastique",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Tractions scapulaires",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Pompes sur les genoux",
    "mesure": "reps"
   }
  ]
