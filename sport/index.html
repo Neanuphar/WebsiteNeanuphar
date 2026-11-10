@@ -723,7 +723,7 @@
           ? programme.exercices.map((e) => ({
               nom: e.nom,
               objectif: e.objectif || "",
-              repos: e.repos || REPOS_PAR_DEFAUT,
+              repos: e.repos ?? REPOS_PAR_DEFAUT,
               partie: e.partie || "",
               series: Array.from({ length: Math.max(1, e.series || 1) }, () => ({})),
             }))
@@ -875,7 +875,7 @@
       c.append(t);
       const info = infoExo(e.nom) || {};
       const yt = idYoutube(info.video);
-      if (info.description || yt || token) {
+      {
         const det = el("details", "comment");
         const rien = !info.description && !yt;
         det.append(el("summary", null, rien ? "Ajouter une explication ou une vidéo" : yt ? "Comment faire ▶" : "Comment faire"));
@@ -901,7 +901,11 @@
           a.rel = "noopener noreferrer";
           liens.append(a);
         }
-        if (token) liens.append(bouton(rien ? "Ajouter" : "Modifier", "petit", () => ouvrirExo(e.nom)));
+        liens.append(bouton(rien ? "Ajouter" : "Modifier", "petit", () => {
+          if (token) { ouvrirExo(e.nom); return; }
+          alert("Pour modifier l'explication ou ajouter une vidéo, active d'abord ta clé GitHub sur cet appareil.");
+          ouvrirCle();
+        }));
         if (liens.children.length) det.append(liens);
         c.append(det);
       }
@@ -947,8 +951,8 @@
       bts.style.justifyContent = "flex-start";
       bts.append(
         bouton("+ Série", "petit", () => { e.series.push({ ...(e.series[e.series.length - 1] || {}) }); sauverBrouillon(); afficherSeance(); }),
-        bouton(`⏱ Repos ${mmss(e.repos || REPOS_PAR_DEFAUT)}`, "petit", () => lancerRepos(e.repos || REPOS_PAR_DEFAUT, e.nom)),
       );
+      if (e.repos !== 0) bts.append(bouton(`⏱ Repos ${mmss(e.repos || REPOS_PAR_DEFAUT)}`, "petit", () => lancerRepos(e.repos || REPOS_PAR_DEFAUT, e.nom)));
       c.append(bts);
       return c;
     }
