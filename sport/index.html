@@ -412,6 +412,7 @@
   </dialog>
 
   <datalist id="liste-exos"></datalist>
+  <input type="file" id="fichier-seance" accept=".json,application/json" hidden>
 
   <script>
     // ===== Réglages modifiables =====
@@ -695,6 +696,59 @@
       e.title = texte;
       e.className = "etat" + (classe ? " " + classe : "");
     }
+    // ===== Séance en cours : export / import d'un fichier (pour passer d'un appareil à l'autre) =====
+    function telecharger(nomFichier, objet) {
+      const blob = new Blob([JSON.stringify(objet, null, 1)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = el("a");
+      a.href = url;
+      a.download = nomFichier;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+    function exporterSeance() {
+      if (!brouillon) return;
+      const h = new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }).replace(":", "h");
+      telecharger(`seance-${brouillon.date}-${h}.json`, { type: "neanuphar-sport-seance", version: 1, seance: brouillon });
+    }
+    function importerSeance() { $("fichier-seance").value = ""; $("fichier-seance").click(); }
+    $("fichier-seance").addEventListener("change", async () => {
+      const f = $("fichier-seance").files[0];
+      if (!f) return;
+      let s;
+      try {
+        const o = JSON.parse(await f.text());
+        s = o.seance || o.seanceEnCours || o;     // fichier de séance, sauvegarde complète, ou séance brute
+      } catch (e) { alert("Ce fichier n'est pas lisible."); return; }
+      const valide = s && Array.isArray(s.exercices) && s.exercices.every((e) => e && typeof e.nom === "string" && Array.isArray(e.series));
+      if (!valide) { alert("Ce fichier ne contient pas de séance en cours."); return; }
+      if (brouillon && !confirm("Une séance est déjà en cours sur cet appareil. La remplacer par celle du fichier ?")) return;
+      brouillon = {
+        id: s.id || idUnique("s-"),
+        date: /^\d{4}-\d{2}-\d{2}$/.test(s.date || "") ? s.date : aujourdhui(),
+        programme: String(s.programme || ""),
+        lieu: String(s.lieu || ""),
+        notes: String(s.notes || ""),
+        exercices: s.exercices.map((e) => ({
+          nom: e.nom,
+          objectif: String(e.objectif || ""),
+          repos: Number.isFinite(e.repos) ? e.repos : REPOS_PAR_DEFAUT,
+          partie: e.partie === "echauffement" ? "echauffement" : "",
+          series: e.series.map((x) => {
+            const r = {};
+            ["reps", "poids", "duree"].forEach((k) => { const v = nombre(x && x[k]); if (v !== null) r[k] = v; });
+            return r;
+          }),
+        })),
+      };
+      sauverBrouillon();
+      choisirOnglet("seance");
+      afficherSeance();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
     function exporter() {
       const blob = new Blob([JSON.stringify({ donnees, seanceEnCours: brouillon }, null, 1)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
@@ -840,7 +894,10 @@
         const lig = el("div", "ligne");
         sel.classList.add("grand");
         lig.append(sel, bouton("Commencer", "principal", () => commencer(donnees.programmes.find((p) => p.id === sel.value))));
-        c.append(lig);
+        const imp = el("div", "boutons");
+        imp.style.justifyContent = "flex-start";
+        imp.append(bouton("Reprendre une séance exportée…", "petit", importerSeance));
+        c.append(lig, imp);
         zone.append(c);
         zone.append(vueHistorique());
       } else {
@@ -868,7 +925,12 @@
       d.style.width = "auto";
       d.addEventListener("change", () => { b.date = d.value || aujourdhui(); sauverBrouillon(); });
       t.append(d);
-      tete.append(t, el("p", "aide", "La séance en cours est gardée sur cet appareil, même sans réseau, jusqu'à ce que tu la termines."));
+      tete.append(t, el("p", "aide", "La séance en cours est gardée sur cet appareil, même sans réseau, jusqu'à ce que tu la termines. Pour la continuer sur un autre appareil : Exporter ici, puis Importer là-bas."));
+      const io = el("div", "boutons");
+      io.style.justifyContent = "flex-start";
+      io.style.marginTop = "6px";
+      io.append(bouton("Exporter la séance", "petit", exporterSeance), bouton("Importer…", "petit", importerSeance));
+      tete.append(io);
       box.append(tete);
 
       // Titres « Échauffement » / « Séance » quand on change de partie
