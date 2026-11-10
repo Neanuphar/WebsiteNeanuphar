@@ -1,6 +1,6 @@
 {
- "revision": 10,
- "maj": "2026-11-10T07:06:53.643Z",
+ "revision": 11,
+ "maj": "2026-11-10T07:39:13.659Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -236,7 +236,8 @@
   {
    "nom": "Tractions scapulaires",
    "mesure": "reps",
-   "description": "Suspendue à la barre, bras tendus. Sans plier les coudes, tire les épaules vers le bas (comme pour les éloigner des oreilles) : le corps monte de quelques centimètres. Tiens 1 s, relâche doucement."
+   "description": "Suspendue à la barre, bras tendus. Sans plier les coudes, tire les épaules vers le bas (comme pour les éloigner des oreilles) : le corps monte de quelques centimètres. Tiens 1 s, relâche doucement.",
+   "video": "https://www.youtube.com/watch?v=E0qJCuvvtis"
   },
   {
    "nom": "Pompes sur les genoux",
