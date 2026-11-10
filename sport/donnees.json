@@ -1,6 +1,6 @@
 {
- "revision": 1,
- "maj": "2026-11-04T19:22:05.000Z",
+ "revision": 2,
+ "maj": "2026-11-10T06:37:00.000Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -87,8 +87,98 @@
      "repos": 45
     }
    ]
+  },
+  {
+   "id": "p-haut-maison-45",
+   "nom": "Cardio + haut du corps (45 min)",
+   "lieu": "maison",
+   "exercices": [
+    {
+     "nom": "Jumping jacks",
+     "series": 2,
+     "objectif": "45 s",
+     "repos": 15
+    },
+    {
+     "nom": "Montées de genoux",
+     "series": 2,
+     "objectif": "30 s",
+     "repos": 15
+    },
+    {
+     "nom": "Rotations d'épaules",
+     "series": 1,
+     "objectif": "60 s",
+     "repos": 0
+    },
+    {
+     "nom": "Pompes",
+     "series": 4,
+     "objectif": "8 à 12",
+     "repos": 90
+    },
+    {
+     "nom": "Pompes piquées",
+     "series": 3,
+     "objectif": "8 à 10",
+     "repos": 90
+    },
+    {
+     "nom": "Dips sur chaise",
+     "series": 3,
+     "objectif": "10 à 12",
+     "repos": 75
+    },
+    {
+     "nom": "Superman",
+     "series": 3,
+     "objectif": "12 à 15",
+     "repos": 60
+    },
+    {
+     "nom": "Planche toucher d'épaules",
+     "series": 3,
+     "objectif": "20 (10 par bras)",
+     "repos": 60
+    },
+    {
+     "nom": "Gainage",
+     "series": 3,
+     "objectif": "45 s",
+     "repos": 45
+    }
+   ]
   }
  ],
  "seances": [],
- "exercices": []
+ "exercices": [
+  {
+   "nom": "Jumping jacks",
+   "mesure": "duree"
+  },
+  {
+   "nom": "Montées de genoux",
+   "mesure": "duree"
+  },
+  {
+   "nom": "Rotations d'épaules",
+   "mesure": "duree"
+  },
+  {
+   "nom": "Pompes piquées",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Dips sur chaise",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Superman",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Planche toucher d'épaules",
+   "mesure": "reps"
+  }
+ ]
 }
