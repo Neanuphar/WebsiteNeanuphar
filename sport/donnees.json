@@ -1,6 +1,6 @@
 {
- "revision": 11,
- "maj": "2026-11-10T07:39:13.659Z",
+ "revision": 12,
+ "maj": "2026-11-10T08:29:58.434Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -280,7 +280,8 @@
   {
    "nom": "Extension triceps",
    "mesure": "poids",
-   "description": "Debout ou assise, un haltère tenu à deux mains au-dessus de la tête. Garde les coudes pointés vers le plafond et proches de la tête, descends l'haltère derrière la nuque en pliant seulement les coudes, puis remonte. Seuls les avant-bras bougent."
+   "description": "Debout ou assise, un haltère tenu à deux mains au-dessus de la tête. Garde les coudes pointés vers le plafond et proches de la tête, descends l'haltère derrière la nuque en pliant seulement les coudes, puis remonte. Seuls les avant-bras bougent.",
+   "video": "https://www.youtube.com/watch?v=Reitru3_Srk"
   },
   {
    "nom": "Gainage",
