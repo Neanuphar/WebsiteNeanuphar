@@ -1,6 +1,6 @@
 {
- "revision": 4,
- "maj": "2026-11-10T06:39:01.000Z",
+ "revision": 5,
+ "maj": "2026-11-10T06:42:15.000Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -97,13 +97,15 @@
      "nom": "Corde à sauter",
      "series": 3,
      "objectif": "45 s",
-     "repos": 15
+     "repos": 15,
+     "partie": "echauffement"
     },
     {
      "nom": "Écarté avec élastique",
      "series": 2,
      "objectif": "15",
-     "repos": 15
+     "repos": 15,
+     "partie": "echauffement"
     },
     {
      "nom": "Tractions",

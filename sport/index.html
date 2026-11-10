@@ -132,14 +132,20 @@
     .lignes-prog { display: grid; gap: 8px; }
     .ligne-prog {
       display: grid;
-      grid-template-columns: 1fr 56px 84px 64px 36px;
+      grid-template-columns: 1fr 56px 84px 64px 70px 36px;
       gap: 6px;
       align-items: center;
     }
     .entetes-prog { font-size: .75rem; color: var(--doux); font-weight: 600; }
+    .echauf { display: flex; align-items: center; gap: 4px; font-size: .8rem; color: var(--doux); white-space: nowrap; }
+    .echauf input { width: auto; }
+    .titre-partie { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin: 18px 0 8px; }
+    .titre-partie:first-child { margin-top: 0; }
+    .prog .sous-titre { font-size: .8rem; font-weight: 700; color: var(--accent); margin-top: 8px; }
     @media (max-width: 480px) {
       .ligne-prog { grid-template-columns: 1fr 1fr 1fr 36px; }
       .ligne-prog .nom-exo { grid-column: 1 / -1; }
+      .ligne-prog .echauf { grid-column: 1 / -2; order: 9; }
       .entetes-prog { display: none; }
     }
 
@@ -323,7 +329,7 @@
       </div>
       <div class="champ">
         <label>Exercices</label>
-        <div class="ligne-prog entetes-prog"><span>Exercice</span><span>Séries</span><span>Objectif</span><span>Repos (s)</span><span></span></div>
+        <div class="ligne-prog entetes-prog"><span>Exercice</span><span>Séries</span><span>Objectif</span><span>Repos (s)</span><span>Échauff.</span><span></span></div>
         <div class="lignes-prog" id="lignes-prog"></div>
         <div class="boutons" style="justify-content:flex-start">
           <button type="button" class="petit" id="prog-ajout-ligne">+ Exercice</button>
@@ -394,6 +400,7 @@
     ];
     const MESURES = { poids: "Répétitions + poids", reps: "Répétitions", duree: "Durée" };
     const LIEUX = { salle: "En salle", maison: "À la maison" };
+    const PARTIES = { echauffement: "Échauffement", seance: "Séance" };
     const REPOS_PROPOSES = [30, 60, 90, 120, 180];   // secondes, boutons du compte à rebours
     const REPOS_PAR_DEFAUT = 90;                    // repos d'un exercice ajouté à la main
     const DELAI_ENREGISTREMENT = 1500;              // ms d'attente avant d'enregistrer
@@ -668,6 +675,7 @@
               nom: e.nom,
               objectif: e.objectif || "",
               repos: e.repos || REPOS_PAR_DEFAUT,
+              partie: e.partie || "",
               series: Array.from({ length: Math.max(1, e.series || 1) }, () => ({})),
             }))
           : [],
@@ -732,7 +740,16 @@
       tete.append(t, el("p", "aide", "La séance en cours est gardée sur cet appareil, même sans réseau, jusqu'à ce que tu la termines."));
       box.append(tete);
 
-      b.exercices.forEach((e, i) => box.append(vueExo(e, i)));
+      // Titres « Échauffement » / « Séance » quand on change de partie
+      let partie = null;
+      b.exercices.forEach((e, i) => {
+        const p = e.partie === "echauffement" ? "echauffement" : "seance";
+        if (p !== partie && b.exercices.some((x) => x.partie === "echauffement")) {
+          box.append(el("div", "titre-partie", PARTIES[p]));
+        }
+        partie = p;
+        box.append(vueExo(e, i));
+      });
 
       // Ajouter un exercice
       const ajout = el("div", "carte");
@@ -953,13 +970,19 @@
           const c = el("div", "carte prog");
           c.style.marginTop = "6px";
           c.append(el("h3", null, p.nom));
-          const ul = el("ul");
-          p.exercices.forEach((e) => {
-            const det = [`${e.series} × ${e.objectif || "?"}`];
-            if (e.repos) det.push(`repos ${mmss(e.repos)}`);
-            ul.append(el("li", null, `${e.nom} — ${det.join(", ")}`));
+          const avecEchauf = p.exercices.some((e) => e.partie === "echauffement");
+          ["echauffement", "seance"].forEach((partie) => {
+            const exos = p.exercices.filter((e) => (e.partie === "echauffement" ? "echauffement" : "seance") === partie);
+            if (!exos.length) return;
+            if (avecEchauf) c.append(el("div", "sous-titre", PARTIES[partie]));
+            const ul = el("ul");
+            exos.forEach((e) => {
+              const det = [`${e.series} × ${e.objectif || "?"}`];
+              if (e.repos) det.push(`repos ${mmss(e.repos)}`);
+              ul.append(el("li", null, `${e.nom} — ${det.join(", ")}`));
+            });
+            c.append(ul);
           });
-          c.append(ul);
           const bt = el("div", "boutons");
           if (token) bt.append(bouton("Modifier", "petit", () => ouvrirProgramme(p)));
           bt.append(bouton("Commencer", "petit principal", () => {
@@ -988,9 +1011,14 @@
       const repos = el("input");
       repos.type = "number"; repos.min = "0"; repos.step = "15"; repos.inputMode = "numeric"; repos.placeholder = "Repos";
       repos.value = e.repos ?? REPOS_PAR_DEFAUT;
+      const lab = el("label", "echauf");
+      const chk = el("input");
+      chk.type = "checkbox";
+      chk.checked = e.partie === "echauffement";
+      lab.append(chk, document.createTextNode("Échauffement"));
       const x = bouton("✕", "icone", () => l.remove());
       x.title = "Retirer";
-      l.append(nom, series, obj, repos, x);
+      l.append(nom, series, obj, repos, lab, x);
       return l;
     }
     function ouvrirProgramme(p) {
@@ -1014,11 +1042,14 @@
     });
     $("form-programme").addEventListener("submit", (ev) => {
       const exos = [...$("lignes-prog").children].map((l) => {
-        const [nom, series, obj, repos] = l.querySelectorAll("input");
-        return { nom: nom.value.trim(), series: Math.max(1, parseInt(series.value) || 1), objectif: obj.value.trim(), repos: Math.max(0, parseInt(repos.value) || 0) };
+        const [nom, series, obj, repos, chk] = l.querySelectorAll("input");
+        const e = { nom: nom.value.trim(), series: Math.max(1, parseInt(series.value) || 1), objectif: obj.value.trim(), repos: Math.max(0, parseInt(repos.value) || 0) };
+        if (chk.checked) e.partie = "echauffement";
+        return e;
       }).filter((e) => e.nom);
       const nom = $("prog-nom").value.trim();
       if (!nom || !exos.length) { ev.preventDefault(); alert("Donne un nom et au moins un exercice."); return; }
+      exos.sort((x, y) => (y.partie === "echauffement") - (x.partie === "echauffement"));   // échauffement en premier
       exos.forEach((e) => retenirExo(e.nom, "poids"));
       const p = progEdite || { id: idUnique("p-") };
       Object.assign(p, { nom, lieu: $("prog-lieu").value, exercices: exos });
