@@ -887,7 +887,7 @@
             if (!det.open || det.querySelector(".video")) return;
             const v = el("div", "video" + (yt.verticale ? " verticale" : ""));
             const f = el("iframe");
-            f.src = `https://www.youtube-nocookie.com/embed/${yt.id}?rel=0&playsinline=1`;
+            f.src = `https://www.youtube-nocookie.com/embed/${yt.id}?rel=0&playsinline=1&mute=1`;   // son coupé par défaut
             f.title = "Vidéo : " + e.nom;
             f.allow = "encrypted-media; picture-in-picture; fullscreen";
             f.allowFullscreen = true;
