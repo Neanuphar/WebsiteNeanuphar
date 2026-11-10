@@ -1,6 +1,6 @@
 {
- "revision": 8,
- "maj": "2026-11-10T07:03:50.638Z",
+ "revision": 9,
+ "maj": "2026-11-10T07:05:53.778Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -272,7 +272,8 @@
   {
    "nom": "Élévations latérales",
    "mesure": "poids",
-   "description": "Debout, un haltère léger dans chaque main le long du corps, coudes très légèrement fléchis. Monte les bras sur les côtés jusqu'à hauteur d'épaules (pas plus haut), redescends lentement. Pas d'élan : si tu dois te balancer, c'est trop lourd."
+   "description": "Debout, un haltère léger dans chaque main le long du corps, coudes très légèrement fléchis. Monte les bras sur les côtés jusqu'à hauteur d'épaules (pas plus haut), redescends lentement. Pas d'élan : si tu dois te balancer, c'est trop lourd.",
+   "video": "https://www.youtube.com/watch?v=DC8ceKPj4TM"
   },
   {
    "nom": "Extension triceps",
