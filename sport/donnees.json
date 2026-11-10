@@ -1,6 +1,6 @@
 {
- "revision": 2,
- "maj": "2026-11-10T06:37:00.000Z",
+ "revision": 3,
+ "maj": "2026-11-10T06:38:26.000Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -94,56 +94,56 @@
    "lieu": "maison",
    "exercices": [
     {
-     "nom": "Jumping jacks",
-     "series": 2,
+     "nom": "Corde à sauter",
+     "series": 3,
      "objectif": "45 s",
      "repos": 15
     },
     {
-     "nom": "Montées de genoux",
+     "nom": "Écarté avec élastique",
      "series": 2,
-     "objectif": "30 s",
+     "objectif": "15",
      "repos": 15
-    },
-    {
-     "nom": "Rotations d'épaules",
-     "series": 1,
-     "objectif": "60 s",
-     "repos": 0
     },
     {
      "nom": "Pompes",
      "series": 4,
-     "objectif": "8 à 12",
+     "objectif": "8 à 12 (avec poignées)",
      "repos": 90
     },
     {
-     "nom": "Pompes piquées",
+     "nom": "Rowing haltère",
+     "series": 3,
+     "objectif": "10 par bras",
+     "repos": 60
+    },
+    {
+     "nom": "Développé militaire",
      "series": 3,
      "objectif": "8 à 10",
      "repos": 90
     },
     {
-     "nom": "Dips sur chaise",
-     "series": 3,
-     "objectif": "10 à 12",
-     "repos": 75
-    },
-    {
-     "nom": "Superman",
+     "nom": "Élévations latérales",
      "series": 3,
      "objectif": "12 à 15",
      "repos": 60
     },
     {
-     "nom": "Planche toucher d'épaules",
+     "nom": "Curl biceps",
      "series": 3,
-     "objectif": "20 (10 par bras)",
+     "objectif": "10 à 12",
+     "repos": 60
+    },
+    {
+     "nom": "Extension triceps",
+     "series": 3,
+     "objectif": "10 à 12",
      "repos": 60
     },
     {
      "nom": "Gainage",
-     "series": 3,
+     "series": 2,
      "objectif": "45 s",
      "repos": 45
     }
@@ -178,6 +178,10 @@
   },
   {
    "nom": "Planche toucher d'épaules",
+   "mesure": "reps"
+  },
+  {
+   "nom": "Écarté avec élastique",
    "mesure": "reps"
   }
  ]
