@@ -1,6 +1,6 @@
 {
- "revision": 7,
- "maj": "2026-11-10T06:46:40.000Z",
+ "revision": 8,
+ "maj": "2026-11-10T07:03:50.638Z",
  "programmes": [
   {
    "id": "p-full-body-salle",
@@ -261,7 +261,8 @@
   {
    "nom": "Rowing haltère",
    "mesure": "poids",
-   "description": "Un genou et une main posés sur une chaise ou un lit, dos plat parallèle au sol. L'haltère pend bras tendu. Tire-le vers la hanche (pas vers l'épaule) en gardant le coude près du corps, serre l'omoplate en haut, redescends lentement. Toutes les répétitions d'un bras, puis l'autre."
+   "description": "Un genou et une main posés sur une chaise ou un lit, dos plat parallèle au sol. L'haltère pend bras tendu. Tire-le vers la hanche (pas vers l'épaule) en gardant le coude près du corps, serre l'omoplate en haut, redescends lentement. Toutes les répétitions d'un bras, puis l'autre.",
+   "video": "https://www.youtube.com/watch?v=dFzUjzfih7k"
   },
   {
    "nom": "Développé militaire",
